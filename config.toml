@@ -1,0 +1,85 @@
+baseurl = "https://ecwuuuuu.com/"
+# baseurl = "/"
+languageCode = "en"
+title = "Σ<VV⋃"
+theme = "hugo-tufte"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false 
+canonifyurls = true
+
+[taxonomies]
+  category = "categories" 
+  group = "groups"
+  series = "series"
+  tag = "tags"
+
+[params]
+  subtitle = "ECWU's Notebook"
+  # copyright = "(c) Zhenghao Wu, Some Rights reserved."
+  copyrightHolder = "Zhenghao Wu"
+  showPoweredBy = true
+
+# -----------------------------------------------------------------------
+# Navigation menu 
+# -----------------------------------------------------------------------
+[[menu.nav]]
+  name = "Home"
+  pre = "<i class='fa fa-home fa-lg'></i> "
+  weight = -110 
+  identifier = "home"
+  url = "/"
+[[menu.nav]]
+  name = "Posts"
+  pre = "<i class='fa fa-book fa-lg'></i> "
+  weight = -100 
+  identifier = "posts"
+  url = "/post"
+# [[menu.nav]]
+#   name = "Categories"
+#   pre = "<i class='fa fa-tags fa-lg'></i> "
+#   weight = -90 
+#   identifier = "categories"
+#   url = "/categories"
+# [[menu.nav]]
+#   name = "Photography"
+#   pre = "<i class='fa fa-camera-retro fa-lg'></i> "
+#   weight = -90 
+#   identifier = "photography"
+#   url = "/page/photography"
+[[menu.nav]]
+  name = "Research"
+  pre = "<i class='fa fa-file-text-o fa-lg'></i> "
+  weight = -80 
+  identifier = "research"
+  url = "/page/research"
+[[menu.nav]]
+  name = "About"
+  pre = "<i class='fa fa-user fa-lg'></i> "
+  weight = -70 
+  identifier = "about"
+  url = "/page/about"
+
+# -----------------------------------------------------------------------
+# Footer menu 
+# -----------------------------------------------------------------------
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-github fa-2x'></i> "
+  weight = -100 
+  identifier = "github"
+  url = "https://github.com/ecwu"
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-book fa-2x'></i> "
+  weight = -90 
+  identifier = "researchgate"
+  url = "https://www.researchgate.net/profile/Zhenghao_Wu2"
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-linkedin-square fa-2x'></i> "
+  weight = -80 
+  identifier = "linkedin"
+  url = "https://www.linkedin.com/in/zhenghaowu/"

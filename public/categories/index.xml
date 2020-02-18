@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Σ&lt;VV⋃</title>
+    <link>https://ecwuuuuu.com/categories/</link>
+    <description>Recent content in Categories on Σ&lt;VV⋃</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Sep 2019 00:07:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://ecwuuuuu.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Photography</title>
+      <link>https://ecwuuuuu.com/categories/photography/</link>
+      <pubDate>Sat, 14 Sep 2019 00:07:01 +0800</pubDate>
+      
+      <guid>https://ecwuuuuu.com/categories/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note</title>
+      <link>https://ecwuuuuu.com/categories/note/</link>
+      <pubDate>Fri, 28 Jun 2019 00:04:50 +0800</pubDate>
+      
+      <guid>https://ecwuuuuu.com/categories/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS</title>
+      <link>https://ecwuuuuu.com/categories/os/</link>
+      <pubDate>Wed, 09 Jan 2019 12:56:01 +0800</pubDate>
+      
+      <guid>https://ecwuuuuu.com/categories/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>https://ecwuuuuu.com/categories/life/</link>
+      <pubDate>Mon, 20 Aug 2018 02:56:01 +0800</pubDate>
+      
+      <guid>https://ecwuuuuu.com/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story</title>
+      <link>https://ecwuuuuu.com/categories/story/</link>
+      <pubDate>Mon, 20 Aug 2018 02:56:01 +0800</pubDate>
+      
+      <guid>https://ecwuuuuu.com/categories/story/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mathjax on C!</title>
+    <link>/categories/mathjax/</link>
+    <description>Recent content in mathjax on C!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 20 Feb 2016 13:56:01 -0800</lastBuildDate>
+    
+	<atom:link href="/categories/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo-Tufte Features</title>
+      <link>/post/tufte-features/</link>
+      <pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate>
+      
+      <guid>/post/tufte-features/</guid>
+      <description>&lt;p&gt;This is a quick demonstration post.  It serves as an example of the features
+of this theme.  One of them is \( \LaTeX \) via MathJax.
+
+
+  &lt;section&gt;
+
+    
+&lt;/p&gt;
+
+&lt;h2 id=&#34;a-bit-about-mathematics&#34;&gt;A Bit About Mathematics&lt;/h2&gt;
+
+&lt;div class=&#34;epigraph&#34;&gt;
+&lt;blockquote&gt;
+
+&lt;p&gt;
+This is an example of an epigraph with some math
+\\(\mathbb N \subseteq \mathbb R \\)
+to start the beginning of a section.
+&lt;/p&gt;
+
+&lt;footer&gt;
+Shawn O&amp;#39;Hare, 
+&lt;cite&gt;Math is Fun&lt;/cite&gt;
+
+&lt;/footer&gt;
+
+&lt;blockquote&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
