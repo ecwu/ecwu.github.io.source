@@ -28,4 +28,5 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: ecwu/ecwu.github.io
           publish_dir: ./public
+          publish_branch: master
           keep_files: true
