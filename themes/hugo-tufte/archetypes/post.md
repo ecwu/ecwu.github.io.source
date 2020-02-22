@@ -10,7 +10,7 @@ meta = true
 hideDate = false
 hideReadTime = true
 math = false
-toc = true
+toc = false
 draft = true
 +++
 

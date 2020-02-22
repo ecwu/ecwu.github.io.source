@@ -11,7 +11,7 @@ hideDate = false
 hideReadTime = true
 math = false
 toc = true
-draft = false
+draft = true
 +++
 
 
