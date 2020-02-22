@@ -7,8 +7,14 @@ theme = "hugo-tufte"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-builddrafts = false 
+builddrafts = false
 canonifyurls = true
+
+[params]
+  subtitle = "ECWU's Notebook"
+  # copyright = "(c) Zhenghao Wu, Some Rights reserved."
+  copyrightHolder = "ECWU"
+  showPoweredBy = true
 
 [taxonomies]
   category = "categories" 
@@ -16,11 +22,14 @@ canonifyurls = true
   series = "series"
   tag = "tags"
 
-[params]
-  subtitle = "ECWU's Notebook"
-  # copyright = "(c) Zhenghao Wu, Some Rights reserved."
-  copyrightHolder = "Zhenghao Wu"
-  showPoweredBy = true
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
+
+[markup.goldmark.renderer]
+unsafe= true
 
 # -----------------------------------------------------------------------
 # Navigation menu 
@@ -37,18 +46,12 @@ canonifyurls = true
   weight = -100 
   identifier = "posts"
   url = "/post"
-# [[menu.nav]]
-#   name = "Categories"
-#   pre = "<i class='fa fa-tags fa-lg'></i> "
-#   weight = -90 
-#   identifier = "categories"
-#   url = "/categories"
-# [[menu.nav]]
-#   name = "Photography"
-#   pre = "<i class='fa fa-camera-retro fa-lg'></i> "
-#   weight = -90 
-#   identifier = "photography"
-#   url = "/page/photography"
+[[menu.nav]]
+  name = "Photography"
+  pre = "<i class='fa fa-camera-retro fa-lg'></i> "
+  weight = -90 
+  identifier = "photography"
+  url = "/photography"
 [[menu.nav]]
   name = "Research"
   pre = "<i class='fa fa-file-text-o fa-lg'></i> "
@@ -83,3 +86,9 @@ canonifyurls = true
   weight = -80 
   identifier = "linkedin"
   url = "https://www.linkedin.com/in/zhenghaowu/"
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-instagram fa-2x'></i> "
+  weight = -70
+  identifier = "instagram"
+  url = "https://www.instagram.com/ecwuuuuu/"

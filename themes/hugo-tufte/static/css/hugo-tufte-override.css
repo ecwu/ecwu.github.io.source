@@ -1,0 +1,10 @@
+blockquote > p {
+    border-left:.5em solid #eee;
+    padding: 0 1em;
+    margin-left:0;
+    max-width: 476px;
+}
+
+body {
+    max-width: 87%;
+}
