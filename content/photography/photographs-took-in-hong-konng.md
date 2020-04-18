@@ -18,7 +18,7 @@ menu = "main"
 <!--more-->
 
 {{< figure
-  src="/hk-photo-01.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-01.jpg"
   class="class param"
   title="维多利亚港夜景"
   label="p1"
@@ -28,7 +28,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-02.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-02.jpg"
   class="class param"
   title="HKBU 学生宿舍外的夕阳"
   label="p6"
@@ -38,7 +38,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-03.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-03.jpg"
   class="class param"
   title="太平山俯瞰维港"
   label="p3"
@@ -48,7 +48,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-04.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-04.jpg"
   class="class param"
   title="港珠澳大桥"
   label="p4"
@@ -58,7 +58,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-05.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-05.jpg"
   class="class param"
   title="与朋友在大澳的市集"
   label="p5"
@@ -68,7 +68,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-06.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-06.jpg"
   class="class param"
   title="缆车上俯瞰"
   label="p6"
@@ -78,7 +78,7 @@ menu = "main"
 {{< section "end" >}}
 
 {{< figure
-  src="/hk-photo-07.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-07.jpg"
   class="class param"
   title="东涌地铁站外的喷泉与戏水的小孩"
   label="p7"
@@ -89,7 +89,7 @@ menu = "main"
 
 
 {{< figure
-  src="/hk-photo-me.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hk-photo-me.jpg"
   class="class param"
   title="我"
   label="p8"

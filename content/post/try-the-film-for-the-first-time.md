@@ -41,7 +41,7 @@ My very first roll of film was sent to the lab together with some films which I 
 But the result is out of my expectation. We do get photos. Vintage color and that unique film grain really build up the mood and bring back all my memory for that day. And there are two pictures I choose to show you.
 
 {{< figure
-  src="/film-3.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-3.jpg"
   class="class param"
   title="Friends doing some posts"
   label="film-1"
@@ -50,7 +50,7 @@ But the result is out of my expectation. We do get photos. Vintage color and tha
 {{< section "end" >}}
 
 {{< figure
-  src="/film-5.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-5.jpg"
   class="class param"
   title="Everyone have two carrots"
   label="carrots"
@@ -87,7 +87,7 @@ The camera is an amazing machine to work with. And the result is worth my wait. 
 Now, you can enjoy some of my work.
 
 {{< figure
-  src="/film-1.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-1.jpg"
   class="class param"
   title="HCC Members having an \"eat together event\""
   attr="Featuring: Alvin Liang, Bill Zhong, Bill Li (From left to right)"
@@ -97,7 +97,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/film-2.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-2.jpg"
   class="class param"
   title="Portrait for Alvin Liang"
   label="胶片 - 02"
@@ -106,7 +106,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/film-4.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-4.jpg"
   type="full"
   label="胶片 - 04"
   title="CCC Building in UIC"
@@ -115,7 +115,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/film-6.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-6.jpg"
   class="class param"
   label="胶片 - 06"
   title="Students who have taken the class"
@@ -124,7 +124,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/film-7.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/film-7.jpg"
   class="class param"
   label="胶片 - 07"
   title="CEFC Building"
@@ -133,7 +133,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/AGFA-40p-25.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-25.jpg"
   class="class param"
   label="AGFA-25"
   title="Max Gu"
@@ -142,7 +142,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/AGFA-40p-26.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-26.jpg"
   class="class param"
   label="AGFA-26"
   title="Hanging tower"
@@ -151,7 +151,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/AGFA-40p-27.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-27.jpg"
   class="class param"
   label="AGFA-27"
   title="Sculler"
@@ -160,7 +160,7 @@ Now, you can enjoy some of my work.
 {{< section "end" >}}
 
 {{< figure
-  src="/AGFA-40p-28.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-28.jpg"
   class="class param"
   label="AGFA-28"
   title="Plane"

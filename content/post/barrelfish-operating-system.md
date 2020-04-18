@@ -27,7 +27,7 @@ toc = true
 <!--more-->
 
 {{< figure
-  src="/barrelfish-logo.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/barrelfish-logo.jpg"
   type="full"
   label="Barrelfish OS Logo"
   title="Barrelfish OS Logo"
@@ -42,7 +42,7 @@ toc = true
 ## 背景
 
 Barrelfish OS 是由苏黎世联邦理工大学{{< figure
-  src="/ETHzurich-logo.png"
+  src="https://cdn.ecwuuuuu.com/blog/image/ETHzurich-logo.png"
   class="class param"
   type="margin"
   label="mn-rhino"
