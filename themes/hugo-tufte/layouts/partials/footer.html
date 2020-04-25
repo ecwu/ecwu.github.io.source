@@ -23,9 +23,11 @@
     {{end}}
     
   </p>
-  <p>
-    <a href="http://beian.miit.gov.cn/"> 粤 ICP 备 17015575 号 - 1</a>
-  </p>
+  {{ if .Site.Params.showBeian }}
+    <p>
+      <a href="http://beian.miit.gov.cn/">{{ .Site.Params.beianMessage }}</a>
+    </p>
+  {{end}}
 </div>
 </footer>
 {{ partial "body.includes.html" . }}

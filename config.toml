@@ -10,11 +10,14 @@ publishdir = "public"
 builddrafts = false
 canonifyurls = true
 
+
 [params]
   subtitle = "ECWU's Notebook"
   # copyright = "(c) Zhenghao Wu, Some Rights reserved."
   copyrightHolder = "ECWU"
   showPoweredBy = true
+  showBeian = true
+  beianMessage = "粤 ICP 备 17015575 号 - 1"
 
 [taxonomies]
   category = "categories" 

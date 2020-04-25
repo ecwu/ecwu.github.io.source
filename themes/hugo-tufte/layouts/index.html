@@ -3,12 +3,12 @@
 <div id="layout" class="pure-g">
 <article class="pure-u-1">
 {{ partial "brand.html" . }}
-{{ range .Pages }}
+{{ range where .Pages "Section" "!=" "page" }}
   {{ partial "content.header.html" . }}
   <ul>
   {{ range first 2 .Pages }}
       <li>
-        <span class="list-date">{{ .Date.Format "Jan 2" }} &middot;</span>
+        <span class="list-date">{{ .Date.Format "06' Jan 2" }} &middot;</span>
         <a href="{{ .RelPermalink }}">{{.Title}}</a>
       </li>
   {{ end }}
