@@ -358,7 +358,7 @@ Finally, I will show some of the photos I have taken, arranged according to diff
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-258.jpg"
   class="class param"
   title="More friends"
-  caption="@ \"3D Lab\""
+  caption="@ \"3D Lab\". From left to right: Qizheng, Junru, Minyong; The man sitting in middle: Yuepeng."
   label="pro1-258"
   attr=""
   attrlink=""
