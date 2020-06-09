@@ -6,7 +6,7 @@
 {{ range where .Pages "Section" "!=" "page" }}
   {{ partial "content.header.html" . }}
   <ul>
-  {{ range first 2 .Pages }}
+  {{ range first 3 .Pages }}
       <li>
         <span class="list-date">{{ .Date.Format "06' Jan 2" }} &middot;</span>
         <a href="{{ .RelPermalink }}">{{.Title}}</a>

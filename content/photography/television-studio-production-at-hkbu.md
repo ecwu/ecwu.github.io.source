@@ -14,6 +14,7 @@ categories = [
     "Life",
 ]
 menu = "main"
+featureimage = "https://cdn.ecwuuuuu.com/blog/image//hkbu-studio.jpg"
 +++
 
 Television Studio Production 电视影棚制作
