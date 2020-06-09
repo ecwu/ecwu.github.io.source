@@ -70,7 +70,7 @@ The whole camera is detachable design, you can remove the body, lens, waist-leve
 
 ### Rotating Back (Film holder)
 
-RB in the camera name stands for “**R**otating **B**ack”, and the back I own is in 6x7 (cm){{% sidenote "rb67-back-size" %}}It supports other formats like 6x4.5, 6x6, 6x8, but you have to pay for these backs. ([Mamiya RB67 Camera Guide - Backs](https://rb67.helluin.org/backs/)){{% /sidenote %}} format (you can shot 10 frames with a standard rolls of 120 film), it is impractical to shoot in portrait orientation by rotating the whole camera. {{% sidenote "hassel66" %}}A camera like the *Hasselblad V* system is using a 6x6 format, It makes no difference with portrait or landscape orientation. Not to mention it weight way less than a Mamiya.{{% /sidenote %}} So the adapter plate is rotatable, to easily switch between a portrait orientation or landscape orientation when shooting with this heavy camera body.
+RB in the camera name stands for “**R**otating **B**ack”, and the back I own is a 6x7 (cm){{% sidenote "rb67-back-size" %}}It supports other formats like 6x4.5, 6x6, 6x8, but you have to pay for these backs. ([Mamiya RB67 Camera Guide - Backs](https://rb67.helluin.org/backs/)){{% /sidenote %}} format (you can shot 10 frames with a standard rolls of 120 film). It is impractical to shoot in portrait orientation by rotating the whole camera. {{% sidenote "hassel66" %}}A camera like the *Hasselblad V* system is using a 6x6 format, It makes no difference with portrait or landscape orientation. Not to mention it weight way less than a Mamiya.{{% /sidenote %}} So the adapter plate is designed to be rotatable, to easily switch between a portrait orientation or landscape orientation when shooting with this heavy camera body.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/back-loaded-with-film.jpg"
@@ -94,7 +94,7 @@ The engineers include a lot of mechanisms (so call foolproof design) to make sur
 - When "double exposure" is turn off on the film holder (I think only available to Pro SD back) the shutter can only release once.
 - When the rotated back is not properly rotated, the shutter cannot be released.
 
-Only the ones that impress me the most are listed, when you play with the camera yourself, you will definitely sigh how ingenious the design of this machine is.
+Only the ones that impress me the most are listed, when you play with this camera yourself, you will definitely sigh how ingenious the design of this machine is.
 
 ## Lens
 
@@ -128,7 +128,7 @@ The focus ring is not on the lens, it is using a rack-and-pinion system with bel
 
 ## Viewfinder
 
-You get a waist-level viewfinder with a pop magnifier instead of an eye-level viewfinder. The world seen through it is absolutely stunning. Color is more vivid, contrast is more natural. Once the light is not sufficient,{{< figure
+You get a waist-level viewfinder with a pop magnifier instead of an eye-level viewfinder. The world seen through it is absolutely stunning. Color is more vivid, contrast is more natural. But the shortcomings are also obvious, once the light is not sufficient,{{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67-night.jpg"
   class="class param"
   type="margin"
@@ -137,7 +137,9 @@ You get a waist-level viewfinder with a pop magnifier instead of an eye-level vi
   caption="Try very hard to pull focus with the help of one flashlight."
   attr=""
   attrlink=""
- >}} it gets hard to see the image or even pull focus. But most of the time, the image has a fair amount of brightness. 
+ >}} it gets hard to see the image or even pull focus. 
+ 
+ Most of the time, the image has a fair amount of brightness. 
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/viewfinder-01.jpg"
@@ -178,7 +180,7 @@ The pain in the ass is, this kind of viewfinder is not usable when you doing som
 
 ## Steps to take a picture
 
-Assume that you have a function machine, loaded with film.
+Let me talk about how you can use such a camera. Pretty straightforward. Assume that you have a function machine, loaded with film.
 
 1. Cocking the lever of the roll film holder to advance the file if the previous film is exposed.
 2. Press down the shutter cocking lever.
@@ -216,9 +218,9 @@ Before dive into each categories, I want to mention the design of the film. Fuji
   attrlink=""
  >}} which can very firmly trick the backing paper and prevent the film from unrolling and accidentally exposed. Other manufacturers should "copy" this design :).
 
-*Negative film*, I really like the effect of Fujifilm on green. But I also like the skin color performance of Kodak Film Portra. Ilford HP5 is reliable, and have really good pushing ability.
+*Negative film*, I really like the effect of Fujifilm on green. But I also like the skin color performance of Kodak Film Portra. Ektar has a very fine grain, but you have to choose the develop lab wisely.
 
-*Slide film*, I only tried RDP III. The lab I chose didn't give me perfect results on scanned images {{% sidenote "scan" %}}The most fancy Hasselblad X5 Scanner may have a better result.{{% /sidenote %}}. But from what I see from the film I get. It has a great result. Good skin tone and color.
+*Slide film*, I only tried RDP III. The lab I chose didn't give me perfect results on scanned images {{% sidenote "scan" %}}The Hasselblad X5 Scanner may have a better result.{{% /sidenote %}}. But from what I see from the film I get. It has a great result. Good skin tone and color.
 
 *Black/White*, I didn't take too many B/W photos so I will leave this part blank for now.
 
@@ -528,11 +530,10 @@ When I first tried photography, I heard a sentence: “You should take every shu
   attrlink=""
  >}}
 
-But since I start with film photography. I start to take every shutter very seriously. Because each shutter press will cost money because I want to give meaning for each shutter pressed. I try to learn more about photography and have lots of fun.
-
+But since I start with film photography. I start to take every shutter very seriously. Because each shutter press will cost money (A bit snobbery, but It is true. You have to pay for the film, develop, scan, and storage. Now each photo I take costs at least eight RMB) because I want to give meaning for each shutter pressed. I try to learn more about photography and have lots of fun.
 
 Aside from expenses and ideas, I found that the medium of the film made me focus when I was taking photographs. First have to take care of lots of settings and knobs, doing operations step by step. But once everything is set, only need to concentrate on the picture reflect on the screen and wait for that moment and press that shutter.
 
-"Click"
+"Ka-click!"
 
 What a satisfying meditation.
