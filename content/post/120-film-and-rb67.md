@@ -3,7 +3,7 @@ title = "Larger format, heavier body"
 subtitle = "120 Film and Mamiya RB67"
 author = "Zhenghao Wu"
 description = "Indulge in film photography"
-math = true
+math = false
 hidedate = false
 date = "2020-06-09T17:44:45+08:00"
 hidereadtime = false
@@ -525,7 +525,7 @@ When I first tried photography, I heard a sentence: “You should take every shu
   class="class param"
   type="margin"
   label="me-using-rb"
-  title="Me Holding an RB67 during the photography class last year"
+  title="Me holding an RB67 during the photography class last year"
   attr=""
   attrlink=""
  >}}
