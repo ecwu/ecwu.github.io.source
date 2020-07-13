@@ -4,7 +4,6 @@ description = "Some photos I take in Hong Kong"
 tags = [
     "Hong Kong",
     "Photography",
-    ""
 ]
 date = "2018-07-30T13:56:01+08:00"
 categories = [
