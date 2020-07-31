@@ -2,7 +2,7 @@
 title = "List of stuffs I enjoy"
 description = "Something I like, maybe you can try it?"
 author = "Zhenghao Wu"
-date = 2020-04-26T00:56:30+08:00
+date = 2020-07-31T10:06:10+08:00
 tags = ["summary"]
 categories = ["Note"]
 draft = false
@@ -33,6 +33,14 @@ toc = true
   attr="Work by Todd Hido"
  >}}
 - Genesis (2013) by **Sebastião Salgado**
+- I Know How Furiously Your Heart Is Beating (2019) by **Alec Soth**{{< figure
+  src="https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/3441069223-1551369073/furiouslycover.jpg"
+  class="class param"
+  type="margin"
+  label="i-know-how-furiously-your-heart-is-beating"
+  title="I Know How Furiously Your Heart Is Beating (2019)"
+  attr="Work by Alec Soth"
+ >}}
 
 ### 2.1 Kevin Kelly Trilogy:
 - Out of Control (1994): [HTML version](http://kk.org/outofcontrol/contents.php)
@@ -114,3 +122,5 @@ Some selected episodes:
 
 - 白馬村遊記 (Album) by **上海彩虹室内合唱团**
 - Africa by **Angel City Chorale**
+
+> 2020.07.31 updated
