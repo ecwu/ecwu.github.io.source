@@ -5,3 +5,5 @@ hasMath = false
 +++
 
 Contact me: ecwu@protonmail.com
+
+More: [LinkedIn](https://www.linkedin.com/in/zhenghaowu/)
