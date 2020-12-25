@@ -19,7 +19,9 @@ featureimage = ""
 
 The window of my room is facing west. Clear view, not blockage. A perfect place for seeing the gorgeous sunset.
 
-I can’t really remember when and why I start taking photos from the window. But the first one I can find on my Instagram is taken in March 2014. That must be some breathtaking scenery. Haven’t thought about making it into a series or project since the beginning. But I have shot a lot of these since 2014 and I think it will be interesting to make it a series. Hope you enjoy it.
+I can’t really remember when and why I start taking photos from the window. Maybe because of the breathtaking scenery, or just some casual shots. But the first one I can find on my Instagram is taken in March 2014. 
+
+Haven’t thought about making it into a series or project since the beginning. But I have shot a lot of these since 2014 and I think it will be interesting to make it into a series. And this is the result, hope you enjoy it.
 
 Most of the photo I took was using my phone or iPad. All photos/video was published on my [Instagram](https://www.instagram.com/ecwuuuuu/).
 
