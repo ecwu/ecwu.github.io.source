@@ -1,14 +1,16 @@
 +++
 title = "{{ replace .Name '-' ' ' | title }}"
 subtitle = ""
-author = ""
+author = "Zhenghao Wu"
 description = ""
 hidedate = false
 date = {{ .Date }}
 hidereadtime = false
 draft = true
-math = true
+math = false
 toc = false
 tags = []
 categories = []
+menu = "main"
+featureimage = ""
 +++
