@@ -2,7 +2,7 @@
 title = "List of stuffs I enjoy"
 description = "Something I like, maybe you can try it?"
 author = "Zhenghao Wu"
-date = 2020-07-31T10:06:10+08:00
+date = 2021-03-03T16:42:10+08:00
 tags = ["summary"]
 categories = ["Note"]
 draft = false
@@ -41,6 +41,7 @@ toc = true
   title="I Know How Furiously Your Heart Is Beating (2019)"
   attr="Work by Alec Soth"
  >}}
+- Crime and Punishment by **Fyodor Dostoevsky** (I have not finished it yet.)
 
 ### 2.1 Kevin Kelly Trilogy:
 - Out of Control (1994): [HTML version](http://kk.org/outofcontrol/contents.php)
@@ -106,11 +107,11 @@ Some selected episodes:
 ### 6.2 Classical Music
 
 - Symphony No. 9 by **Gustav Mahler**
-- The Planets by **Gustav Holst**
+- The Planets, Op. 32 by **Gustav Holst**
 - The Four Seasons by **Antonio Vivaldi**
-- Violin Concerto by **Pyotr Ilyich Tchaikovsky**
+- The Violin Concerto in D major, Op. 35 by **Pyotr Ilyich Tchaikovsky**
 - 1812 Overture by **Pyotr Ilyich Tchaikovsky and Stan LePard**
-- Clair De Lune by **Claude Debussy**
+- Clair De Lune from *Suite bergamasque (L. 75)* by **Claude Debussy**
 - Seven Days Walking (Set of album) by **Ludovico Einaudi**
 
 
@@ -123,4 +124,4 @@ Some selected episodes:
 - 白馬村遊記 (Album) by **上海彩虹室内合唱团**
 - Africa by **Angel City Chorale**
 
-> 2020.07.31 updated
+> Initially posted in 2019, updated in 2021.03.03
