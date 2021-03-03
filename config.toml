@@ -21,8 +21,6 @@ canonifyurls = true
 
 [taxonomies]
   category = "categories" 
-  group = "groups"
-  series = "series"
   tag = "tags"
 
 [markup]
@@ -56,11 +54,11 @@ unsafe= true
   identifier = "photography"
   url = "/photography"
 [[menu.nav]]
-  name = "Research"
+  name = "Project"
   pre = "<i class='fa fa-file-text-o fa-lg'></i> "
   weight = -80 
-  identifier = "research"
-  url = "/page/research"
+  identifier = "project"
+  url = "/project"
 [[menu.nav]]
   name = "About"
   pre = "<i class='fa fa-user fa-lg'></i> "

@@ -8,6 +8,17 @@
   {{ partial "toc.html" . }}
 <section class=article>{{ .Content }}</section>
 <section>
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+<h3>Related Posts</h3>
+<ul>
+	{{ range . }}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+</ul>
+{{ end }}
+</section>
+<section>
   {{ partial "footer.html" . }}
 </section>
 </article>
