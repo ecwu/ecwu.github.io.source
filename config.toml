@@ -93,3 +93,9 @@ unsafe= true
   weight = -70
   identifier = "instagram"
   url = "https://www.instagram.com/ecwuuuuu/"
+[[menu.footer]]
+  name = ""
+  pre = "<i class='fa fa-video-camera fa-2x'></i> "
+  weight = -60
+  identifier = "bilibili"
+  url = "https://space.bilibili.com/509461"
