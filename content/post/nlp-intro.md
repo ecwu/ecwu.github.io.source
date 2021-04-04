@@ -1,5 +1,5 @@
 +++
-title = "What is the Natural Language Processing I always mentioning."
+title = "Natural Language Processing!"
 author = "Zhenghao Wu"
 description = "How computer process language"
 tags = ['UICHCC Salon', 'NLP']

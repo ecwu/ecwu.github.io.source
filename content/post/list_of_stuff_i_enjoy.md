@@ -1,5 +1,5 @@
 +++
-title = "List of stuffs I enjoy"
+title = "List of stuff I enjoy"
 description = "Something I like, maybe you can try it?"
 author = "Zhenghao Wu"
 date = 2021-03-03T16:42:10+08:00
@@ -25,7 +25,7 @@ toc = true
 
 - Simulacra and Simulation (1981) by **Jean Baudrillard**
 - House Hunting (2001) by **Todd Hido** {{< figure
-  src="http://www.toddhido.com/images/biblio/househunting/hh-1.jpg"
+  src="http://cdn.ecwuuuuu.com/blog/image/hh-1.jpg"
   class="class param"
   type="margin"
   label="house-hunting"
