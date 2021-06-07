@@ -47,7 +47,7 @@ $$
 \sigma(z)_i = \frac{e^{z_i}}{ \sum\_{j=1}^K e^{z_j}}
 $$
 
-Softmax usually use on multi-classes classification. We have multiple output neurons, and each one represents one class. With the values of these neurons as input. We can get the probabilities of each class. The sum of the probabilities is equal to 1. After give such probabilities distribution of the classes, we then use Argmax {{% sidenote "argmax-explain" %}}Argmax: The operation that finds the argument with maximum value. Usually for finding the class with the largest probability.{{% /sidenote %}} to get the model output.
+Softmax usually use on multi-classes classification. We have multiple output neurons, and each one represents one class. With the values of these neurons as input. We can get the probabilities of each class. The sum of the probabilities is equal to 1. After give such probabilities distribution of the classes, we then use Argmax{{% sidenote "argmax-explain" %}}Argmax: The operation that finds the argument with maximum value. Usually for finding the class with the largest probability.{{% /sidenote %}} to get the model output.
 
 ## Comparison
 
