@@ -35,7 +35,7 @@ We used the BERT model, which is state-of-the-art at that time for text classifi
 
 We proposed an novel attention-based module for RNN-based Encoder-Decoder Model for Fixed Length Summerization Task. The proposed method achieved good results on CNN/Daily Mail and English Gigaword Dataset.
 
-> This work has been accepted in ACL2021
+> This work has been accepted in Findings of ACL2021, Preprint can be found [here](https://arxiv.org/abs/2106.00316).
 
 ## MSc Independent Project: XXX
 
