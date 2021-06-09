@@ -60,9 +60,15 @@ unsafe= true
   identifier = "project"
   url = "/project"
 [[menu.nav]]
+  name = "Keep List"
+  pre = "<i class='fa fa-paperclip fa-lg'></i> "
+  weight = -70 
+  identifier = "keep"
+  url = "/page/keep"
+[[menu.nav]]
   name = "About"
   pre = "<i class='fa fa-user fa-lg'></i> "
-  weight = -70 
+  weight = -60 
   identifier = "about"
   url = "/page/about"
 

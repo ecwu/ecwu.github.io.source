@@ -2,7 +2,7 @@
 title = "List of stuff I enjoy"
 description = "Something I like, maybe you can try it?"
 author = "Zhenghao Wu"
-date = 2021-03-03T16:42:10+08:00
+date = 2021-06-09T11:47:10+08:00
 tags = ["summary"]
 categories = ["Note"]
 draft = false
@@ -113,6 +113,7 @@ Some selected episodes:
 - 1812 Overture by **Pyotr Ilyich Tchaikovsky and Stan LePard**
 - Clair De Lune from *Suite bergamasque (L. 75)* by **Claude Debussy**
 - Seven Days Walking (Set of album) by **Ludovico Einaudi**
+- Feux d'artifice: Modérément animé from *Prélude N °XII, 2ème livre* **Claude Debussy**
 
 
 ### 6.3 Post-Rock
@@ -124,4 +125,8 @@ Some selected episodes:
 - 白馬村遊記 (Album) by **上海彩虹室内合唱团**
 - Africa by **Angel City Chorale**
 
-> Initially posted in 2019, updated in 2021.03.03
+### 6.5 Misc
+
+- Loneliness by **Epic Mountain**
+
+> Initially posted in 2019, updated in 2021.06.09
