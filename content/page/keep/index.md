@@ -72,7 +72,10 @@ toc = true
   attr="From: The Movie Database (TMDb)"
  >}}
 
-### 3.3 Love, Death & Robots (LOVE DEATH + ROBOTS) created by Tim Miller
+### 3.3 Mare of Easttown created by **Brad Ingelsby**
+- Featuring: *Kate Winslet, Julianne Nicholson, Jean Smart, Angourie Rice, David Denman, Neal Huff, Guy Pearce, Cailee Spaeny, John Douglas Thompson, Joe Tippett, Evan Peters, Sosie Bacon, James McArdle*
+
+### 3.4 Love, Death & Robots (LOVE DEATH + ROBOTS) created by Tim Miller
 Some selected episodes:
 - Three Robots by *Victor Maldonado & Alfredo Torres*
 - Beyond the Aquila Rift by *Léon Bérelle, Dominique Boidin, Rémi Kozyra, Maxime Luère*
