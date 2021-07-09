@@ -71,6 +71,12 @@ unsafe= true
   weight = -60 
   identifier = "about"
   url = "/page/about"
+[[menu.nav]]
+  name = "Friends"
+  pre = "<i class='fa fa-users fa-lg'></i> "
+  weight = -50
+  identifier = "friends"
+  url = "/page/friends"
 
 # -----------------------------------------------------------------------
 # Footer menu 
