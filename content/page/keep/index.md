@@ -86,6 +86,7 @@ Some selected episodes:
 
 - Haikyu!! (ハイキュー！！) by **Haruichi Furudate**
 - BLEACH (ブリーチ) by **Tite Kubo**
+- Neon Genesis Evangelion (新世紀エヴァンゲリオン) by **Anno Hideaki**
 
 ## 5 Website
 

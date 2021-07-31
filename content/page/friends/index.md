@@ -10,6 +10,7 @@ math = false
 - [Renjie Deng](https://www.drjchn.com/)
 - [Junru Zhong](https://junru.dev/)
 - [Laurence Luo](https://www.lzc.app/)
+- [Frank Ng](https://aerofrankie.com/)
 
 
 ## Propose New Link

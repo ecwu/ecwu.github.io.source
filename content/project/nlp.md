@@ -29,17 +29,14 @@ There are three subtasks. Task A needs to identify the offensive language. Task 
 
 We used the BERT model, which is state-of-the-art at that time for text classification. But our experiment limit to changing the preprocessing methods and some simple ensemble (not even proper) methods. But is still fun to learn such an advanced model and some NLP methods.
 
-> Our work as publish as a paper in NAACL2019 Workshop: [ACL Anthology](https://www.aclweb.org/anthology/S19-2099/)
+> Our work was published as a paper in the NAACL 2019 Workshop: [ACL Anthology](https://www.aclweb.org/anthology/S19-2099/)
 
 ## Final Year Project: LenAtten
 
-We proposed an novel attention-based module for RNN-based Encoder-Decoder Model for Fixed Length Summerization Task. The proposed method achieved good results on CNN/Daily Mail and English Gigaword Dataset.
+We proposed a novel attention-based module that can be applied to the RNN-based sequence-to-sequence Model for Fixed Length Summarization Task. The proposed method achieved good results on CNN/Daily Mail and English Gigaword Dataset.
 
-> This work has been accepted in Findings of ACL2021, Preprint can be found [here](https://arxiv.org/abs/2106.00316).
+> This work has been published at Findings of ACL 2021: [ACL Anthology](https://aclanthology.org/2021.findings-acl.31/); [Code](https://github.com/X-AISIG/LenAtten).
 
-## MSc Independent Project: XXX
+## MSc Independent Project: Text Generation Related Project
 
-This is work is still under anonymity period, more details will publish once suitable.
-
-
-
+Because of the anonymity requirement, more details will be provided once time suitable.
