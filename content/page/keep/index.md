@@ -2,7 +2,7 @@
 title = "List of stuff I enjoy"
 description = "Something I like, maybe you can try it?"
 author = "Zhenghao Wu"
-date = 2021-7-31T10:59:30+08:00
+date = 2021-07-31T10:59:30+08:00
 tags = ["summary"]
 categories = ["Note"]
 draft = false
