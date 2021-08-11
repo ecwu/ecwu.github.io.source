@@ -1,7 +1,7 @@
 +++
 title = "I am initiating a new domain!"
 author = "Zhenghao Wu"
-description = "ecwu.xyz"
+description = "ecwu.xyz, and other news about my site"
 tags = [
     "Domain",
     "dotxyz",
