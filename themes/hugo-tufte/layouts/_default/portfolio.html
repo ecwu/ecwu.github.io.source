@@ -6,6 +6,9 @@
     {{ partial "feature.html" . }}
     {{ partial "content.header.html" . }}
     {{ partial "toc.html" . }}
+    {{ if and .Site.Params.showChaosMessage .Params.chaosRedirect }}
+        {{ partial "chaos.message.html" . }}
+    {{end}}
 <section class=article>{{ .Content }}
 </section>
 <section>

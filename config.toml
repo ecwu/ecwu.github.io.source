@@ -18,6 +18,7 @@ canonifyurls = true
   showPoweredBy = true
   showBeian = true
   beianMessage = "粤 ICP 备 17015575 号 - 1"
+  showChaosMessage = true
 
 [taxonomies]
   category = "categories" 

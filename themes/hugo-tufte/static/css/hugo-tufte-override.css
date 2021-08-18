@@ -40,3 +40,8 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
+
+.emoji-large{
+    font-size: 50px;
+    vertical-align: middle;
+}
