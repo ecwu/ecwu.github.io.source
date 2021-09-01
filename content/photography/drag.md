@@ -15,7 +15,7 @@ categories = [
 menu = "main"
 layout = "portfolio"
 featureimage = ""
-chaosRedirect = "https://chaos.ecwuuuuu.com/drag/"
+chaosRedirect = "https://foto.ecwuuuuu.com/drag/"
 +++
 
 Hang out with friends in Shenzhen. In the evening, we saw a nice sunset in [OH BAY](http://en.sasac.gov.cn/2020/10/09/c_5587.htm).
