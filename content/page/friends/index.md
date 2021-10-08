@@ -11,6 +11,7 @@ math = false
 - [Junru Zhong](https://junru.dev/)
 - [Laurence Luo](https://www.lzc.app/)
 - [Frank Ng](https://aerofrankie.com/)
+- [KirinBaka](https://9baka.moe/)
 
 
 ## Propose New Link
