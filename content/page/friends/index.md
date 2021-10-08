@@ -12,6 +12,7 @@ math = false
 - [Laurence Luo](https://www.lzc.app/)
 - [Frank Ng](https://aerofrankie.com/)
 - [KirinBaka](https://9baka.moe/)
+- [黑墨水鱼](https://aquarium39.moe)
 
 
 ## Propose New Link
