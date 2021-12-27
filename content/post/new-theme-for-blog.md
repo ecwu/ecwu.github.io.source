@@ -38,4 +38,13 @@ In a sentence, I decided to rewrite the theme from scratch.
 
 And using [Tailwind CSS 3](https://tailwindcss.com/blog/tailwindcss-v3) instead of Bootstrap which I am more familiar with. Converts all posts with sidenote into another format (still thinking the format). During the process, I may share some of my experiences, especially the Tailwind + Hugo workflow.
 
+## 2021.12.27 Update
+
+The theme has been warmed up and some preliminary layout has been implemented. But as a previous [bootstrap](https://getbootstrap.com/) user, I have to say the experience with Tailwind is a bitter-sweet story. 
+
+Similarly use way of applying classes to the elements. What Tailwind provides are more underlying levels of building blocks. And with a tiny number of demos. So it is not so intuitive when I implement stuff.
+
+The Tailwind UI is the official component library, and it has a paywall (not cheap). So, don't take for granted the bootstrap official examples.
+
+
 Stay tuned.
