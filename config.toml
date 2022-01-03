@@ -28,6 +28,11 @@ theme = 'ecwu-theme'
   identifier = "posts"
   url = "/post"
 [[menu.nav]]
+  name = "Photos"
+  weight = -90 
+  identifier = "photos"
+  url = "/photography"
+[[menu.nav]]
   name = "Topics"
   weight = -80 
   identifier = "topics"
