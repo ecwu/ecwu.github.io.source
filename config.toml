@@ -15,7 +15,19 @@ theme = 'ecwu-theme'
 # -----------------------------------------------------------------------
 # Navigation menu 
 # -----------------------------------------------------------------------
-
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'solarized-dark'
+    tabWidth = 2
 
 [[menu.nav]]
   name = "Home"

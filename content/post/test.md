@@ -272,10 +272,10 @@ Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means
 it's also easy to use Markdown to write about Markdown's own syntax.
 
-```
-tell application "Foo"
-    beep
-end tell
+```html
+<div class="footer">
+    &copy; 2004 Foo Corporation
+</div>
 ```
 
 ## Span Elements
@@ -317,6 +317,18 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
+
+```python {hl_lines=[8,"15-17"]}
+import sys
+ 
+while True:
+    print('Type exit to exit this program.')
+    response = input()
+    if response.lower() == 'exit':
+        sys.exit()
+    else:
+        print('You typed ' + response + '.' + 'Looks like you do not want to exit this program.')
+```
 
 # Math & $\LaTeX$
 
