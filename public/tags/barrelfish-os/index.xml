@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Barrelfish OS on My New Hugo Site</title>
+    <link>https://new-theme.ecwu-github-io-source.pages.dev/tags/barrelfish-os/</link>
+    <description>Recent content in Barrelfish OS on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Jan 2019 12:56:01 +0800</lastBuildDate><atom:link href="https://new-theme.ecwu-github-io-source.pages.dev/tags/barrelfish-os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Barrelfish OS 和多内核操作系统</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/barrelfish-operating-system/</link>
+      <pubDate>Wed, 09 Jan 2019 12:56:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/barrelfish-operating-system/</guid>
+      <description>&lt;p&gt;大三的上学期有一门专业课叫操作系统（Operating System），它的课程小组项目是对某个操作系统进行研究。我们组抽到了 Barrelfish Operating System。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

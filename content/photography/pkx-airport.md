@@ -63,4 +63,3 @@ image-description="10">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/pkx/pkx-11.jpg"
 image-description="11">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="pkx">}}

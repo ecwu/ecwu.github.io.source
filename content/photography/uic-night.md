@@ -46,4 +46,3 @@ image-description="Learning Resource Centre">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-303.jpg"
 image-description="T2">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="uic-night">}}

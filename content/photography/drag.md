@@ -42,6 +42,5 @@ image-description="No.3">}}
 image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg"
 image-description="No.4">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="drag">}}
 
 > Post Created at 2021-07-20, 2021-08-18 Updated.

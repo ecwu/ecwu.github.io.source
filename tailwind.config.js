@@ -1,5 +1,6 @@
 module.exports = {
   content: ["themes/ecwu-theme/layouts/**/*.html", "themes/ecwu-theme/layouts/**/**/*.html"],
+  darkMode: 'class',
   theme: {
     extend: {},
     fontFamily: {

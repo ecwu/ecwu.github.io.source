@@ -59,7 +59,6 @@ image-description="September 13 2014">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2014-09-13_10-55-50_UTC.jpg"
 image-description="September 13 2014 (2)">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="windowsill-2014">}}
 
 ## 2017
 
@@ -83,7 +82,6 @@ image-description="August 21 2017">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2017-08-30_16-41-05_UTC.jpg"
 image-description="August 30 2017">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="windowsill-2017">}}
 
 ## 2019
 
@@ -104,7 +102,6 @@ image-description="November 09 2019">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2019-11-10_17-06-11_UTC.jpg"
 image-description="November 10 2019">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="windowsill-2019">}}
 
 ## 2020
 
@@ -128,4 +125,3 @@ image-description="May 09 2020">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2020-07-23_14-56-46_UTC.jpg"
 image-description="July 23 2020">}}
 {{< gallery "end">}}
-{{< gallery-activator g-class="windowsill-2020">}}

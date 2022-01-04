@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on My New Hugo Site</title>
+    <link>https://new-theme.ecwu-github-io-source.pages.dev/tags/networking/</link>
+    <description>Recent content in Networking on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Apr 2021 10:01:01 +0800</lastBuildDate><atom:link href="https://new-theme.ecwu-github-io-source.pages.dev/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making Synology NAS accessible from the Internet using IPv6 and DDNS</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/nas-ipv6-ddns/</link>
+      <pubDate>Sun, 04 Apr 2021 10:01:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/nas-ipv6-ddns/</guid>
+      <description>Although I majored in computer science, my blog is filled with photography-related content. For balance, I take the opportunity of a recent explore and write down this note. :-)
+  Spoiler alert: This is not the way I currently using to exposed my NAS to the WWW.
+ Some Background I own a Synology DS918+ NAS, which was purchased in 2020. Both ports on the NAS are connected to my ASUS AC68U router for redundancy.</description>
+    </item>
+    
+  </channel>
+</rss>

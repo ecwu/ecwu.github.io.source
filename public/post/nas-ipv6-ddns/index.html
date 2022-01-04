@@ -1,0 +1,391 @@
+<!DOCTYPE html><html>
+    <head>
+
+    
+    <link rel="stylesheet" href="/css/style.min.85d72fd86f7268caf421c990f838660c5709b35fc9017a91b0e5063a322965f7.css" integrity="sha256-hdcv2G9yaMr0IcmQ&#43;DhmDFcJs1/JAXqRsOUGOjIpZfc=">
+    
+</head>
+    <body><div class="pt-6">
+
+
+<h1 class="max-w-2xl mx-auto px-4 flex space-x-2 sm:px-6 lg:max-w-7xl lg:px-8 mb-5">
+    <img src="/img/ecwu.svg" class="w-36">
+</h1><nav aria-label="navbar">
+    <ol role="list" class="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
+        
+        
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/" class="mr-2 text-sm font-medium">Home</a>
+            
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" class="w-4 h-5 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+            
+        </div>
+        </li>
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/post" class="mr-2 text-sm font-medium">Posts</a>
+            
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" class="w-4 h-5 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+            
+        </div>
+        </li>
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/photography" class="mr-2 text-sm font-medium">Photos</a>
+            
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" class="w-4 h-5 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+            
+        </div>
+        </li>
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/topic" class="mr-2 text-sm font-medium">Topics</a>
+            
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" class="w-4 h-5 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+            
+        </div>
+        </li>
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/page/about" class="mr-2 text-sm font-medium">About</a>
+            
+            <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" class="w-4 h-5 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+            </svg>
+            
+        </div>
+        </li>
+        
+        <li>
+        <div class="flex items-center">
+            <a href="/page/friends" class="mr-2 text-sm font-medium">Friends</a>
+            
+            
+        </div>
+        </li>
+        
+    </ol>
+</nav></div>
+<div
+    class="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+    <div class="py-10 lg:pt-6 lg:col-start-1 lg:col-span-2 lg:pr-8"><div class="mb-12">
+  <h1><a href="/post/nas-ipv6-ddns/">Making Synology NAS accessible from the Internet using IPv6 and DDNS</a></h1>
+<h2 class=italic>IPv6 Yes! :-)</h2>
+
+
+  <span>
+    
+         Author: Zhenghao Wu</span> <br>
+    
+
+
+    
+    2021-04-04
+    
+
+    
+
+    
+      <br>
+      Tags: 
+      
+        <a  href="https://new-theme.ecwu-github-io-source.pages.dev/categories/note">Note</a>
+      
+        <a  href="https://new-theme.ecwu-github-io-source.pages.dev/categories/website">Website</a>
+      
+    
+  </span>
+
+</div><article>
+            <blockquote>
+<p>Although I majored in computer science, my blog is filled with photography-related content. For balance, I take the opportunity of a recent explore and write down this note. :-)</p>
+</blockquote>
+<blockquote>
+<p>Spoiler alert: This is not the way I currently using to exposed my NAS to the WWW.</p>
+</blockquote>
+<h2 id="some-background">Some Background</h2>
+<p>I own a Synology DS918+ NAS, which was purchased in 2020. Both ports on the NAS are connected to my ASUS AC68U router for redundancy. The ISP in my house is CMCC <!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+China Mobile Limited; Chinese: 中国移动通信集团有限公司<!-- raw HTML omitted -->
+, so no dedicated IPv4 address.</p>
+<p>For most cases, the <a href="https://quickconnect.to/">Synology QuickConnect</a> service can serve my need. Until I live in Hong Kong for postgraduate study. The service is unusable most of the time.</p>
+<p>Since the MIIT <!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+Ministry of Industry and Information Technology<!-- raw HTML omitted -->
+already pushing IPv6 landing for years, and some recent IPv6 trials with my friends reported some positive results (i.e. accessible cross different ISP; port 80, 443 are not blocked). So, why not make the NAS accessible from the Internet via IPv6.</p>
+<h2 id="idea">Idea</h2>
+<p>So the plan is to bind the IPv6 address for the NAS to a domain of mine. Which divide into steps:</p>
+<ul>
+<li>Configure the IPv6 firewall setting on the router, make sure the NAS can access via the IPv6 address.</li>
+<li>IPv6 address for the NAS would change, update the AAAA record with DDNS.</li>
+<li>HTTPS certificate for the domain.</li>
+<li>Security enhancement for the Synology DSM.</li>
+</ul>
+<p>I try to avoid handcraft solutions, so the DSM built-in DDNS tool is the first choice, but the DNS I am using is Cloudflare, which isn&rsquo;t supported. I tried one <a href="https://github.com/joshuaavalon/SynologyCloudflareDDNS">solution</a> which can add Cloudflare DDNS support, but the IPv6 address is not passing from the DSM and the script is not working.</p>
+<p>So, I change the plan. Setup a Synology DDNS (a service provided by Synology) first, then create a CNAME rule direct to the Synology URL (the second step will divide into two):</p>
+<ul>
+<li>Previous: <del>Update the AAAA record with DDNS</del></li>
+<li>New:
+<ul>
+<li>Setup Synology DDNS</li>
+<li>Setup CNAME to the Synology DDNS URL in the DNS provider (Cloudflare in this case)</li>
+</ul>
+</li>
+</ul>
+<h2 id="implementations">Implementations</h2>
+<h3 id="a-firewall">A. Firewall</h3>
+<blockquote>
+<p>The router in my house is Asus AC68U and I use it for demonstration.</p>
+</blockquote>
+<p>For IPv6 firewall settings, go to <code>Advanced Settings &gt; Firewall &gt; IPv6 Firewall</code>. You need to set up <code>Inbound Firewall Rules</code> to expose the service port on your NAS to IPv6. But the problem is how to fill in these rules.</p>
+<p>There are five fields for each rule:</p>
+<ul>
+<li><code>Service Name</code>: Name of your rule, you can keep it empty.</li>
+<li><code>Remote IP/CIDR</code>: Allowed request IP/CIDR, you can keep it empty if there are no limits.</li>
+<li><code>Local IP</code>: What local IP is allowed for access, you need to set it to the address of your NAS IP (v6).</li>
+<li><code>Port Range</code>: What port is allowed for access, this one has to set according to your service.</li>
+<li><code>Protocol</code>: Protocol for this rules, default is <code>TCP</code>, just keep it this way.</li>
+</ul>
+<p>Usually, you just need to set <code>Local IP</code> and <code>Port Range</code>.</p>
+<h4 id="a1-local-ip">A.1. <code>Local IP</code></h4>
+<p>Assuming the IPv6 IP for the NAS is <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>, you can fill in <code>::0000:8a2e:0370:7334/::ffff:ffff:ffff:ffff</code> in the <code>Local IP</code> field.</p>
+<h4 id="a2-port-range">A.2. <code>Port Range</code></h4>
+<p>Just fill in the port of the service you want to allow access to. Here are some of the ports on the Synology NAS.</p>
+<ul>
+<li>Synology DSM (http): <code>5000</code></li>
+<li>Synology DSM (https): <code>5001</code></li>
+<li>Web: <code>80</code></li>
+<li>ssh: <code>22</code></li>
+</ul>
+<p>You can fill in multiple port by range (i.e. <code>80-5001</code>), or input multiple ports and divide them by comma (i.e. <code>80,443,5000</code>)</p>
+<h4 id="a3-one-example">A.3. One example</h4>
+<ul>
+<li><code>Service Name</code>: (Keep it empty)</li>
+<li><code>Remote IP/CIDR</code>: (Keep it empty)</li>
+<li><code>Local IP</code>: <code>::0000:8a2e:0370:7334/::ffff:ffff:ffff:ffff</code></li>
+<li><code>Port Range</code>: <code>80,443,5000,5001</code></li>
+<li><code>Protocol</code>: <code>TCP</code></li>
+</ul>
+<h4 id="a4-tips">A.4. Tips</h4>
+<ul>
+<li>Rules do not allow changes once it saved and display for those existing rules will truncate those long IP (like the <code>Local IP</code> field). Make sure you have an backup of your settings.</li>
+<li>You can just turn off the IPv6 Firewall (any requests are allowed) for debugging purposes, but a proper firewall setting is strongly recommended for production environments.</li>
+</ul>
+<h3 id="b-synology-ddns">B. Synology DDNS</h3>
+<blockquote>
+<p>Steps are based on the article from Synology Knowledge Base: <a href="https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/connection_ddns">DDNS &gt; Setting up DDNS</a></p>
+</blockquote>
+<p>You can point an existing hostname at the IP address of your Synology NAS, or register for a new one provided by Synology or several other DDNS providers. Please consult each provider for more details regarding hostname registration.</p>
+<p>To set up a DDNS hostname, first go to the DDNS settings <code>Control Panel &gt; Connectivity &gt; External Access &gt; DDNS</code>:</p>
+<ol>
+<li>Click the Add button.</li>
+<li>A dialog box appears prompting you to edit the following settings:
+<ul>
+<li>Service provider: Choose Synology from the drop-down menu for a free hostname provided by Synology.</li>
+<li>Hostname: Enter a registered DDNS hostname, such as <code>john.synology.me</code>.</li>
+<li>Email: Will be auto fill in by the DSM.</li>
+<li>External address: Set IPv4 to 0.0.0.0 and leave IPv6 as default (System should automatically fill in the IPv6 address).</li>
+<li>Heartbeat: Enable it.</li>
+</ul>
+</li>
+<li>Click Test Connection to see if settings are correct.</li>
+<li>Click OK to save and finish.</li>
+<li>If you have selected Synology as the service provider, a message box will appear if there&rsquo;s no matching SSL certificate for your DDNS hostname, recommending you to sign a Let’s Encrypt certificate for the hostname and set it as the default certificate. Click No, will cover this in Part D.</li>
+</ol>
+<ul>
+<li>After setup is complete, you can access your Synology NAS over the Internet by entering the DDNS hostname in a web browser.</li>
+</ul>
+<h3 id="c-configuring-dns-cloudflare">C. Configuring DNS (Cloudflare)</h3>
+<p>Now, you should be able to access the synology DSM via <code>john.synology.me</code>. We can add some DNS configurations so you can access the site from your own domain.</p>
+<p>I am using the free plan from Cloudflare. A CNAME record is what we need. In my case, I just add one new CNAME record with <code>Name: mynas</code>, <code>Target: john.synology.me</code>, <code>TTL: Auto</code>, <code>Proxy status: DNS only</code>.</p>
+<p>After you save the new record and wait for some second for the Cloudflare to flush their record. You can access the synology DSM via <code>mynas.yourdomain.com</code></p>
+<h4 id="c1-enable-dnssec">C.1. Enable DNSSEC</h4>
+<p>DNSSEC <!-- raw HTML omitted --><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+Domain Name System Security Extensions<!-- raw HTML omitted -->
+uses public-key cryptography to ensure the security of DNS resolving the domain name.</p>
+<p>I also noticed that I need to enable DNSSEC so that I can successfully apply a free certificate from Let&rsquo;s Encrypt (Cover in Part D).</p>
+<p>If your domain is host by Cloudflare, this should be very easy. But this is not the case (like me), you have to add another DS record to your domain registrar. You can check the <a href="https://support.cloudflare.com/hc/en-us/articles/360006660072-Understanding-and-configuring-DNSSEC-in-Cloudflare-DNS">document</a> from Cloudflare for more details.</p>
+<h3 id="d-https-certificate">D. HTTPS Certificate</h3>
+<p>It will more safe to enable HTTPS certificate for the DSM. And we will choice the free SSL/TLS certificates from Let&rsquo;s Encrypt. This can be done via the GUI in the DSM.</p>
+<blockquote>
+<p>Steps are based on the article from Synology Knowledge Base: <a href="https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/connection_certificate">Certificate &gt; Certificates from Let&rsquo;s Encrypt</a></p>
+</blockquote>
+<p>First go to the UI: <code>Control Panel &gt; Security &gt; Certificate</code>.</p>
+<ol>
+<li>Click Add.</li>
+<li>Select Add a new certificate and click Next.</li>
+<li>Select Get a certificate from Let&rsquo;s Encrypt.</li>
+<li>Enter the following information:
+<ul>
+<li>Domain name: Enter the domain you have registered from the domain provider, here we use <code>mynas.yourdomain.com</code> as example.</li>
+<li>Email: Enter the email address used for certificate registration.</li>
+<li>Subject Alternative Name: Keep it blank.</li>
+</ul>
+</li>
+<li>Click Apply to save the settings. Once confirmed, the certificate will be instantly imported into your Synology NAS.</li>
+</ol>
+<p>Now, when you access your NAS via <code>mynas.yourdomain.com</code>, the traffic is encrypted.</p>
+<h3 id="e-security-enhancement">E. Security Enhancement</h3>
+<p>If you expose your server to the Internet, there will be unavoidable crawlers, port scanners, enumeration attackers try to access your NAS without your condonement. If you are using some weak passwords or there are some weaknesses in the system, your device and data will be in threat. There are some of the fixes you can do.</p>
+<ul>
+<li>Remove useless user account</li>
+<li>Increase Password Strength for Admin account</li>
+<li>Enable 2FA for Admin account
+<ul>
+<li>Steps for above check <a href="https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/file_user_desc">here</a> and <a href="https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/file_user_advanced">here</a>.</li>
+</ul>
+</li>
+<li>Change default ports for services
+<ul>
+<li>Like ssh(22), steps can be found <a href="https://www.synology.com/cgi/knowledgebase/findHelpFile/dsm/dsm/6.0/enu/6.0-7321/synology_armada370_ds115j/100/AdminCenter/system_terminal.html">here</a>.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<blockquote>
+</blockquote>
+
+        </article><div class="py-10">
+    <div class="bg-white drop-shadow-lg overflow-hidden sm:rounded-lg">
+        <div class="px-4 py-5 sm:px-6">
+          <h3 class="text-lg leading-6 font-medium text-gray-900">
+            Article Card
+          </h3>
+          <p class="mt-1 max-w-2xl text-sm text-gray-500">
+            For article "<span class="italic">Making Synology NAS accessible from the Internet using IPv6 and DDNS</span>"
+          </p>
+        </div>
+        <div class="border-t border-gray-200">
+          <dl>
+            
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="text-sm font-medium text-gray-500">
+                Author
+              </dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                Zhenghao Wu
+              </dd>
+            </div>
+            
+            
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="text-sm font-medium text-gray-500">
+                Publish & Update Date
+              </dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                2022-01-02 (Version 3, originally published on 2021-04-04)
+              </dd>
+            </div>
+            
+            
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="text-sm font-medium text-gray-500">
+                Tags
+              </dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                
+                    
+                        <a class="rounded py-1 px-2 text-xs font-medium text-white bg-gray-900" href="https://new-theme.ecwu-github-io-source.pages.dev/categories/note">Note</a>
+                    
+                        <a class="rounded py-1 px-2 text-xs font-medium text-white bg-gray-900" href="https://new-theme.ecwu-github-io-source.pages.dev/categories/website">Website</a>
+                    
+                    
+              </dd>
+            </div>
+            
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              <dt class="text-sm font-medium text-gray-500">
+                Extra Materials
+              </dt>
+              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                <ul role="list" class="border border-gray-200 rounded-md divide-y divide-gray-200">
+                  <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                    <div class="w-0 flex-1 flex items-center">
+                      
+                      <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+                      </svg>
+                      <span class="ml-2 flex-1 w-0 truncate">
+                        abxd-firmware-v1.0.zip
+                      </span>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                      <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                        Download
+                      </a>
+                    </div>
+                  </li>
+                  <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                    <div class="w-0 flex-1 flex items-center">
+                      
+                      <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />  
+                    </svg>
+                      <span class="ml-2 flex-1 w-0 truncate">
+                        abxd documentation
+                      </span>
+                    </div>
+                    <div class="ml-4 flex-shrink-0">
+                      <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                        Check
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+    </div>  
+</div><section>
+    
+    
+</section></div>
+    </div>
+<footer class="relative mb-6">
+<div class="max-w-2xl mx-auto px-4 space-x-2 sm:px-6 lg:max-w-7xl lg:px-8 mb-5">
+    <hr class="pb-5">
+    <p>
+        Powered by <a href="https://gohugo.io">Hugo</a>, Build by <a href="https://github.com/features/actions">GitHub Action</a>.
+      </p>
+	<p>
+    
+      &copy; 2022
+    ECWU.
+    All rights reserved.
+    
+    
+  </p>
+  
+    <p>
+      <a href="http://beian.miit.gov.cn/"> 粤 ICP 备 17015575 号 - 1</a>
+    </p>
+  
+</div>
+</footer></body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activation Function on My New Hugo Site</title>
+    <link>https://new-theme.ecwu-github-io-source.pages.dev/tags/activation-function/</link>
+    <description>Recent content in Activation Function on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jun 2021 13:06:14 +0800</lastBuildDate><atom:link href="https://new-theme.ecwu-github-io-source.pages.dev/tags/activation-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sigmoid or Softmax for Binary Classification</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/sigmoid-softmax-binary-class/</link>
+      <pubDate>Mon, 07 Jun 2021 13:06:14 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/sigmoid-softmax-binary-class/</guid>
+      <description>Recently, been asked a question on using neural networks for binary classification.
+ The output layer of the network can be &amp;hellip; One output neuron with sigmoid activation function or Two neurons and then apply a softmax activation function. But what is the difference between these two?
+ Let start with the equations of the two functions.
+Sigmoid Activation Function $$ S(x) = \frac{1}{ 1+e^{-x}} $$
+We input the value of the last layer $x$, and we can get a value in the range 0 to 1 as shown in the figure.</description>
+    </item>
+    
+  </channel>
+</rss>

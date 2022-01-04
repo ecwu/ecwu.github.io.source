@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://new-theme.ecwu-github-io-source.pages.dev/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jan 2022 17:44:45 +0800</lastBuildDate><atom:link href="https://new-theme.ecwu-github-io-source.pages.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Test Post</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/test/</link>
+      <pubDate>Sat, 01 Jan 2022 17:44:45 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/test/</guid>
+      <description>Markdown: Syntax  Overview  Philosophy Inline HTML  TEST   Automatic Escaping for Special Characters   Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements  Links Emphasis Code Images   Miscellaneous  Backslash Escapes Automatic Links    Note: This document is itself written using Markdown; you can see the source for it by adding &amp;lsquo;.</description>
+    </item>
+    
+    <item>
+      <title>Switching to a new theme ... I guess</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/new-theme-for-blog/</link>
+      <pubDate>Thu, 23 Dec 2021 00:35:45 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/new-theme-for-blog/</guid>
+      <description>This blogsite has been using hugo-tufte theme (with some customization) for a while. I choose the theme because I appreciate the aesthetic look of the original Tufte $\LaTeX$ template. Using a dedicated area on the right side of the page for sidenotes, supplements images, or thoughts. Diversify the layout of an article, and make the article fun to read.
+A couple of months ago, under my willingness of making enhancements to the theme.</description>
+    </item>
+    
+    <item>
+      <title>I am initiating a new domain!</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/new-domain/</link>
+      <pubDate>Wed, 01 Sep 2021 14:40:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/new-domain/</guid>
+      <description>Starting from Aug 11, 2021. I am starting a new domain name for my website.
+ ecwu.xyz
+ Personally, the old domain name (ecwuuuuu.com) is good but is it a little bit longer in length and maybe difficult for people to memorize and use. So, I register this domain name to create some convenience for others (but mostly for myself :)).
+Currently, I am don&amp;rsquo;t have a concrete plan for how to utilize these two domains.</description>
+    </item>
+    
+    <item>
+      <title>Drag</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/drag/</link>
+      <pubDate>Wed, 18 Aug 2021 13:57:20 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/drag/</guid>
+      <description>Hang out with friends in Shenzhen. In the evening, we saw a nice sunset in OH BAY.
+On the way back home, I saw more breathtaking scenery. And I captured it with my camera.
+The images are shot using a slow shutter speed, and the shape of the objects is dragged by the movement of the cabin. I arrange the image in a linear (both in time and space) manner. Along with intertwined artificial lights, urban buildings, and twilight sky in the frame.</description>
+    </item>
+    
+    <item>
+      <title>List of stuff I enjoy</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/page/keep/</link>
+      <pubDate>Sat, 31 Jul 2021 10:59:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/page/keep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sigmoid or Softmax for Binary Classification</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/sigmoid-softmax-binary-class/</link>
+      <pubDate>Mon, 07 Jun 2021 13:06:14 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/sigmoid-softmax-binary-class/</guid>
+      <description>Recently, been asked a question on using neural networks for binary classification.
+ The output layer of the network can be &amp;hellip; One output neuron with sigmoid activation function or Two neurons and then apply a softmax activation function. But what is the difference between these two?
+ Let start with the equations of the two functions.
+Sigmoid Activation Function $$ S(x) = \frac{1}{ 1+e^{-x}} $$
+We input the value of the last layer $x$, and we can get a value in the range 0 to 1 as shown in the figure.</description>
+    </item>
+    
+    <item>
+      <title>NLP related stuff</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/project/nlp/</link>
+      <pubDate>Fri, 07 May 2021 00:13:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/project/nlp/</guid>
+      <description>I started to learn NLP-related stuff in mid-2018. And gradually start to some serious research. My focus mainly on Natural Language Generation (NLG).
+Beginning: SemEval2019 By the end of 2018, members of the AI learning group Lead by Prof. Weifeng Sudecide to take part in the SemEval 2019. To study and learning more about NLP.
+Our group chose task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval). Which the input text is users&#39; tweets and we need to classify it.</description>
+    </item>
+    
+    <item>
+      <title>Making Synology NAS accessible from the Internet using IPv6 and DDNS</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/nas-ipv6-ddns/</link>
+      <pubDate>Sun, 04 Apr 2021 10:01:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/nas-ipv6-ddns/</guid>
+      <description>Although I majored in computer science, my blog is filled with photography-related content. For balance, I take the opportunity of a recent explore and write down this note. :-)
+  Spoiler alert: This is not the way I currently using to exposed my NAS to the WWW.
+ Some Background I own a Synology DS918+ NAS, which was purchased in 2020. Both ports on the NAS are connected to my ASUS AC68U router for redundancy.</description>
+    </item>
+    
+    <item>
+      <title>TeX template</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/project/tex/</link>
+      <pubDate>Mon, 15 Feb 2021 19:13:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/project/tex/</guid>
+      <description>Under Construction&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>uicCourse</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/project/uiccourse/</link>
+      <pubDate>Mon, 15 Feb 2021 19:13:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/project/uiccourse/</guid>
+      <description>Under Construction&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>UICCRS</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/project/uiccrs/</link>
+      <pubDate>Mon, 15 Feb 2021 19:13:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/project/uiccrs/</guid>
+      <description>Under Construction&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Web Design</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/project/web-design/</link>
+      <pubDate>Mon, 15 Feb 2021 19:13:30 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/project/web-design/</guid>
+      <description>Under Construction&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Outside Windowsill</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/outside-windowsill/</link>
+      <pubDate>Fri, 25 Dec 2020 21:30:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/outside-windowsill/</guid>
+      <description>The window of my room is facing west. Clear view, not blockage. A perfect place for seeing the gorgeous sunset.
+I can’t really remember when and why I start taking photos from the window. Maybe because of the breathtaking scenery, or just some casual shots. But the first one I can find on my Instagram is taken in March 2014.
+Haven’t thought about making it into a series or project since the beginning.</description>
+    </item>
+    
+    <item>
+      <title>Beijing Daxing International Airport</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/pkx-airport/</link>
+      <pubDate>Thu, 16 Jul 2020 15:20:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/pkx-airport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UIC night</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/uic-night/</link>
+      <pubDate>Mon, 13 Jul 2020 21:43:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/uic-night/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Larger format, heavier body</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/120-film-and-rb67/</link>
+      <pubDate>Tue, 09 Jun 2020 17:44:45 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/120-film-and-rb67/</guid>
+      <description>In my last photography-related post: Try the Film For the First Time. I have lots of fun with negatives. This makes me want to have my own camera to experience this medium that has existed for nearly 200 years. The film we are still using today was invented by Kodak in 1888, but photosensitive material that uses in photography can date back to 1835.⊕ View from the Window at Le Gras  Jonnychiwa [CC BY-SA 4.</description>
+    </item>
+    
+    <item>
+      <title>About (Curriculum Vitæ)</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/page/about/</link>
+      <pubDate>Tue, 18 Feb 2020 23:57:58 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/page/about/</guid>
+      <description>Me  Postgraduate Student, Hong Kong University of Science and Technology Graduated with First-Class Honours, BNU-HKBU UIC  Tech, Photography (Analog and Digital), Music
+Contact me: ecwu@protonmail.com
+CV: Coming soon
+More: LinkedIn
+This site  Write with static site generator Hugo  hugo-tufte theme with custom modifications   Build with GitHub Actions Host by GitHub Pages Cloudflare &amp;amp; Qiniu for distributing files  </description>
+    </item>
+    
+    <item>
+      <title>Try the Film For the First Time</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/try-the-film-for-the-first-time/</link>
+      <pubDate>Sat, 14 Sep 2019 00:07:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/try-the-film-for-the-first-time/</guid>
+      <description>&lt;p&gt;The story starts from a disposable camera sent to me by &lt;a href=&#34;https://github.com/russelloop&#34;&gt;Root&lt;/a&gt; in 2017.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Barrelfish OS 和多内核操作系统</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/post/barrelfish-operating-system/</link>
+      <pubDate>Wed, 09 Jan 2019 12:56:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/post/barrelfish-operating-system/</guid>
+      <description>&lt;p&gt;大三的上学期有一门专业课叫操作系统（Operating System），它的课程小组项目是对某个操作系统进行研究。我们组抽到了 Barrelfish Operating System。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Television Studio Production @ HKBU</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/television-studio-production-at-hkbu/</link>
+      <pubDate>Mon, 20 Aug 2018 02:56:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/television-studio-production-at-hkbu/</guid>
+      <description>&lt;p&gt;Television Studio Production 电视影棚制作&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hong Kong Flashback</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/photography/photographs-took-in-hong-konng/</link>
+      <pubDate>Mon, 30 Jul 2018 13:56:01 +0800</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/photography/photographs-took-in-hong-konng/</guid>
+      <description>&lt;p&gt;一些我 2018 年暑假在香港期间拍摄的一些照片&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Friends</title>
+      <link>https://new-theme.ecwu-github-io-source.pages.dev/page/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://new-theme.ecwu-github-io-source.pages.dev/page/friends/</guid>
+      <description>For now, I just post these links here, will complete the description when I have time :)
+  Junde Yhi Terence Lau Renjie Deng Junru Zhong Laurence Luo Frank Ng KirinBaka 黑墨水鱼  Propose New Link If you want me to append you to the friend page, just create a reply under this issue page!</description>
+    </item>
+    
+  </channel>
+</rss>

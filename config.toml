@@ -1,6 +1,6 @@
-baseURL = 'https://new-theme.ecwu-github-io-source.pages.dev/'
+baseURL = 'localhost'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ECWUUUUU'
 theme = 'ecwu-theme'
 
 [params]
@@ -10,7 +10,7 @@ theme = 'ecwu-theme'
   showPoweredBy = true
   showBeian = true
   beianMessage = " 粤 ICP 备 17015575 号 - 1"
-  homePageThought = 'Hi, <a href="/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
+  homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
 
 # -----------------------------------------------------------------------
 # Navigation menu 
@@ -53,10 +53,10 @@ theme = 'ecwu-theme'
   pre = "School work and Personal"
   weight = -100
   identifier = "projects"
-  url = ""
+  url = "/project/"
 [[menu.topic]]
   name = "Keep List"
   pre = "List of stuffs I enjoy"
   weight = -90
   identifier = "keeplist"
-  url = ""
+  url = "/page/keep/"
