@@ -3,7 +3,7 @@ title = "Markdown Test Post"
 subtitle = "Try to include as many style as possible"
 author = "Zhenghao Wu"
 description = "Indulge in film photography"
-math = false
+math = true
 hidedate = false
 date = "2022-01-01T17:44:45+08:00"
 modified = "2022-01-03T17:44:45+08:00"
@@ -13,7 +13,7 @@ next = ""
 confidence = ""
 importance = ""
 hidereadtime = false
-toc = false
+toc = true
 draft = false
 tags = [
     "Film",
@@ -29,28 +29,6 @@ menu = "main"
 featureimage = "https://cdn.ecwuuuuu.com/blog/image/rdp3.png"
 +++
 # Markdown: Syntax
-
-*   [Overview](#overview)
-    *   [Philosophy](#philosophy)
-    *   [Inline HTML](#html)
-        * [TEST](TEST)
-    *   [Automatic Escaping for Special Characters](#autoescape)
-*   [Block Elements](#block)
-    *   [Paragraphs and Line Breaks](#p)
-    *   [Headers](#header)
-    *   [Blockquotes](#blockquote)
-    *   [Lists](#list)
-    *   [Code Blocks](#precode)
-    *   [Horizontal Rules](#hr)
-*   [Span Elements](#span)
-    *   [Links](#link)
-    *   [Emphasis](#em)
-    *   [Code](#code)
-    *   [Images](#img)
-*   [Miscellaneous](#misc)
-    *   [Backslash Escapes](#backslash)
-    *   [Automatic Links](#autolink)
-
 
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL](/projects/markdown/syntax.text).
@@ -339,3 +317,22 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
+
+# Math & $\LaTeX$
+
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+
+Inline Equation: $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
+
+$$
+    A=\begin{bmatrix}
+    a & b\\\\
+    c & d\\\\
+    e & f
+    \end{bmatrix}
+    $$
+
+\begin{equation}
+    \label{eq:bayes}
+    P(\theta|\textbf{D}) = P(\theta ) \frac{P(\textbf{D} |\theta)}{P(\textbf{D})}
+    \end{equation}
