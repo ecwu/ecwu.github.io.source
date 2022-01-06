@@ -38,27 +38,27 @@ theme = 'ecwu-theme'
   name = "Posts"
   weight = -100 
   identifier = "posts"
-  url = "/post"
+  url = "/post/"
 [[menu.nav]]
   name = "Photos"
   weight = -90 
   identifier = "photos"
-  url = "/photography"
+  url = "/photography/"
 [[menu.nav]]
   name = "Topics"
   weight = -80 
   identifier = "topics"
-  url = "/topic"
+  url = "/topic/"
 [[menu.nav]]
   name = "About"
   weight = -60 
   identifier = "about"
-  url = "/page/about"
+  url = "/page/about/"
 [[menu.nav]]
   name = "Friends"
   weight = -50
   identifier = "friends"
-  url = "/page/friends"
+  url = "/page/friends/"
 
 [[menu.topic]]
   name = "Projects"
