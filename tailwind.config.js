@@ -18,6 +18,10 @@ module.exports = {
               "border-radius": "0.25rem",
               padding: "0.1rem 0.25rem",
             },
+            ".dark code": {
+              backgroundColor: theme('colors.gray.800'),
+              color: "#DD1144",
+            },
             "code::before": false,
             "code::after": false,
             "blockquote p:first-of-type::before": false,
