@@ -1,33 +1,53 @@
-+++
-title = "Markdown Test Post"
-subtitle = "Try to include as many style as possible"
-author = "Zhenghao Wu"
-description = "Indulge in film photography"
-math = true
-hidedate = false
-date = "2022-01-01T17:44:45+08:00"
-modified = "2022-01-03T17:44:45+08:00"
-status = "finished"
-previous = ""
-next = ""
-confidence = ""
-importance = ""
-hidereadtime = false
-toc = true
-draft = false
-tags = [
-    "Film",
-    "Mamiya",
-    "Photography",
-    "analog",
-    "120 Film"
-]
-categories = [
-    "Photography",
-]
-menu = "main"
-featureimage = "https://cdn.ecwuuuuu.com/blog/image/rdp3.png"
-+++
+---
+title: Markdown Test Post
+subtitle: Try to include as many styles as possible
+author: Zhenghao Wu
+description: A test post for the new theme
+featureimage: https://cdn.ecwuuuuu.com/blog/image/rdp3.png
+
+showmeta: false
+date: "2022-01-01T17:44:45+08:00"
+modified: "2022-01-03T17:44:45+08:00"
+draft: false
+status: finished
+
+showmeta: true
+hidereadtime: false
+toc: true
+math: true
+showinfocard: true
+
+previous:
+next:
+
+confidence: high
+importance: 5
+
+tags:
+- Test
+- Hugo
+- Theme
+- Markdown
+- LaTeX
+- Style
+
+categories:
+- Site
+
+extramaterials:
+- type: file
+  name: abxd-firmware-v1.0.zip
+  url: /test-download-file
+- type: link
+  name: abxd documentation
+  url: https://google.com
+- type: image
+  name: cool-picture.png
+  url: https://unsplash.com/photos/gJzpzEajT6c/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDE1MzcwMzY&force=true
+- type: audio
+  name: hazheng.mp3
+  url: https://unsplash.com/photos/gJzpzEajT6c/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDE1MzcwMzY&force=true
+---
 # Markdown: Syntax
 
 **Note:** This document is itself written using Markdown; you
@@ -277,6 +297,13 @@ it's also easy to use Markdown to write about Markdown's own syntax.
     &copy; 2004 Foo Corporation
 </div>
 ```
+
+### Table
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 ## Span Elements
 

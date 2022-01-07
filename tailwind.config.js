@@ -18,7 +18,7 @@ module.exports = {
               "border-radius": "0.25rem",
               padding: "0.1rem 0.25rem",
             },
-            ".dark code": {
+            ".dark code:not(pre *)": {
               backgroundColor: theme('colors.gray.800'),
               color: "#DD1144",
             },
