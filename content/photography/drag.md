@@ -1,22 +1,53 @@
-+++
-title = "Drag"
-description = "On the way back home."
-tags = [
-    "Metro",
-    "FUJIFILM X-T4",
-    "X-T4",
-    "Set"
-]
-date = "2021-08-18T13:57:20+08:00"
-categories = [
-    "Life",
-    "Photograph"
-]
-menu = "main"
-layout = "portfolio"
-featureimage = ""
-chaosRedirect = "https://foto.ecwuuuuu.com/drag/"
-+++
+---
+title: Drag
+subtitle: 
+author: Zhenghao Wu
+description: On the way back home.
+layout: portfolio
+isCJKLanguage: false
+featureimage: 
+
+showmeta: false
+publishDate: "2021-07-20T17:44:45+08:00"
+lastmod: "2021-08-18T13:57:20+08:00"
+draft: false
+status: finished
+
+showmeta: false
+hidereadtime: false
+toc: true
+math: true
+showinfocard: true
+enablecomment: false
+
+series:
+previous:
+next:
+
+confidence: 
+importance: 
+
+tags:
+- metro
+- FUJIFILM X-T4
+- FUJIFILM
+- XT-4
+- Set
+
+categories:
+- Life
+- Photography
+
+camera:
+- FUJIFILM XT-4
+lens:
+- FUJINON 16-80mm F4.0
+medium:
+- digital
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 Hang out with friends in Shenzhen. In the evening, we saw a nice sunset in [OH BAY](http://en.sasac.gov.cn/2020/10/09/c_5587.htm).
 
@@ -42,5 +73,3 @@ image-description="No.3">}}
 image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg"
 image-description="No.4">}}
 {{< gallery "end">}}
-
-> Post Created at 2021-07-20, 2021-08-18 Updated.

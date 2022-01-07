@@ -12,9 +12,6 @@ theme = 'ecwu-theme'
   beianMessage = " 粤 ICP 备 17015575 号 - 1"
   homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
 
-# -----------------------------------------------------------------------
-# Navigation menu 
-# -----------------------------------------------------------------------
 [markup]
   [markup.highlight]
     anchorLineNos = true
@@ -28,6 +25,16 @@ theme = 'ecwu-theme'
     noClasses = true
     style = 'solarized-dark'
     tabWidth = 2
+
+[frontmatter]
+  date = ['date', 'publishDate']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod']
+  publishDate = ['publishDate', 'date']
+
+# -----------------------------------------------------------------------
+# Navigation menu 
+# -----------------------------------------------------------------------
 
 [[menu.nav]]
   name = "Home"

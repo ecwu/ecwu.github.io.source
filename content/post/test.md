@@ -3,11 +3,14 @@ title: Markdown Test Post
 subtitle: Try to include as many styles as possible
 author: Zhenghao Wu
 description: A test post for the new theme
-featureimage: https://cdn.ecwuuuuu.com/blog/image/rdp3.png
+layout: 
+isCJKLanguage: false
+featureimage: https://unsplash.com/photos/E9b5kcgCR9Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8c3Bhcmt8fDB8fHx8MTY0MTU1ODM2NA&force=true
+unsplashfeatureimage: Dawid Zawiła
 
 showmeta: false
-date: "2022-01-01T17:44:45+08:00"
-modified: "2022-01-03T17:44:45+08:00"
+publishDate: "2022-01-01T17:44:45+08:00"
+lastmod: "2022-01-03T17:44:45+08:00"
 draft: false
 status: finished
 
@@ -16,7 +19,9 @@ hidereadtime: false
 toc: true
 math: true
 showinfocard: true
+enablecomment: false
 
+series:
 previous:
 next:
 
@@ -47,7 +52,11 @@ extramaterials:
 - type: audio
   name: hazheng.mp3
   url: https://unsplash.com/photos/gJzpzEajT6c/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDE1MzcwMzY&force=true
+
+copyright: cc0
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
+
 # Markdown: Syntax
 
 **Note:** This document is itself written using Markdown; you

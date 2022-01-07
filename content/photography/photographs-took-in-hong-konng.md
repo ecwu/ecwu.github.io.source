@@ -11,6 +11,9 @@ categories = [
 ]
 menu = "main"
 layout = "portfolio"
+copyright = "byncsa"
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+showinfocard = true
 +++
 
 一些我 2018 年暑假在香港期间拍摄的一些照片
@@ -43,7 +46,3 @@ image-description="东涌地铁站外的喷泉与戏水的小孩 ƒ/2.8 1/2500s 
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/hkflash/hk-photo-me.jpg"
 image-description="我 ƒ/2.8 1/320s 50mm ISO400">}}
 {{< gallery "end">}}
-
-----
-
-本页面作品采用[知识共享署名 - 非商业性使用 - 相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
