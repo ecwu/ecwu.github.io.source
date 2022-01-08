@@ -1,5 +1,5 @@
 ---
-title: {{ replace .Name "-" " " | title }}
+title: Comment Test
 subtitle: 
 author: Zhenghao Wu
 description: 
@@ -7,9 +7,9 @@ layout:
 featureimage: 
 unsplashfeatureimage: 
 
-publishDate: "{{ .Date }}"
+publishDate: "2022-01-08T16:25:39+08:00"
 lastmod: 
-draft: true
+draft: false
 status: In Progress
 
 showmeta: true
@@ -17,7 +17,7 @@ hidereadtime: false
 toc: false
 math: false
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
 series:
 previous:

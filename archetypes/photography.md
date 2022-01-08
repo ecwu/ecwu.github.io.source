@@ -12,7 +12,7 @@ lastmod:
 draft: true
 status: In Progress
 
-showmeta: true
+showmeta: false
 hidereadtime: false
 toc: false
 math: false
@@ -32,11 +32,12 @@ tags:
 categories:
 - Placeholder
 
-# type: file, link, image, and others
-extramaterials:
-- type: file
-  name: placeholder
-  url: #
+camera:
+- Unknown Camera
+lens:
+- Unknown Lens
+medium:
+- Unknown Medium
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
