@@ -1,16 +1,25 @@
 baseURL = ''
 languageCode = 'en-us'
+timeZone = "Asia/Shanghai"
 title = 'ECWUUUUU'
 theme = 'ecwu-theme'
 
+
+enableGitInfo = true
+hasCJKLanguage = true
+footnoteReturnLinkContents = '↩'
+
 [params]
   subtitle = "ECWU's Notebook"
-  # copyright = "(c) Zhenghao Wu, Some Rights reserved."
   copyrightHolder = "ECWU"
   showPoweredBy = true
   showBeian = true
   beianMessage = " 粤 ICP 备 17015575 号 - 1"
   homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
+  email = "ecwu@protonmail.com"
+  github = "ecwu"
+  google_scholar = "xxx"
+  linkedin = "zhenghaowu"
 
 [markup]
   [markup.highlight]
@@ -25,12 +34,46 @@ theme = 'ecwu-theme'
     noClasses = true
     style = 'solarized-dark'
     tabWidth = 2
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
 
 [frontmatter]
   date = ['date', 'publishDate']
   expiryDate = ['expiryDate']
   lastmod = [':git', 'lastmod']
   publishDate = ['publishDate', 'date']
+
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = 'category'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
+[[related.indices]]
+  name = 'date'
+  weight = 10
 
 # -----------------------------------------------------------------------
 # Navigation menu 
