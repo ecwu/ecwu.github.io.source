@@ -41,14 +41,14 @@ module.exports = {
           css: {
             code: {
               backgroundColor: theme('colors.gray.100'),
-              color: "#DD1144",
+              color: theme('colors.rose.700'),
               fontWeight: "400",
               "border-radius": "0.25rem",
               padding: "0.1rem 0.25rem",
             },
             ".dark code:not(pre *)": {
               backgroundColor: theme('colors.gray.800'),
-              color: "#DD1144",
+              color: theme('colors.rose.700'),
             },
             "code::before": false,
             "code::after": false,

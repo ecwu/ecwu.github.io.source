@@ -10,7 +10,7 @@ categories = [
     "Photography",
 ]
 menu = "main"
-layout = "portfolio"
+gallery = true
 copyright = "byncsa"
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 showinfocard = true

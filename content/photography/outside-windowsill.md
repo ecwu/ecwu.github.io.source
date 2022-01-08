@@ -13,7 +13,7 @@ categories = [
     "Instagram"
 ]
 menu = "main"
-layout = "portfolio"
+gallery = true
 featureimage = ""
 +++
 

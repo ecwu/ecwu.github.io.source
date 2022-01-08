@@ -18,8 +18,15 @@ footnoteReturnLinkContents = '↩'
   homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
   email = "ecwu@protonmail.com"
   github = "ecwu"
-  google_scholar = "xxx"
+  google_scholar = "gBi_1mgAAAAJ"
   linkedin = "zhenghaowu"
+  instagram = "ecwu"
+  video = "https://space.bilibili.com/509461"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
 
 [markup]
   [markup.highlight]
@@ -95,10 +102,10 @@ footnoteReturnLinkContents = '↩'
   identifier = "photos"
   url = "/photography/"
 [[menu.nav]]
-  name = "Topics"
+  name = "Series"
   weight = -80 
   identifier = "topics"
-  url = "/topic/"
+  url = "/series/"
 [[menu.nav]]
   name = "About"
   weight = -60 

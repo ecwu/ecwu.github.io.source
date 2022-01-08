@@ -12,7 +12,7 @@ categories = [
     "Photography",
 ]
 menu = "main"
-layout = "portfolio"
+gallery = true
 +++
 
 

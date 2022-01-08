@@ -5,8 +5,8 @@ author: Zhenghao Wu
 description: A test post for the new theme
 layout: 
 isCJKLanguage: false
-featureimage: https://unsplash.com/photos/E9b5kcgCR9Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OHx8c3Bhcmt8fDB8fHx8MTY0MTU1ODM2NA&force=true
-unsplashfeatureimage: Dawid Zawiła
+featureimage: https://unsplash.com/photos/GSnMWuCbov8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQxNjQyOTA1&force=true
+unsplashfeatureimage: Andrew Seaman
 
 showmeta: false
 publishDate: "2022-01-01T17:44:45+08:00"

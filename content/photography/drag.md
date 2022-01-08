@@ -3,7 +3,6 @@ title: Drag
 subtitle: 
 author: Zhenghao Wu
 description: On the way back home.
-layout: portfolio
 isCJKLanguage: false
 featureimage: 
 
@@ -17,6 +16,7 @@ showmeta: false
 hidereadtime: false
 toc: true
 math: true
+gallery: true
 showinfocard: true
 enablecomment: false
 
