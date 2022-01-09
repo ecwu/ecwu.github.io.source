@@ -21,7 +21,7 @@ I started to learn NLP-related stuff in mid-2018. And gradually start to some se
 
 ## Beginning: SemEval2019
 
-By the end of 2018, members of the AI learning group {{% sidenote "ai-learning-group" %}}Lead by Prof. Weifeng Su{{% /sidenote %}} decide to take part in the SemEval 2019. To study and learning more about NLP. 
+By the end of 2018, members of the AI learning group {{% sidenote "ai-learning-group" %}}Lead by [Prof. Weifeng Su](https://dst.uic.edu.cn/en/faculty/faculty.htm#/wfsu/en){{% /sidenote %}} decide to take part in the SemEval 2019. To study and learning more about NLP. 
 
 Our group chose task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval). Which the input text is users' tweets and we need to classify it.
 
@@ -37,6 +37,6 @@ We proposed a novel attention-based module that can be applied to the RNN-based 
 
 > This work has been published at Findings of ACL 2021: [ACL Anthology](https://aclanthology.org/2021.findings-acl.31/); [Code](https://github.com/X-AISIG/LenAtten).
 
-## MSc Independent Project: Text Generation Related Project
+## MSc Independent Project: Cross-modal Dialogue Generation Project
 
 Because of the anonymity requirement, more details will be provided once time suitable.
