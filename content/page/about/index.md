@@ -36,11 +36,24 @@ copyright:
 ---
 
 ## Zhenghao Wu, 伍正豪, Jack, ECWU
+
+Education:
 - Postgraduate Student, [Hong Kong University of Science and Technology](https://hkust.edu.hk/), MSc. Big Data Technology
 - Graduated with First-Class Honours, [BNU-HKBU UIC](https://uic.edu.cn/), BSc. Computer Science and Technology (Honours)
 
+Experience:
+- Application Research Engineer Intern at Tencent
+- Co-founder and member of [UICHCC Computer Club](https://uichcc.com)
+- Member of UICAISIG
+
 Hobbies: Tech, Photography (Analog and Digital), Music
 
-Contact me: ecwu@protonmail.com
+Social Media:
+- GitHub: [@ecwu](https://github.com/ecwu)
+- Instagram: [@ecwuuuuu](https://www.instagram.com/ecwuuuuu/)
+- Bilibili: [ecwuuu](https://space.bilibili.com/509461/)
+- Google Scholar: [Zhenghao Wu](https://scholar.google.com/citations?user=gBi_1mgAAAAJ)
+- ResearchGate: [Zhenghao Wu](https://www.researchgate.net/profile/Zhenghao-Wu)
+- LinkedIn: [Zhenghao Wu](https://www.linkedin.com/in/zhenghaowu/)
 
-More: [LinkedIn](https://www.linkedin.com/in/zhenghaowu/); check social links in footer.
+Contact me: [ecwu@protonmail.com](mailto:ecwu@protonmail.com)

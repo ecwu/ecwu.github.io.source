@@ -23,12 +23,12 @@ footnoteReturnLinkContents = '↩'
   showBeian = true
   beianMessage = " 粤 ICP 备 17015575 号 - 1"
   homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
-  email = "ecwu@protonmail.com"
-  github = "ecwu"
-  google_scholar = "gBi_1mgAAAAJ"
-  linkedin = "zhenghaowu"
-  instagram = "ecwuuuuu"
-  video = "https://space.bilibili.com/509461"
+  # email = "ecwu@protonmail.com"
+  # github = "ecwu"
+  # google_scholar = "gBi_1mgAAAAJ"
+  # linkedin = "zhenghaowu"
+  # instagram = "ecwuuuuu"
+  # video = "https://space.bilibili.com/509461"
 
 [taxonomies]
   tag = "tags"
