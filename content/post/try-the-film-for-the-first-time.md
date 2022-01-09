@@ -1,20 +1,47 @@
-+++
-title = "Try the Film For the First Time"
-description = "My first set of film photo"
-tags = [
-    "Film",
-    "Fujifilm",
-    "Photography",
-    "AGFAPhoto",
-    "Kodak",
-    "analog"
-]
-date = "2019-09-14T00:07:01+08:00"
-categories = [
-    "Photography",
-]
-menu = "main"
-+++
+---
+title: Try the Film For the First Time
+subtitle: My first set of film photo
+author: Zhenghao Wu
+description: My first set of film photo
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2019-09-14T00:07:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: true
+toc: false
+math: true
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: Film Photography
+
+confidence: certain
+importance: 7
+
+tags:
+- Film
+- Fujifilm
+- Photography
+- AGFAPhoto
+- Kodak
+- analog
+
+categories:
+- Photography
+
+# type: file, link, image, and others
+extramaterials:
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 The story starts from a disposable camera sent to me by [Root](https://github.com/russelloop) in 2017.
 

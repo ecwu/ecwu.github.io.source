@@ -1,21 +1,50 @@
-+++
-title = "Outside Windowsill"
-description = "Flows of Instagram Memory"
-tags = [
-    "Home",
-    "Mobile Phone Photography",
-    "Instagram",
-    "Collection"
-]
-date = "2020-12-25T21:30:01+08:00"
-categories = [
-    "Life",
-    "Instagram"
-]
-menu = "main"
-gallery = true
-featureimage = ""
-+++
+---
+title: Outside Windowsill
+subtitle: 
+author: Zhenghao Wu
+description: Flows of Instagram Memory
+featureimage: https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2020-02-24_10-16-27_UTC.jpg
+unsplashfeatureimage: 
+
+publishDate: "2020-12-25T21:30:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: true
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- Home
+- Mobile Phone Photography
+- Instagram
+- Collection
+
+categories:
+- Photography
+
+camera:
+- iPad Air
+- OnePlus 3
+- Samsung Galaxy Note 9
+lens:
+medium:
+- Digital
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 The window of my room is facing west. Clear view, not blockage. A perfect place for seeing the gorgeous sunset.
 

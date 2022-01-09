@@ -3,47 +3,43 @@ title: Drag
 subtitle: 
 author: Zhenghao Wu
 description: On the way back home.
-isCJKLanguage: false
-featureimage: 
+featureimage: http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg
+unsplashfeatureimage: 
 
-showmeta: false
-publishDate: "2021-07-20T17:44:45+08:00"
+publishDate: "2021-07-20T13:57:20+08:00"
 lastmod: "2021-08-18T13:57:20+08:00"
 draft: false
-status: finished
+status: Finished
+# In Progress, Staging, Finished, Lagacy
 
 showmeta: false
-hidereadtime: false
-toc: true
-math: true
+hidereadtime: true
+toc: false
+math: false
 gallery: true
 showinfocard: true
 enablecomment: false
 
-series:
-previous:
-next:
+series: 
 
 confidence: 
 importance: 
 
 tags:
-- metro
+- Metro
 - FUJIFILM X-T4
-- FUJIFILM
-- XT-4
+- X-T4
 - Set
 
 categories:
-- Life
 - Photography
 
 camera:
-- FUJIFILM XT-4
+- FUJIFILM X-T4
 lens:
-- FUJINON 16-80mm F4.0
+- FUJINON 16-80mm F4
 medium:
-- digital
+- Digital
 
 copyright: inherit
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
@@ -73,3 +69,4 @@ image-description="No.3">}}
 image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg"
 image-description="No.4">}}
 {{< gallery "end">}}
+

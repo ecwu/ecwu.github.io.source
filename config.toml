@@ -1,9 +1,16 @@
-baseURL = ''
+baseURL = 'https://ecwuuuuu.com/'
 languageCode = 'en-us'
 timeZone = "Asia/Shanghai"
 title = 'ECWUUUUU'
 theme = 'ecwu-theme'
 
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+
+googleAnalytics = 'G-HSPDSQWH5L'
+enableRobotsTXT = true
 
 enableGitInfo = true
 hasCJKLanguage = true
@@ -60,11 +67,15 @@ footnoteReturnLinkContents = '↩'
       hardWraps = false
       unsafe = true
       xhtml = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
 
 [frontmatter]
   date = ['date', 'publishDate']
   expiryDate = ['expiryDate']
-  lastmod = [':git', 'lastmod']
+  lastmod = ['lastmod', ':git']
   publishDate = ['publishDate', 'date']
 
 

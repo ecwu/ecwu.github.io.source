@@ -1,7 +1,37 @@
-+++
-title = "Friends"
-math = false
-+++
+---
+title: Friends
+subtitle: 
+author: Zhenghao Wu
+description: 
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: 
+lastmod: 
+draft: false
+status: 
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: false
+showinfocard: false
+enablecomment: true
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+
+categories:
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 > For now, I just post these links here, will complete the description when I have time :)
 
@@ -13,8 +43,9 @@ math = false
 - [Frank Ng](https://aerofrankie.com/)
 - [KirinBaka](https://9baka.moe/)
 - [黑墨水鱼](https://aquarium39.moe)
+- [小田](https://hixiaotian.com)
 
 
 ## Propose New Link
 
-If you want me to append you to the friend page, just create a reply under this [issue page](https://github.com/ecwu/ecwu.github.io.source/issues/1)! 
+If you want me to append you to the friend page, just comment below!

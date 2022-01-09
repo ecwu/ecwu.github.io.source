@@ -1,27 +1,50 @@
-+++
-title = "Larger format, heavier body"
-subtitle = "120 Film and Mamiya RB67"
-author = "Zhenghao Wu"
-description = "Indulge in film photography"
-math = false
-hidedate = false
-date = "2020-06-09T17:44:45+08:00"
-hidereadtime = false
-toc = false
-draft = false
-tags = [
-    "Film",
-    "Mamiya",
-    "Photography",
-    "analog",
-    "120 Film"
-]
-categories = [
-    "Photography",
-]
-menu = "main"
-featureimage = "https://cdn.ecwuuuuu.com/blog/image/rdp3.png"
-+++
+---
+title: Larger format, heavier body
+subtitle: 120 Film and Mamiya RB67
+author: Zhenghao Wu
+description: Indulge in film photography
+featureimage: https://cdn.ecwuuuuu.com/blog/image/rdp3.png
+unsplashfeatureimage: 
+
+publishDate: "2020-06-09T17:44:45+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: false
+toc: false
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: Film Photography
+
+confidence: certain
+importance: 7
+
+tags:
+- Film
+- Mamiya
+- Mamiya RB67
+- Kodak
+- ilford
+- Photography
+- analog
+- 120 Film
+- 135 Film
+
+categories:
+- Photography
+
+# type: file, link, image, and others
+extramaterials:
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 In my last photography-related post: [Try the Film For the First Time]({{< ref "/post/try-the-film-for-the-first-time" >}}). I have lots of fun with negatives. This makes me want to have my own camera to experience this medium that has existed for nearly 200 years. {{% sidenote "film-exist-time" %}}The film we are still using today was invented by Kodak in 1888, but photosensitive material that uses in photography can date back to 1835.{{% /sidenote %}}{{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/View_from_the_Window_at_Le_Gras_colorized_2020_new.png/1600px-View_from_the_Window_at_Le_Gras_colorized_2020_new.png"

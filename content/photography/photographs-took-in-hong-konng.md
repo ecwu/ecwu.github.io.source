@@ -1,20 +1,49 @@
-+++
-title = "Hong Kong Flashback"
-description = "Some photos I take in Hong Kong"
-tags = [
-    "Hong Kong",
-    "Photography",
-]
-date = "2018-07-30T13:56:01+08:00"
-categories = [
-    "Photography",
-]
-menu = "main"
-gallery = true
-copyright = "byncsa"
+---
+title: Hong Kong Flashback
+subtitle: 
+author: Zhenghao Wu
+description: Some photos I take in Hong Kong
+featureimage: https://cdn.ecwuuuuu.com/blog/image/series/hkflash/hk-photo-01.jpg
+unsplashfeatureimage: Zhenghao Wu
+
+publishDate: "2018-07-30T13:56:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: true
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- Hong Kong
+- Photography
+
+categories:
+- Photography
+
+camera:
+- Sony A7R3
+- Canon 5DIV
+lens:
+- Sony FE 24-70mm f/2.8 GM
+- Canon EF 24-70mm f/2.8L II USM
+medium:
+- Digital
+
+copyright: byncsa
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
-showinfocard = true
-+++
+---
 
 一些我 2018 年暑假在香港期间拍摄的一些照片
 

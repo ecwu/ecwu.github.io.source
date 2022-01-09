@@ -1,16 +1,47 @@
-+++
-title = "List of stuff I enjoy"
-description = "Something I like, maybe you can try it?"
-author = "Zhenghao Wu"
-date = 2021-07-31T10:59:30+08:00
-tags = ["summary"]
-categories = ["Note"]
-draft = false
-menu = "main"
-hideDate = true
-hideReadTime = true
-toc = true
-+++
+---
+title: List of stuff I enjoy
+subtitle: Something I like, maybe you can try it?
+author: Zhenghao Wu
+description: Something I like, maybe you can try it?
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2019-04-15T16:23:05+08:00"
+lastmod: "2021-07-31T10:59:30+08:00"
+draft: false
+status: In Progress
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: true
+toc: true
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- summary
+- List
+- Hobby
+- Music
+- Anime
+- Movie
+- Website
+- Book
+- Article
+
+categories:
+- Note
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 <!--more-->
 
@@ -132,5 +163,3 @@ Some selected episodes:
 ### 6.5 Misc
 
 - Loneliness by **Epic Mountain**
-
-> Initially posted in 2019, updated in 2021.07.31

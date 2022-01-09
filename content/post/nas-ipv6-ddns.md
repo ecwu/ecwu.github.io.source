@@ -1,31 +1,50 @@
-+++
-title = "Making Synology NAS accessible from the Internet using IPv6 and DDNS"
-subtitle = "IPv6 Yes! :-)"
-author = "Zhenghao Wu"
-description = "Making Synology NAS accessible from the Internet using IPv6 and DDNS"
-tags = [
-    "NAS",
-    "Synology",
-    "DS918+",
-    "DDNS",
-    "Networking",
-    "Cloudflare",
-    "Domain",
-    "HTTPS"
-]
-date = "2021-04-04T10:01:01+08:00"
-categories = [
-    "Note",
-    "Website",
-]
-menu = "main"
-meta = true
-hideDate = false
-hideReadTime = true
-draft = false
-math = false
-toc = true
-+++
+---
+title: Making Synology NAS accessible from the Internet using IPv6 and DDNS
+subtitle: 'IPv6 Yes! :-)'
+author: Zhenghao Wu
+description: Making Synology NAS accessible from the Internet using IPv6 and DDNS
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2021-04-04T10:01:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: true
+toc: true
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series:
+
+confidence: highly likely
+importance: 8
+
+tags:
+- NAS
+- Synology
+- DS918+
+- DDNS
+- Networking
+- Cloudflare
+- Domain
+- HTTPS
+
+categories:
+- Tech
+- Website
+
+# type: file, link, image, and others
+extramaterials:
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 > Although I majored in computer science, my blog is filled with photography-related content. For balance, I take the opportunity of a recent explore and write down this note. :-)
 

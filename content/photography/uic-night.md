@@ -1,19 +1,49 @@
-+++
-title = "UIC night"
+---
+title: UIC night
+subtitle: 
+author: Zhenghao Wu
+description: The course I took at 2018 HKBU summer program
+featureimage: "https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-302.jpg"
+unsplashfeatureimage: 
 
-tags = [
-    "UIC",
-    "Photography",
-    "Kodak",
-    "Portra 400"
-]
-date = "2020-07-13T21:43:01+08:00"
-categories = [
-    "Photography",
-]
-menu = "main"
-gallery = true
-+++
+publishDate: "2020-07-13T21:43:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: true
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- UIC
+- Photography
+- Kodak
+- Portra 400
+
+categories:
+- Photography
+
+camera:
+- Mamiya RB67 PRO S
+lens:
+- SEKOR C 127mm F3.8
+medium:
+- Kodak Portra 400
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 
 <!--more-->

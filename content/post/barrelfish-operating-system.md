@@ -1,26 +1,58 @@
-+++
-title = "Barrelfish OS 和多内核操作系统"
-author = "Zhenghao Wu"
-description = "Barrelfish OS and Multi-kernel Operating System"
-tags = [
-    "OS",
-    "Barrelfish OS",
-    "ETH Zurich",
-    "UIC",
-    "Computer Science"
-]
-date = "2019-01-09T12:56:01+08:00"
-categories = [
-    "Note",
-    "OS",
-]
-menu = "main"
-meta = true
-hideDate = false
-hideReadTime = true
-math = false
-toc = true
-+++
+---
+title: Barrelfish OS 和多内核操作系统
+subtitle: Barrelfish OS and Multi-kernel Operating System
+author: Zhenghao Wu
+description: Barrelfish OS and Multi-kernel Operating System
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2019-01-09T12:56:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: false
+toc: true
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series:
+
+confidence: highly likely
+importance: 8
+
+tags:
+- OS
+- Operating System
+- Barrelfish OS
+- Multi-kernel
+- ETH Zurich
+- UIC
+- Computer Science
+
+categories:
+- Note
+- OS
+
+# type: file, link, image, and others
+extramaterials:
+- type: link
+  name: Barrelfish Operating System Homepage
+  url: http://www.barrelfish.org/index.html
+- type: file
+  name: "Original Paper on Barrelfish OS - The Multikernel: A new OS architecture for scalable multicore systems"
+  url: http://www.barrelfish.org/publications/barrelfish_sosp09.pdf
+- type: link
+  name: "An article from Microsoft about this topic - Barrelfish: Exploring a Multicore OS"
+  url: https://www.microsoft.com/en-us/research/blog/barrelfish-exploring-multicore-os/
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 大三的上学期有一门专业课叫操作系统（Operating System），它的课程小组项目是对某个操作系统进行研究。我们组抽到了 Barrelfish Operating System。
 
@@ -130,10 +162,5 @@ Capability 的引入有一定的原因是为了安全的内存访问。
 
 Barrelfish 不能成为下一个 Windows。但它能像官网里展望所说的，它能成为未来多核 / 多内核操作系统的研究平台，为多内核操作系统奠基。
 
-# Reference / Extra materials
-- [Barrelfish Operating System Homepage](http://www.barrelfish.org/index.html)
-- [Original Paper on Barrelfish OS - The Multikernel: A new OS architecture for scalable multicore systems](http://www.barrelfish.org/publications/barrelfish_sosp09.pdf)
-- [An article from Microsoft about this topic - Barrelfish: Exploring a Multicore OS](https://www.microsoft.com/en-us/research/blog/barrelfish-exploring-multicore-os/)
-
 ---
-The group project mentioned in this article was completed by Jack (@ECWU), Turing ([@IrvingSau](https://github.com/IrvingSau)), and Otto ([@zhanggzzy](https://github.com/zhanggzzy))
+The group project mentioned in this article was completed by Jack (@ECWU), Turing ([@turing-yfqiu](https://github.com/turing-yfqiu)), and Otto ([@zhanggzzy](https://github.com/zhanggzzy))

@@ -1,27 +1,48 @@
-+++
-title = "I am initiating a new domain!"
-author = "Zhenghao Wu"
-description = "ecwu.xyz, and other news about my site"
-tags = [
-    "Domain",
-    "dotxyz",
-    ".xyz",
-    "Cloudflare",
-    "Gandi",
-    "website"
-]
-date = "2021-09-01T14:40:01+08:00"
-categories = [
-    "Note",
-    "Website",
-]
-menu = "main"
-meta = true
-hideDate = false
-hideReadTime = true
-draft = false
-math = false
-+++
+---
+title: I am initiating a new domain!
+subtitle: 
+author: Zhenghao Wu
+description: 'ecwu.xyz, and other news about my site'
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2021-09-01T14:40:01+08:00"
+lastmod: 
+draft: false
+status: In Progress
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: true
+toc: true
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: Website Note
+
+confidence: certain
+importance: 5
+
+tags:
+- Domain
+- dotxyz
+- .xyz
+- Cloudflare
+- Gandi
+- website
+
+categories:
+- Tech
+- Website
+
+# type: file, link, image, and others
+extramaterials:
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 Starting from Aug 11, 2021. I am starting a new domain name for my website.
 

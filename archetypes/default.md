@@ -3,19 +3,20 @@ title: {{ replace .Name "-" " " | title }}
 subtitle: 
 author: Zhenghao Wu
 description: 
-layout: 
 featureimage: 
 unsplashfeatureimage: 
 
 publishDate: "{{ .Date }}"
 lastmod: 
-draft: true
-status: In Progress
+draft: false
+status: 
+# In Progress, Staging, Finished, Lagacy
 
 showmeta: true
 hidereadtime: false
 toc: false
 math: false
+gallery: true
 showinfocard: true
 enablecomment: false
 

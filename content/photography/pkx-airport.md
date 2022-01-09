@@ -1,21 +1,52 @@
-+++
-title = "Beijing Daxing International Airport"
+---
+title: Beijing Daxing International Airport
+subtitle: 
+author: Zhenghao Wu
+description: Some photos I take in Hong Kong
+featureimage: https://cdn.ecwuuuuu.com/blog/image/series/pkx/pkx-9.jpg
+unsplashfeatureimage: 
 
-tags = [
-    "PKX",
-    "Photography",
-    "Kodak",
-    "Portra 400",
-    "ILFORD",
-    "HP5 PLUS"
-]
-date = "2020-07-16T15:20:01+08:00"
-categories = [
-    "Photography",
-]
-menu = "main"
-gallery = true
-+++
+publishDate: "2020-07-16T15:20:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: true
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- PKX
+- Photography
+- Kodak
+- Portra 400
+- ILFORD
+- HP5 PLUS
+
+categories:
+- Photography
+
+camera:
+- Mamiya RB67 PRO S
+lens:
+- SEKOR C 127mm F3.8
+medium:
+- Kodak Portra 400
+- ILFORD HP5+
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 
 <!--more-->
@@ -23,10 +54,6 @@ gallery = true
 I arrange a trip for myself to the north part of China at the end of 2019. And the last destination is Beijing. We booked the plane from Shenyang Taoxian Airport to Beijing Daxing Airport to see this just-opened mega construction project in person.
 
 > During the shooting, I adjusted the metering parameters incorrectly, and almost all the color negative photos were overexposed by two or three stops.
-
-Specs:
-- Film: Kodak Portra 400, ILFORD HP5 PLUS
-- Camera & Lens: Mamiya RB67 Pro S, 127mm f3.8 lens.
 
 {{< gallery g-class="pkx">}}
 {{< gallery-image

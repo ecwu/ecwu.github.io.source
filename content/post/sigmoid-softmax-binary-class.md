@@ -1,25 +1,47 @@
-+++
-title = "Sigmoid or Softmax for Binary Classification"
-author = "Zhenghao Wu"
-math = true
-hidedate = false
-date = "2021-06-07T13:06:14+08:00"
-hidereadtime = false
-toc = false
-draft = false
-tags = [
-    "Machine Learning",
-    "Classification",
-    "Softmax",
-    "Sigmoid",
-    "Activation Function"
-]
-categories = [
-    "Note",
-    "Machine Learning"
-]
-menu = "main"
-+++
+---
+title: Sigmoid or Softmax for Binary Classification
+subtitle: 
+author: Zhenghao Wu
+description: 
+featureimage: 
+unsplashfeatureimage: 
+
+publishDate: "2021-06-07T13:06:14+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: true
+toc: false
+math: true
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: Machine Learning
+
+confidence: certain
+importance: 8
+
+tags:
+- Machine Learning
+- Classification
+- Softmax
+- Sigmoid
+- Activation Function
+
+categories:
+- Note
+- Machine Learning
+
+# type: file, link, image, and others
+extramaterials:
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 Recently, been asked a question on using neural networks for binary classification.
 

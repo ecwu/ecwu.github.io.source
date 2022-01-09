@@ -1,21 +1,51 @@
-+++
-title = "Television Studio Production @ HKBU"
-description = "The course I took at 2018 HKBU summer program"
-tags = [
-    "HKBU Summer Program",
-    "Television Studio Production",
-    "Academy of film hkbu",
-    "UIC",
-    "Hong Kong"
-]
-date = "2018-08-20T02:56:01+08:00"
-categories = [
-    "Story",
-    "Life",
-]
-menu = "main"
-featureimage = "https://cdn.ecwuuuuu.com/blog/image//hkbu-studio.jpg"
-+++
+---
+title: Television Studio Production @ HKBU
+subtitle: 
+author: Zhenghao Wu
+description: The course I took at 2018 HKBU summer program
+featureimage: "https://cdn.ecwuuuuu.com/blog/image//hkbu-studio.jpg"
+unsplashfeatureimage: 
+
+publishDate: "2018-08-20T02:56:01+08:00"
+lastmod: 
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: true
+showinfocard: true
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+- HKBU Summer Program
+- Television Studio Production
+- Academy of film hkbu
+- UIC
+- Hong Kong
+
+categories:
+- Photography
+- Life
+
+camera:
+- Sony A7R3
+lens:
+- Sony FE 24-70mm f/2.8 GM
+medium:
+- Digital
+
+copyright: inherit
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 Television Studio Production 电视影棚制作
 
@@ -92,7 +122,3 @@ Television Studio Production 电视影棚制作
 这门课说轻松也不算轻松，因为要做的时期很多，有几次我们都是上午进棚（课是下午才开始）准备，一直拍摄到下午的六点钟。但重在好玩，虽然很累，但依然非常兴奋。
 
 非常推荐上的一门课，很有趣。还没有期末考，岂不美哉。
-
-----
-
-除特别注明，本页面作品版权所有 © Zhenghao WU 2018。
