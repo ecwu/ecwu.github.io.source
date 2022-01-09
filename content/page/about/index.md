@@ -1,25 +1,46 @@
-+++
-title = "About (Curriculum Vitæ)"
-date = "2020-02-18T23:57:58+08:00"
-math = false
-+++
+---
 
-## Me
+title: About Me
+subtitle: 
+author: Zhenghao Wu
+description: 
+featureimage: 
+unsplashfeatureimage: 
 
-- Postgraduate Student, [Hong Kong University of Science and Technology](https://hkust.edu.hk/)
-- Graduated with First-Class Honours, [BNU-HKBU UIC](https://uic.edu.cn/)
+publishDate: "2020-02-18T23:57:58+08:00"
+draft: false
+status: 
+# In Progress, Staging, Finished, Lagacy
 
-Tech, Photography (Analog and Digital), Music
+showmeta: false
+hidereadtime: true
+toc: false
+math: false
+gallery: false
+showinfocard: false
+enablecomment: false
+
+series: 
+
+confidence: 
+importance: 
+
+tags:
+
+categories:
+- Page
+- Topic
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
+
+## Zhenghao Wu, 伍正豪, Jack, ECWU
+- Postgraduate Student, [Hong Kong University of Science and Technology](https://hkust.edu.hk/), MSc. Big Data Technology
+- Graduated with First-Class Honours, [BNU-HKBU UIC](https://uic.edu.cn/), BSc. Computer Science and Technology (Honours)
+
+Hobbies: Tech, Photography (Analog and Digital), Music
 
 Contact me: ecwu@protonmail.com
 
-CV: *Coming soon*
-
-More: [LinkedIn](https://www.linkedin.com/in/zhenghaowu/)
-
-## This site
-- Write with static site generator [Hugo](https://gohugo.io/)
-    - [hugo-tufte](https://github.com/shawnohare/hugo-tufte) theme with custom modifications
-- Build with [GitHub Actions](https://github.com/features/actions)
-- Host by [GitHub Pages](https://pages.github.com/)
-- [Cloudflare](https://www.cloudflare.com/) & [Qiniu](https://www.qiniu.com/) for distributing files
+More: [LinkedIn](https://www.linkedin.com/in/zhenghaowu/); check social links in footer.

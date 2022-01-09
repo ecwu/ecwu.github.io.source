@@ -1,5 +1,5 @@
 ---
-title: Switching to a new theme ... I guess
+title: (Switched!) Switching to a new theme ... I guess
 subtitle: Tailwind + Hugo
 author: Zhenghao Wu
 description: 
@@ -9,7 +9,7 @@ unsplashfeatureimage:
 publishDate: "2021-12-22T16:35:45.000Z"
 lastmod: 
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -18,7 +18,7 @@ toc: false
 math: true
 gallery: false
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
 series: Website Note
 
@@ -75,4 +75,7 @@ Setting up a new theme is a quite messy process, have to consider an overwhelmin
 
 I provide [the guidelines](http://cdn.ecwuuuuu.com/blog/image/designstandard/designstandard.pdf) here and you can also check out the contiguous [building site](https://ecwu-github-io-source.pages.dev/) that has the new theme enabled (Powered by Cloudflare pages).
 
-Stay tuned.
+## 2022.1.9 Update
+
+The [new theme](https://github.com/ecwu/ecwu-theme) has been applied on the site, I probably will write a post to introduce the new theme. Feel free to explore the site, and give me some feedback in the comment section.
+
