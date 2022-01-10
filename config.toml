@@ -23,6 +23,7 @@ footnoteReturnLinkContents = '↩'
   showBeian = true
   beianMessage = " 粤 ICP 备 17015575 号 - 1"
   homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog may contain random thoughts, technological content, projects, and photography work. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing my random stuff.'
+  placeholderUnsplashCollection = "https://source.unsplash.com/collection/559527"
   # email = "ecwu@protonmail.com"
   # github = "ecwu"
   # google_scholar = "gBi_1mgAAAAJ"
