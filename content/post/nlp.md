@@ -7,7 +7,7 @@ hidedate = false
 date = "2021-05-07T00:13:30+08:00"
 hidereadtime = false
 toc = false
-draft = false
+draft = true
 tags = [
     "project",
 ]
@@ -15,6 +15,7 @@ categories = [
     "Project",
 ]
 menu = "main"
+series = "Project"
 +++
 
 I started to learn NLP-related stuff in mid-2018. And gradually start to some serious research. My focus mainly on Natural Language Generation (NLG).

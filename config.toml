@@ -128,12 +128,16 @@ footnoteReturnLinkContents = '↩'
   identifier = "friends"
   url = "/page/friends/"
 
+# -----------------------------------------------------------------------
+# Selected Topic 
+# -----------------------------------------------------------------------
+
 [[menu.topic]]
-  name = "Projects"
-  pre = "School work and Personal"
+  name = "Changelog"
+  pre = "About the site"
   weight = -100
-  identifier = "projects"
-  url = "/project/"
+  identifier = "changelog"
+  url = "/page/changelog/"
 [[menu.topic]]
   name = "Keep List"
   pre = "List of stuffs I enjoy"

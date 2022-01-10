@@ -1,5 +1,5 @@
 +++
-title = "Natural Language Processing!"
+title = "A Very Brief Intro to Natural Language Processing"
 author = "Zhenghao Wu"
 description = "How computer process language"
 tags = ['UICHCC Salon', 'NLP']
@@ -12,6 +12,7 @@ hideReadTime = true
 math = false
 toc = true
 draft = true
+series = "Machine Learning"
 +++
 
 > This is a outline for an future UICHCC Tech Salon.

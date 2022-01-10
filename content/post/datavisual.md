@@ -18,7 +18,8 @@ categories = [
     "Project",
 ]
 menu = "main"
-featureimage = "/project/vis-head.png"
+featureimage = "http://cdn.ecwuuuuu.com/blog/image/project/covid-19-visualization/vis-head.png"
+series = "Project"
 +++
 
 > This visualization dashboard is the project for MSBD5005 Course
