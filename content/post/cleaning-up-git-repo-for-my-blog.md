@@ -3,8 +3,8 @@ title: Cleaning Up Git Repo For My Blog
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: 
-unsplashfeatureimage: 
+featureimage: https://unsplash.com/photos/842ofHC6MaI/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8Z2l0fHwwfHx8fDE2NDE5MDkxMTI&force=true&w=2400
+unsplashfeatureimage: Yancy Min
 
 publishDate: "2022-01-10T15:54:37+08:00"
 lastmod: 

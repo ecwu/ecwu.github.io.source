@@ -3,8 +3,8 @@ title: List of stuff I enjoy
 subtitle: Something I like, maybe you can try it?
 author: Zhenghao Wu
 description: Something I like, maybe you can try it?
-featureimage: 
-unsplashfeatureimage: 
+featureimage: https://unsplash.com/photos/Ae7pSsfzEHs/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8Y29sbGVjdGlvbnx8MHx8fHwxNjQxOTA5MDU2&force=true&w=2400
+unsplashfeatureimage: Eran Menashri
 
 publishDate: "2019-04-15T16:23:05+08:00"
 lastmod: "2021-07-31T10:59:30+08:00"
@@ -20,7 +20,7 @@ gallery: false
 showinfocard: true
 enablecomment: false
 
-series: 
+series: Keep List
 
 confidence: 
 importance: 
@@ -37,7 +37,7 @@ tags:
 - Article
 
 categories:
-- Note
+- Keep List
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
