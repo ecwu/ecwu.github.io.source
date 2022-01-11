@@ -18,6 +18,7 @@ footnoteReturnLinkContents = '↩'
 
 [params]
   subtitle = "ECWU's Notebook"
+  description = "Homepage and Blog of ECWU"
   copyrightHolder = "ECWU"
   showPoweredBy = true
   showBeian = true
