@@ -1,22 +1,64 @@
-+++
-title = "NLP related stuff"
-subtitle = "Natural Language Processing"
-author = "Zhenghao Wu"
-math = false
-hidedate = false
-date = "2021-05-07T00:13:30+08:00"
-hidereadtime = false
-toc = false
-draft = true
-tags = [
-    "project",
-]
-categories = [
-    "Project",
-]
-menu = "main"
-series = "Project"
-+++
+---
+title: My Past NLP Projects
+subtitle: Natural Language Processing
+author: Zhenghao Wu
+description: 
+featureimage: http://cdn.ecwuuuuu.com/blog/image/misc/307-guaige.jpg
+unsplashfeatureimage: 
+
+publishDate: "2021-05-07T00:13:30+08:00"
+lastmod: "2022-01-23T14:24:00+08:00"
+draft: false
+status: Finished
+# In Progress, Staging, Finished, Lagacy
+
+showmeta: true
+hidereadtime: false
+toc: false
+math: false
+gallery: false
+showinfocard: true
+enablecomment: false
+
+series: Project
+previous:
+next:
+
+confidence: 
+importance: 
+
+tags:
+- NLP
+- Natural Language Processing
+- Classification
+- Machine Learning
+- Offensive Detection
+- Summarization
+- Text Generation
+- Controllable Text Generation
+- Cross Modal
+- Dialogue
+- Transformer
+- Pre-trained Language Model
+
+categories:
+- Project
+
+# type: file, link, image, and others
+extramaterials:
+- type: link
+  name: "[ACL Anthology] BNU-HKBU UIC NLP Team 2 at SemEval-2019 Task 6: Detecting Offensive Language Using BERT model"
+  url: https://aclanthology.org/S19-2099/
+- type: link
+  name: "[ACL Anthology] LenAtten: An Effective Length Controlling Unit For Text Summarization"
+  url: https://aclanthology.org/2021.findings-acl.31/
+- type: link
+  name: "[GitHub] LenAtten"
+  url: https://github.com/X-AISIG/LenAtten
+
+copyright: 
+# inherit cc0 by bysa bync byncsa bynd byncnd unsplash
+---
 
 I started to learn NLP-related stuff in mid-2018. And gradually start to some serious research. My focus mainly on Natural Language Generation (NLG).
 
@@ -38,6 +80,10 @@ We proposed a novel attention-based module that can be applied to the RNN-based 
 
 > This work has been published at Findings of ACL 2021: [ACL Anthology](https://aclanthology.org/2021.findings-acl.31/); [Code](https://github.com/X-AISIG/LenAtten).
 
-## MSc Independent Project: Cross-modal Dialogue Generation Project
+## MSc Independent Project: Multimodal Pre-training for Dialogue Generation with Emotional Factors Considered
 
-Because of the anonymity requirement, more details will be provided once time suitable.
+> (Not the final title)
+
+In this work, we consider the natural situation that happens during a two-person doing conversation. Factors like facial expression, posture, and more will be considered except for the content expressed through spoken language. And usually, such non-verbal factors will convey much richer and more abstract information like emotions. Based on this nature, we proposed methods pre-training the language model to capture emotions from modals and incorporate the emotion into text generation for dialogue.
+
+> This work has been accepted at DASFAA 2022, reading link will be provided once a pre-print is ready.
