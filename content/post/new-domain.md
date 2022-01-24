@@ -53,9 +53,12 @@ Personally, the old domain name (ecwuuuuu.com) is good but is it a little bit lo
 Currently, I am don't have a concrete plan for how to utilize these two domains. But I will probably migrate all my info page and service to the new domain. The domain email and blog will still keep in the old one. I will keep thinking about this, and sync the progress on this page in the future.
 
 Update log:
+- 2022.01.24: Multiple services are deployed under the domain, most of the services are used privately and host on Tencent Cloud; I recently go through a personal homepage project called [flame](https://github.com/pawelmalak/flame), I tend to replace it with the current landing page built with Netlify.
+- 2022.01.22: [Cloudflare Email Routing](https://blog.cloudflare.com/introducing-email-routing/) Service is enabled, you can use `hi@ecwu.xyz` to sent me email.
 - 2021.09.01: A Landing page is setup for the site, CI with [Netlify](https://www.netlify.com/).
 - 2021.08.11: Accessing the [root](https://ecwu.xyz) and [www](https://www.ecwu.xyz) subdomain of the new domain will 302 redirect to [ecwuuuuu.com](https://ecwuuuuu.com) via a URL forwarding rule using Cloudflare.
 
 More info:
 - This domain is register at Gandi.com
-- I launch a new subdomain [foto.ecwuuuuu.com](https://foto.ecwuuuuu.com) ~~[chaos.ecwuuuuu.com](https://chaos.ecwuuuuu.com)~~ with [Ghost](https://github.com/TryGhost/Ghost) as backend. I tend to use it as a more friendly and more good-looking site for my photo project. But I don't guarantee the service will run without termination in the future.
+- ~~I launch a new subdomain [foto.ecwuuuuu.com](https://foto.ecwuuuuu.com) [chaos.ecwuuuuu.com](https://chaos.ecwuuuuu.com)~~ with [Ghost](https://github.com/TryGhost/Ghost) as backend. I tend to use it as a more friendly and more good-looking site for my photo project. But I don't guarantee the service will run without termination in the future.
+  - 2022.01.24: A problem with Nginx and Ghost (running in Docker) causing redirect loop and showing an `ERR_TOO_MANY_REDIRECTS` error. Taking down the site till further notice.
