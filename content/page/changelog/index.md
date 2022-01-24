@@ -56,6 +56,7 @@ copyright:
 - New Article Info Card
 - New Gallery Implementation with JS.
 - Remove Sidenote
+- Adding shortcode for video (via CDN)
 
 ## Pre 2022
 - Using [hugo-tufte](https://github.com/shawnohare/hugo-tufte) theme with custom modifications
