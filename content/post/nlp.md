@@ -80,10 +80,10 @@ We proposed a novel attention-based module that can be applied to the RNN-based 
 
 > This work has been published at Findings of ACL 2021: [ACL Anthology](https://aclanthology.org/2021.findings-acl.31/); [Code](https://github.com/X-AISIG/LenAtten).
 
-## MSc Independent Project: Multimodal Pre-training for Dialogue Generation with Emotional Factors Considered
+## MSc Independent Project: Cross-modal Dialogue Pre-training
 
-> (Not the final title)
+> Emotion-aware Multimodal Pre-training for Image-grounded Emotional Response Generation
 
 In this work, we consider the natural situation that happens during a two-person doing conversation. Factors like facial expression, posture, and more will be considered except for the content expressed through spoken language. And usually, such non-verbal factors will convey much richer and more abstract information like emotions. Based on this nature, we proposed methods pre-training the language model to capture emotions from modals and incorporate the emotion into text generation for dialogue.
 
-> This work has been accepted at DASFAA 2022, reading link will be provided once a pre-print is ready.
+> This work has been accepted at DASFAA 2022, link will be provided once a pre-print is ready.

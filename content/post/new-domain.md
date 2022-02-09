@@ -9,12 +9,12 @@ unsplashfeatureimage:
 publishDate: "2021-09-01T14:40:01+08:00"
 lastmod: 
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
 hidereadtime: true
-toc: true
+toc: false
 math: false
 gallery: false
 showinfocard: true
@@ -53,6 +53,7 @@ Personally, the old domain name (ecwuuuuu.com) is good but is it a little bit lo
 Currently, I am don't have a concrete plan for how to utilize these two domains. But I will probably migrate all my info page and service to the new domain. The domain email and blog will still keep in the old one. I will keep thinking about this, and sync the progress on this page in the future.
 
 Update log:
+- 2022.02.09: A new homepage build with flame has been deployed.
 - 2022.01.24: Multiple services are deployed under the domain, most of the services are used privately and host on Tencent Cloud; I recently go through a personal homepage project called [flame](https://github.com/pawelmalak/flame), I tend to replace it with the current landing page built with Netlify.
 - 2022.01.22: [Cloudflare Email Routing](https://blog.cloudflare.com/introducing-email-routing/) Service is enabled, you can use `hi@ecwu.xyz` to sent me email.
 - 2021.09.01: A Landing page is setup for the site, CI with [Netlify](https://www.netlify.com/).
