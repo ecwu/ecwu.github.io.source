@@ -14,8 +14,8 @@ status: In Progress
 
 showmeta: true
 hidereadtime: false
-# toc: true
-# math: true
+toc: false
+math: true
 gallery: false
 showinfocard: true
 enablecomment: false
