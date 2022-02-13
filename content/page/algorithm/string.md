@@ -165,7 +165,7 @@ class Solution:
         return ans
 ```
 
-其中， `ans = [ec + ac for ec in ans for ac in mapping[num]] 可以展开：
+其中， `ans = [ec + ac for ec in ans for ac in mapping[num]]` 可以展开：
 ```python
 for num in digits:
     new_ans = list()

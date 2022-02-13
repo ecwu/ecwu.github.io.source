@@ -3,7 +3,7 @@ title: Making Synology NAS accessible from the Internet using IPv6 and DDNS
 subtitle: 'IPv6 Yes! :-)'
 author: Zhenghao Wu
 description: Making Synology NAS accessible from the Internet using IPv6 and DDNS
-featureimage: 
+featureimage: https://unsplash.com/photos/d53ZooI5TtM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bmFzfGVufDB8fHx8MTY0NDczNDU2OA&force=true&w=2400
 unsplashfeatureimage: 
 
 publishDate: "2021-04-04T10:01:01+08:00"
@@ -18,9 +18,9 @@ toc: true
 math: false
 gallery: false
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
-series:
+series: Home Networking
 
 confidence: highly likely
 importance: 8
@@ -38,6 +38,7 @@ tags:
 categories:
 - Tech
 - Website
+- Network
 
 # type: file, link, image, and others
 extramaterials:
@@ -97,6 +98,8 @@ Usually, you just need to set `Local IP` and `Port Range`.
 
 #### A.1. `Local IP`
 Assuming the IPv6 IP for the NAS is `2001:0db8:85a3:0000:0000:8a2e:0370:7334`, you can fill in `::0000:8a2e:0370:7334/::ffff:ffff:ffff:ffff` in the `Local IP` field.
+
+> An errata and supplements on this "mask" like Local IP input stuff is posted on [here]({{< ref "more-on-ipv6-firewall.md" >}}).
 
 #### A.2. `Port Range`
 Just fill in the port of the service you want to allow access to. Here are some of the ports on the Synology NAS.

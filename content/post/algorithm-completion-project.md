@@ -64,7 +64,7 @@ Checkout [Algorithm Series](/series/algorithm), questions are arranged by catego
 | [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water) | 中等 | 数组 | [Py](/page/algorithm/array/#11-盛最多水的容器) |
 | [15. 三数之和](https://leetcode-cn.com/problems/3sum) | 中等 | 数组 | [Py](/page/algorithm/array/#15-三数之和) |
 | [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number) | 中等 | 字符串 / 回溯 | [Py](/page/algorithm/string/#17-电话号码的字母组合) |
-| [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) | 中等 | - | - |
+| [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) | 中等 | 链表 | - |
 | [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses) | 简单 | - | - |
 | [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | 简单 | - | - |
 | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses) | 中等 | - | - |
