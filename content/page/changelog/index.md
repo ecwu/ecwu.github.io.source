@@ -48,6 +48,10 @@ copyright:
 
 # Changelog
 ## 2022
+### February 2022
+- Adding shortcode for PDF (Tailwind Aspect-ratio plugin)
+- Refines and adding labels for Draft post 
+
 ### January 2022
 - Enable the new [ecwu-theme](https://github.com/ecwu/ecwu-theme), Written in [Tailwind CSS 3](https://tailwindcss.com/)
 - Adding Comment Plugin [utterances](https://utteranc.es)

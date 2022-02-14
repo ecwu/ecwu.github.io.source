@@ -24,7 +24,7 @@ series: Home Networking
 previous:
 next:
 
-confidence: highly likely
+confidence: likely
 importance: 8
 
 tags:
