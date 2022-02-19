@@ -15,6 +15,7 @@ toc = false
 draft = true
 +++
 
+
 I post lots of art related stuff on this site. Certainly, after someone visits, it is impossible to link such a blog with the blog of a computer student (LOL).
 
 After many whim updates in the mid-night. The functions of the blog gradually met my needs. Then I think this is a great circumstance to write a post about how I built this blog.
