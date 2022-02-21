@@ -46,9 +46,9 @@ categories:
 
 # type: file, link, image, and others
 extramaterials:
-- type: file
-  name: placeholder
-  url: #
+- type: link
+  name: Check Reference Materials
+  url: "#reference-materials"
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
@@ -107,7 +107,7 @@ A more proprietary and well known color naming system is the [PANTONE Color](htt
 
 In our case, we need the color name and its corresponding RGB value, so I made a Chinese color [name mapping file](https://gist.github.com/ecwu/d7534ef90c936e034c68b68281d9ad88) using [the list from Wikipedia](https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8), I also made an English one which I stored [here](https://gist.github.com/ecwu/d7534ef90c936e034c68b68281d9ad88). 
 
-> In the mapping files I create, there are 248 colors named in Chinese and 977 colors named in English. Personally, I thought some color names used in English were less intuitive. And as a native Chinese speaker, I am more familiar with those Chinese color names, So in the following examples on color naming, I will use the Chinese name mapping file (translation or description will be provided).
+> In the mapping files I create, there are 248 colors named in Chinese and 977 colors named in English. Personally, I thought some color names used in English were less intuitive. And as a native Chinese speaker, I am more familiar with those Chinese color names, So in the following examples on color naming, I will use the Chinese name mapping file (I will provide translation or description).
 
 ## Distance Between Colors
 Consider the RGB color space. If we set each color intensity as the axis of the rectangular coordinates, we can form a $255^3$ size cube. Points inside the cube representing different colors (consider only the integer value).
@@ -164,7 +164,7 @@ Use `#FFFFFF` (white) color for a try, the program return the top three matches:
 
 ### Problem
 
-I tried another color, `#6A4764`. Seeing it with my eye, the color belongs to dark magenta. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *dark rock blue*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($25.15, 34.38, 52.69$).
+I tried another color, `#6A4764`. Seeing it with my eye, the color belongs to dark magenta and dark purple. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *dark rock blue*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($25.15, 34.38, 52.69$).
 
 ![Program Generated Top three matches](rgb-color-match-problem.png)
 > Please hover the picture to see the original color in dark mode.
@@ -230,18 +230,78 @@ $$V= M$$
 
 ## Color Distance under HSV color space
 
+Apparently, the shape of the HSV color space is a cylinder, and it is not a good idea to use $L_2$ distance here. I found this [solution from SO](https://stackoverflow.com/a/1678497/6804791) for comparing the colors under HSV space.
 
+First, create a weighted function to convert vector-like HSV to a value.
+
+$$f(H,S,V) = \sqrt{a\times H^2+b\times S^2+c\times V^2}$$
+
+Then compare the color by the closeness of the values. The weights $a, b, c$ should be on par with human perception when deciding color differences. Suggested weights are $a=b=1.0$ and $c=0.5$.
 
 ## Perceptually-uniform Color Space
 
-The problem with RGB and HSV is it does not model the way in which humans perceive colour. Specifically, color perception is non-linear and not exactly orthogonal.
+The distance function for RGB and HSV color space can partially solve our problems. But still leaves the foundation problem unsolved. The problem with RGB and HSV is that it does not model how humans perceive color. Specifically, color perception is non-linear and not exactly orthogonal.
+
+The scientist then tries to model the way humans see colors and create some relatively perceptually-uniform color space. Like CIELAB and CIELUV. 
 
 {{< video video-url="https://upload.wikimedia.org/wikipedia/commons/a/a4/SRGB_gamut_within_CIELAB_color_space_mesh.webm" is-loop="True">}}
 
-{{< include-html "3d-color-space.html" >}}
+The CIELAB color space is the one we want to introduce. It represents color using three values: **L**ightness, and **a** for Green and Red color channel and **b** for Blue and Yellow color channel. These two color channels are in such a way because it is set according to the opponent's color model of human vision.
 
-Lab and HCL color spaces are special in that the perceived difference between two colors is proportional to their Euclidean distance in color space. This special property, called perceptual uniformity, makes them ideal for accurate visual encoding of data. In contrast, the more familiar RGB and HSV color spaces distort data when used for visualization.
+> How CIE modeled CIELAB color space is quite complicated; I suggest checking out [Wikipedia](https://en.wikipedia.org/wiki/CIELAB_color_space) or [related papers](https://www.researchgate.net/publication/229712679_The_Development_of_the_CIE_1976_Lab_Uniform_Colour-Space_and_Colour-Difference_Formula).
+
+For more intuitive visualization for the color spaces, please try the following 3D color space visualization. You can switch between color spaces and manipulate the model.
+
+{{< include-html "3d-color-space.html" >}}
 
 ### Color Distance in CIELAB Color Space
 
-## Other Uncovered Stuffs
+The relations between the L, a, and b are non-linear to mimic the human's non-linear response to color. But the model itself is uniform to measure it with a simple $L_2$ distance. But before doing the calculation, you need to convert the RGB color to CIELAB color space.
+
+The way to do it is first to convert it to CIEXYZ color space when do some calculation and convert it to CIELAB.
+
+After you get the L, a, and b values, the work should be easy.
+
+$$\Delta E(\[L_1, a_1, b_1\], \[L_2, a_2, a_2\]) = \sqrt{(L_1-L_2)^2+(a_1-a_2)^2+(b_1-b_2)^2}$$
+
+> sqrt is unnecessary if you only need to find the closest color.
+
+Such distance is usually called $\Delta E$ in color science. Stand for the color difference. When you buy some electronics with a screen, the claim for the screen with $\Delta E$ is less than a certain number. It is what it means. (It is an average of multiple colors measurements differences). A $\Delta E \leq 1$ is hard for humans to distinguish; a good monitor should have a $\Delta E \leq 3$.
+
+## Epilogue
+
+This article is the first academic work I finished without outer pushes (like school or work). I was not quite familiar with the topic initially (I still do not fully understand the full picture after all my research, like how the CIELAB converted and modeled). But I was having a lot of fun when writing the text and creating the visualization and interactive modules.
+
+Revisiting the color naming problem. I could give a good enough solution from what I have learned, but there exists more that I have not covered so that we can improve. Like:
+
+- How humans see color does not solely depend on the object that reflects or emits lights. The environment that the people are in is also important. So [Illuminations condition](https://en.wikipedia.org/wiki/Standard_illuminant) should also be considered
+- Color naming is not complete; naming schemes with more names can improve the accuracy in color matching.
+- The CIELAB color space is approximately uniform; a more accurate and complex model should include (the CAM16-UCS model).
+- The understanding of color is also changing for people with different backgrounds and languages. In some languages, there only exist three different colors. You can learn more via [this Vox video](https://www.youtube.com/watch?v=gMqZR3pqMjg).
+- There definitely exist some colors that are hard to give a certain name. In such a case, tolerance should introduce. Manually decided color range or uses [MacAdam ellipse](https://en.wikipedia.org/wiki/MacAdam_ellipse). Only the color inside the area will get a definite name for a more accurate color naming.
+
+I am not professional in this area, hope I have not messed up too much knowledge. And hope you learn something just like I do. Welcome to leave a comment.
+
+## Reference Materials
+
+Color Distance Tools
+- https://github.com/insomnious0x01/ntc-js
+- https://lynan.cn/static/random_color.html
+
+Solutions
+- https://stackoverflow.com/questions/1678457/best-algorithm-for-matching-colours/1678498#1678498
+- https://www.image-engineering.de/library/technotes/958-how-to-convert-between-srgb-and-ciexyz
+
+Color Distances
+- https://en.wikipedia.org/wiki/Color_difference
+- https://stackoverflow.com/questions/4754506/color-similarity-distance-in-rgba-color-space
+- https://www.compuphase.com/cmetric.htm
+- https://cubicspot.blogspot.com/2019/05/designing-better-terminal-text-color.html
+
+Color Naming List
+- https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8
+- https://en.wikipedia.org/wiki/Lists_of_colors
+
+Explainations
+- https://www.quora.com/What-are-the-differences-between-RGB-HSV-and-CIE-Lab
+- https://www.youtube.com/watch?v=rY413t5fArw
