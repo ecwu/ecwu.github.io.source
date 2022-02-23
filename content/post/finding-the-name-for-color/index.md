@@ -19,7 +19,7 @@ toc: true
 math: true
 gallery: true
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
 series: Project
 previous:
