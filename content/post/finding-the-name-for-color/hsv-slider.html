@@ -1,0 +1,86 @@
+<hr>
+<p class="text-2xl">Interactive: HSV Color Mixing</p>
+<div class="w-full flex-none lg:flex space-x-5 items-center">
+  <div class="flex-1">
+    <label for="hue-slider" class="form-label">Hue<span id="hsv-hue"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="hue-slider"
+      min="0"
+      max="359"
+      step="1"
+      value="250"/>
+    <label for="saturation-slider" class="form-label">Saturation<span id="hsv-saturation"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="saturation-slider"
+      min="0"
+      max="1"
+      step="0.01"
+      value="1"/>
+    <label for="value-slider" class="form-label">Value<span id="hsv-value"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="value-slider"
+      min="0"
+      max="1"
+      step="0.01"
+      value="1"/>
+  </div>
+  <div class="flex-1 flex justify-center">
+    <canvas id="hsv-result" class="rounded-lg" height="200px" width="200px"></canvas>
+  </div>
+</div>
+
+<script>
+  // Read the color HSV values from the sliders
+  const hueSlider = document.getElementById('hue-slider');
+  const saturationSlider = document.getElementById('saturation-slider');
+  const valueSlider = document.getElementById('value-slider');
+  const hueIntensity = document.getElementById('hsv-hue');  
+  const saturationIntensity = document.getElementById('hsv-saturation');
+  const valueIntensity = document.getElementById('hsv-value');
+  const hslcanvas = document.getElementById('hsv-result');
+  const hslctx = hslcanvas.getContext('2d');
+
+  // monitor slider changes
+  hueSlider.addEventListener('input', () => {
+    hueIntensity.innerText = ': ' + hueSlider.value + '°';
+    updateHSVColor();
+  });
+  saturationSlider.addEventListener('input', () => {
+    saturationIntensity.innerText = ': ' + Number(saturationSlider.value).toFixed(4) * 100 + '%';
+    updateHSVColor();
+  });
+  valueSlider.addEventListener('input', () => {
+    valueIntensity.innerText = ': ' + Number(valueSlider.value).toFixed(4) * 100 + '%';
+    updateHSVColor();
+  });
+
+  // convert hsv to hsl
+  function hsvToHsl(h, s, v) {
+    var l = (2 - s) * v / 2;
+    if (l != 0) {
+      if (l == 1) s = 0;
+      else if (l < 0.5) s = s * v / (l * 2);
+      else s = s * v / (2 - l * 2);
+    }
+    return [h, s * 100, l * 100];
+  }
+
+  // red the hsv value and convert to hsl, then update the canvas
+  function updateHSVColor() {
+    const hue = hueSlider.value;
+    const saturation = saturationSlider.value;
+    const value = valueSlider.value;
+    const hsl = hsvToHsl(hue, saturation, value);
+    const h = hsl[0];
+    const s = hsl[1];
+    const l = hsl[2];
+    hslctx.fillStyle = `hsl(${h}, ${s}%, ${l}%)`;
+    hslctx.fillRect(0, 0, hslcanvas.width, hslcanvas.height);
+  }
+
+  updateHSVColor()
+</script>
+<hr>

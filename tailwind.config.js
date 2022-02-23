@@ -1,5 +1,7 @@
 module.exports = {
-  content: ["themes/ecwu-theme/layouts/**/*.html", "themes/ecwu-theme/layouts/**/**/*.html"],
+  content: ["themes/ecwu-theme/layouts/**/*.html",
+            "themes/ecwu-theme/layouts/**/**/*.html",
+            "content/post/**/*.html"],
   darkMode: 'class',
   variants: {},
   plugins: [

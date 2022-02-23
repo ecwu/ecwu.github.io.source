@@ -1,0 +1,79 @@
+<hr>
+<p class="text-2xl">Interactive: Color Mixing</p>
+<div class="w-full flex-none lg:flex space-x-5 items-center">
+  <div class="flex-1">
+    <label for="red-slider" class="form-label">Red Intensity<span id="red-intensity"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="red-slider"
+      min="0"
+      max="255"
+      step="1"
+      value="0"/>
+    <label for="green-slider" class="form-label">Green Intensity<span id="green-intensity"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="green-slider"
+      min="0"
+      max="255"
+      step="1"
+      value="0"/>
+    <label for="blue-slider" class="form-label">Blue Intensity<span id="blue-intensity"></span></label>
+    <input type="range"
+      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
+      id="blue-slider"
+      min="0"
+      max="255"
+      step="1"
+      value="0"/>
+  </div>
+  <div class="flex-1 flex justify-center">
+    <canvas id="mixing-result" class="rounded-lg" height="200px" width="200px"></canvas>
+  </div>
+</div>
+
+<script>
+  const redSlider = document.getElementById('red-slider');
+  const greenSlider = document.getElementById('green-slider');
+  const blueSlider = document.getElementById('blue-slider');
+  const redIntensity = document.getElementById('red-intensity');
+  const greenIntensity = document.getElementById('green-intensity');
+  const blueIntensity = document.getElementById('blue-intensity');
+  const canvas = document.getElementById('mixing-result');
+  const ctx = canvas.getContext('2d');
+
+  redSlider.addEventListener('input', () => {
+    redIntensity.innerHTML = ": " + redSlider.value;
+    updateCanvas();
+  });
+
+  greenSlider.addEventListener('input', () => {
+    greenIntensity.innerHTML = ": " + greenSlider.value;
+    updateCanvas();
+  });
+
+  blueSlider.addEventListener('input', () => {
+    blueIntensity.innerHTML = ": " + blueSlider.value;
+    updateCanvas();
+  });
+
+  function updateCanvas() {
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+    const red = redSlider.value;
+    const green = greenSlider.value;
+    const blue = blueSlider.value;
+
+    ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // write hex color text with reverse color to canvas center
+    ctx.fillStyle = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
+    ctx.font = 'bold 24px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(`#${(red << 16 | green << 8 | blue).toString(16).toUpperCase().padStart(6, '0')}`, canvas.width / 2, canvas.height / 2);
+  }
+
+  updateCanvas();
+</script>
+<hr>
