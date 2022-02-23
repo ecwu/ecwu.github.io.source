@@ -6,13 +6,14 @@ description:
 featureimage: https://unsplash.com/photos/PtabTe6iJ_8/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8cGFudG9uZXxlbnwwfHx8fDE2NDQ4NDIwMDU&force=true&w=2400
 unsplashfeatureimage: Mika Baumeister
 
-publishDate: "2022-02-14T23:28:08+08:00"
+publishDate: "2022-02-23T20:44:55+08:00"
 lastmod: 
-draft: true
-status: In Progress
+draft: false
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
+hidedate: false
 hidereadtime: true
 toc: true
 math: true
@@ -47,7 +48,7 @@ categories:
 # type: file, link, image, and others
 extramaterials:
 - type: link
-  name: Check Reference Materials
+  name: Reference Materials
   url: "#reference-materials"
 
 copyright: 
@@ -87,16 +88,15 @@ In HTML, pure white color under such a model is `RGB(255,255,255)`. comma-separa
 
 ## Color Naming
 
-Consider three primary colors, each with 256 different intensities. We have $255^3 = 16777216$ possible colors. But our commonsense tells us that we don't have such an enormous number of names for colors. Noteworthy that several dominant color naming schemes provide various names.
+Consider three primary colors, each with 256 different intensities. We have $256^3 = 16777216$ possible colors. But our commonsense tells us that we don't have such an enormous number of names for colors. But we can take several dominant color naming schemes that provide various names.
 
-Two easy to get examples are the [X11 color names](https://en.wikipedia.org/wiki/X11_color_names) and [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/) ([Basic](https://www.w3.org/TR/css-color-3/#html4), [Extended](https://www.w3.org/TR/css-color-3/#svg-color)). Especially the CSS Color Module Level 3, which you can directly reference then when writing web pages.
+Two easy-to-access examples are the [X11 color names](https://en.wikipedia.org/wiki/X11_color_names) and [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/) ([Basic](https://www.w3.org/TR/css-color-3/#html4), [Extended](https://www.w3.org/TR/css-color-3/#svg-color)). Especially the CSS Color Module Level 3, which you can directly use when writing web pages.
 
-A more proprietary and well known color naming system is the [PANTONE Color](https://www.pantone.com/). They put effort on standardize the color, and their color matching system are used all around the world. They started to publish their choice of "Color of the year" from 2000. The 2022 color of the year is PANTONE 17-3938 Very Peri.
+The [PANTONE Color](https://www.pantone.com/) is a more proprietary and well-known color naming system. They put effort on standardize the color, and their color matching system are used all around the world. The general public gets to sound them by the annual “Color of the year” published since 2000. In 2022, the color of the year is **PANTONE 17-3938** Very Peri.
 
 {{< figure
   src="https://www.pantone.com/media/wysiwyg/color-of-the-year/2022/pantone-color-of-the-year-2022-very-peri-banner.jpg"
   class="class param"
-  
   title="Pantone Color of the Year 2022: "
   label="pantone-coty"
   attr="PANTONE 17-3938 Very Peri"
@@ -110,7 +110,7 @@ In our case, we need the color name and its corresponding RGB value, so I made a
 > In the mapping files I create, there are 248 colors named in Chinese and 977 colors named in English. Personally, I thought some color names used in English were less intuitive. And as a native Chinese speaker, I am more familiar with those Chinese color names, So in the following examples on color naming, I will use the Chinese name mapping file (I will provide translation or description).
 
 ## Distance Between Colors
-Consider the RGB color space. If we set each color intensity as the axis of the rectangular coordinates, we can form a $255^3$ size cube. Points inside the cube representing different colors (consider only the integer value).
+Consider the RGB color space. If we set each color intensity as the axis of the rectangular coordinates, we can form a $255^3$ size cube. Points inside the cube represent different colors (consider only the integer value).
 
 {{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RGB_color_solid_cube.png/1024px-RGB_color_solid_cube.png"
@@ -125,13 +125,13 @@ Consider the RGB color space. If we set each color intensity as the axis of the 
  >}}
 {{< section "end" >}}
 
-When we find a name for a color, if there is no exact match in the naming mapping, we can find a similar match by calculating the "distance" and finding the color and its name with the smallest distance difference.
+When we find a name for a color, if there is no exact match in the naming mapping, we can find a similar match by calculating the “distance” and finding the color and its name with the slightest distance difference.
 
-The distance here is the $L_2$ distance ([Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)) for $C_1: \[R_1, G_1, B_1\]$ and $C_2: \[R_2, G_2, B_2\]$:
+The distance here is the $L_2$ distance ([Euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance)). For $C_1: \[R_1, G_1, B_1\]$ and $C_2: \[R_2, G_2, B_2\]$:
 
 $$d(\[R_1, G_1, B_1\], \[R_2, G_2, B_2\]) = \sqrt{(R_1-R_2)^2+(G_1-G_2)^2+(B_1-B_2)^2}$$
 
-So, if there is no exact match, the algorithm will traverse and calculate the distance between the query color $C_1$ all colors $C_k$ in the list and uses the color with $min(d(\[R_1, G_1, B_1\], \[R_k, G_k, B_k\]))$ as the close match.
+The algorithm will traverse and calculate the distance between the query color $C_1$ all colors $C_k$ in the list and uses the color with minimum distance $min(d(\[R_1, G_1, B_1\], \[R_k, G_k, B_k\]))$ as the closest match.
 
 I create these codes to do the procedure above.
 
@@ -160,47 +160,47 @@ if __name__ == "__main__":
     print(closest_n_color(match_list, source))
 ```
 
-Use `#FFFFFF` (white) color for a try, the program return the top three matches: `[['白色 (White)', 0.0], ['雪色 (Snow White)', 7.0710678118654755], ['幽灵白 (Ghost White)', 9.899494936611665]]`. We can see that except for the exact match, the other two matches pretty much refer to the same color: White. Our little program has been working perfectly!
+Use `#FFFFFF` (white) color for a try, the program return the top three matches: `[['白色 (White)', 0.0], ['雪色 (Snow White)', 7.0710678118654755], ['幽灵白 (Ghost White)', 9.899494936611665]]`. We can see that except for the exact match, the other two matches pretty much refer to the same color: White. So, it seem that our little program has been working perfectly!
 
 ### Problem
 
-I tried another color, `#6A4764`. Seeing it with my eye, the color belongs to dark magenta and dark purple. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *dark rock blue*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($25.15, 34.38, 52.69$).
+But when I tried another color, like `#6A4764`. Seeing it with my eye, the color belongs to dark magenta and dark purple. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *dark rock blue*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($\[25.15, 34.38, 52.69\]$).
 
 ![Program Generated Top three matches](rgb-color-match-problem.png)
 > Please hover the picture to see the original color in dark mode.
 
-Why?
+Why this happens?
 
 ## Understand Color (2)
 
-I visualize the named colors in 3d space. Clearly, those colors aren't uniformly distributed. Some are clustered together, and some space is rather sparse with almost no named color. This means some of the colors may not easy to describe.
+I try to visualize the named colors in 3d space. Those colors aren't uniformly distributed. Some are clustered together, and some are relatively sparse with almost no named color. This means some of the colors may not be easy to describe.
 
 ![Named Colors in 3D space](color-name-cn-visual.png)
 > Please hover the picture to see the original color in dark mode.
 
-The other problem is, such RGB color model is hard to understand by human, especially when people have to manipulate the color. How to make it to some color or "more that color" (hue, satuation; not just red, greed, or blue). How to make it brighter or darker.
+The other problem is that such a color model is hard to understand. When manipulating a color, how to make it to some color or “more that color" (hue, saturation; not just red, green, or blue); How to make it brighter or darker.
 
-Instead using RGB color model, HSV color model is prefered. It is converted from the RGB color space.
+The HSV color model is preferred instead of the RGB color model, in which the HSV color space is converted from the RGB color space.
 
 {{< video video-url="https://upload.wikimedia.org/wikipedia/commons/5/59/RGB_2_HSV_conversion_with_grid.ogg" is-loop="True">}}
 
 > Visualisation for conversion between color models RGB and HSV. video from [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File%3ARGB_2_HSV_conversion_with_grid.ogg), by VerbaGleb.
 
-As shown in the video, the original color cube of the RGB color model is converted into a cylinder object. At the cylinder's cap, we can easily see distinguishable named colors. And color at the top is the brightest, and it gets darker at the bottom. Slice out a layer of color horizontally, the color inside is more faded and the outer color is more vivid.
+As shown in the video, the original color cube of the RGB color model is converted into a cylinder object. At the cylinder’s cap, we can easily see distinguishable colors. And color at the top is the brightest, and it gets darker at the bottom. Slice out a layer of cylinder horizontally, the color inside is more faded, and the exterior color is more vivid.
 
 My verbal description of the HSV color cylinder is actually its three variables: **H**ue, **S**aturation and **V**alue (Or Brightness). Here are their definitions:
 
-- Hue: The "attribute of a visual sensation according to which an area appears to be similar to one of the perceived colors: red, yellow, green, and blue, or to a combination of two of them".
-- Saturation: The "colorfulness of a stimulus relative to its own brightness".
-- Value: The "attribute of a visual sensation according to which an area appears to emit more or less light".
+- Hue: The “attribute of a visual sensation according to which an area appears to be similar to one of the perceived colors: red, yellow, green, and blue, or to a combination of two of them”.
+- Saturation: The “colorfulness of a stimulus relative to its own brightness.”
+- Value: The “attribute of a visual sensation according to which an area appears to emit more or less light.”
 
-With the HSV color model, the color could be easily distingish with the Hue value, which you can try with the following interactive tool.
+The hue in the HSV color model could help distinguish color, which you can try with the following interactive tool.
 
 {{< include-html "hsv-slider.html" >}}
 
-### RGB to HSV converstion
+### RGB to HSV Converstion
 
-First, scale the range for $R, G, B$ to 0 and 1 by divide 255 to each color channel and get $R', G', B'$.
+First, scale the range for $R, G, B$ to 0 and 1 by dividing 255 to each color channel and getting $R', G', and B'$.
 
 $$M=\max(R',G',B')$$
 
@@ -208,7 +208,9 @@ $$m=\min(R',G',B')$$
 
 $$C= M - m$$
 
-$C$ is also call [Chroma](https://en.wikipedia.org/wiki/Colorfulness#Chroma).
+> $C$ is also call [Chroma](https://en.wikipedia.org/wiki/Colorfulness#Chroma).
+
+Then, we can calculate H, S, L with the equations.
 
 #### Hue
 
@@ -240,13 +242,13 @@ Then compare the color by the closeness of the values. The weights $a, b, c$ sho
 
 ## Perceptually-uniform Color Space
 
-The distance function for RGB and HSV color space can partially solve our problems. But still leaves the foundation problem unsolved. The problem with RGB and HSV is that it does not model how humans perceive color. Specifically, color perception is non-linear and not exactly orthogonal.
+The distance function for RGB and HSV color space can partially solve our problems. But it still leaves the fundamental problem unsolved. The problem with RGB and HSV is that it does not model how humans perceive color. Specifically, color perception is non-linear and not exactly orthogonal.
 
 The scientist then tries to model the way humans see colors and create some relatively perceptually-uniform color space. Like CIELAB and CIELUV. 
 
 {{< video video-url="https://upload.wikimedia.org/wikipedia/commons/a/a4/SRGB_gamut_within_CIELAB_color_space_mesh.webm" is-loop="True">}}
 
-The CIELAB color space is the one we want to introduce. It represents color using three values: **L**ightness, and **a** for Green and Red color channel and **b** for Blue and Yellow color channel. These two color channels are in such a way because it is set according to the opponent's color model of human vision.
+The CIELAB color space is the one I want to introduce. It represents color using three values: **L**ightness, and **a** for Green and Red color channel and **b** for Blue and Yellow color channel. These two color channels are in such a way because it is set according to the opponent's color model of human vision.
 
 > How CIE modeled CIELAB color space is quite complicated; I suggest checking out [Wikipedia](https://en.wikipedia.org/wiki/CIELAB_color_space) or [related papers](https://www.researchgate.net/publication/229712679_The_Development_of_the_CIE_1976_Lab_Uniform_Colour-Space_and_Colour-Difference_Formula).
 
@@ -258,9 +260,9 @@ For more intuitive visualization for the color spaces, please try the following 
 
 The relations between the L, a, and b are non-linear to mimic the human's non-linear response to color. But the model itself is uniform to measure it with a simple $L_2$ distance. But before doing the calculation, you need to convert the RGB color to CIELAB color space.
 
-The way to do it is first to convert it to CIEXYZ color space when do some calculation and convert it to CIELAB.
+The way to do it is an `RGB -> CIEXYZ -> CIELAB` conversion.
 
-After you get the L, a, and b values, the work should be easy.
+After you have the CIELAB values, calculates the “perceptual color distance” should be easy.
 
 $$\Delta E(\[L_1, a_1, b_1\], \[L_2, a_2, a_2\]) = \sqrt{(L_1-L_2)^2+(a_1-a_2)^2+(b_1-b_2)^2}$$
 
@@ -270,9 +272,9 @@ Such distance is usually called $\Delta E$ in color science. Stand for the color
 
 ## Epilogue
 
-This article is the first academic work I finished without outer pushes (like school or work). I was not quite familiar with the topic initially (I still do not fully understand the full picture after all my research, like how the CIELAB converted and modeled). But I was having a lot of fun when writing the text and creating the visualization and interactive modules.
+This article is the first academic work I finished without outer pushes (like school or work). Initially, I was not entirely familiar with the topic (I still do not fully understand the complete picture after my research, like how the CIELAB converted and modeled). But I was having a lot of fun when writing the text and creating the visualization and interactive modules.
 
-Revisiting the color naming problem. I could give a good enough solution from what I have learned, but there exists more that I have not covered so that we can improve. Like:
+Back to the color naming problem. I could give a good enough solution from what I have learned, but there exists more that I have not covered so that we can improve. Like:
 
 - How humans see color does not solely depend on the object that reflects or emits lights. The environment that the people are in is also important. So [Illuminations condition](https://en.wikipedia.org/wiki/Standard_illuminant) should also be considered
 - Color naming is not complete; naming schemes with more names can improve the accuracy in color matching.
@@ -302,6 +304,6 @@ Color Naming List
 - https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8
 - https://en.wikipedia.org/wiki/Lists_of_colors
 
-Explainations
+Explanations
 - https://www.quora.com/What-are-the-differences-between-RGB-HSV-and-CIE-Lab
 - https://www.youtube.com/watch?v=rY413t5fArw

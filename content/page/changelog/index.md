@@ -53,6 +53,7 @@ copyright:
 - Refines and adding labels for Draft post 
 - Adding shortcode for embeds html file
 - Adding video looping args for video shortcode
+- Fix a bug in article time and read time metadata display
 
 ### January 2022
 - Enable the new [ecwu-theme](https://github.com/ecwu/ecwu-theme), Written in [Tailwind CSS 3](https://tailwindcss.com/)
