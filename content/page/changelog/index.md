@@ -35,7 +35,7 @@ copyright:
 ---
 
 
-# About this site
+## About this site
 - Write with static site generator [Hugo](https://gohugo.io/)
     - Uses [ecwu-theme](https://github.com/ecwu/ecwu-theme) from Jan 2022, Theme introduction: `TBA`
 - Build with [GitHub Actions](https://github.com/features/actions)
@@ -46,16 +46,16 @@ copyright:
 - Comment Plugin: [utterances](https://utteranc.es)
 - Site Analytics: [Google Analytics v4](https://support.google.com/analytics/answer/10089681?hl=en)
 
-# Changelog
-## 2022
-### February 2022
+## Changelog
+### 2022
+#### February 2022
 - Adding shortcode for PDF (Tailwind Aspect-ratio plugin)
 - Refines and adding labels for Draft post 
 - Adding shortcode for embeds html file
 - Adding video looping args for video shortcode
 - Fix a bug in article time and read time metadata display
 
-### January 2022
+#### January 2022
 - Enable the new [ecwu-theme](https://github.com/ecwu/ecwu-theme), Written in [Tailwind CSS 3](https://tailwindcss.com/)
 - Adding Comment Plugin [utterances](https://utteranc.es)
 - Adding Site Analytics [Google Analytics v4](https://support.google.com/analytics/answer/10089681?hl=en)
@@ -65,5 +65,5 @@ copyright:
 - Remove Sidenote
 - Adding shortcode for video (via CDN)
 
-## Pre 2022
+### Pre 2022
 - Using [hugo-tufte](https://github.com/shawnohare/hugo-tufte) theme with custom modifications
