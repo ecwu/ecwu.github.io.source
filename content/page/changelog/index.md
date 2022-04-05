@@ -48,6 +48,10 @@ copyright:
 
 ## Changelog
 ### 2022
+#### April 2022
+- Replace comment plugins: [utterances](https://utteranc.es) -> [giscus](https://github.com/giscus/giscus)
+- Migrate legacy comments from GitHub Issues to GitHub Discussion
+
 #### February 2022
 - Adding shortcode for PDF (Tailwind Aspect-ratio plugin)
 - Refines and adding labels for Draft post 
