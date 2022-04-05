@@ -64,9 +64,9 @@ Checkout [Algorithm Series](/series/algorithm), questions are arranged by catego
 | [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water) | 中等 | 数组 | [Py](/page/algorithm/array/#11-盛最多水的容器) |
 | [15. 三数之和](https://leetcode-cn.com/problems/3sum) | 中等 | 数组 | [Py](/page/algorithm/array/#15-三数之和) |
 | [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number) | 中等 | 字符串 / 回溯 | [Py](/page/algorithm/string/#17-电话号码的字母组合) |
-| [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) | 中等 | 链表 | - |
-| [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses) | 简单 | - | - |
-| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | 简单 | - | - |
+| [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list) | 中等 | 链表 | [Py](/page/algorithm/linked-list/#19-删除链表的倒数第-n-个结点) |
+| [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses) | 简单 | 字符串 / 栈 | [Py](/page/algorithm/string/#20-有效的括号) |
+| [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists) | 简单 | 链表 | [Py](/page/algorithm/linked-list/#21-合并两个有序链表) |
 | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses) | 中等 | - | - |
 | [23. 合并 K 个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists) | 困难 | - | - |
 | [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation) | 中等 | - | - |
@@ -78,7 +78,7 @@ Checkout [Algorithm Series](/series/algorithm), questions are arranged by catego
 | [46. 全排列](https://leetcode-cn.com/problems/permutations) | 中等 | - | - |
 | [48. 旋转图像](https://leetcode-cn.com/problems/rotate-image) | 中等 | - | - |
 | [49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams) | 中等 | - | - |
-| [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray) | 简单 | - | - |
+| [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray) | 简单 | 数组 / 动态规划 | [Py](/page/algorithm/array/#53-最大子数组和) |
 | [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game) | 中等 | - | - |
 | [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals) | 中等 | - | - |
 | [62. 不同路径](https://leetcode-cn.com/problems/unique-paths) | 中等 | - | - |

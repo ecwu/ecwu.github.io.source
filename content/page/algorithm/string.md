@@ -175,3 +175,32 @@ for num in digits:
     ans = new_ans
 ```
 时间复杂度为 $\mathcal{O}(3^m\times 4^n)$，其中 $m$为映射中有三个字母的数字个数，$m$为映射中有四个字母的数字个数。
+
+
+## 20. 有效的括号
+
+https://leetcode-cn.com/problems/valid-parentheses
+
+比较经典的利用栈的题目，遇到左括弧则推入栈中，遇到又括弧则抛出栈内元素进行比对。因为栈这一数据结构是先进先出（[FIFO](https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)))，则满足情况的阔号串满足：遍历完字符串后所有的堆栈为空。阔号的对则使用字典进行储存，方便进行压栈和抛出时比对。
+
+其中不满足的情况：
+1. 抛出的阔号对不匹配：直接返回 `False`
+2. 左括号数量大于右括号数量：栈长度不为0，返回 `False`
+3. 右括号数量大于左括弧数量：栈已经不存在更多元素，继续抛出栈顶元素会出错。
+
+针对第三个问题，使用到一个 trick 是，在初始化栈时，塞入一个不为阔号的元素：例如 `$`，则第三种情况发生时，一定无法匹配，触发第一个条件结束判断并返回结果。但是符合情况的字符串也发生了改变，如果栈的长度为1（只剩下`$`），则括号串满足条件。
+
+```python
+class Solution:
+    def isValid(self, s: str) -> bool:
+        dic = {'{': '}',  '[': ']', '(': ')', '?': '?'}
+        stack = ['?']
+        for c in s:
+            if c in dic:
+                stack.append(c)
+            elif dic[stack.pop()] != c:
+                return False 
+        return len(stack) == 1
+```
+
+遍历一次，时间复杂度为 $O(n)$。
