@@ -92,3 +92,26 @@ GitLab 的官方文档属于很详细的类型，官方给出的安装方法有�
 6. 安装完成后，获取自动生成的 root 用户密码，登录
 
 ## 进一步配置
+
+> 这部分是这篇文章的重点内容，我在配置自己的 GitLab 时，重复安装了很多次，主要是无法通过自定义域名（不带端口号）访问域名。解决后复盘时会发现，一方面是自己比较心急，没有认真读文档；另外是网络上许多教程没有写的很清楚。
+
+### 使用自定义域名访问
+
+GitLab 的软件包中集成了 Nginx，安装后就可以通过 IP + 端口号的方式访问搭建好的 GitLab 实例（在云服务器上还有配置防火墙允许相应的端口）。但在自己试错的过程中，我尝试了：改配置中的URL、使用 Docker 安装再用 Docker 外的 Nginx 做反向代理，都没有成功。
+
+最后使用的方案是关闭 GitLab 自带的 Nginx，然后利用宝塔的 Nginx 来处理请求。
+
+1. 第一步是将 GitLab 的 Nginx 关闭：
+
+```ruby
+# from
+nginx['enable'] = true
+# to
+nginx['enable'] = false
+```
+
+2. 设置 Nginx 用户
+```ruby
+# www-data is the user.
+web_server['external_users'] = ['www-data']
+```
