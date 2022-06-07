@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/niUkImZcSP8/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: Alexander Shatov
 
 publishDate: "2022-01-11T21:58:05+08:00"
-lastmod: 
+lastmod: "2022-06-07T15:26:59+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -41,6 +41,22 @@ copyright:
 ---
 
 <!--more-->
+
+> 22.06.07 Updates
+
+## [Techno Tim](https://www.youtube.com/c/TechnoTimLive/featured)
+
+A software engineer shares knowledge and live demos about server stuff (especially self-hosting servers and home lab). I have learned a lot about Docker, Kubernetes, and reverse proxy after seeing his video.
+
+## [Posy](https://www.youtube.com/c/PosyMusic)
+
+The YouTube algorithm pushed this author to my timeline with a video about [Segmented Displays](https://www.youtube.com/watch?v=RTB5XhjbgZA&t=2s). His content is well organized with enough content and sound visualizations—an excellent source for learning new stuff (or old stuff in a new way).
+
+## [Just A Printer](https://www.youtube.com/channel/UCSuSPbvmwLZv9CMdeSsWkFA)
+
+A man working for a publishing company, all content about how to make publish products and maintenance printer. [This is a video tour](https://www.youtube.com/watch?v=HTbQpPOC4U0) about his print shop.
+
+> Initial Recommendations
 
 ## [Wintergatan](https://www.youtube.com/channel/UCcXhhVwCT6_WqjkEniejRJQ)
 
