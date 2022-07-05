@@ -43,8 +43,10 @@ copyright:
     - https://ecwu-github-io-source.pages.dev/
 - Host by [GitHub Pages](https://pages.github.com/)
 - [Cloudflare](https://www.cloudflare.com/) & [Qiniu](https://www.qiniu.com/) for distributing files
-- Comment Plugin: [utterances](https://utteranc.es)
+- Comment Plugin: [giscus](https://github.com/giscus/giscus)
 - Site Analytics: [Google Analytics v4](https://support.google.com/analytics/answer/10089681?hl=en)
+- LaTeX Render: [KaTeX](https://katex.org)
+
 
 ## Changelog
 ### 2022
