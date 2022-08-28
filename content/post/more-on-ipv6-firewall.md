@@ -20,7 +20,7 @@ gallery: true
 showinfocard: true
 enablecomment: true
 
-series: Home Networking
+series: HomeLab
 previous:
 next:
 

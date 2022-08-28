@@ -20,7 +20,7 @@ gallery: false
 showinfocard: true
 enablecomment: true
 
-series: Home Networking
+series: HomeLab
 
 confidence: highly likely
 importance: 8

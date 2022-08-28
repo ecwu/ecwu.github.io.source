@@ -50,12 +50,14 @@ copyright:
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
 
-Group Members:
-
-- WU Zhenghao
-- GU Xianggao
-- XING Zhenghao
-- USMANI Muhammad Adam
+> This is the course project for HKUST MSBD5005 Data Visualization
+> 
+> Group Members:
+>
+> - WU Zhenghao
+> - GU Xianggao
+> - XING Zhenghao
+> - USMANI Muhammad Adam
 
 
 ------
