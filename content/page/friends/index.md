@@ -44,6 +44,7 @@ copyright:
 - [KirinBaka](https://9baka.moe/)
 - [黑墨水鱼](https://aquarium39.moe)
 - [小田](https://hixiaotian.com)
+- [Max Gu](https://guxianggao.github.io/)
 
 
 ## Propose New Link
