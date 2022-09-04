@@ -19,18 +19,32 @@ footnoteReturnLinkContents = '↩'
 [params]
   subtitle = "ECWU's Notebook"
   description = "Homepage and Blog of ECWU"
-  copyrightHolder = "ECWU"
-  showPoweredBy = true
-  showBeian = true
-  beianMessage = " 粤 ICP 备 17015575 号 - 1"
-  homePageThought = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog stores my thoughts, collections, and projects. I also share my photography works here. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing random stuff I create or deploy.'
+  # titleLogo = 'img/ecwu.svg'
+  # titleString = "Zhenghao Wu's Blog"
   placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
-  # email = "ecwu@protonmail.com"
-  # github = "ecwu"
-  # google_scholar = "gBi_1mgAAAAJ"
-  # linkedin = "zhenghaowu"
-  # instagram = "ecwuuuuu"
-  # video = "https://space.bilibili.com/509461"
+  # HTML is ok for `homePageSelfIntro`
+  homePageSelfIntro = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog stores my thoughts, collections, and projects. I also share my photography works here. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing random stuff I create or deploy.'
+  homePageSectionArticleCount = 5 # Number of articles for each section shows at the homepage
+  homePageSection = [
+    'post',
+    'photography'
+  ]
+  [params.footer]
+    copyrightHolder = "ECWUUUUU"
+    showPoweredBy = true
+    showBeian = true
+    beianMessage = " 粤 ICP 备 17015575 号 - 1"
+    buildBy = "GitHub Actions"
+    changelogUrl = '/page/changelog'
+  [params.social] # Parameters for social platform
+    rss = true
+    # email = "ecwu@protonmail.com"
+    # github = "ecwu"
+    # google_scholar = "gBi_1mgAAAAJ"
+    # linkedin = "zhenghaowu"
+    # instagram = "ecwuuuuu"
+    # video = "https://space.bilibili.com/509461"
+    # twitter = "https://twitter.com"
 
 [taxonomies]
   tag = "tags"
@@ -82,7 +96,7 @@ footnoteReturnLinkContents = '↩'
 
 
 [related]
-  includeNewer = false
+  includeNewer = true
   threshold = 80
   toLower = false
 [[related.indices]]
@@ -131,7 +145,7 @@ footnoteReturnLinkContents = '↩'
   url = "/page/friends/"
 
 # -----------------------------------------------------------------------
-# Selected Topic 
+# Two Selected Topic Block
 # -----------------------------------------------------------------------
 
 [[menu.topic]]
