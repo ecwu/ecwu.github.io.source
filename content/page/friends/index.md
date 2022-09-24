@@ -36,7 +36,7 @@ copyright:
 > For now, I just post these links here, will complete the description when I have time :)
 
 - [Junde Yhi](https://yhi.moe)
-- [Terence Lau](https://www.deluxelau.com/)
+- [Terence Lau](https://www.cklau.cc/)
 - [Renjie Deng](https://www.drjchn.com/)
 - [Junru Zhong](https://junru.dev/)
 - [Laurence Luo](https://www.lzc.app/)
