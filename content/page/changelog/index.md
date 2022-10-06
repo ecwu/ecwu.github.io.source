@@ -50,6 +50,10 @@ copyright:
 
 ## Changelog
 ### 2022
+
+#### October 2022
+- Warp the main content with `<main>` tags, improving RSS scraping results.
+
 #### April 2022
 - Replace comment plugins: [utterances](https://utteranc.es) -> [giscus](https://github.com/giscus/giscus)
 - Migrate legacy comments from GitHub Issues to GitHub Discussion
