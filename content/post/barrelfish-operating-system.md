@@ -163,4 +163,4 @@ Capability 的引入有一定的原因是为了安全的内存访问。
 Barrelfish 不能成为下一个 Windows。但它能像官网里展望所说的，它能成为未来多核 / 多内核操作系统的研究平台，为多内核操作系统奠基。
 
 ---
-The group project mentioned in this article was completed by Jack (@ECWU), Turing ([@turing-yfqiu](https://github.com/turing-yfqiu)), and Otto ([@zhanggzzy](https://github.com/zhanggzzy))
+The group project mentioned in this article was completed by Jack (@ECWU), Turing ([@yfqiu98](https://github.com/yfqiu98)), and Otto ([@zhanggzzy](https://github.com/zhanggzzy))

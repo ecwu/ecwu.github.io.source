@@ -1,5 +1,5 @@
 ---
-title: Homelab：我的赛博积木 (1)
+title: Homelab：我的赛博积木
 subtitle: 前言和总览
 author: Zhenghao Wu
 description: 
@@ -61,7 +61,7 @@ HomeLab 直译是在家里的实验室，赛博语境下指网络、计算设备
   src="http://cdn.ecwuuuuu.com/blog/image/homelab/homelab-overview.jpg"
   class="class param"
   title="HomeLab 规模概览"
-  caption="使用 Homarr 构建"
+  caption="通过部署 Homarr 项目展示了大部分服务"
   label="rb67-pic"
   attr=""
   attrlink=""
@@ -78,7 +78,7 @@ HomeLab 直译是在家里的实验室，赛博语境下指网络、计算设备
 希望通过记录我搭建赛博积木的过程，分享以前踩过的坑；更是让一些人认识到这个有趣的兴趣，一起折腾起来。对于系列里的内容，我计划有以下这些部分，列出来方便之后添加超链接进行索引。
 
 - 组成与架构
-- 内网服务
+- [内网服务](/post/homelab-journey-2/)
 - 公网服务
 - 通信方案
 - 未来展望
