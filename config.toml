@@ -24,7 +24,7 @@ footnoteReturnLinkContents = '↩'
   placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
   # HTML is ok for `homePageSelfIntro`
   homePageSelfIntro = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog stores my thoughts, collections, and projects. I also share my photography works here. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing random stuff I create or deploy.'
-  homePageSectionArticleCount = 5 # Number of articles for each section shows at the homepage
+  homePageSectionArticleCount = 8 # Number of articles for each section shows at the homepage
   homePageSection = [
     'post',
     'photography'
