@@ -190,3 +190,35 @@ class Solution:
 ```
 
 因为只涉及一次数组遍历，时间复杂度为$O(n)$
+
+## 136. 只出现一次的数字
+
+https://leetcode.cn/problems/single-number/
+
+数组中的数都是成对出现，只有一个落单。如果要找到那个只出现一次的数字，最简单粗暴的方法就是用字典记录每个数字出现的次数。这会许多额外的空间。所以这道题额外要求"算法应该具有线性时间复杂度。不使用额外空间来实现"。
+
+这里使用的方法是位运算：利用 XOR 异或运算 `^`，异或运算具有以下特性：
+- 交换律：`a ^ b ^ c <=> a ^ c ^ b`
+- 任何数于 0 异或为任何数 `0 ^ n => n`
+- 相同的数异或为 0  `n ^ n => 0`
+
+那么将所有的数字异或后，得到的数字就是那个只出现了一次的数字。
+
+个人认为这种方法如果没见过就很难想到，这类问题需要多看方法拓展知识面。
+
+```python
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        a = 0  # extra space
+        for n in nums:
+            a ^= n
+        return a
+```
+
+```python
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        for idx in range(1, len(nums)):
+            nums[0] ^= nums[idx]  # reuse the first element i n the array
+        return nums[0]
+```

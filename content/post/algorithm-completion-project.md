@@ -102,7 +102,7 @@ Checkout [Algorithm Series](/series/algorithm), questions are arranged by catego
 | [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock) | 简单 | - | - |
 | [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum) | 困难 | - | - |
 | [128. 最长连续序列](https://leetcode-cn.com/problems/longest-consecutive-sequence) | 中等 | - | - |
-| [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number) | 简单 | - | - |
+| [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number) | 简单 | 数组 / 位运算 | [Py](/page/algorithm/array/#136-只出现一次的数字) |
 | [139. 单词拆分](https://leetcode-cn.com/problems/word-break) | 中等 | - | - |
 | [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle) | 简单 | - | - |
 | [142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii) | 中等 | - | - |

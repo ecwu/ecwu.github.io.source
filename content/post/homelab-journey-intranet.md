@@ -92,7 +92,17 @@ copyright:
 
 以前自己玩云主机的时候，部署过 NextCloud (OwnCloud)。[NextCloud](https://nextcloud.com/) 功能丰富，撑得起团队办公的需求（安装插件可以处理多种文件格式，支持协作办公）。但在内网的场景，完全没必要部署这么“重”的方案（反正只允许内网访问，甚至不需求鉴权）。所以最后选择的是用 Go 写的文件浏览器，[filebrowser](https://github.com/filebrowser/filebrowser)。部署其 Docker 镜像，将目录映射到指定地点，就可以在 Web UI 进行文件的增删改查。支持多用户、运行脚本对文件进行操作、控制用户访问的目录范围等。
 
-![Filebrowser](//cdn.ecwuuuuu.com/blog/image/homelab/filebrowser.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/filebrowser.png"
+  class="class param"
+  title="Filebrowser"
+  caption=""
+  label="fb-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 ### Komga
 
@@ -100,13 +110,34 @@ copyright:
 
 最后选择了 Komga，因为 GitHub 上 Star 比较多，界面也比较的简洁。
 
-![Komga](//cdn.ecwuuuuu.com/blog/image/homelab/komga-interface.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/komga-interface.png"
+  class="class param"
+  title="Komga"
+  caption=""
+  label="dashdot-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 ### Paperless-NGX
 
 这个服务其实我也没有硬需求，只是想了解下就部署了（部署后，使用率也比较低）。之所以叫这个名字是因为最初的项目是 [Paperless](https://github.com/the-paperless-project/paperless)，原作者疲于维护，开源社区 Fork 出了一个新版本 [Paperless-ng](https://github.com/jonaswinkler/paperless-ng)，然后又因为缺少维护，有了现在最新的这个叉出 [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)。
 
-![Paperless-ngx](//cdn.ecwuuuuu.com/blog/image/homelab/paperless-ngx.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/paperless-ngx.png"
+  class="class param"
+  title="Paperless-ngx"
+  caption=""
+  label="dashdot-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
+
 
 Paperless-ngx 的介绍是 scan, index and archive all your physical documents。也反映了他的用途：整理、电子化你的实体文件的。将你所有的实体文件扫描后导入，paperless-ngx 会进行 OCR 识别内容，配合你可以人工进行打标签、评论。整理好的文件再未来就可以很方便的进行检索查询。
 
@@ -122,13 +153,33 @@ Paperless-ngx 里的文档还有 Archive serial number 的概念，这在你需�
 
 我这套 Homelab 的服务，绝大多数都是使用 Docker 进行部署的。[Portainer](https://github.com/portainer/portainer) 就提供了一个 Web UI 可以对 Docker 环境进行简单的管理（也支持 Docker Swarm 集群，Kubernetes 集群）。创建容器可以直接在 Web UI 里以填表的形式，选择镜像、添加环境变量和绑定存储。也支持在页面上直接应用一个 Docker-compose yaml 文件。拉起一个多个容器的栈（Stack）。部署了 Portainer 就不需要打命令，直接点击就可以操作容器或者调整配置。 
 
-![Portainer UI](//cdn.ecwuuuuu.com/blog/image/homelab/portainer-ui.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/portainer-ui.png"
+  class="class param"
+  title="Portainer"
+  caption=""
+  label="portainer-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 ### Liberspeed
 
 Speedtest 的社区开源版本，部署来是用来测试内网链路的速度的。[Liberspeed](https://github.com/librespeed/speedtest) 并不是只用来内网测速，现在也有在线的测速网站在用这套方案。
 
-![Liberspeed UI](//cdn.ecwuuuuu.com/blog/image/homelab/liberspeed-ui.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/liberspeed-ui.png"
+  class="class param"
+  title="Liberspeed"
+  caption="看着像个简陋的 SpeedTest，但是该有的信息都有"
+  label="liberspeed-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 使用了这个工具会发现，有线千兆内网其实跑不到 1000M 的速度、也能看看无线设备能到多少速度。
 
@@ -136,15 +187,34 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 
 部署的服务太多，会记不住服务的访问入口（无论是域名还是端口）。这时候就可以部署一个内网门户。在这个系列中，在外网服务中我介绍了 Authentik，他的应用列表可以作为服务的门户。也介绍了 Flame，可以添加应用的列表和书签列表。但是内网中，我选择的是 Homarr。
 
-![Homarr UI](//cdn.ecwuuuuu.com/blog/image/homelab/homelab-overview.jpg)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/homarr-ui.jpg"
+  class="class param"
+  title="Homarr"
+  caption="为你的服务提供一个统一美观的导航栏"
+  label="dashdot-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 [Homarr](https://github.com/ajnart/homarr) 没有鉴权，直接按组把服务的卡片显示在页面中。你不需要下载应用的图标，主流的服务它可以依赖 [walkxcode / Dashboard-Icons](https://github.com/walkxcode/dashboard-icons) 获取到图标。它除了加入服务的卡片，还支持容器、日历、搜索、Torrent、天气等模块，可以绑定下载软件、媒体库、系统状态等信息显示在页面中。
 
 这种设计就非常适合内网 Homelab 的环境：不鉴权，卡片方便访问各种服务，将自己软件、硬件的状态显示在页面上。
 
 ### DashDot
-
-![Dashdot](//cdn.ecwuuuuu.com/blog/image/homelab/dashdot-ui.png)
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/dashdot-ui.png"
+  class="class param"
+  title="Dashdot."
+  caption=""
+  label="dashdot-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
 
 [Dashdot](https://github.com/MauriceNino/dashdot) 是一个显示服务器状态的面板，提供的信息包括系统、处理器负载、存储、内存和网络。比较美观，能与 Homarr 组合作为组件显示。
 
