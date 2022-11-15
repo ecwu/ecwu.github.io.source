@@ -56,4 +56,8 @@ Social Media:
 - ResearchGate: [Zhenghao Wu](https://www.researchgate.net/profile/Zhenghao-Wu)
 - LinkedIn: [Zhenghao Wu](https://www.linkedin.com/in/zhenghaowu/)
 
-Contact me: [ecwu@protonmail.com](mailto:ecwu@protonmail.com)
+Identification:
+- GPG: **`338E B68B 0962 5E8B 0540 1F2F 15DA D8A4 76DD F311`**
+  - pk: [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/338EB68B09625E8B05401F2F15DAD8A476DDF311)
+
+Contact me: [ecwu@protonmail.com](mailto:hi@ecwu.xyz)
