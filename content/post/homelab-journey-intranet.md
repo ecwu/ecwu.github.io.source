@@ -188,7 +188,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 部署的服务太多，会记不住服务的访问入口（无论是域名还是端口）。这时候就可以部署一个内网门户。在这个系列中，在外网服务中我介绍了 Authentik，他的应用列表可以作为服务的门户。也介绍了 Flame，可以添加应用的列表和书签列表。但是内网中，我选择的是 Homarr。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/homarr-ui.jpg"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/homarr-ui.png"
   class="class param"
   title="Homarr"
   caption="为你的服务提供一个统一美观的导航栏"
@@ -222,6 +222,34 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 
 > 涉及的服务：overleaf, drawio
 
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/selfhost-drawio-ui.png"
+  class="class param"
+  title="Draw.IO"
+  caption=""
+  label="drawio-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
+
 ## 家庭体验提升
 
 > 涉及的服务：pihole, home-assistant
+
+## 本地开发环境
+
+> 涉及的服务：Coder
+
+{{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/coder-ui.png"
+  class="class param"
+  title="Coder with code-server (a open source vs code implementation) template"
+  caption=""
+  label="coder-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
