@@ -58,8 +58,7 @@ copyright:
 ## 半自动媒体中心
 
 > 涉及的自建服务：Emby, Jellyfin, Jackett, Sonarr, Radarr, Chinesesubfinder, Flaresolverr, qBittorrent, Aria2
-> 
-> 部署区域：广州
+
 
 大多人买 NAS 都会下载收藏电影和电视剧。刚买 918+ 使用的方案是使用群晖 DSM 带的 [Video Station](https://www.synology.com/en-global/dsm/feature/video_station)。这个工具的优势是自带基本的内容刮削（新版本需要申请一个 [The Movie Database](https://www.themoviedb.org/) 的 API 密钥），能通过官方的 Quick Connect 访问到。首次使用只需添加媒体目录的位置+等待内容索引后，就可以获得网页串流媒体文件的体验。
 
@@ -82,7 +81,7 @@ copyright:
 
 > 涉及的服务：filebrowser, komga, paperless-ngx
 
-### Filebrowser
+### 在线文件浏览器：Filebrowser
 
 自己现在是 iOS 设备和 Android 双持，macOS 与 Windows 兼修。再加上之前下定决心不在 macOS 上安装微信。因此想分享一个设备上的图片或文件，可能需要中转好几个设备和服务。
 
@@ -104,7 +103,7 @@ copyright:
   link=""
  >}}
 
-### Komga
+### 漫画阅读器：Komga
 
 自己不怎么看漫画，但还是有喜欢的作品{{% sidenote "sn-manga-work" %}}(《BLEACH》，《排球少年》){{% /sidenote %}}并收藏了电子化的漫画。这些大量图片的形式浏览不方便。所以想部署一个在线的漫画阅读器。一开始调研时，会发现电子书的阅读平台有很多，但是都不适合直接用于整理多图片的漫画。针对漫画有优化的工具有 Ubooquity，Komga，Kavita，Comixed。
 
@@ -122,7 +121,7 @@ copyright:
   link=""
  >}}
 
-### Paperless-NGX
+### 文档数字化管理：Paperless-NGX
 
 这个服务其实我也没有硬需求，只是想了解下就部署了（部署后，使用率也比较低）。之所以叫这个名字是因为最初的项目是 [Paperless](https://github.com/the-paperless-project/paperless)，原作者疲于维护，开源社区 Fork 出了一个新版本 [Paperless-ng](https://github.com/jonaswinkler/paperless-ng)，然后又因为缺少维护，有了现在最新的这个叉出 [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)。
 
@@ -149,7 +148,7 @@ Paperless-ngx 里的文档还有 Archive serial number 的概念，这在你需�
 
 > 涉及的服务：portainer, liberspeed, homarr, dashdot
 
-### Portainer
+### 容器管理：Portainer
 
 我这套 Homelab 的服务，绝大多数都是使用 Docker 进行部署的。[Portainer](https://github.com/portainer/portainer) 就提供了一个 Web UI 可以对 Docker 环境进行简单的管理（也支持 Docker Swarm 集群，Kubernetes 集群）。创建容器可以直接在 Web UI 里以填表的形式，选择镜像、添加环境变量和绑定存储。也支持在页面上直接应用一个 Docker-compose yaml 文件。拉起一个多个容器的栈（Stack）。部署了 Portainer 就不需要打命令，直接点击就可以操作容器或者调整配置。 
 
@@ -165,7 +164,7 @@ Paperless-ngx 里的文档还有 Archive serial number 的概念，这在你需�
   link=""
  >}}
 
-### Liberspeed
+### 测速服务端：Liberspeed
 
 Speedtest 的社区开源版本，部署来是用来测试内网链路的速度的。[Liberspeed](https://github.com/librespeed/speedtest) 并不是只用来内网测速，现在也有在线的测速网站在用这套方案。
 
@@ -183,7 +182,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 
 使用了这个工具会发现，有线千兆内网其实跑不到 1000M 的速度、也能看看无线设备能到多少速度。
 
-### Homarr
+### 服务门户：Homarr
 
 部署的服务太多，会记不住服务的访问入口（无论是域名还是端口）。这时候就可以部署一个内网门户。在这个系列中，在外网服务中我介绍了 Authentik，他的应用列表可以作为服务的门户。也介绍了 Flame，可以添加应用的列表和书签列表。但是内网中，我选择的是 Homarr。
 
@@ -203,7 +202,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 
 这种设计就非常适合内网 Homelab 的环境：不鉴权，卡片方便访问各种服务，将自己软件、硬件的状态显示在页面上。
 
-### DashDot
+### 系统实时信息：DashDot
 {{< figure
   src="//cdn.ecwuuuuu.com/blog/image/homelab/dashdot-ui.png"
   class="class param"
