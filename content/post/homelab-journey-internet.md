@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/tjX_sniNzgQ/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: frank mckenna
 
 publishDate: "2022-12-30T00:20:00+08:00"
-lastmod: ""
+lastmod: "2023-01-08T21:59:00+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -53,7 +53,7 @@ copyright:
 
 与[内网服务](/post/homelab-journey-intranet/)不一样，部署在公网的服务目的性明确：希望能随时随地能访问到。这些服务部署在腾讯云轻量服务器，机房位于广州和香港。
 
-## 身份鉴权 (SSO)
+## 身份鉴权 (SSO)：Authentik
 
 > 涉及的服务：Authentik
 
@@ -87,6 +87,8 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 
 我对 RSS 并没有特别的情感，但是为了逃离推荐算法构建的茧房。用 RSS 这一工具，信息的来源从以往的被动接受转变为我主动选择。
 
+### 阅读器：Miniflux
+
 最初使用了 Tiny Tiny RSS (TTRSS) 的 [Docker 方案](https://ttrss.henry.wang/)，它插件、主题众多，有不少优秀的移动端 APP(第三方)，整体体验良好，使用了将近一年的时间。当 22 年 10 月份的时候，接触到 [Miniflux](https://miniflux.app/) 项目，它界面上更加简洁，而且是用 Go 实现的，应该会比用 PHP 实现的 TTRSS 更加的轻量，这些优势促使我切换了阅读器。
 
 {{< figure
@@ -101,7 +103,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
   link=""
  >}}
 
- ### RSSHub
+ ### 订阅生成：RSSHub
 
  除了阅读器，一起配套的服务是 RSSHub，这是一个 RSS 生成器，理论上可以为任意内容生成 RSS 订阅源；随着 RSS 式微，很多媒体/信息来源都不再提供 RSS 订阅的途径，而使用 RSSHub 就可以为这些途径生成一个可以订阅的链接，目前已经支持的信息源和可以从[官方文档](https://docs.rsshub.app/)中查看。但如果你不想自建，你也可以使用[官方部署的 Instance](https://rsshub.app/) 或是 [RSS Forever](https://rssforever.com/) 提供的 Instance。后者还附带了一些抓取要求的 API Key (比如 Twitter)，轻量需求下简单好用。
 
@@ -131,15 +133,13 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 
 以前一直有听说 GitOps 中的 CI/CD (Continuous Integration and Continuous Delivery/Continuous Deployment 持续集成和持续构建)，但一直没有实践过。但完成将博客和 [HCC 的主页](https://uichcc.com) 利用 GitHub Actions 进行自动构建的改造后，开始体验到它的魔力。自己构建的 CI 是利用了 [Drone](https://www.drone.io/)，如果你使用的是 Gitea，官方提供了[安装教程](https://docs.drone.io/server/provider/gitea/)。我目前使用持续构建主要是进行 Docusaurus 的构建和一些软件的 Docker 镜像构建。CD 部分，因为架构上还没有用到 Kubernetes，加上 Portainer 的 Web Hook 功能需要付费，所以暂时还没有涉足。
 
-## 密码管理
-
-> 涉及的服务：VaultWarden
+## 密码管理：VaultWarden
 
 {{< figure
   src="//cdn.ecwuuuuu.com/blog/image/homelab/vaultwarden-ui.png"
   class="class param"
   title="vaultwarden"
-  caption="BitWarden 密码管理器，但是是自建的"
+  caption="BitWarden 密码管理器，但是是自建的（截图中还是老版本的 VaultWarden，新版本已经将 BitWarden 和 VaultWarden 更彻底的区分开，以避免版权商标带来的问题）"
   label="vaultwarden-ui"
   attr=""
   attrlink=""
@@ -147,11 +147,15 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
   link=""
  >}}
 
-TBA
+[VaultWarden](https://github.com/dani-garcia/vaultwarden) 是 [BitWarden](https://bitwarden.com/) 密码管理工具的开源适配服务端，使用 Rust 实现。我本身在使用 BitWarden 的[付费服务](https://bitwarden.com/pricing/)。自己部署额外部署有两个原因：提供一个备份的访问渠道；为特定环境下的密码管理需求提供遍历。
 
-## 知识库，团队工具
+值得一提是，这个服务端几乎包含了付费端全部的功能。像密码泄露检查、Yubico MFA 等功能，你如果有相应功能提供商的 API，你也可以在自己的 VaultWarden 上体验和 BitWarden 一样的功能。
+
+## 知识库/团队工具
 
 > 涉及的服务：Outline, YouTrack
+
+### 个人或团队知识库：Outline
 
 {{< figure
   src="//cdn.ecwuuuuu.com/blog/image/homelab/outline-ui.png"
@@ -165,8 +169,27 @@ TBA
   link=""
  >}}
 
-TBA
+我一直很热衷于尝试团队协作/知识库工具。研究生期间在使用 [Notion](https://www.notion.so/) 作为日常使用的笔记工具，后来为了内容的可迁移性更换到了基于 Markdown 的 [Obsidian](https://obsidian.md/)。但 Obsidian 还是更偏向于个人知识库，不太适用于团队使用。出于这样的需求，我 22 年中就开始物色新的知识库工具。最后 [Outline](https://github.com/outline/outline) 从众多知识库中脱颖而出，成为了一直用到现在的选择。它支持多人协同编辑（如石墨/腾讯文档/Confluence），但又使用了类似 Notion 的模块 （Block） 的设计。
 
+它的用户系统在设计上比较激进，它必须配置统一登录或配置邮件发送以发送一次性登录链接（不支持账号密码登录）。但是它支持的 SSO 服务很多，具体见官方的[配置文档](https://wiki.generaloutline.com/s/hosting/doc/authentication-7ViKRmRY5o)。
+
+需要注意的是，目前最新的版本 `0.66.3` 还不支持数学公式（LaTeX），但是[相关的功能已经合并进主线](https://github.com/outline/outline/issues/1038)，相信很快会在下一个发布版本中推出。
+
+### 团队协作工具：YouTrack
+
+  {{< figure
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/youtrack-ui.png"
+  class="class param"
+  title="YouTrack"
+  caption="官方演示项目"
+  label="youtrack-ui"
+  attr=""
+  attrlink=""
+  alt="alt"
+  link=""
+ >}}
+
+[YouTrack](https://hub.docker.com/r/jetbrains/youtrack/) 部署来只是为了体验功能，它来自 IntelliJ IDEA 的公司 JetBrains，十个用户以内支持免费自部署。因为没有团队开发软件的需求，我并没有深度体验过，只作为一个灵活很高的看板和信息记录工具，属于是有点小题大做了。
 
 ## 辅助工具
 
@@ -174,7 +197,7 @@ TBA
 
 ### 简易导航栏：Flame
 
-目前内外网提到的服务就有十几种，如果使用的是端口，那很难全部记住（就算是域名也不容易）。那么一个类似 Hao123 的门户导航站是有必要的。之前在内网，我使用的是 Homarr，但 Homarr 没有鉴权、可以随意修改页面的内容。这种形式是不适合部署在公网的。这种情况下，我就选用了 [Flame](https://github.com/pawelmalak/flame)
+目前内外网提到的服务就有十几种，如果使用的是端口，那很难全部记住（就算全用域名也容易搞混）。那么一个类似 Hao123 的门户导航站是有必要的。之前在内网，我使用的是 [Homarr](/post/homelab-journey-intranet#服务门户homarr)，但 Homarr 没有鉴权、可以随意修改页面的内容。这种形式是不适合部署在公网的。这种情况下，我就选用了 [Flame](https://github.com/pawelmalak/flame)。
 
 {{< figure
   src="//cdn.ecwuuuuu.com/blog/image/homelab/flame-ui.png"
@@ -218,7 +241,7 @@ TBA
   src="//cdn.ecwuuuuu.com/blog/image/homelab/grafana-ui.png"
   class="class param"
   title="Grafana"
-  caption="可视化服务器 Docker 带宽和流量的状态"
+  caption="可视化服务器 Docker 带宽和资源使用的状态"
   label="grafana-ui"
   attr=""
   attrlink=""
@@ -226,4 +249,4 @@ TBA
   link=""
  >}}
 
- 个人使用方面，大多是将服务器的状态暴露，让 Prometheus 抓取，最后 Grafana 使用出来，可以实时监控服务器的负载和各资源的状态。
+ 个人使用方面，会将将服务器的状态接口让 Prometheus 抓取，然后使用 Grafana 可视化出来，实时监控服务器的负载和各资源的状态。
