@@ -9,10 +9,16 @@ jobs:
   build-deploy:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3  # v2 does not have submodules option now
+      - uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "Asia/Shanghai"
+          timezoneMacos: "Asia/Shanghai"
+          timezoneWindows: "China Standard Time"
+          
+      - uses: actions/checkout@v3
         with:
           submodules: 'recursive'
-
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
