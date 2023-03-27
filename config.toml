@@ -91,7 +91,7 @@ footnoteReturnLinkContents = '↩'
 [frontmatter]
   date = ['date', 'publishDate']
   expiryDate = ['expiryDate']
-  lastmod = ['lastmod', ':git']
+  lastmod = ['lastmod']
   publishDate = ['publishDate', 'date']
 
 
