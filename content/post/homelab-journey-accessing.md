@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/ahi73ZN5P0Y/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: Federico Beccari
 
 publishDate: "2023-02-25T02:20:00+08:00"
-lastmod:
+lastmod: "2023-04-12T00:20:00+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -79,7 +79,9 @@ copyright:
 
 ### FRP
 
-FRP 是后来配置来作为 IPv6 访问补充的工具。最早知道 FRP 是还在大二，学校信息中心明确说明不能使用反向代理打通内外网。要实现 FRP 转发内网流量需要服务端 frps 和客户端 frpc 两个组件。两侧会建立起长连接来来保持通信，然后服务端会监听来自公网的请求。服务端接受外部请求且 frpc 可连通时，服务端会将 frpc 请求来源（client）的流量进行双向转发。转发在请求断开时就会结束。简单来说它通过公网的中转机器实现内网流量的转发。本身 fprs 的部署也需要你有一台带公网的设备，但市面上有很多 fpr 服务提供商，很多还提供免费额度（比如我用过的 [SAKURA FRP](https://www.natfrp.com/)），这样只需要在需要反向代理的设备上部署 frpc 就可以实现内网的穿透。
+FRP 是后来配置来作为 IPv6 访问补充的工具。最早知道 FRP 是还在大二，学校信息中心明确说明不能使用反向代理打通内外网。要实现 FRP 转发内网流量需要服务端 frps 和客户端 frpc 两个组件。两侧会建立起长连接来来保持通信，然后服务端会监听来自公网的请求。服务端接受外部请求且 frpc 可连通时，服务端会将 frpc 请求来源（client）的流量进行双向转发。转发在请求断开时就会结束。
+
+简单来说它通过公网的中转机器实现内网流量的转发。本身 fprs 的部署也需要你有一台带公网的设备，但市面上有很多 fpr 服务提供商，很多还提供免费额度（比如我用过的 [SAKURA FRP](https://www.natfrp.com/)），这样只需要在需要反向代理的设备上部署 frpc 就可以实现内网的穿透。
 
 最多的时候，我代理出了三个服务：DSM，EMBY 媒体服务，Apache Guacamole™ 远程桌面工具。但是国内的 frps 提供商说不上稳定，速度也差强人意。在免费使用了一年多，也尝试付费节点近半年的事件后，我最后放弃了 FRP 方案。
 
@@ -90,6 +92,30 @@ Tailscale 是 [Lau](cklau.cc) 介绍的工具，他是基于 Wireguard 构建，
 - 它通过第三方服务的认证来登录，在设备上登录后就可以将设备添加进自己的组网里。然后 Tailscale 会自动处理用于加密点对点通信的密钥分发和配置。
 - 大多时候，通信通过 NAT 穿透实现；但当穿透无法实现时，Tailscale 的中继服务会介入。
 
-Tailscale 的效果非常惊艳，连接上就可以访问组网内的其他设备，不需要特别的配置，设备就如同在同一个内网。在 OpenWRT 连接并配置好相应的端口和防火墙后，网关下的设备还能无需连接，直接访问组网内的设备。
+Tailscale 的效果非常惊艳，连接上就可以访问组网内的其他设备，不需要特别的配置，设备就如同在同一个内网。在 OpenWRT 连接并配置好相应的端口和防火墙后([一个教程](https://pfschina.org/wp/?p=9151))，网关下的设备能无需 Tailscale 客户端显式的连接，也访问到组网内的设备。
+
+目前 Tailscale 已经成为了我的主要访问工具。但取决于你的网络环境，如果你所在的网络环境无法进行 NAT 穿透，Tailscale 无法直连并会使用一个中继服务器使用类似反向代理的方式进行连接。因为 Tailscale 的中继服务器不设在内地，这种情况下，访问速度会很慢，甚至时常无法访问到页面。对此可以自建 DERP 中继服务器，但是目前我还是尝试过，未来如果有机会我会继续补充。
+
+## 自适应 URL 门户
+群晖中使用 Docker 的服务相对是比较难管理的，各个服务都会用不同的端口号。再加上群晖虽然使用 Nginx 展示各种内容，但你无法方便的修改配置将主页映射到容器中（也就无法使用之前章节中介绍的 Flame 或者 Homarr）。
+
+为此我使用了 Hugo 制作了一个门户页（使用 [Hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/) 模板），来方便访问不同的服务。但是这个静态页面有些小问题，因为前面提到的访问方法很多，不同情况下，我的访问用的 URL 都是不一样的，正常 HTML 并无法自适应。但群晖的 DSM 中却有这一特性，即会根据你访问的 URL 来动态的调整页面中提供的 URL。为了实现类似的功能，我修改了 Hugo 模板的一些代码，加入了一段 JavaScript 来动态的修改按钮的 URL。
+
+![NAS 上用 Hugo 生成的页面](http://cdn.ecwuuuuu.com/blog/image/homelab/nas-80-hugo-home.png)
+
+```Javascript
+let getUrl = window.location;
+let baseUrl = getUrl.protocol+"//"+getUrl.hostname;
+let btns = document.getElementsByClassName("dynamic-url");
+
+for(let i=0; i < btns.length; i++){
+  btn_url = new URL(btns.item(i).href);
+  btns.item(i).setAttribute("href", baseUrl + ":" + btn_url.port + "/");
+}
+```
+
+> 这段代码的意思是，首先拿到当前访问的网址做处理，提取出协议和 Hostname 组成 BaseURL。然后循环对页面中所有按钮的 URL处理：将 Hostname 部分修改成 BaseURL（可以认为是替换，但实际的做法是将端口号提取出来，然后和 BaseURL 组装出新的 URL）。其中 Anchor 按钮都会带有 `dynamic-url` class，方便使用 `getElementsByClassName` 提取出来，批量替换。
+
+## 本地服务域名访问
 
 > 未完待续
