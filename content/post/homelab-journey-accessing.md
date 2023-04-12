@@ -7,9 +7,9 @@ featureimage: https://unsplash.com/photos/ahi73ZN5P0Y/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: Federico Beccari
 
 publishDate: "2023-02-25T02:20:00+08:00"
-lastmod: "2023-04-12T00:20:00+08:00"
+lastmod: "2023-04-13T02:03:00+08:00"
 draft: false
-status: In Progress
+status: Staging
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -96,7 +96,7 @@ Tailscale 的效果非常惊艳，连接上就可以访问组网内的其他设�
 
 目前 Tailscale 已经成为了我的主要访问工具。但取决于你的网络环境，如果你所在的网络环境无法进行 NAT 穿透，Tailscale 无法直连并会使用一个中继服务器使用类似反向代理的方式进行连接。因为 Tailscale 的中继服务器不设在内地，这种情况下，访问速度会很慢，甚至时常无法访问到页面。对此可以自建 DERP 中继服务器，但是目前我还是尝试过，未来如果有机会我会继续补充。
 
-## 自适应 URL 门户
+## 门户 URL 自适应
 群晖中使用 Docker 的服务相对是比较难管理的，各个服务都会用不同的端口号。再加上群晖虽然使用 Nginx 展示各种内容，但你无法方便的修改配置将主页映射到容器中（也就无法使用之前章节中介绍的 Flame 或者 Homarr）。
 
 为此我使用了 Hugo 制作了一个门户页（使用 [Hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/) 模板），来方便访问不同的服务。但是这个静态页面有些小问题，因为前面提到的访问方法很多，不同情况下，我的访问用的 URL 都是不一样的，正常 HTML 并无法自适应。但群晖的 DSM 中却有这一特性，即会根据你访问的 URL 来动态的调整页面中提供的 URL。为了实现类似的功能，我修改了 Hugo 模板的一些代码，加入了一段 JavaScript 来动态的修改按钮的 URL。
@@ -116,6 +116,41 @@ for(let i=0; i < btns.length; i++){
 
 > 这段代码的意思是，首先拿到当前访问的网址做处理，提取出协议和 Hostname 组成 BaseURL。然后循环对页面中所有按钮的 URL处理：将 Hostname 部分修改成 BaseURL（可以认为是替换，但实际的做法是将端口号提取出来，然后和 BaseURL 组装出新的 URL）。其中 Anchor 按钮都会带有 `dynamic-url` class，方便使用 `getElementsByClassName` 提取出来，批量替换。
 
-## 本地服务域名访问
+## 本地服务域名访问 + 配置 SSL 证书
 
-> 未完待续
+部署了太多的服务，就比较难管理，除了用门户/开源的导航页的方案，还有一种方法是设定多个有意义的域名，然后将域名的请求指向特定的服务。这样不需要记 Port Number，也可以访问想要的服务。这背后基于反向代理基于。这里将所有的域名都解析到本地设备的 IP（可以使用 Cloudflare 的泛域名解析），并且本地设备的 80 和 443 端口已经被 Nginx / Caddy / Traefik 之类的 Web 服务端/代理工具托管。这样，你访问设置好的域名都会访问到对应的 IP，但是你访问使用的 Hostname 信息依然会随着请求头发送到服务端，服务端就是根据这个信息，来将请求转发到对应的服务中。
+
+### Caddy 配置示例
+
+```
+portainer.local.ecwu.xyz {
+  reverse_proxy https://portainer:9443 {
+    transport http {
+      tls_insecure_skip_verify
+    }
+  }
+  tls /data/cert/local.ecwu.xyz.crt /data/cert/local.ecwu.xyz.key
+}
+```
+
+上图的配置是我用于本地的 Portainer 服务做的配置，使用的是 Caddy 作为服务端。因为 Portainer 默认使用 HTTPS，且会生成自签证书，这样需要要求不校验 HTTPS 证书的有效性。然后再套用自定义证书（Let's Encrypt）。`/data/cert/local.ecwu.xyz.(crt/key)` 就是我存储 certificates 并映射进 Caddy 容器中的位置。
+
+对于默认没有 HTTPS 的网址，配置更加简单，只需要定义 reverse_proxy 字段（需要注意，服务和 Caddy 在 Docker 中需要在同一网段，或者 IP 和端口在 Caddy 容器内可以访问到）。
+
+### Let's Encrypt 针对用于局域网的域名申请证书
+
+现在没有 HTTPS 证书的网站总是会带个不安全的提示，如果想避免这个情况，可以给自己的域名配置证书。但这个证书使用亚洲诚信来申请，他有一年的有效期，但是不支持泛域名证书，且申请有数量限制。Let's Encrypt 会存在一些小问题，他为了校验域名的所有，需要你在线存储特定信息的文件。但本地服务器是无法访问的，这个时候，你可以使用 DNS 校验的方式来验证。
+
+```certbot certonly --manual  --preferred-challenges=dns-01```
+
+你可以安装 certbot 来进行请求，使用上面显示的指令，他会接着询问你需要申请证书的邮箱和其他信息（如果域名曾经申请过，会进入续期的流程）。如果你需要申请泛域名，你需要注意带 wildcard：`*.local.ecwu.xyz`。
+
+所谓的 DNS 校验会要求你在你的域名 TXT 解析中输入一些 Let's Encrypt 指定你设定的信息，你按他的要求添加（如果之前注册过，则是修改）后，再在 certbot 继续认证过程即可。这个过程一旦通过，证书就会被保存在申请设备的本地，你需要复制到指定位置并再 Web 服务端/代理 配置好，就可以实现自己本地服务带 SSL 证书的域名访问了。
+
+## Cloudflare Zero Trust
+
+最后的一个技术是使用 Cloudflare Zero Trust，这里我们先不讨论 Zero Trust 是什么概念。但是你可以使用它来限制你某个网站的访问。比如我的 ecwu.xyz 页面，我不希望其他人能看到里面的内容，那么我就可以使用 CloudFlare Zero Trust 来限制其他用户的访问：必须先经过鉴权。
+
+我本身就使用 Cloudflare 进行网站的解析，并且已经部署了 Authentik 的身份验证服务。我将 Authentik 通过 OAuth2 的方式添加到 Authentication 的 Identity Provider 中。然后将 ecwu.xyz 页面加入到 Applications，并选定 Identity Provider 为 Login Method。经过这样的设定，ecwu.xyz 页面就要求登录才能访问了，并且正常情况下只显示一个登录页。
+
+![CloudFlare Zero Trust 保护的 ecwu.xyz 网页](http://cdn.ecwuuuuu.com/blog/image/homelab/cf-access-ecwuxyz.png)
