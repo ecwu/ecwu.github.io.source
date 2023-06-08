@@ -44,7 +44,7 @@ copyright:
 - [小田](https://hixiaotian.com): Top student.
 - [Max Gu](https://guxianggao.github.io/): Engineer in the information security field.
 - [HoshiMi BAI](https://hoshimi.cn/): Digital art painter, he plays FPS games very well.
-- [Yifu Qiu](https://yfqiu.netlify.app/): PhD Student at UoE & Cambridge, 2023 Apple Scholar in AI/ML.
+- [Yifu Qiu](https://yfqiu.netlify.app/): Ph.D. Student at UoE & Cambridge, 2023 Apple Scholar in AI/ML.
 
 > The order of the list has no special meaning.
 
