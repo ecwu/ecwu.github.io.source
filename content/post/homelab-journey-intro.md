@@ -81,4 +81,4 @@ HomeLab 直译是在家里的实验室，赛博语境下指网络、计算设备
 - [内网服务](/post/homelab-journey-intranet/)
 - [公网服务](/post/homelab-journey-internet/)
 - [访问](/post/homelab-journey-accessing/)
-- [总结与展望(暂未上线)](/post/homelab-journey-future)
+- [展望](/post/homelab-journey-future)
