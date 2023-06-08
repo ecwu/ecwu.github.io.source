@@ -34,17 +34,17 @@ copyright:
 ---
 
 - [Junde Yhi](https://yhi.moe): Proficient in computer tech (specializing in IoT), open source evangelist.
-- [Terence Lau](https://www.cklau.cc/): A typical statistic student, a quasi-computer-science-expert.
+- [Terence Lau](https://www.cklau.cc/): Ph.D. Student in Political Science at Trinity College Dublin, an expert in statistics, medical image, cyptography, language processing; a quasi-computer-science-expert.
 - [Renjie Deng](https://www.drjchn.com/): Software development guru, good at rapid prototyping.
-- [Junru Zhong](https://junru.dev/): Ph.D. candidate studying medical imaging; Tech and transportation enthusiast.
+- [Junru Zhong](https://junru.dev/): Ph.D. candidate in medical imaging at CUHK; Tech and transportation enthusiast.
 - [Laurence Luo](https://www.lzc.app/): Tech enthusiast.
 - [Frank Ng](https://aerofrankie.com/): A plane.
 - [KirinBaka](https://9baka.moe/): Big shot.
 - [黑墨水鱼](https://aquarium39.moe): Highly skilled non-CS students, Miku fan.
 - [小田](https://hixiaotian.com): Top student.
-- [Max Gu](https://guxianggao.github.io/): Engineer in the information security field.
-- [HoshiMi BAI](https://hoshimi.cn/): Digital art painter, he plays FPS games very well.
-- [Yifu Qiu](https://yfqiu.netlify.app/): Ph.D. Student at UoE & Cambridge, 2023 Apple Scholar in AI/ML.
+- [Max Gu](https://guxianggao.github.io/): Software Engineer in the information security field.
+- [HoshiMi BAI](https://hoshimi.cn/): Digital art painter, part-time Vtuber.
+- [Yifu Qiu](https://yfqiu.netlify.app/): Ph.D. Student in Natural Language Processing at UoE & Cambridge, 2023 Apple Scholar in AI/ML.
 
 > The order of the list has no special meaning.
 
