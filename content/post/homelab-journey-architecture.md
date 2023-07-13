@@ -7,9 +7,9 @@ featureimage: https://unsplash.com/photos/US9Tc9pKNBU/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: Ryan Quintal
 
 publishDate: "2023-01-08T23:17:00+08:00"
-lastmod:
+lastmod: "2023-07-13T20:32:00+08:00"
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -59,7 +59,7 @@ copyright:
 
 ## 内网
 
-我的地址在粤港澳大湾区，并在常住的广州和中山配有两台设备。
+我的地址在粤港澳大湾区，并在常住的广州，中山，和珠海配有三台设备。
 
 -----
 
@@ -73,12 +73,24 @@ copyright:
 
 -----
 
-在中山是 J4125 四口 2.5GB 的工控机。配有 16G RAM，120G mSTAT 固态。使用 ESXi 7.0 作为底层 hypervisor。
+在中山是 J4125 四口 2.5GB 的工控机。配有 16G RAM，120G mSTAT 固态。使用 PVE 7 作为底层 hypervisor。
 
-- 一个 Ubuntu 22.04 虚拟机，部署日常服务。
+- 一个 Debian 11 虚拟机，运行服务监测容器 （Uptime Kuma）。
 - 一个 OpenWRT 做旁路由。
 
 在 Ubuntu 虚拟机上，使用了基于 Containerd 的容器服务，然后使用 [Caddy](https://caddyserver.com/) 做服务代理。
+
+-----
+
+在珠海的是自己组装的 W-2140B 服务器。配有 64G RECC RAM，500G NVMe 固态，四块 16T SAS 硬盘。使用 PVE 7.0 作为底层 hypervisor。（详细组装过程见[B 站视频](https://www.bilibili.com/video/BV1KV4y127wk)）
+
+- 一个 TrueNAS 虚拟机，直通 HBA 卡管理硬盘。
+- 一个 Ubuntu 虚拟机，部署耗费较多资源的服务（Wiki，GitLab，Coder）。
+- 一个 Debian 虚拟机，用于下载、内容刮削。
+- 一个 Ubuntu LXC 虚拟机，直通 T400 (2G) 显卡，运行 Emby。
+- 一个 OpenWRT 做旁路由。
+
+在 Ubuntu 虚拟机上，使用 [Caddy](https://caddyserver.com/) 做服务代理，通过 Cloudflare DNS Challenge 自动获取 TLS 证书。
 
 ## 公网
 
