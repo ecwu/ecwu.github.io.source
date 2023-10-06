@@ -76,7 +76,7 @@ copyright:
 在中山是 J4125 四口 2.5GB 的工控机。配有 16G RAM，120G mSTAT 固态。使用 PVE 7 作为底层 hypervisor。
 
 - 一个 Debian 11 虚拟机，运行服务监测容器 （Uptime Kuma）。
-- 一个 OpenWRT 做旁路由。
+- 一个 OpenWRT 做单臂路由。
 
 在 Ubuntu 虚拟机上，使用了基于 Containerd 的容器服务，然后使用 [Caddy](https://caddyserver.com/) 做服务代理。
 
@@ -88,15 +88,15 @@ copyright:
 - 一个 Ubuntu 虚拟机，部署耗费较多资源的服务（Wiki，GitLab，Coder）。
 - 一个 Debian 虚拟机，用于下载、内容刮削。
 - 一个 Ubuntu LXC 虚拟机，直通 T400 (2G) 显卡，运行 Emby。
-- 一个 OpenWRT 做旁路由。
+- 一个 OpenWRT 做单臂路由。
 
 在 Ubuntu 虚拟机上，使用 [Caddy](https://caddyserver.com/) 做服务代理，通过 Cloudflare DNS Challenge 自动获取 TLS 证书。
 
 ## 公网
 
-公网上的服务使用了两台腾讯云 Lighthouse 虚拟机，系统基于 CentOS。
+公网上的服务使用了腾讯云 Lighthouse 虚拟机，系统基于 CentOS。和 [CubeCloud](https://www.cubecloud.net/aff.php?aff=2332) 的 CN2 GIA 服务器，系统基于 Ubuntu。
 
-- 4C4G 广州 峰值带宽 8M
-- 2C4G 香港 峰值带宽 30M
+- 腾讯云轻量 4C4G 广州 峰值带宽 8M
+- ~~腾讯云轻量 2C4G 香港 峰值带宽 30M~~ （已经弃用）
+- CubeCloud CN2 GIA 2C1G 广州 峰值带宽 50M
 
-两台设备选装了腾讯云的宝塔定制版面板，关闭了在线面板的访问。
