@@ -47,6 +47,7 @@ copyright:
 - [Yifu Qiu](https://yfqiu.netlify.app/): Ph.D. Student in Natural Language Processing at UoE & Cambridge, 2023 Apple Scholar in AI/ML.
 - [Steven](https://blog.steven53.top)
 - [HARKERBEST](https://www.harkerbest.cn)
+- [WallBreakerNO4](https://blog.wall-breaker-no4.xyz/)
 
 > The order of the list has no special meaning.
 
