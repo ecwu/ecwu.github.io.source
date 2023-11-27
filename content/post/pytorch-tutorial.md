@@ -141,17 +141,19 @@ Tensors are a specialized data structure that are very similar to arrays and mat
 
 Tensor can have different data types such as float, integer, or boolean, which is similar to NumPy’s ndarray and, except that **tensors can run on GPUs or other hardware accelerators**. In fact, tensors and NumPy arrays can often share the same underlying memory, eliminating the need to copy data. Tensors are also **optimized for automatic differentiation**.
 
-Tensor
-Tensors are a specialized data structure that are very similar to arrays and matrices (multi-dimensional array). In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
+#### Initializing a Tensor
 
-Tensor can have different data types such as float, integer, or boolean, which is similar to NumPy’s ndarray and, except that tensors can run on GPUs or other hardware accelerators. In fact, tensors and NumPy arrays can often share the same underlying memory, eliminating the need to copy data. Tensors are also optimized for automatic differentiation.
+- Direct
 
-Initializing a Tensor
-Direct
+```python
 # Initialize a tensor of size 2x3 with all elements set to zero
 tensor_a = torch.zeros(2, 3)
 print(tensor_a)
-From NumPy
+```
+
+- From NumPy
+
+```python
 import numpy as np
  
 # Create a NumPy array
@@ -160,7 +162,11 @@ numpy_array = np.array([[1, 2, 3], [4, 5, 6]])
 # Initialize a tensor from the NumPy array
 tensor_b = torch.from_numpy(numpy_array)
 print(tensor_b)
-From another tensor
+```
+
+- From another tensor
+
+```python
 # From another tensor
 tensor_c = torch.tensor([[1, 2, 3], [4, 5, 6]])
  
@@ -175,9 +181,12 @@ tensor_c = torch.tensor([[1, 2, 3], [4, 5, 6]])
 # print(tensor_d)
  
 tensor_e = tensor_c.clone().detach()
- 
+
 print(tensor_e)
-Fill in random or constant values
+```
+
+- Fill in random or constant values
+```python
 # Fill in random or constant values
 tensor_f = torch.rand(3, 2)  # Uniform Distribution
 print(tensor_f)
@@ -187,15 +196,19 @@ print(tensor_g)
  
 tensor_h = torch.full((3, 3), 7)  # Filled with constant value
 print(tensor_h)
-Attributes of a Tensor
+```
+
+#### Attributes of a Tensor
+
 Tensors in PyTorch have several attributes that provide information about their shape, data type, and other properties. Here are some of the commonly used attributes of a PyTorch tensor.
 
-Shape: It represents the size of each dimension of the tensor. You can access it using the shape attribute or the size() method. For example, tensor.shape or tensor.size() will return the shape of the tensor.
-Datatype: It indicates the data type of the elements stored in the tensor. PyTorch supports various data types such as torch.float32, torch.int64, torch.bool, etc. You can access the data type of a tensor using the dtype attribute.
-Device: It specifies the device (CPU or GPU) on which the tensor is stored. You can use the device attribute to check if the tensor is on the CPU or GPU.
-requires_grad: This attribute indicates whether the tensor requires gradient computation for automatic differentiation. By default, tensors created directly from data do not require gradients. You can enable gradient tracking by setting requires_grad=True on a tensor.
+- Shape: It represents the size of each dimension of the tensor. You can access it using the shape attribute or the `size()` method. For example, `tensor.shape` or `tensor.size()` will return the shape of the tensor.
+- Datatype: It indicates the data type of the elements stored in the tensor. PyTorch supports various data types such as `torch.float32`, `torch.int64`, `torch.bool`, etc. You can access the data type of a tensor using the `dtype` attribute.
+- Device: It specifies the device (CPU or GPU) on which the tensor is stored. You can use the device attribute to check if the tensor is on the CPU or GPU.
+- `requires_grad`: This attribute indicates whether the tensor requires gradient computation for automatic differentiation. By default, tensors created directly from data do not require gradients. You can enable gradient tracking by setting `requires_grad=True` on a tensor.
 
 
+```python
 tensor = torch.zeros(2, 3, 4)
 print(f"tensor shape: {tensor.shape}")  # This is a attribute, not function
 print(f"tensor size: {tensor.size()}")
@@ -206,7 +219,9 @@ print(f"tensor dtype: {tensor.dtype}")
  
 # tensor = torch.zeros(2, 3).to('cuda')
 print(f"tensor device: {tensor.device}")
-Operations
+```
+
+### Operations
 In PyTorch, tensors support a wide range of operations (100+) for manipulating and performing computations on the data they contain. Including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling and more are comprehensively described here.
 
 Standard numpy-like indexing and slicing: Tensors can be indexed and sliced using similar syntax as NumPy arrays.
