@@ -222,9 +222,11 @@ print(f"tensor device: {tensor.device}")
 ```
 
 ### Operations
+
 In PyTorch, tensors support a wide range of operations (100+) for manipulating and performing computations on the data they contain. Including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling and more are comprehensively described here.
 
 Standard numpy-like indexing and slicing: Tensors can be indexed and sliced using similar syntax as NumPy arrays.
+```python
 tensor = torch.tensor([[1, 2, 3], [4, 5, 6]])
  
 # Indexing
@@ -232,7 +234,8 @@ print(tensor[0, 1])  # Output: 2
  
 # Slicing
 print(tensor[:, 1:])  # Output: tensor([[2, 3], [5, 6]])
-Joining tensors
+
+# Joining tensors
 tensor1 = torch.tensor([[1, 2], [3, 4]])
 tensor2 = torch.tensor([[5, 6], [7, 8]])
  
@@ -243,12 +246,16 @@ print(concatenated)
 # Stacking
 stacked = torch.stack((tensor1, tensor2), dim=0)  # Stack along new dimension 0
 print(stacked)
-Reshape: Returns a tensor with the same data but a different shape.Returns a tensor with the same data but a different shape.
+
+# Reshape: Returns a tensor with the same data but a different shape.
 tensor = torch.tensor([[1, 2], [3, 4]])
- 
 reshaped = torch.reshape(tensor, (4,))
 print(reshaped)
-Arithmetic operations
+```
+
+#### Arithmetic operations
+
+```python
 tensor1 = torch.tensor([[1, 2], [3, 4]])
 tensor2 = torch.tensor([[5, 6], [7, 8]])
  
@@ -263,13 +270,18 @@ print(result)
 # Matrix Multiplication
 result = torch.matmul(tensor1, tensor2)
 print(result)
-Building Neural Networks
-nn.Module Class
-It serves as a base class for all neural network modules in PyTorch and is used to define the architecture and behavior of the network. It provides a convenient way to organize the parameters of a model and define the forward pass computation. To create your own neural network using nn.Module, you need to define a subclass of nn.Module and override two key methods: __init__ and forward. The __init__ method is used to define the layers and modules of your network, while the forward method specifies the forward pass computation.
+```
 
+## Building Neural Networks
+
+### `nn.Module` Class
+
+It serves as a base class for all neural network modules in PyTorch and is used to define the architecture and behavior of the network. It provides a convenient way to organize the parameters of a model and define the forward pass computation. To create your own neural network using `nn.Module`, you need to define a subclass of `nn.Module` and override two key methods: `__init__` and `forward`. The `__init__` method is used to define the layers and modules of your network, while the `forward` method specifies the forward pass computation.
+
+```python
 import torch
 import torch.nn as nn
- 
+
 class MyNetwork(nn.Module):
     def __init__(self):
         super(MyNetwork, self).__init__()
@@ -282,10 +294,12 @@ class MyNetwork(nn.Module):
         x = self.fc1(x)
         x = self.fc2(x)
         return x
+```
 
+In the `__init__` method, you can define any layers or modules you need for your network. In this example, we define two fully connected layers (`nn.Linear`) with specified input and output sizes.
+In the forward method, you specify the sequence of operations that will be applied to the input x during the forward pass. In this example, we apply the first linear layer (`self.fc1`), followed by the second linear layer (`self.fc2`).
 
-In the __init__ method, you can define any layers or modules you need for your network. In this example, we define two fully connected layers (nn.Linear) with specified input and output sizes.
-In the forward method, you specify the sequence of operations that will be applied to the input x during the forward pass. In this example, we apply the first linear layer (self.fc1), followed by a ReLU activation function (torch.relu), and finally the second linear layer (self.fc2).
+```python
 batch_size = 1
 in_features = 10
  
@@ -295,17 +309,22 @@ input_data = torch.randn(batch_size, in_features)
 output = model(input_data)
  
 print(f"input: {input_data}\noutput: {output}")
-In this example, we first instanize the network we just defined. And setup the input_data which is a tensor representing the input to your network. You can pass this input tensor to your network instance (model) to obtain the output tensor (output). The forward method of your network will be automatically called, executing the forward pass computation defined earlier.
+```
 
-Predefined Layers
-PyTorch's nn module provides a wide range of predefined layers that you can use to build your neural networks. Just like the nn.Linear and nn.ReLU we just use. Here are some commonly used layers:
+In this example, we first instantize the network we just defined. And setup the input_data which is a tensor representing the input to your network. You can pass this input tensor to your network instance (model) to obtain the output tensor (output). The forward method of your network will be automatically called, executing the forward pass computation defined earlier.
 
-nn.Linear: This layer implements a fully connected (linear) operation. It applies a linear transformation to the input data, where each input element is multiplied by a weight and summed with a bias term.
-nn.Conv2d: This layer performs 2D convolutional operations on input data, commonly used in image processing tasks. It applies a set of learnable filters (kernels) to the input tensor to extract local features.
+### Predefined Layers
+
+PyTorch's nn module provides a wide range of predefined layers that you can use to build your neural networks. Just like the `nn.Linear` and `nn.ReLU` we just use. Here are some commonly used layers:
+
+- `nn.Linear`: This layer implements a fully connected (linear) operation. It applies a linear transformation to the input data, where each input element is multiplied by a weight and summed with a bias term.
+- `nn.Conv2d`: This layer performs 2D convolutional operations on input data, commonly used in image processing tasks. It applies a set of learnable filters (kernels) to the input tensor to extract local features.
 nn.Dropout: This layer implements dropout regularization, which randomly sets input elements to zero during training. Dropout helps prevent overfitting by reducing the interdependencies between neurons.
-nn.BatchNorm2d: This layer performs batch normalization along the channels of a 2D input tensor. It normalizes the input by subtracting the mean and dividing by the standard deviation, which helps stabilize and accelerate the training process.
-nn.ReLU: This activation function applies the Rectified Linear Unit (ReLU) element-wise to the input tensor. ReLU sets negative values to zero and keeps positive values unchanged.
-nn.Softmax: This activation function applies the softmax operation to the input tensor, which normalizes the tensor into a probability distribution over the classes. It is commonly used for multi-class classification problems.
+- `nn.BatchNorm2d`: This layer performs batch normalization along the channels of a 2D input tensor. It normalizes the input by subtracting the mean and dividing by the standard deviation, which helps stabilize and accelerate the training process.
+- `nn.ReLU`: This activation function applies the Rectified Linear Unit (ReLU) element-wise to the input tensor. ReLU sets negative values to zero and keeps positive values unchanged.
+- `nn.Softmax`: This activation function applies the softmax operation to the input tensor, which normalizes the tensor into a probability distribution over the classes. It is commonly used for multi-class classification problems.
+
+```python
 class MyNetwork(nn.Module):
     def __init__(self, in_channels, out_classes):
         super(MyNetwork, self).__init__()
@@ -335,7 +354,11 @@ class MyNetwork(nn.Module):
         x = self.softmax(x)
           
         return x
-Model Summary and Parameters
+```
+
+### Model Summary and Parameters
+
+```python
 model = MyNetwork(in_channels=1, out_classes=10)
  
 # Print the network structure
@@ -359,8 +382,10 @@ MyNetwork(
 )
 Total parameters: 6425866
 """
-there is a convenient package called torchsummary that you can use to calculate the total number of parameters in a PyTorch model. Here's how you can use it:
+```
+There is a convenient package called `torchsummary` that you can use to calculate the total number of parameters in a PyTorch model. Here's how you can use it:
 
+```python
 from torchsummary import summary
  
 # Instantiate the network
@@ -395,7 +420,10 @@ Params size (MB): 24.51
 Estimated Total Size (MB): 26.06
 ----------------------------------------------------------------
 """
-Dataset and DataLoader
+```
+
+## Dataset and DataLoader
+
 PyTorch Dataset represents a dataset of input samples and their corresponding labels, while PyTorch DataLoader is responsible for efficiently loading the data from the dataset during training or inference.
 
 Dataset Class
