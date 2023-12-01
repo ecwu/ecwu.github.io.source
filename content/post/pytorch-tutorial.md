@@ -426,13 +426,16 @@ Estimated Total Size (MB): 26.06
 
 PyTorch Dataset represents a dataset of input samples and their corresponding labels, while PyTorch DataLoader is responsible for efficiently loading the data from the dataset during training or inference.
 
-Dataset Class
-The PyTorch torch.utils.data.Dataset class is a base class that you can inherit from to create your custom dataset.
+### `Dataset` Class
 
-To create a dataset in PyTorch, you need to override the following methods of the Dataset class:
+The PyTorch `torch.utils.data.Dataset` class is a base class that you can inherit from to create your custom dataset.
 
-__len__: Returns the total number of data samples in the dataset.
-__getitem__: Retrieves a specific data sample from the dataset, given its index.
+To create a dataset in PyTorch, you need to override the following methods of the `Dataset` class:
+
+- `__len__`: Returns the total number of data samples in the dataset.
+- `__getitem__`: Retrieves a specific data sample from the dataset, given its index.
+
+```python
 import torch
 from torch.utils.data import Dataset
  
@@ -456,21 +459,26 @@ dataset = CustomDataset(data)
 # Access individual data samples
 sample = dataset[0]
 print(sample)  # Output: 1
-Built-in Datasets
-PyTorch provides several built-in datasets through the torchvision.datasets module. These datasets are commonly used for computer vision tasks. Here are some of the popular built-in datasets available in PyTorch:
+```
 
-MNIST: Handwritten digit dataset.
-CIFAR10 and CIFAR100: Small images dataset with 10 and 100 classes, respectively.
-ImageNet: Large-scale image dataset with 1000 classes.
-FashionMNIST: Fashion product images dataset.
-COCO: Common Objects in Context dataset for object detection, segmentation, and captioning.
-VOC: Visual Object Classes dataset for object detection, segmentation, and classification.
-LSUN: Large-scale Scene Understanding dataset for scene classification and generation.
-SVHN: Street View House Numbers dataset.
-STL10: Small images dataset with 10 classes.
-CelebA: Large-scale celebrity faces dataset.
+### Built-in Datasets
+
+PyTorch provides several built-in datasets through the `torchvision`.datasets module. These datasets are commonly used for computer vision tasks. Here are some of the popular built-in datasets available in PyTorch:
+
+- [MNIST](http://yann.lecun.com/exdb/mnist/): Handwritten digit dataset.
+- [CIFAR10 and CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html): Small images dataset with 10 and 100 classes, respectively.
+- [ImageNet](https://www.image-net.org/): Large-scale image dataset with 1000 classes.
+- [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist): Fashion product images dataset.
+- [COCO](https://cocodataset.org/): Common Objects in Context dataset for object detection, segmentation, and captioning.
+- [VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/): Visual Object Classes dataset for object detection, segmentation, and classification.
+- [LSUN](https://github.com/fyu/lsun): Large-scale Scene Understanding dataset for scene classification and generation.
+- [SVHN](http://ufldl.stanford.edu/housenumbers/): Street View House Numbers dataset.
+- [STL10](https://cs.stanford.edu/~acoates/stl10/): Small images dataset with 10 classes.
+- [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html): Large-scale celebrity faces dataset.
+
 To use these built-in datasets in PyTorch, you need to follow these steps:
 
+```python
 from torchvision import datasets
  
 dataset = datasets.MNIST(root='./data', train=True, download=True)
@@ -482,27 +490,31 @@ import matplotlib.pyplot as plt  # Visualize
 plt.figure(figsize=(3,3))
 plt.imshow(sample[0])
 plt.show()
-Transformations
-Transformations in PyTorch are operations applied to data samples in a dataset. They are commonly used to preprocess or augment the data before feeding it into a machine learning model. PyTorch provides the torchvision.transforms module, which offers a variety of predefined transformations for computer vision tasks. Here are some commonly used transformations:
+```
 
-ToTensor(): Converts a PIL image or numpy array to a PyTorch tensor. It also scales the pixel values between 0 and 1.
+### Transformations
 
-Normalize(mean, std): Normalizes a tensor by subtracting the mean and dividing by the standard deviation. The mean and std arguments specify the channel-wise means and standard deviations.
+Transformations in PyTorch are operations applied to data samples in a dataset. They are commonly used to preprocess or augment the data before feeding it into a machine learning model. PyTorch provides the `torchvision.transforms` module, which offers a variety of predefined transformations for computer vision tasks. Here are some commonly used transformations:
 
-Resize(size): Resizes the input PIL image to the specified size. It can take a single integer as an argument to resize the image's shorter side while maintaining its aspect ratio.
+- `ToTensor()`: Converts a PIL image or numpy array to a PyTorch tensor. It also scales the pixel values between 0 and 1.
 
-CenterCrop(size): Crops the center portion of the image to the specified size.
+- `Normalize(mean, std)`: Normalizes a tensor by subtracting the mean and dividing by the standard deviation. The mean and std arguments specify the channel-wise means and standard deviations.
 
-RandomCrop(size): Randomly crops the input image to the specified size.
+- `Resize(size)`: Resizes the input PIL image to the specified size. It can take a single integer as an argument to resize the image's shorter side while maintaining its aspect ratio.
 
-RandomHorizontalFlip(): Randomly flips the input image horizontally with a probability of 0.5.
+- `CenterCrop(size)`: Crops the center portion of the image to the specified size.
 
-RandomRotation(degrees): Rotates the input image by a random angle within the specified range.
+- `RandomCrop(size)`: Randomly crops the input image to the specified size.
 
-RandomResizedCrop(size): Randomly crops and resizes the input image to the specified size.
+- `RandomHorizontalFlip()`: Randomly flips the input image horizontally with a probability of 0.5.
 
+- `RandomRotation(degrees)`: Rotates the input image by a random angle within the specified range.
+
+- `RandomResizedCrop(size)`: Randomly crops and resizes the input image to the specified size.
+
+```python
 from torchvision import transforms
-  
+
 # Define the transformations
 transform = transforms.Compose([
     transforms.CenterCrop(20),  # Crops the given image at the center.
@@ -511,16 +523,20 @@ transform = transforms.Compose([
     transforms.ToTensor(),  # Convert PIL image to tensor
     transforms.Normalize((0.5,), (0.5,))  # Normalize tensor
 ])
-  
+
 # Create an instance of the dataset with transformations
 dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-What is DataLoader and how to use
-In PyTorch, a DataLoader is an iterable that provides an interface to efficiently load data from a dataset during training or evaluation. It handles batch loading, shuffling, and other useful functionalities to facilitate the training process. The DataLoader takes a dataset as input and returns batches of data samples and their corresponding labels.
+```
 
-The relationship between a dataset and a DataLoader is that the DataLoader wraps the dataset and provides an interface to access the data in batches. It abstracts away the details of data loading and allows you to focus on training your model.
+### What is DataLoader and how to use
 
-To use a DataLoader with the dataset you defined, you can follow these steps:
+In PyTorch, a `DataLoader` is an iterable that provides an interface to efficiently load data from a dataset during training or evaluation. It handles batch loading, shuffling, and other useful functionalities to facilitate the training process. The `DataLoader` takes a dataset as input and returns batches of data samples and their corresponding labels.
 
+The relationship between a dataset and a `DataLoader` is that the `DataLoader` wraps the dataset and provides an interface to access the data in batches. It abstracts away the details of data loading and allows you to focus on training your model.
+
+To use a `DataLoader` with the dataset you defined, you can follow these steps:
+
+```python
 import torch
 from torch.utils.data import DataLoader
  
@@ -534,19 +550,24 @@ for batch_data, batch_labels in dataloader:
  
     # Clear gradients, perform backward pass, update model parameters, etc.
     # ...
-Training and Optimization
+```
+## Training and Optimization
 Splitting data into training, validation, and test sets
 The common method we use for the dataset split is from sklearn
 
+```python
 from sklearn.model_selection import train_test_split  dataset = CustomDataset(data)
  
 # Split the data into train, validation, and test sets
 train_data, test_data = train_test_split(dataset, test_size=0.2, random_state=42)
 train_data, val_data = train_test_split(train_data, test_size=0.2, random_state=42)
+```
+
 In the example above, the dataset is split into 80% training data and 20% test data. Then, the training data is further split into 80% for training and 20% for validation.
 
 Once you have split your data into training, validation, and test sets, you can construct separate data loaders for each set.
 
+```python
 # Define batch size
 batch_size = 32
  
@@ -554,34 +575,48 @@ batch_size = 32
 train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
 val_loader = DataLoader(val_data, batch_size=batch_size)
 test_loader = DataLoader(test_data, batch_size=batch_size)
-In the code above, train_data, val_data, and test_data represent the respective splits of your dataset. The batch_size parameter specifies the number of samples in each batch. You can adjust this value based on your computational resources and model requirements.
+```
 
-The DataLoader class from PyTorch is used to create the data loaders. The shuffle=True argument is passed to the training loader to randomly shuffle the samples in each epoch, which helps in improving the model's generalization.
+In the code above, `train_data`, `val_data`, and `test_data` represent the respective splits of your dataset. The `batch_size` parameter specifies the number of samples in each batch. You can adjust this value based on your computational resources and model requirements.
 
-Defining loss functions (e.g., cross-entropy, mean squared error)
+The `DataLoader` class from PyTorch is used to create the data loaders. The `shuffle=True` argument is passed to the training loader to randomly shuffle the samples in each epoch, which helps in improving the model's generalization.
+
+### Defining loss functions (e.g., cross-entropy, mean squared error)
+
 After defining the data loader and model in a deep learning task, the next steps typically involve defining the loss function and optimizer. Here's a general outline of how to do that:
 
 The loss function measures the discrepancy between the predicted output of your model and the true labels. The choice of loss function depends on the specific task you are working on. Some common loss functions include:
 
-Mean Squared Error (MSE): Suitable for regression tasks where the output is continuous.
-Binary Cross-Entropy: Used for binary classification tasks where the output is a probability between 0 and 1.
-Categorical Cross-Entropy: Appropriate for multi-class classification problems where the output is a probability distribution over multiple classes.
+- Mean Squared Error (MSE): Suitable for regression tasks where the output is continuous.
+- Binary Cross-Entropy: Used for binary classification tasks where the output is a probability between 0 and 1.
+- Categorical Cross-Entropy: Appropriate for multi-class classification problems where the output is a probability distribution over multiple classes.
+
+```python
 # loss_fn = nn.MSELoss()
 # loss_fn = nn.BCELoss()
 loss_fn = nn.CrossEntropyLoss()
 # loss_fn = nn.KLDivLoss()
-Choosing and configuring optimizers (e.g., SGD, Adam)
-The optimizer is responsible for updating the model's parameters based on the computed gradients during the backpropagation process. It adjusts the parameters in the direction that minimizes the loss function. One commonly used optimizer is Stochastic Gradient Descent (SGD), but there are many other variants available, such as Adam, RMSprop, and Adagrad. PyTorch provides various optimizers in the torch.optim module. To use an optimizer, you typically need to pass the model parameters and specify the learning rate. Here's an example of defining an optimizer:
+```
 
+### Choosing and configuring optimizers (e.g., SGD, Adam)
+
+The optimizer is responsible for updating the model's parameters based on the computed gradients during the backpropagation process. It adjusts the parameters in the direction that minimizes the loss function. One commonly used optimizer is Stochastic Gradient Descent (SGD), but there are many other variants available, such as Adam, RMSprop, and Adagrad. PyTorch provides various optimizers in the `torch.optim` module. To use an optimizer, you typically need to pass the model parameters and specify the learning rate. Here's an example of defining an optimizer:
+
+```python
 import torch.optim as optim
   
 # optimizer = optim.SGD(model.parameters(), lr=0.001)
 # Or
 optimizer = optim.Adam(model.parameters(), lr=0.001)
-Do Training
+```
+
+### Do Training
+
 Once you have defined the model, data loader, loss function, and optimizer, you can proceed with training your model and calculating metrics for each batch and epoch. Here's an overview of the steps involved:
 
 Training Loop: Iterate over your data for a specified number of epochs. In each epoch, iterate over the batches of data provided by the data loader. Here's an example of a training loop:
+
+```python
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = model.to(device)
 loss_fn = loss_fn.to(device)
@@ -635,168 +670,164 @@ for epoch in range(num_epochs):
   
     # Print or log the metrics for analysis
     print(f"Epoch {epoch+1} - Loss: {avg_epoch_loss:.4f} - Metric: {avg_epoch_metric:.4f}")
+```
+
 You'll typically follow these steps:
 
-Iterate over the training dataset for a specific number of epochs.
-Within each epoch, iterate over the batches of the dataset.
-Perform the forward pass through the model to obtain predictions.
-Calculate the loss using the defined loss function.
-Perform the backward pass and update the model parameters using the optimizer.
-Calculate and record the desired metrics for analysis.
-Saving and Loading Models
-To save a trained model in PyTorch, you can use the torch.save() function. This function allows you to save various components of the model, including the model's architecture, parameters, optimizer state, and any additional information you want to store.
+- Iterate over the training dataset for a specific number of epochs.
+    - Within each epoch, iterate over the batches of the dataset.
+        - Perform the forward pass through the model to obtain predictions.
+        - Calculate the loss using the defined loss function.
+        - Perform the backward pass and update the model parameters using the optimizer.
+    - Calculate and record the desired metrics for analysis.
 
+#### Saving and Loading Models
+
+To save a trained model in PyTorch, you can use the `torch.save()` function. This function allows you to save various components of the model, including the model's architecture, parameters, optimizer state, and any additional information you want to store.
+
+```python
 torch.save(model, 'saved_model.pth')
-In this example, the model object is saved in a file called "saved_model.pth". This file will contain the entire model, including its architecture, parameters, and other associated information.
+```
 
-When you load the saved model, you can use the torch.load() function. Here's an example of how to load the saved model:
+In this example, the model object is saved in a file called "`saved_model.pth`". This file will contain the entire model, including its architecture, parameters, and other associated information.
 
+When you load the saved model, you can use the `torch.load()` function. Here's an example of how to load the saved model:
+
+```python
 loaded_model = torch.load('saved_model.pth')
 loaded_model = loaded_model.to(device)
 # Print the model summary
 summary(loaded_model, (1, 28, 28))  # Provide an example input size
-The torch.load() function returns the model object, which you can assign to a variable (loaded_model in this case). After loading, you can use the loaded model for inference, evaluation, or further training.
+```
 
-Note that when you save the entire model using torch.save(), it saves the complete state of the model, including all parameters and buffers. However, it does not save the optimizer state by default. If you want to save and load the optimizer state as well, you can save it separately or include it in a dictionary along with the model.
+The `torch.load()` function returns the model object, which you can assign to a variable (loaded_model in this case). After loading, you can use the loaded model for inference, evaluation, or further training.
 
+Note that when you save the entire model using `torch.save()`, it saves the complete state of the model, including all parameters and buffers. However, it does not save the optimizer state by default. If you want to save and load the optimizer state as well, you can save it *separately* or include it in a dictionary along with the model.
+
+```python
 # Save model and optimizer together
 checkpoint = {
     'model_state_dict': model.state_dict(),
     'optimizer_state_dict': optimizer.state_dict()
 }
 torch.save(checkpoint, 'saved_model-w-optimizer.pth')
-To load the model and optimizer together, you can use torch.load() and then access the saved states:
+```
 
+To load the model and optimizer together, you can use `torch.load()` and then access the saved states:
+
+```python
 checkpoint = torch.load('saved_model-w-optimizer.pth')
 opt_model = MyNetwork(in_channels=1, out_classes=10)
 opt_optimizer = optim.Adam(opt_model.parameters(), lr=0.001)
 opt_model.load_state_dict(checkpoint['model_state_dict'])
 opt_optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-Transfer Learning
-In PyTorch, you can use predefined models from the torchvision.models module, which provides a collection of popular pre-trained models for tasks such as image classification, object detection, and segmentation (Huggingface for NLP, LLM, and Multi-modal). These models are trained on large datasets like ImageNet and have learned useful features that can be leveraged for various computer vision tasks.
+```
+
+## Transfer Learning
+
+In PyTorch, you can use predefined models from the `torchvision.models` module, which provides a collection of popular pre-trained models for tasks such as image classification, object detection, and segmentation (Huggingface for NLP, LLM, and Multi-modal). These models are trained on large datasets like ImageNet and have learned useful features that can be leveraged for various computer vision tasks.
+
+### Load Models and Pre-trained weights
 
 To use a predefined model and download its pre-trained parameters, you can follow these steps:
 
 Import the necessary modules, and load a model:
+
+```python
 import torchvision.models as models
  
 model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
-In this example, the ResNet-50 model is loaded with pre-trained weights. You can choose different models such as ResNet-18, VGG-16, etc. Here is the full model list:
+```
 
-Table of all available classification weights: Models and pre-trained weights — Torchvision 0.15 documentation (pytorch.org)
+In this example, the ResNet-50 model is loaded with pre-trained weights. You can choose different models such as ResNet-18, VGG-16, etc. Here is the full model list: [Models and pre-trained weights — Torchvision 0.15 documentation (pytorch.org)](https://pytorch.org/vision/stable/models.html)
+
+### Modify model for your task
 
 After loaded such model with pre-trained parameters, you can use them just like the model you defined, but you have to know that the model is design for a specific tasks, which may not align with yours. So if you want to use the model on your task and fully utilize the pretrain effort, you can change the model and do transfer learning (fine-tuning). What you need to do is replacing or fine-tuning the last fully connected layer. For ResNet model the last layer typically corresponds to the classification layer for ImageNet's 1000 classes. If your task has a different number of classes, you need to adapt the last layer accordingly. For example:
+
+```python
 num_classes = 10
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
-In this example, the last fully connected layer (model.fc) is replaced with a new linear layer that has num_classes output units.
+```
+
+In this example, the last fully connected layer (`model.fc`) is replaced with a new linear layer that has num_classes output units.
 
 Depending on your task and the amount of available data, you may choose to freeze some layers to prevent their weights from being updated during training. This is particularly useful when you have limited data or when the pre-trained model is already well-suited to your task. For example, to freeze all layers except the last one:
+
+```python
 for param in model.parameters():
     param.requires_grad = False
 model.fc.weight.requires_grad = True
 model.fc.bias.requires_grad = True
-In this example, all parameters (requires_grad) are set to False except for the weights and biases of the last fully connected layer (model.fc).
+```
+
+In this example, all parameters (`requires_grad`) are set to False except for the weights and biases of the last fully connected layer (`model.fc`).
 
 With these steps, you can use a pre-trained model, download its pre-trained parameters, and modify it to suit your specific task. Once you've made the necessary modifications, you can train the model on your own dataset or use it for inference.
 
+> PS: The layer naming is not fully aligned for all model, like the Transformer model have a different name and structure for the output layer, you need to look in to the model first before the modification.
 
+## GPU Acceleration
 
-PS: The layer naming is not fully aligned for all model, like the Transformer model have a different name and structure for the output layer, you need to look in to the model first before the modification.
-
-GPU Acceleration
 GPU acceleration in PyTorch refers to leveraging the computational power of Graphics Processing Units (GPUs) to speed up training and inference processes. GPUs are highly parallel processors capable of performing multiple calculations simultaneously, making them well-suited for tasks involving large-scale matrix computations, such as deep learning.
 
-To utilize CUDA and GPU-enabled devices in PyTorch, you need to ensure that you have the appropriate hardware (an NVIDIA GPU) and the necessary software dependencies installed, including CUDA Toolkit and cuDNN. Once you have these prerequisites set up, you can follow these steps to move tensors and models to the GPU for faster computation:
+To utilize CUDA and GPU-enabled devices in PyTorch, you need to ensure that you have the appropriate hardware (an NVIDIA GPU) and the necessary software dependencies installed, including `CUDA Toolkit` and `cuDNN`. Once you have these prerequisites set up, you can follow these steps to move tensors and models to the GPU for faster computation:
 
+```python
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-This code snippet checks if CUDA is available and assigns the device accordingly. If CUDA is available, the device will be set to "cuda"; otherwise, it will fall back to the CPU.
+```
 
-Move tensors to the GPU:
+This code snippet checks if CUDA is available and assigns the device accordingly. If CUDA is available, the device will be set to `"cuda"`; otherwise, it will fall back to the CPU.
+
+- Move tensors to the GPU:
+
+```python
 tensor = tensor.to(device)
-This line of code moves a PyTorch tensor to the GPU by calling the to() method and passing the device as an argument. After this operation, computations involving this tensor will be performed on the GPU.
+```
 
-Move models to the GPU:
+This line of code moves a PyTorch tensor to the GPU by calling the `to()` method and passing the device as an argument. After this operation, computations involving this tensor will be performed on the GPU.
+
+- Move models to the GPU:
+
+```python
 model = model.to(device)
-Similarly, you can move an entire PyTorch model to the GPU using the to() method. This ensures that all model parameters and computations are performed on the GPU.
+```
 
-Ensure inputs are also on the GPU:
+Similarly, you can move an entire PyTorch model to the GPU using the `to()` method. This ensures that all model parameters and computations are performed on the GPU.
+
+- Ensure inputs are also on the GPU:
+
 If you're passing inputs to the model during training or inference, make sure to move those tensors to the GPU as well. For example:
+
+```python
 input_data = input_data.to(device)
+```
+
 By moving tensors and models to the GPU, PyTorch automatically utilizes the GPU's computational power, leading to faster computations compared to running on the CPU. It's important to note that not all operations are automatically GPU-accelerated. PyTorch provides GPU-accelerated implementations for most common operations, but some custom operations may require manual implementation for GPU compatibility.
 
 When using a GPU, it's also essential to manage GPU memory appropriately, especially when working with large models or batches of data. You may need to optimize your code to minimize memory usage, such as using gradient accumulation or batch splitting techniques.
 
 Remember to perform necessary operations on the same device (CPU or GPU) to avoid unnecessary data transfers between devices, as it can negatively impact performance.
 
-Addition Topics
-Random Seed
+## Addition Topics
+
+### Random Seed
+
 The random seed is a crucial parameter when working with random number generation in PyTorch or any other deep learning framework. It is used to initialize the pseudorandom number generator (PRNG) algorithm, which is responsible for generating random numbers during model training.
 
 By setting a specific random seed, you can ensure reproducibility of your experiments. When the same random seed is used, the sequence of random numbers generated by the PRNG will be the same across multiple runs. This is important because deep learning models often involve random initialization of weights, dropout, data shuffling, and other stochastic operations. Reproducibility allows you to compare different model configurations, debug code, and share results with others.
 
 To preserve determinism when working with random seeds in PyTorch, there are a few key points to keep in mind:
 
-Setting the seed: Before initializing your model or performing any random operations, set the random seed using the `torch.manual_seed(seed)` function, where `seed` is an integer value. You can also set the random seed for numpy and other libraries if they are used in conjunction with PyTorch.
-GPU considerations: If you are using GPUs for training, be aware that additional steps may be necessary to ensure deterministic results. For example, you can use `torch.backends.cudnn.deterministic = True` and `torch.backends.cudnn.benchmark = False` to disable certain GPU optimizations that introduce non-determinism.
-NumPy interactions: If your code involves interactions between PyTorch and NumPy, be mindful that both libraries have their own random number generators. To maintain determinism, set the random seed for both libraries using `np.random.seed(seed)` and `torch.manual_seed(seed)`.
-Non-deterministic operations: While setting a random seed helps control the sources of randomness, some operations in PyTorch may still be non-deterministic, even with a fixed seed. Examples include certain GPU operations or multi-threaded code. In such cases, achieving full determinism may not be possible.
-Library versions: Ensure that you are using the same version of PyTorch and related libraries across different runs. Changes in library versions or underlying algorithms could affect the reproducibility of results, even with the same random seed.
-By being mindful of these considerations and setting the random seed appropriately, you can increase the reproducibility of your PyTorch model training experiments. Your can check more about reproducibility from Torch Document: Reproducibility — PyTorch 2.0 documentation
+- Setting the seed: Before initializing your model or performing any random operations, set the random seed using the `torch.manual_seed(seed)` function, where `seed` is an integer value. You can also set the random seed for numpy and other libraries if they are used in conjunction with PyTorch.
+- GPU considerations: If you are using GPUs for training, be aware that additional steps may be necessary to ensure deterministic results. For example, you can use `torch.backends.cudnn.deterministic = True` and `torch.backends.cudnn.benchmark = False` to disable certain GPU optimizations that introduce non-determinism.
+- NumPy interactions: If your code involves interactions between PyTorch and NumPy, be mindful that both libraries have their own random number generators. To maintain determinism, set the random seed for both libraries using `np.random.seed(seed)` and `torch.manual_seed(seed)`.
+- Non-deterministic operations: While setting a random seed helps control the sources of randomness, some operations in PyTorch may still be non-deterministic, even with a fixed seed. Examples include certain GPU operations or multi-threaded code. In such cases, achieving full determinism may not be possible.
+- Library versions: Ensure that you are using the same version of PyTorch and related libraries across different runs. Changes in library versions or underlying algorithms could affect the reproducibility of results, even with the same random seed.
+- By being mindful of these considerations and setting the random seed appropriately, you can increase the reproducibility of your PyTorch model training experiments. Your can check more about reproducibility from Torch Document: Reproducibility — PyTorch 2.0 documentation
 
-DataLoader Worker
+### DataLoader Worker
+
 When using a data loader in frameworks like PyTorch or TensorFlow, you often have the option to specify the number of worker processes to use for data loading. These worker processes, also known as data loading threads, are responsible for asynchronously loading and preprocessing data in parallel to speed up the overall data loading process.
 
 The correct number of worker processes to use depends on various factors, including the characteristics of your dataset, the available computational resources, and the specific requirements of your training or inference pipeline. In general, increasing the number of worker processes can help speed up data loading, especially when the data loading and preprocessing operations are computationally expensive. However, there are practical limitations to consider, such as the number of CPU cores available and the memory requirements of each worker.
-
-Multi-GPU Training
-When the model you are working on is too big for single card training, you probability need to consider using multi-GPU. It involves distributing the computational workload across multiple GPUs to accelerate the training process and improve overall performance.
-
-Multi-GPU training is particularly beneficial when working with large models or datasets that require significant computational resources. By leveraging multiple GPUs, you can parallelize the training process and process multiple mini-batches simultaneously, leading to faster convergence and reduced training time.
-
-PyTorch provides various mechanisms for multi-GPU training, such as DataParallel and DistributedDataParallel.
-
-DataParallel: DataParallel is a PyTorch wrapper that allows you to wrap your model with it. It automatically divides the input data across multiple GPUs, performs forward and backward passes on each GPU, and then synchronizes the gradients across all GPUs. Using DataParallel is relatively straightforward:
-```python
-import torch
-import torch.nn as nn
-from torch.nn import DataParallel
- 
-# Define your model
-model = MyModel()
- 
-# Wrap the model with DataParallel
-model = DataParallel(model)
- 
-# Move the model to the GPUs
-model = model.cuda()
- 
-# Perform training
-outputs = model(inputs)
-loss = criterion(outputs, labels)
-loss.backward()
-optimizer.step()
-```
-DistributedDataParallel: DistributedDataParallel is another PyTorch module designed for training models on multiple GPUs across different machines. It is useful when you have access to a cluster of machines with multiple GPUs. DistributedDataParallel provides a similar interface to DataParallel but offers additional features for distributed training, such as all-reduce algorithms for gradient synchronization across multiple machines.
-
-To use DistributedDataParallel, you need to set up a PyTorch distributed backend, such as torch.distributed.launch, and initialize the process group:
-
-```python
-import torch
-import torch.nn as nn
-import torch.distributed as dist
-from torch.nn.parallel import DistributedDataParallel as DDP
-# Set up distributed training
-dist.init_process_group(backend='nccl')
-# Define your model
-model = MyModel()
-# Wrap the model with DistributedDataParallel
-model = DDP(model)
-# Move the model to the GPUs
-model = model.cuda()
-# Perform training
-outputs = model(inputs)
-loss = criterion(outputs, labels)
-loss.backward()
-optimizer.step()
-```
-In both cases, PyTorch takes care of dividing the input data and gradients across GPUs, performing the necessary computations, and aggregating the results. The choice between DataParallel and DistributedDataParallel depends on whether you are training on a single machine or multiple machines in a distributed environment. What we show case are a very brief introduction on multi-GPU training, there are more problem when dealing with the actually training.
