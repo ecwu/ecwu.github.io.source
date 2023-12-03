@@ -9,7 +9,7 @@ unsplashfeatureimage: Brecht Corbeel
 publishDate: "2023-11-27T15:50:00+08:00"
 lastmod: 
 draft: true
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -24,8 +24,8 @@ series: Machine Learning
 previous:
 next:
 
-confidence: 
-importance: 8
+confidence: 9
+importance: 
 
 tags:
 - PyTorch
@@ -51,16 +51,19 @@ copyright: bysa
 
 ## Introduction to PyTorch
 
+![PyTorch](https://pytorch.org/assets/images/logo-white.svg)
+
 - PyTorch is an open-source deep learning framework that provides a flexible and dynamic approach to building and training neural networks.
 - Its popularity and widespread adoption by the research and industry communities.
 - PyTorch is widely known for its ease of use, Pythonic interface, and excellent support for research-oriented tasks.
 
 ### Key Technology
 
-
 #### Dynamic computational graph
 
 A **computational graph** is a directed acyclic graph (DAG) that depicts the flow of data through a computational model. It is a way to represent the mathematical operations that are performed on the input data to produce the output.
+
+![computational_graph_equation2.jpg](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/computational_graph_equation2.jpg)
 
 Allows for efficient and flexible model construction and dynamic control flow.
 
@@ -103,21 +106,29 @@ Overall, the automatic differentiation capability in PyTorch, combined with its 
 
 ### Comparison with Other
 
-TBA
+![num_hf_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_hf_models_2023.png)
+
+![num_top_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_top_models_2023.png)
+
+![Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png)
+
+![torch-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/torch-download-trend.png)
+
+![tensorflow-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/tensorflow-download-trend.png)
 
 ## How to use PyTorch
 
-
 ### Online Computation Resource
-- Kaggle: Your Machine Learning and Data Science Community
-- colab.googl
+
+- [Kaggle: Your Machine Learning and Data Science Community](https://www.kaggle.com/)
+- [colab.google](https://colab.research.google.com/)
 
 In such environment. You don't need to explicitly set up the PyTorch environment since such platforms provide a containerized environment with the computational resource and basic environment installed.
 
 ### Your Own Machine
 
-- Python Environment: Anaconda/Miniconda Miniconda — miniconda documentation
-- PyTorch Install: Start Locally | PyTorch
+- Python Environment: [Anaconda/Miniconda Miniconda — miniconda documentation](https://docs.conda.io/projects/miniconda/en/latest/)
+- PyTorch Install: [Start Locally | PyTorch](https://pytorch.org/get-started/locally/)
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
@@ -125,10 +136,12 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
-#### With GPU:
+#### With GPU
+
 - A GPU (Support CUDA 11 or later)
-- CUDA Environment: CUDA Zone - Library of Resources | NVIDIA Developer
-- PyTorch GPU version: 
+- CUDA Environment: [CUDA Zone - Library of Resources | NVIDIA Developer](https://developer.nvidia.com/cuda-zone)
+- PyTorch GPU version
+
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
@@ -139,7 +152,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 Tensors are a specialized data structure that are very similar to arrays and matrices (multi-dimensional array). In PyTorch, we use tensors to encode the inputs and outputs of a model, as well as the model’s parameters.
 
-Tensor can have different data types such as float, integer, or boolean, which is similar to NumPy’s ndarray and, except that **tensors can run on GPUs or other hardware accelerators**. In fact, tensors and NumPy arrays can often share the same underlying memory, eliminating the need to copy data. Tensors are also **optimized for automatic differentiation**.
+Tensor can have different data types such as float, integer, or boolean, which is similar to NumPy’s `ndarray` and, except that **tensors can run on GPUs or other hardware accelerators**. In fact, tensors and NumPy arrays can often share the same underlying memory, eliminating the need to copy data. Tensors are also **optimized for automatic differentiation**.
 
 #### Initializing a Tensor
 
@@ -223,7 +236,7 @@ print(f"tensor device: {tensor.device}")
 
 ### Operations
 
-In PyTorch, tensors support a wide range of operations (100+) for manipulating and performing computations on the data they contain. Including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling and more are comprehensively described here.
+In PyTorch, tensors support a wide range of operations (100+) for manipulating and performing computations on the data they contain. Including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling and more are comprehensively described [here](https://pytorch.org/docs/stable/tensors.html).
 
 Standard numpy-like indexing and slicing: Tensors can be indexed and sliced using similar syntax as NumPy arrays.
 ```python
@@ -295,6 +308,8 @@ class MyNetwork(nn.Module):
         x = self.fc2(x)
         return x
 ```
+
+![mlp-figure.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/mlp-figure.png)
 
 In the `__init__` method, you can define any layers or modules you need for your network. In this example, we define two fully connected layers (`nn.Linear`) with specified input and output sizes.
 In the forward method, you specify the sequence of operations that will be applied to the input x during the forward pass. In this example, we apply the first linear layer (`self.fc1`), followed by the second linear layer (`self.fc2`).
