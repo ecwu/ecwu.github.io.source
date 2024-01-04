@@ -6,9 +6,9 @@ description:
 featureimage: https://unsplash.com/photos/qHx3w6Gwz9k/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8UHlUb3JjaHxlbnwwfHx8fDE3MDEwNzEzNjh8MA&force=true&w=2400
 unsplashfeatureimage: Brecht Corbeel
 
-publishDate: "2023-11-27T15:50:00+08:00"
+publishDate: "2024-01-05T00:25:00+08:00"
 lastmod: 
-draft: true
+draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
 
@@ -24,14 +24,24 @@ series: Machine Learning
 previous:
 next:
 
-confidence: 9
+confidence: 8
 importance: 
 
 tags:
 - PyTorch
+- Machine Learning
+- Tensorflow
+- Model
+- DataLoader
+- Dataset
+- MLP
+- Transfer Learning
+- Tutorial
+- Deep Learning
 
 categories:
 - Tech
+- Note
 
 # type: file, link, image, and others
 extramaterials:
@@ -45,7 +55,7 @@ copyright: bysa
 
 > A little bit of context
 >
-> This is the tutorial material I prepared this fall, for people with the basic foundation of machine learning to get hands-on PyTorch quickly.
+> This is the tutorial material I prepared in fall 2023, for people with basic foundation of machine learning to get hands-on PyTorch quickly.
 >
 > My idea behind the whole document is to teach the reader how to do full model training from the ground up and introduce each component alongside the process.
 
@@ -61,50 +71,39 @@ copyright: bysa
 
 #### Dynamic computational graph
 
-A **computational graph** is a directed acyclic graph (DAG) that depicts the flow of data through a computational model. It is a way to represent the mathematical operations that are performed on the input data to produce the output.
+A **computational graph** represents the flow of data through a computational model in the form of a directed acyclic graph (DAG). It serves as a visual representation of the mathematical operations performed on input data to produce the desired output.
 
 ![computational_graph_equation2.jpg](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/computational_graph_equation2.jpg)
 
-Allows for efficient and flexible model construction and dynamic control flow.
+PyTorch allows for efficient and flexible model construction and dynamic control flow through its dynamic computational graph. Unlike TensorFlow, another popular deep-learning framework that employs static computational graphs, PyTorch constructs and executes the computational graph dynamically during runtime.
 
-Both PyTorch and TensorFlow are popular deep-learning frameworks that utilize **computational graphs** to define and execute mathematical operations. However, they differ in their approach to building and executing these graphs, resulting in dynamic and static computational graphs, respectively.
+The dynamic nature of PyTorch's computational graph enables greater flexibility and control flow. The graph is built on-the-fly as operations are executed, making it easier to debug and write code that involves complex or varying control flows. This feature is particularly useful for tasks that require dynamic graph construction, like recurrent neural networks or models with varying input sizes. Additionally, PyTorch's dynamic nature facilitates seamless integration with Python control flow and external libraries. However, it's worth noting that the dynamic construction of the graph may result in reduced performance compared to static graphs.
 
-- Dynamic Computational Graph (PyTorch):
+In contrast, TensorFlow follows a static computational graph approach where the graph is defined and compiled before execution. The graph is constructed independently of the actual data being processed, which allows for potential optimization opportunities. Once the graph is defined, it can be executed repeatedly without the need for graph construction, thereby improving performance.
 
-  - In PyTorch, the computational graph is constructed and executed dynamically during runtime.
-  - The graph is built on the fly as operations are executed, allowing for more flexibility and dynamic control flow.
-  - This dynamic nature makes it easier to debug and write code that involves complex or varying control flows.
-  - It is well-suited for tasks that require dynamic, on-the-fly graph construction, such as recurrent neural networks or models with varying input sizes.
-  - PyTorch's dynamic nature also enables easier integration with Python control flow and external libraries.
-  - However, the dynamic construction of the graph can result in reduced performance compared to static graphs.
-- Static Computational Graph (TensorFlow):
-  - TensorFlow adopts a static computational graph approach where the graph is defined and compiled before the actual execution.
-  - The graph is constructed independently of the actual data being processed, allowing for potential optimization opportunities.
-  - Once the graph is defined, it can be executed repeatedly without the need for graph construction, which can improve performance.
-  - TensorFlow's static nature allows for better graph optimization, such as automatic differentiation and graph pruning.
-  - It is well-suited for scenarios where the model architecture is fixed and known in advance, and the focus is on optimizing performance.
-  - However, the static nature of TensorFlow's graph construction can make it less flexible for models with dynamic control flow or varying input sizes.
-  - Writing code with TensorFlow's static graphs can sometimes be more complex and require more boilerplate code.
+TensorFlow's static nature facilitates better graph optimization, including automatic differentiation and graph pruning. It is well-suited for scenarios where the model architecture is fixed and known in advance, with a focus on optimizing performance. However, the static nature of TensorFlow's graph construction may limit flexibility for models with dynamic control flow or varying input sizes. Writing code with TensorFlow's static graphs can sometimes be more complex and require additional boilerplate code. 
 
-> It's important to note that both frameworks have evolved over time, and there have been advancements in making them more flexible and efficient. TensorFlow 2.0 introduced the TensorFlow eager execution mode, which provides a dynamic execution similar to PyTorch, while PyTorch also introduced the TorchScript (torch.JIT) feature in PyTorch 2.0 for static graph optimization.
+> It's important to mention that both frameworks have evolved over time, with advancements made to enhance flexibility and efficiency. For instance, TensorFlow 2.0 introduced TensorFlow eager execution mode, which provides a dynamic execution similar to PyTorch. PyTorch also introduced TorchScript (`torch.JIT`) in PyTorch 2.0 for static graph optimization.
 
 #### Automatic differentiation
 
 [Overview of PyTorch Autograd Engine | PyTorch](https://pytorch.org/blog/overview-of-pytorch-autograd-engine/)
 
-In PyTorch, automatic differentiation is a fundamental feature that enables efficient computation of gradients for training deep learning models. It is tightly integrated with the **dynamic computational graph** of PyTorch, allowing for easy and efficient backpropagation of gradients through the network.
+PyTorch's automatic differentiation is a fundamental feature that enables efficient computation of gradients for training deep learning models. It is tightly integrated with PyTorch's *dynamic computational graph*, allowing for easy and efficient backpropagation of gradients through the network.
 
-PyTorch tracks **operations on tensors** during the forward pass, building a dynamic computational graph as these operations are executed. This graph **records the operations and their dependencies**, forming a directed acyclic graph (DAG). __Each node in the graph represents an operation, and the edges represent data dependencies__.
+During the forward pass, PyTorch tracks **operations on tensors**, building a dynamic computational graph as these operations are executed. This graph **records the operations and their dependencies**, forming a directed acyclic graph (DAG). Each node in the graph represents an operation, and the edges represent data dependencies.
 
-During the forward pass, PyTorch also **keeps track of the operations required for computing gradients by creating a backward pass function for each operation**. This function calculates the gradient of the output with respect to the input tensors by using the chain rule of calculus. The backward pass function is then invoked during the backward pass to compute gradients efficiently.
+PyTorch also keeps track of the operations required **for computing gradients** during the forward pass. It creates a backward pass function for each operation, which calculates the gradient of the output with respect to the input tensors using the chain rule of calculus. During the backward pass, these backward pass functions are invoked to compute gradients efficiently.
 
-The dynamic nature of the computational graph in PyTorch allows for the automatic differentiation process to be performed on a per-graph basis, meaning that gradients are computed dynamically as the forward pass is executed. This dynamic approach enables greater flexibility and control over the model's behavior, as the graph can change at runtime based on the data or control flow.
+The dynamic nature of PyTorch's computational graph allows for the automatic differentiation process to be performed on a per-graph basis. Gradients are computed dynamically as the forward pass is executed. This dynamic approach offers greater flexibility and control over the model's behavior, as the graph can change at runtime based on the data or control flow.
 
 To perform backpropagation in PyTorch, you typically define a loss function and call the `backward()` method on the loss tensor. **This triggers the computation of gradients using the dynamic computational graph and the chain rule, updating the gradients of all the model's parameters**. These gradients can then be used to update the model's weights using an optimizer, such as stochastic gradient descent (SGD).
 
-Overall, the automatic differentiation capability in PyTorch, combined with its dynamic computational graph, simplifies the process of computing gradients and enables efficient backpropagation for training deep learning models.
+Overall, PyTorch's automatic differentiation capability, combined with its dynamic computational graph, simplifies the process of computing gradients and enables efficient backpropagation for training deep learning models.
 
 ### Comparison with Other
+
+These figures show the usage of DL frameworks based on PyPI downloads, the number of models available on HuggingFace, and the changes in publications over time.
 
 ![num_hf_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_hf_models_2023.png)
 
@@ -118,17 +117,21 @@ Overall, the automatic differentiation capability in PyTorch, combined with its 
 
 ## How to use PyTorch
 
+To use PyTorch, you have different options depending on the environment you are working in.
+
 ### Online Computation Resource
+
+If you are using platforms like Kaggle, Google Colab, or any other similar environment, you typically don't need to set up the PyTorch environment explicitly. These platforms provide a containerized environment with the necessary computational resources and basic environment already installed.
 
 - [Kaggle: Your Machine Learning and Data Science Community](https://www.kaggle.com/)
 - [colab.google](https://colab.research.google.com/)
 
-In such environment. You don't need to explicitly set up the PyTorch environment since such platforms provide a containerized environment with the computational resource and basic environment installed.
-
 ### Your Own Machine
 
-- Python Environment: [Anaconda/Miniconda Miniconda — miniconda documentation](https://docs.conda.io/projects/miniconda/en/latest/)
-- PyTorch Install: [Start Locally | PyTorch](https://pytorch.org/get-started/locally/)
+If you want to work on your own machine, you can follow these steps:
+
+- Ensure you have Python installed on your machine. You can use Anaconda or Miniconda Python distributions: [Anaconda/Miniconda Miniconda — miniconda documentation](https://docs.conda.io/projects/miniconda/en/latest/)
+- To install PyTorch, you can either use pip or conda: [Start Locally | PyTorch](https://pytorch.org/get-started/locally/)
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
@@ -136,15 +139,22 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
+This command will download and install the CPU version of PyTorch.
+
 #### With GPU
 
-- A GPU (Support CUDA 11 or later)
+If you have a GPU and want to utilize its power for accelerated computations, make sure you have a GPU that supports CUDA 11 or later.
+
 - CUDA Environment: [CUDA Zone - Library of Resources | NVIDIA Developer](https://developer.nvidia.com/cuda-zone)
-- PyTorch GPU version
+- To install the GPU version of PyTorch, use pip with the following command:
 
 ```bash
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
+
+These steps will help you set up PyTorch based on your specific requirements and environment.
+
+------
 
 ## Tensors and Operations
 
@@ -156,7 +166,7 @@ Tensor can have different data types such as float, integer, or boolean, which i
 
 #### Initializing a Tensor
 
-- Direct
+- Direct: You can initialize a tensor of a specific size with all elements set to zero using the torch.zeros() function.
 
 ```python
 # Initialize a tensor of size 2x3 with all elements set to zero
@@ -164,7 +174,7 @@ tensor_a = torch.zeros(2, 3)
 print(tensor_a)
 ```
 
-- From NumPy
+- From NumPy: You can create a NumPy array and then initialize a tensor from it using the `torch.from_numpy()` function.
 
 ```python
 import numpy as np
@@ -177,7 +187,7 @@ tensor_b = torch.from_numpy(numpy_array)
 print(tensor_b)
 ```
 
-- From another tensor
+- From another tensor: You can create a new tensor from an existing tensor using the `torch.tensor()` function.
 
 ```python
 # From another tensor
@@ -198,7 +208,7 @@ tensor_e = tensor_c.clone().detach()
 print(tensor_e)
 ```
 
-- Fill in random or constant values
+- Fill in random or constant values: You can initialize a tensor with random values. You can also initialize a tensor with constant values using `torch.full()`.
 ```python
 # Fill in random or constant values
 tensor_f = torch.rand(3, 2)  # Uniform Distribution
@@ -213,7 +223,7 @@ print(tensor_h)
 
 #### Attributes of a Tensor
 
-Tensors in PyTorch have several attributes that provide information about their shape, data type, and other properties. Here are some of the commonly used attributes of a PyTorch tensor.
+Tensors in PyTorch have attributes that provide information about their shape, data type, device, and gradient requirements. Some commonly used attributes include:
 
 - Shape: It represents the size of each dimension of the tensor. You can access it using the shape attribute or the `size()` method. For example, `tensor.shape` or `tensor.size()` will return the shape of the tensor.
 - Datatype: It indicates the data type of the elements stored in the tensor. PyTorch supports various data types such as `torch.float32`, `torch.int64`, `torch.bool`, etc. You can access the data type of a tensor using the `dtype` attribute.
@@ -235,10 +245,15 @@ print(f"tensor device: {tensor.device}")
 ```
 
 ### Operations
+Tensors in PyTorch support a wide range of operations for manipulating and performing computations on the data they contain. These operations include arithmetic operations, linear algebra, matrix manipulation (such as indexing and slicing), and more. You can refer to the [PyTorch documentation](https://pytorch.org/docs/stable/tensors.html) for a comprehensive list of tensor operations.
 
-In PyTorch, tensors support a wide range of operations (100+) for manipulating and performing computations on the data they contain. Including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling and more are comprehensively described [here](https://pytorch.org/docs/stable/tensors.html).
+Some examples of tensor operations include:
 
-Standard numpy-like indexing and slicing: Tensors can be indexed and sliced using similar syntax as NumPy arrays.
+- Indexing and slicing: Tensors can be indexed and sliced using similar syntax as NumPy arrays.
+- Joining tensors: Tensors can be concatenated or stacked along different dimensions.
+- Reshaping: Tensors can be reshaped to have a different shape but the same data.
+- Arithmetic operations: Tensors support element-wise addition, multiplication, and matrix multiplication.
+
 ```python
 tensor = torch.tensor([[1, 2, 3], [4, 5, 6]])
  
@@ -289,7 +304,8 @@ print(result)
 
 ### `nn.Module` Class
 
-It serves as a base class for all neural network modules in PyTorch and is used to define the architecture and behavior of the network. It provides a convenient way to organize the parameters of a model and define the forward pass computation. To create your own neural network using `nn.Module`, you need to define a subclass of `nn.Module` and override two key methods: `__init__` and `forward`. The `__init__` method is used to define the layers and modules of your network, while the `forward` method specifies the forward pass computation.
+The `nn.Module` class serves as a base class for all neural network modules in PyTorch. It is used to define the architecture and behavior of the network. This class provides a convenient way to organize the parameters of a model and define the forward pass computation. To create your own neural network using `nn.Module`, you need to define a subclass of `nn.Module` and override two key methods: `__init__` and `forward`. The `__init__` method is used to define the layers and modules of your network, while the `forward` method specifies the forward pass computation.
+
 
 ```python
 import torch
