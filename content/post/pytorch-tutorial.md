@@ -20,7 +20,7 @@ gallery: false
 showinfocard: true
 enablecomment: true
 
-series: Machine Learning
+series:
 previous:
 next:
 
