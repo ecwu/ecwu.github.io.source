@@ -81,7 +81,7 @@ The dynamic nature of PyTorch's computational graph enables greater flexibility 
 
 In contrast, TensorFlow follows a static computational graph approach where the graph is defined and compiled before execution. The graph is constructed independently of the actual data being processed, which allows for potential optimization opportunities. Once the graph is defined, it can be executed repeatedly without the need for graph construction, thereby improving performance.
 
-TensorFlow's static nature facilitates better graph optimization, including automatic differentiation and graph pruning. It is well-suited for scenarios where the model architecture is fixed and known in advance, with a focus on optimizing performance. However, the static nature of TensorFlow's graph construction may limit flexibility for models with dynamic control flow or varying input sizes. Writing code with TensorFlow's static graphs can sometimes be more complex and require additional boilerplate code. 
+TensorFlow's static nature facilitates better graph optimization, including automatic differentiation and graph pruning. It is well-suited for scenarios where the model architecture is fixed and known in advance, with a focus on optimizing performance. However, the static nature of TensorFlow's graph construction may limit flexibility for models with dynamic control flow or varying input sizes. Writing code with TensorFlow's static graphs can sometimes be more complex and require additional boilerplate code.
 
 > It's important to mention that both frameworks have evolved over time, with advancements made to enhance flexibility and efficiency. For instance, TensorFlow 2.0 introduced TensorFlow eager execution mode, which provides a dynamic execution similar to PyTorch. PyTorch also introduced TorchScript (`torch.JIT`) in PyTorch 2.0 for static graph optimization.
 
@@ -209,6 +209,7 @@ print(tensor_e)
 ```
 
 - Fill in random or constant values: You can initialize a tensor with random values. You can also initialize a tensor with constant values using `torch.full()`.
+
 ```python
 # Fill in random or constant values
 tensor_f = torch.rand(3, 2)  # Uniform Distribution
@@ -230,7 +231,6 @@ Tensors in PyTorch have attributes that provide information about their shape, d
 - Device: It specifies the device (CPU or GPU) on which the tensor is stored. You can use the device attribute to check if the tensor is on the CPU or GPU.
 - `requires_grad`: This attribute indicates whether the tensor requires gradient computation for automatic differentiation. By default, tensors created directly from data do not require gradients. You can enable gradient tracking by setting `requires_grad=True` on a tensor.
 
-
 ```python
 tensor = torch.zeros(2, 3, 4)
 print(f"tensor shape: {tensor.shape}")  # This is a attribute, not function
@@ -245,6 +245,7 @@ print(f"tensor device: {tensor.device}")
 ```
 
 ### Operations
+
 Tensors in PyTorch support a wide range of operations for manipulating and performing computations on the data they contain. These operations include arithmetic operations, linear algebra, matrix manipulation (such as indexing and slicing), and more. You can refer to the [PyTorch documentation](https://pytorch.org/docs/stable/tensors.html) for a comprehensive list of tensor operations.
 
 Some examples of tensor operations include:
@@ -305,7 +306,6 @@ print(result)
 ### `nn.Module` Class
 
 The `nn.Module` class serves as a base class for all neural network modules in PyTorch. It is used to define the architecture and behavior of the network. This class provides a convenient way to organize the parameters of a model and define the forward pass computation. To create your own neural network using `nn.Module`, you need to define a subclass of `nn.Module` and override two key methods: `__init__` and `forward`. The `__init__` method is used to define the layers and modules of your network, while the `forward` method specifies the forward pass computation.
-
 
 ```python
 import torch
@@ -414,6 +414,7 @@ MyNetwork(
 Total parameters: 6425866
 """
 ```
+
 There is a convenient package called `torchsummary` that you can use to calculate the total number of parameters in a PyTorch model. Here's how you can use it:
 
 ```python
@@ -582,7 +583,9 @@ for batch_data, batch_labels in dataloader:
     # Clear gradients, perform backward pass, update model parameters, etc.
     # ...
 ```
+
 ## Training and Optimization
+
 Splitting data into training, validation, and test sets
 The common method we use for the dataset split is from sklearn
 
@@ -706,11 +709,11 @@ for epoch in range(num_epochs):
 You'll typically follow these steps:
 
 - Iterate over the training dataset for a specific number of epochs.
-    - Within each epoch, iterate over the batches of the dataset.
-        - Perform the forward pass through the model to obtain predictions.
-        - Calculate the loss using the defined loss function.
-        - Perform the backward pass and update the model parameters using the optimizer.
-    - Calculate and record the desired metrics for analysis.
+  - Within each epoch, iterate over the batches of the dataset.
+    - Perform the forward pass through the model to obtain predictions.
+    - Calculate the loss using the defined loss function.
+    - Perform the backward pass and update the model parameters using the optimizer.
+  - Calculate and record the desired metrics for analysis.
 
 #### Saving and Loading Models
 
