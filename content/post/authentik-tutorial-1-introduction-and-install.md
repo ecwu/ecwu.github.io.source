@@ -20,11 +20,11 @@ gallery: false
 showinfocard: true
 enablecomment: true
 
-series: HomeLab
+series: Authentik
 previous:
 next:
 
-confidence: 9
+confidence: highly likely
 importance: 
 
 tags:

@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/tjX_sniNzgQ/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: frank mckenna
 
 publishDate: "2022-12-30T00:20:00+08:00"
-lastmod: "2023-01-08T22:30:00+08:00"
+lastmod: "2024-04-08T10:30:00+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -80,6 +80,8 @@ copyright:
 Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目前绝大多数的统一认证需求：官方在[文档的 Integrations 部分](https://goauthentik.io/integrations/)收集了许多服务的配置方法指引。其他没有提到的服务，只要简单了解这几种 Provider 的原理，也能自行配置。
 
 我觉得 Authentik 最可玩的是 Flows/Stages/Policies，基于这三个工具，可以创建流程，来实现邀请注册、多因素认证登录、邮箱验证等功能，但这部分比较复杂，未来会考虑单独写一篇文章介绍。
+
+> 我制作了 Authentik 系列教程，[点击了解更多](/post/authentik-tutorial-1-introduction-and-install/)
 
 ## 资讯获取
 
