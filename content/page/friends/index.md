@@ -50,6 +50,7 @@ copyright:
 - [WallBreakerNO4](https://blog.wall-breaker-no4.xyz/): Resident of Kings Canyon; World's Edge; Olympus; Storm Point; and the Special Economic Zone of Norvinsk.
 - [Isoheptane](https://blog.cascade.moe/): Nekomusume Engineer
 - [Hao Tian](https://www.haotian22.top/)
+- [某科学的贝壳](https://blog.ning.moe): Get busy living or get busy dying.
 
 > The order of the list has no special meaning.
 
