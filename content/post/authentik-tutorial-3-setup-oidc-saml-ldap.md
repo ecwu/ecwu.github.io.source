@@ -48,9 +48,15 @@ categories:
 
 # type: file, link, image, and others
 extramaterials:
-# - type: link
-#   name: Bilibili：Authentik 教程系列 - 部署自己的开源身份验证服务 - 介绍、安装和配置 - OAuth2, SAML, LDAP
-#   url: https://www.bilibili.com/video/BV1pm41167WK/?spm_id_from=333.999.0.0
+- type: link
+  name: Bilibili：Authentik 教程系列 3 - 将应用接入统一登陆 - OAuth 协议篇 - 以 Gitea 和 Grafana 为例
+  url: https://www.bilibili.com/video/BV1QC41157pX/
+- type: link
+  name: Bilibili：Authentik 教程系列 4 - 将应用接入统一登陆 - SAML 协议篇 - 以 Cloudflare Zero Trust 和 GitLab 为例
+  url: https://www.bilibili.com/video/BV1um411B7kE/
+- type: link
+  name: Bilibili：Authentik 教程系列 5 - 将应用接入统一登陆 - LDAP 协议篇 - 以 EMBY 为例
+  url: https://www.bilibili.com/video/BV12z421C7hU/
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
