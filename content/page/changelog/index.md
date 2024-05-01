@@ -49,9 +49,17 @@ copyright:
 
 
 ## Changelog
+
+### 2024
+
+#### May 2024
+
+- Refreshing the design and layout for friends page, adding avatar for each item.
+
 ### 2022
 
 #### October 2022
+
 - Warp the main content with `<main>` tags, improving RSS scraping results.
 
 #### April 2022
