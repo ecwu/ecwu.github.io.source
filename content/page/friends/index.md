@@ -80,7 +80,7 @@ copyright:
 
 {{< friend-item title="Steven" img="https://blog.steven53.top/img/avatar_hue48002d6542a472818c02b5f0bee8ed1_780708_300x0_resize_box_3.png" url="https://blog.steven53.top/" desc="">}}
 
-{{< friend-item title="HARKERBEST" img="https://placehold.co/300x300" url="https://www.harkerbest.cn/" desc="Try your best, do your best">}}
+{{< friend-item title="HARKERBEST" img="https://ui-avatars.com/api/?name=Harker+Best&background=333333&color=fff" url="https://www.harkerbest.cn/" desc="Try your best, do your best">}}
 
 {{< friend-item title="WallBreakerNO4" img="https://avatars.githubusercontent.com/u/34301560?v=4" url="https://blog.wall-breaker-no4.xyz/" desc="Resident of Kings Canyon; World's Edge; Olympus; Storm Point; and the Special Economic Zone of Norvinsk.">}}
 
