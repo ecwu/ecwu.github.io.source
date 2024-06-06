@@ -89,6 +89,8 @@ copyright:
 {{< friend-item title="Hao Tian" img="https://avatars.githubusercontent.com/u/48882584?v=4" url="https://www.haotian22.top/" desc="A student willing to learn more and try more.">}}
 
 {{< friend-item title="某科学的贝壳" img="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" url="https://blog.ning.moe/" desc="Get busy living or get busy dying.">}}
+
+{{< friend-item title="Tony102" img="https://avatars.githubusercontent.com/u/77042216?v=4" url="https://tony102.com/" desc="银鞍照白马，飒沓如流星">}}
 </ul>
 
 > The order of the list has no special meaning.
