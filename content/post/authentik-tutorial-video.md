@@ -53,9 +53,7 @@ categories:
 
 # type: file, link, image, and others
 extramaterials:
-- type: 
-  name: 
-  url: 
+
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
