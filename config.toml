@@ -17,146 +17,143 @@ hasCJKLanguage = true
 footnoteReturnLinkContents = '↩'
 
 [params]
-  subtitle = "ECWU's Notebook"
-  description = "Homepage and Blog of ECWU"
-  # titleLogo = 'img/ecwu.svg'
-  # titleString = "Zhenghao Wu's Blog"
-  placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
-  # HTML is ok for `homePageSelfIntro`
-  homePageSelfIntro = 'Hi, <a href="/page/about">Jack Wu (a.k.a ECWU)</a> here. The blog stores my thoughts, collections, and projects. I also share my photography works here. Other than that, I have a site <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing random stuff I create or deploy.'
-  homePageSectionArticleCount = 8 # Number of articles for each section shows at the homepage
-  homePageSection = [
-    'post',
-    'photography'
-  ]
-  [params.footer]
-    copyrightHolder = "ECWUUUUU"
-    showPoweredBy = true
-    showBeian = true
-    beianMessage = " 粤 ICP 备 17015575 号 - 1"
-    buildBy = "GitHub Actions"
-    changelogUrl = '/page/changelog'
-  [params.social] # Parameters for social platform
-    rss = true
-    # email = "ecwu@protonmail.com"
-    # github = "ecwu"
-    # google_scholar = "gBi_1mgAAAAJ"
-    # linkedin = "zhenghaowu"
-    # instagram = "ecwuuuuu"
-    # video = "https://space.bilibili.com/509461"
-    # twitter = "https://twitter.com"
+subtitle = "ECWU's Notebook"
+description = "Homepage and Blog of ECWU"
+# titleLogo = 'img/ecwu.svg'
+# titleString = "Zhenghao Wu's Blog"
+placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
+# HTML is ok for `homePageSelfIntro`
+homePageSelfIntro = 'Hello and welcome! I am <a href="/page/about">Zhenghao Wu</a>, but you may also know me by my alias, ECWU. This blog serves as a virtual repository of my thoughts, ideas, collections, and creative projects. I also exhibit my photographic endeavors sometime. Beyond this, I have a domain <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing stuffs I create or deploy.'
+homePageSectionArticleCount = 8                                                                                                                                                                                                                                                                                                                                                                   # Number of articles for each section shows at the homepage
+homePageSection = ['post', 'photography']
+[params.footer]
+copyrightHolder = "ECWUUUUU"
+showPoweredBy = true
+showBeian = true
+beianMessage = " 粤 ICP 备 17015575 号 - 1"
+buildBy = "GitHub Actions"
+changelogUrl = '/page/changelog'
+[params.social] # Parameters for social platform
+rss = true
+# email = "ecwu@protonmail.com"
+# github = "ecwu"
+# google_scholar = "gBi_1mgAAAAJ"
+# linkedin = "zhenghaowu"
+# instagram = "ecwuuuuu"
+# video = "https://space.bilibili.com/509461"
+# twitter = "https://twitter.com"
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = "series"
+tag = "tags"
+category = "categories"
+series = "series"
 
 [markup]
-  [markup.highlight]
-    anchorLineNos = true
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = ''
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = 'solarized-dark'
-    tabWidth = 2
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = 'github'
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true
-      xhtml = false
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+[markup.highlight]
+anchorLineNos = true
+codeFences = true
+guessSyntax = true
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = 'solarized-dark'
+tabWidth = 2
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = 'github'
+[markup.goldmark.parser.attribute]
+block = false
+title = true
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false
+[markup.tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2
 
 [frontmatter]
-  date = ['date', 'publishDate']
-  expiryDate = ['expiryDate']
-  lastmod = ['lastmod']
-  publishDate = ['publishDate', 'date']
+date = ['date', 'publishDate']
+expiryDate = ['expiryDate']
+lastmod = ['lastmod']
+publishDate = ['publishDate', 'date']
 
 
 [related]
-  includeNewer = true
-  threshold = 80
-  toLower = false
+includeNewer = true
+threshold = 80
+toLower = false
 [[related.indices]]
-  name = 'category'
-  weight = 100
+name = 'category'
+weight = 100
 [[related.indices]]
-  name = 'tags'
-  weight = 80
+name = 'tags'
+weight = 80
 [[related.indices]]
-  name = 'date'
-  weight = 10
+name = 'date'
+weight = 10
 
 # -----------------------------------------------------------------------
 # Navigation menu 
 # -----------------------------------------------------------------------
 
 [[menu.nav]]
-  name = "Home"
-  weight = -110 
-  identifier = "home"
-  url = "/"
+name = "Home"
+weight = -110
+identifier = "home"
+url = "/"
 [[menu.nav]]
-  name = "Posts"
-  weight = -100 
-  identifier = "posts"
-  url = "/post/"
+name = "Posts"
+weight = -100
+identifier = "posts"
+url = "/post/"
 [[menu.nav]]
-  name = "Photos"
-  weight = -90 
-  identifier = "photos"
-  url = "/photography/"
+name = "Photos"
+weight = -90
+identifier = "photos"
+url = "/photography/"
 [[menu.nav]]
-  name = "Series"
-  weight = -80 
-  identifier = "topics"
-  url = "/series/"
+name = "Series"
+weight = -80
+identifier = "topics"
+url = "/series/"
 [[menu.nav]]
-  name = "About"
-  weight = -60 
-  identifier = "about"
-  url = "/page/about/"
+name = "About"
+weight = -60
+identifier = "about"
+url = "/page/about/"
 [[menu.nav]]
-  name = "Friends"
-  weight = -50
-  identifier = "friends"
-  url = "/page/friends/"
+name = "Friends"
+weight = -50
+identifier = "friends"
+url = "/page/friends/"
 
 # -----------------------------------------------------------------------
 # Two Selected Topic Block
 # -----------------------------------------------------------------------
 
 [[menu.topic]]
-  name = "Changelog"
-  pre = "About the site"
-  weight = -100
-  identifier = "changelog"
-  url = "/page/changelog/"
+name = "Changelog"
+pre = "About the site"
+weight = -100
+identifier = "changelog"
+url = "/page/changelog/"
 [[menu.topic]]
-  name = "Keep List"
-  pre = "List of stuffs I enjoy"
-  weight = -90
-  identifier = "keeplist"
-  url = "/series/keep-list/"
+name = "Keep List"
+pre = "List of stuffs I enjoy"
+weight = -90
+identifier = "keeplist"
+url = "/series/keep-list/"
