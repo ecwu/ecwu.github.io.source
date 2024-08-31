@@ -39,9 +39,9 @@ copyright:
 
 Education:
 
-- ...
-- Postgraduate Student, [Hong Kong University of Science and Technology](https://hkust.edu.hk/), MSc. Big Data Technology
-- Graduated with First-Class Honours, [BNU-HKBU UIC](https://uic.edu.cn/), BSc. Computer Science and Technology (Honours)
+- PhD. Student, Computer Science [University College Dublin](https://ucd.ie) (Expected 2024-2028)
+- MSc. Big Data Technology, [Hong Kong University of Science and Technology](https://hkust.edu.hk/) (2020-2021)
+- BSc. Computer Science and Technology (Honours), [BNU-HKBU UIC](https://uic.edu.cn/), Graduated with First-Class Honours (2016-2020)
 
 Experience:
 
