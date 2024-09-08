@@ -149,3 +149,8 @@ docker run --rm -v authentik_database:/from -v authentik_database_backup:/to alp
 我们刚刚在 yaml 里面写的  `network_mode: none` 需要删掉，然后执行 `docker compose up -d --force-recreate` 来重建服务，网络配置恢复后，Server 和 Worker 也可以正常的访问数据库。配置好反向代理，新服务器上的 Authentik 服务也就启动了。
 
 最后还需要检查 Outpost 有没有正常启动，可能需要自行手动启动。至此，Authentik 就已经迁移完了。
+
+## 参考资料
+
+- https://github.com/goauthentik/authentik/issues/8411
+- https://docs.goauthentik.io/docs/troubleshooting/postgres/upgrade_docker
