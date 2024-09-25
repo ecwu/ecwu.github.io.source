@@ -93,12 +93,11 @@ copyright:
 1. TrueNAS Scale 虚拟机直通了 HBA 卡，分配了 4 核心 32G 的内存。这个虚拟机负责管理硬盘并提供存储的接口。里面我将四块硬盘组成了 RAIDZ1 存储池，并提供出 NFS 和 Samba 的接口用来挂载到其他系统中。
 2. Ubuntu 虚拟机分配了 8 核心 16G 的内存，主要是运行各种自用的服务。
 3. Debian 虚拟机分配了 4 核心 14G 的内存，安装了[内网服务/半自动媒体中心](/post/homelab-journey-intranet/#半自动媒体中心)同款的下载器和内容刮削工具。
-4. Ubuntu LXC 容器分配率 4 核心 8G 的内存，安装了 Emby。
-5. OpenWRT 容器分配率 2 核心 2G 的内存，安装了 Emby。
+4. Ubuntu LXC 容器分配率 4 核心 8G 的内存，安装了 Emby，直通了显卡用于硬件解码。
+5. OpenWRT 容器分配率 2 核心 2G 的内存。
 
 大部分的虚拟机都配置了 Tailscale 用于访问和管理。Ubuntu LXC 容器使用 Wireguard 与 CN2 GIA 服务器组网，提高部分服务的访问速度。
 
 因为腾讯云轻量香港的服务器继续续费比较贵，所以将大部分的服务都迁移到了 Ubuntu 虚拟机中，并通过 Tailscale 来访问，有较高的安全性，访问的体验也不错。
 
-
-未完待续。
+> 未完待续。
