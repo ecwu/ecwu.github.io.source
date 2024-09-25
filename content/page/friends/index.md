@@ -96,7 +96,6 @@ copyright:
 
 {{< friend-item title="渺宙凛娴" img="https://chrdsite.rinchord.studio/content/images/size/w256h256/format/jpeg/2024/09/1000023288.jpg" url="https://chrdsite.rinchord.studio/" desc="渺之舟，宇之奏">}}
 
-{{< friend-item title="渺宙凛娴" img="https://chrdsite.rinchord.studio/content/images/size/w256h256/format/jpeg/2024/09/1000023288.jpg" url="https://chrdsite.rinchord.studio/" desc="渺之舟，宇之奏">}}
 </ul>
 
 > The order of the list has no special meaning.
