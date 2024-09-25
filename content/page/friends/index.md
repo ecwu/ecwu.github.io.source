@@ -78,7 +78,7 @@ copyright:
 
 {{< friend-item title="Yifu Qiu" img="https://avatars.githubusercontent.com/u/28985888?v=4" url="https://yfqiu.netlify.app/" desc="Ph.D. Student in Natural Language Processing at UoE & Cambridge, 2023 Apple Scholar in AI/ML.">}}
 
-{{< friend-item title="Steven" img="https://blog.steven53.top/img/avatar_hue48002d6542a472818c02b5f0bee8ed1_780708_300x0_resize_box_3.png" url="https://blog.steven53.top/" desc="">}}
+{{< friend-item title="Steven" img="https://blog.steven53.top/img/avatar_hue48002d6542a472818c02b5f0bee8ed1_780708_300x0_resize_box_3.png" url="https://blog.steven53.top/" desc="喵喵喵…？喵喵喵喵！">}}
 
 {{< friend-item title="HARKERBEST" img="https://ui-avatars.com/api/?name=Harker+Best&background=333333&color=fff" url="https://www.harkerbest.cn/" desc="Try your best, do your best">}}
 
