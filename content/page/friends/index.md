@@ -91,6 +91,12 @@ copyright:
 {{< friend-item title="某科学的贝壳" img="https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp" url="https://blog.ning.moe/" desc="Get busy living or get busy dying.">}}
 
 {{< friend-item title="Tony102" img="https://avatars.githubusercontent.com/u/77042216?v=4" url="https://tony102.com/" desc="银鞍照白马，飒沓如流星">}}
+
+{{< friend-item title="zlicdt" img="https://zlicdt.github.io/img/avatar.png" url="https://zlicdt.github.io/" desc="なに？？">}}
+
+{{< friend-item title="渺宙凛娴" img="https://chrdsite.rinchord.studio/content/images/size/w256h256/format/jpeg/2024/09/1000023288.jpg" url="https://chrdsite.rinchord.studio/" desc="渺之舟，宇之奏">}}
+
+{{< friend-item title="渺宙凛娴" img="https://chrdsite.rinchord.studio/content/images/size/w256h256/format/jpeg/2024/09/1000023288.jpg" url="https://chrdsite.rinchord.studio/" desc="渺之舟，宇之奏">}}
 </ul>
 
 > The order of the list has no special meaning.
