@@ -52,6 +52,11 @@ copyright:
 
 ### 2024
 
+#### October 2024
+
+- Update the build pipeline with Hugo 0.134.2
+- Change the tag for site logo/title from `<h1>` to `<div>` for better SEO
+
 #### May 2024
 
 - Refreshing the design and layout for friends page, adding avatar for each item.
