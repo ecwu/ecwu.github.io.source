@@ -157,3 +157,7 @@ pre = "List of stuffs I enjoy"
 weight = -90
 identifier = "keeplist"
 url = "/series/keep-list/"
+
+[services]
+[services.googleAnalytics]
+id = 'G-HSPDSQWH5L'
