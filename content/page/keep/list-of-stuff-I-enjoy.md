@@ -66,7 +66,7 @@ copyright:
  >}}
 - Genesis (2013) by **Sebastião Salgado**
 - I Know How Furiously Your Heart Is Beating (2019) by **Alec Soth**{{< figure
-  src="https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/3441069223-1551369073/furiouslycover.jpg"
+  src="https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/3fa2adc462-1551369073/furiouslycover.jpg"
   class="class param"
   type="margin"
   label="i-know-how-furiously-your-heart-is-beating"
@@ -164,3 +164,8 @@ Some selected episodes:
 ### 6.5 Misc
 
 - Loneliness by **Epic Mountain**
+
+## 6. Video Game
+
+- Apex Legends by **Respawn Entertainment**
+- Black Myth: Wukong by **Game Science**

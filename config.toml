@@ -18,7 +18,7 @@ footnoteReturnLinkContents = '↩'
 
 [params]
 subtitle = "ECWU's Notebook"
-description = "Homepage and Blog of ECWU"
+description = "Homepage and blog for Zhenghao Wu (ECWU), sharing thoughts on technology, everyday experiences, and photography. Engaging with the community through knowledge sharing."
 # titleLogo = 'img/ecwu.svg'
 # titleString = "Zhenghao Wu's Blog"
 placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
