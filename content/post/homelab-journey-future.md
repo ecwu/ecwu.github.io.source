@@ -106,7 +106,7 @@ copyright:
 
 Kubernetes 是我在攒这台服务器时就设想着要使用的底座。但部署的服务和容器量一直没有达到使用 Kubernetes 的程度。虽然已经在一些实验环境安装了许多次，但实际情况下还是只部署一个 Docker Engine 用于运行容器。
 
-但我认识的 Terence Lau 他就运行了一个 Kubernetes 集群，用于部署自己的服务。使用着也相当的顺畅，未来如果我的 HomeLab 继续扩大规模，我会考虑部署到 Kubernetes 上。
+但我认识的 [Terence Lau](https://blog.cklau.cc) 他就运行了一个 Kubernetes 集群，用于部署自己的服务。使用着也相当的顺畅，未来如果我的 HomeLab 继续扩大规模，我会考虑部署到 Kubernetes 上。
 
 ### 网络
 
