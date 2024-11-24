@@ -1,5 +1,5 @@
 ---
-title: 新装 GPU 服务器的容器化配置笔记
+title: 服务器新装 GPU 的容器化配置笔记
 subtitle: 在 JupyterHub 环境下
 author: Zhenghao Wu
 description: 
