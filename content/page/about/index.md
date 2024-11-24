@@ -35,7 +35,7 @@ copyright:
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
 
-## Zhenghao Wu, 伍正豪, Jack, ECWU
+## Zhenghao Wu, 伍正豪, ECWU
 
 Education:
 
