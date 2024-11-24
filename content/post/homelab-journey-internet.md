@@ -7,9 +7,9 @@ featureimage: https://unsplash.com/photos/tjX_sniNzgQ/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: frank mckenna
 
 publishDate: "2022-12-30T00:20:00+08:00"
-lastmod: "2024-04-08T10:30:00+08:00"
+lastmod: "2024-11-24T14:19:00+00:00"
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -135,6 +135,11 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 
 以前一直有听说 GitOps 中的 CI/CD (Continuous Integration and Continuous Delivery/Continuous Deployment 持续集成和持续构建)，但一直没有实践过。但完成将博客和 [HCC 的主页](https://uichcc.com) 利用 GitHub Actions 进行自动构建的改造后，开始体验到它的魔力。自己构建的 CI 是利用了 [Drone](https://www.drone.io/)，如果你使用的是 Gitea，官方提供了[安装教程](https://docs.drone.io/server/provider/gitea/)。我目前使用持续构建主要是进行 Docusaurus 的构建和一些软件的 Docker 镜像构建。CD 部分，因为架构上还没有用到 Kubernetes，加上 Portainer 的 Web Hook 功能需要付费，所以暂时还没有涉足。
 
+> 2024.11 Update
+>
+> Gitea 在 1.21 版本后支持了自己的持续构建 Gitea Actions 的支持（从 1.19 开始可以手动启用）。如果不想额外部署 Drone，可以考虑使用 Gitea Actions。它使用的语法和 GitHub Actions 类似，学习和迁移成本较低。
+
+
 ## 密码管理：VaultWarden
 
 {{< figure
@@ -149,7 +154,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
   link=""
  >}}
 
-[VaultWarden](https://github.com/dani-garcia/vaultwarden) 是 [BitWarden](https://bitwarden.com/) 密码管理工具的开源适配服务端，使用 Rust 实现。我本身在使用 BitWarden 的[付费服务](https://bitwarden.com/pricing/)。自己部署额外部署有两个原因：提供一个备份的访问渠道；为特定环境下的密码管理需求提供遍历。
+[VaultWarden](https://github.com/dani-garcia/vaultwarden) 是 [BitWarden](https://bitwarden.com/) 密码管理工具的开源实现，支持 Bitwarden 官方的客户端，但与 Bitwarden 的公司无关。使用 Rust 实现。我本身在使用 BitWarden 的[付费服务](https://bitwarden.com/pricing/)。自己部署额外部署有两个原因：提供一个备份的访问渠道；为特定环境下的密码管理需求提供便利。
 
 值得一提是，这个服务端几乎包含了付费端全部的功能。像密码泄露检查、Yubico MFA 等功能，你如果有相应功能提供商的 API，你也可以在自己的 VaultWarden 上体验和 BitWarden 一样的功能。
 
@@ -175,7 +180,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 
 它的用户系统在设计上比较激进，它必须配置统一登录或配置邮件发送以发送一次性登录链接（不支持账号密码登录）。但是它支持的 SSO 服务很多，具体见官方的[配置文档](https://wiki.generaloutline.com/s/hosting/doc/authentication-7ViKRmRY5o)。
 
-需要注意的是，目前最新的版本 `0.66.3` 还不支持数学公式（LaTeX），但是[相关的功能已经合并进主线](https://github.com/outline/outline/issues/1038)，相信很快会在下一个发布版本中推出。
+需要注意的是，目前最新的版本 `0.66.3` 还不支持数学公式（LaTeX），但是[相关的功能已经合并进主线](https://github.com/outline/outline/issues/1038)，相信很快会在下一个发布版本中推出（2024.11 Update：LaTeX 已经在 [v0.67.1](https://github.com/outline/outline/releases/tag/v0.67.1) 之后版本支持）。
 
 ### 团队协作工具：YouTrack
 
@@ -216,6 +221,10 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
  Flame 有 Application 和 Bookmark 的概念，显示上，Application会显示在页面的上半部分，且显示尺寸比较大。Bookmarks 显示在页面下半部分，可以归类。两种类似都可以设定名字和一个 [MDI](https://materialdesignicons.com/) 图标。每个链接都可以设定为私有或公开。设定管理员密码，只有输入密码后，才可以修改页面上的内容并查看私有链接。
 
  页面上还有附加功能，可以直接进行搜索和显示当地天气，很适合做内网的主页。
+
+> 2024.11 Update
+>
+> 我现在已经转向使用另一个项目 [Homepage](https://github.com/gethomepage/homepage)。这个项目不提供前端的编辑，而是需要编辑配置文件（文件修改后页面会自动刷新和应用修改）。他的一个特性是内带了许多插件，这些插件经过配置后会通过访问 API 来获取数据，比如 PVE 的占用，下载器的下载速度，和媒体库的播放状态等。
 
 ### 服务状态监控：Uptime Kuma
 

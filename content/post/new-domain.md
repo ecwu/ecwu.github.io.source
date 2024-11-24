@@ -53,6 +53,7 @@ Personally, the old domain name (ecwuuuuu.com) is good but is it a little bit lo
 Currently, I am don't have a concrete plan for how to utilize these two domains. But I will probably migrate all my info page and service to the new domain. The domain email and blog will still keep in the old one. I will keep thinking about this, and sync the progress on this page in the future.
 
 Update log:
+- End of 2023: The domain is still active, but most for my personal use. And It is protected by Cloudflare Zero Trust.
 - 2022.02.09: A new homepage build with flame has been deployed.
 - 2022.01.24: Multiple services are deployed under the domain, most of the services are used privately and host on Tencent Cloud; I recently go through a personal homepage project called [flame](https://github.com/pawelmalak/flame), I tend to replace it with the current landing page built with Netlify.
 - 2022.01.22: [Cloudflare Email Routing](https://blog.cloudflare.com/introducing-email-routing/) Service is enabled, you can use `hi@ecwu.xyz` to sent me email.

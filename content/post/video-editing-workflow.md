@@ -12,7 +12,7 @@ draft: false
 status: 
 # In Progress, Staging, Finished, Lagacy
 
-showmeta: true
+showmeta: false
 hidereadtime: false
 toc: false
 math: false
