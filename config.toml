@@ -161,3 +161,15 @@ url = "/series/keep-list/"
 [services]
 [services.googleAnalytics]
 id = 'G-HSPDSQWH5L'
+
+[giscus]
+repo = "ecwu/ecwu.github.io"
+repoID = "MDEwOlJlcG9zaXRvcnkxNjQzMzE1NjY="
+category = "Blog Post Discussion"
+categoryID = "DIC_kwDOCcuALs4CObNl"
+mapping = "pathname"
+inputPosition = "top"
+reactionsEnabled = "1"
+emitMetadata = "0"
+lang = "en"
+loading = "lazy"
