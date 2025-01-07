@@ -66,7 +66,7 @@ copyright:
 
 {{< friend-item title="Frank Ng" img="https://avatars.githubusercontent.com/u/31507877?v=4" url="https://github.com/franksyng" desc="A plane ✈️. Ph.D. Student at UoE.">}}
 
-{{< friend-item title="Kirin" img="https://avatars.githubusercontent.com/u/29482388?v=4" url="https://9baka.moe/zh/" desc="Big shot.">}}
+{{< friend-item title="Kirin" img="https://avatars.githubusercontent.com/u/29482388?v=4" url="https://baka.link/en/" desc="Big shot.">}}
 
 {{< friend-item title="黑墨水鱼" img="https://avatars.githubusercontent.com/u/22657774?v=4" url="https://aquarium39.moe/" desc="Highly skilled non-CS students, Miku fan.">}}
 
