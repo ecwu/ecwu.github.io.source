@@ -6,7 +6,7 @@ description:
 featureimage: https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp
 unsplashfeatureimage: 
 
-publishDate: "2025-01-18T18:00:00+01:00"
+publishDate: "2025-01-18T18:00:00+00:00"
 lastmod: 
 draft: false
 status: 
