@@ -1,6 +1,6 @@
 ---
 title: Cinestill 800T & Expired Kodak Portra 400
-subtitle: A new film stock, some new insights.
+subtitle: A new film stock, some new thoughts.
 author: Zhenghao Wu
 description: 
 featureimage: https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp
@@ -171,12 +171,9 @@ image-description="Me (by Andrin)">}}
 
 {{< gallery "end">}}
 
-## Some insights
+## Some thoughts
 
 1. The RB67 is incredibly heavy, and there’s also a delay between pressing the shutter and its release. This time, after not using the camera for so long, I completely forgot about this. The first blurry photo happened because I pressed the shutter and, after waiting for the exposure duration, moved the camera—only to realize the leaf shutter didn’t open until I started moving. I’m seriously considering switching to a Mamiya 7II. :3
 2.	Physical light meters look great and are accurate, but smartphone light meter apps are faster and more efficient. I used to collect a lot of reciprocity failure charts and tables, and every time I shot long exposures, I had to calculate everything manually. With light meter apps, the calculations are done automatically. It’s so much more convenient.
 3.	The spools of different film brands might not be fully compatible. The last two photos on my roll of 800T had light leaks. At the time, the film was wound onto an ILFORD spool, and the light leaks might have been caused by this.
 
-## Conclusion
-
-Both CineStill 800T and Kodak Portra 400 delivered unique results (and they're expensive pro film!). The distinctive halation of CineStill 800T adds a cinematic charm, especially for night scenes, while the expired Portra 400 demonstrated impressive resilience.
