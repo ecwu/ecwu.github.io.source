@@ -55,7 +55,7 @@ copyright:
 
 ## 什么是 input-overlay
 
-![input-overlay 使用中的效果](https://camo.githubusercontent.com/925ac0d1526f620d1669077ed909daf2ff8318ae9ffcecd14f790090de0b39ec/68747470733a2f2f692e696d6775722e636f6d2f6e5067707352782e706e67)
+![input-overlay 使用中的效果](https://github.com/univrsal/input-overlay/blob/master/docs/io.png?raw=true)
 
 [input-overlay](https://github.com/univrsal/input-overlay) 是由 [Alex (univrsal)](https://vrsal.xyz/) 开发的一个 OBS Studio 插件。安装后，可以在 OBS Studio 中增加新的来源（source）用于展示鼠标、键盘、甚至是各种游戏手柄的操作。可以在游戏操作教学、软件教程类直播中提升直播时的效果。
 
