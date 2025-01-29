@@ -59,7 +59,7 @@ copyright:
 <!--more-->
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/barrelfish-logo.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/barrelfish-logo.jpg-compressed.webp"
   type="full"
   label="Barrelfish OS Logo"
   title="Barrelfish OS Logo"
@@ -74,7 +74,7 @@ copyright:
 ### 背景
 
 Barrelfish OS 是由苏黎世联邦理工大学{{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/ETHzurich-logo.png"
+  src="https://cdn.ecwuuuuu.com/blog/image/ETHzurich-logo.png-compressed.webp"
   class="class param"
   type="margin"
   label="mn-rhino"

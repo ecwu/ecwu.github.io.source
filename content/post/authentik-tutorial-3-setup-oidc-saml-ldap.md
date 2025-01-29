@@ -78,7 +78,7 @@ copyright:
 
 使用管理员账号登录，进入后台 `Applications` > `Applications`，点击 Create 会弹出一个填写新应用参数的窗口。
 
-![Authentik Application Creation Window](https://cdn.ecwuuuuu.com/blog/image/authentik/application-create.png)
+![Authentik Application Creation Window](https://cdn.ecwuuuuu.com/blog/image/authentik/application-create.png-compressed.webp)
 
 常用功能填写的参数包括：
 
@@ -100,7 +100,7 @@ copyright:
 
 提供程序的创建在后台 `Applications` > `Provider` 中。点击 `Create` 会弹出一个创建提供程序的向导。其中首先要选择的是提供程序的类型。
 
-![Authentik Provider select](https://cdn.ecwuuuuu.com/blog/image/authentik/provider-select.png)
+![Authentik Provider select](https://cdn.ecwuuuuu.com/blog/image/authentik/provider-select.png-compressed.webp)
 
 ### OpenID Connect (OIDC) / OAuth 2.0
 
@@ -121,7 +121,7 @@ copyright:
 
 #### Gitea
 
-![Gitea OIDC Settings](https://cdn.ecwuuuuu.com/blog/image/authentik/gitea-oidc-setup.png)
+![Gitea OIDC Settings](https://cdn.ecwuuuuu.com/blog/image/authentik/gitea-oidc-setup.png-compressed.webp)
 
 [Gitea](https://github.com/go-gitea/gitea) 是一个轻量的版本控制平台。通过在启动的应用内创建认证源进行 OAuth2 的配置。入口是`管理后台` > `身份及认证` > `认证源`。
 
@@ -135,7 +135,7 @@ OpenID 配置一般还需要填写授权URL，令牌URL等信息告知应用程�
 
 #### Grafana
 
-![Grafana OIDC Settings](https://cdn.ecwuuuuu.com/blog/image/authentik/grafana-oidc-setup.png)
+![Grafana OIDC Settings](https://cdn.ecwuuuuu.com/blog/image/authentik/grafana-oidc-setup.png-compressed.webp)
 
 [Grafana](https://github.com/grafana/grafana) 是一个数据可视化的平台。它的 OAuth2 接入是通过启动时的环境变量进行配置。一下是启动的 docker-compose.yaml
 

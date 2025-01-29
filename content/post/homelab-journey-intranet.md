@@ -71,7 +71,7 @@ copyright:
 
 单有媒体库还不够，我参照了 [sleele](https://sleele.com/) 的[《追剧全流程自动化》](https://sleele.com/2020/03/16/%e9%ab%98%e9%98%b6%e6%95%99%e7%a8%8b-%e8%bf%bd%e5%89%a7%e5%85%a8%e6%b5%81%e7%a8%8b%e8%87%aa%e5%8a%a8%e5%8c%96/) 一文，构建了集媒体资源监控、下载任务创建、媒体内容归档、字幕下载的半自动化追剧工具链。{{% sidenote "sn-no-media-install-details" %}}这里不对具体搭建的途径进行描述，可以直接参考 sleele 的文章，描述的非常详细。{{% /sidenote %}}总结来说，工具链的核心是 [Sonarr](https://github.com/Sonarr/Sonarr) 和 [Radarr](https://github.com/Radarr/Radarr) 这类剧集和电影媒体管理工具。它会爬取媒体的更新信息并定时任务检查缺失媒体，然后使用媒体索引工具 [Jackett](https://github.com/Jackett/Jackett) 来获取资源的下载链接，并将链接给到下载器执行下载任务。媒体文件下载后，会移动到指定的位置并按规范统一命名，等待对媒体库的索引。媒体库中的媒体信息，是由媒体库的刮削工具进行的。经过这些步骤，你提前选好的剧集就会第一时间被下载和整理到你的媒体库，等待你的观看了。
 
-![Auto Media Base](//cdn.ecwuuuuu.com/blog/image/homelab/auto-media.drawio.png)
+![Auto Media Base](//cdn.ecwuuuuu.com/blog/image/homelab/auto-media.drawio.png-compressed.webp)
 
 之所以是“半自动”，是因为自己的网络环境下，负责媒体资源监控的 [Jackett](https://github.com/Jackett/Jackett) 部分经常会出现网络相关的错误，导致媒体管理工具 [Sonarr](https://github.com/Sonarr/Sonarr)/[Radarr](https://github.com/Radarr/Radarr) 无法获取到对应的媒体资源并第一时间创建下载任务（通过 [Aria2](https://github.com/aria2/aria2) 和 [qBittorrent](https://github.com/qbittorrent/qBittorrent)）。所以目前使用的一个缓解是，在远端的服务器中部署了一个 [Flaresolverr](https://github.com/FlareSolverr/FlareSolverr)，用来绕过 Cloudflare 的认证。另外目前也在考虑将 [Jackett](https://github.com/Jackett/Jackett) 更换为 [Prowlarr](https://github.com/Prowlarr/Prowlarr) 项目（是 [Jackett](https://github.com/Jackett/Jackett) 索引管理器的一个替代品，目前处于快速迭代的状态）。半自动中不自动的部分，是 fallback 方案：手动下载媒体并放在预设位置，这样媒体库索引与刮削也能正常的工作，进行媒体的入库。
 
@@ -96,7 +96,7 @@ copyright:
 > 我现在补充了 Alist 来进行文件管理，Alist 支持多云存储（比如将 OneDrive，阿里云盘挂载），但我只是用它来管理文件，不使用它的云存储功能。你可以通过官方的仓库来了解 [Alist](https://github.com/AlistGo/alist)。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/filebrowser.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/filebrowser.png-compressed.webp"
   class="class param"
   title="Filebrowser"
   caption=""
@@ -114,7 +114,7 @@ copyright:
 最后选择了 Komga，因为 GitHub 上 Star 比较多，界面也比较的简洁。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/komga-interface.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/komga-interface.png-compressed.webp"
   class="class param"
   title="Komga"
   caption=""
@@ -130,7 +130,7 @@ copyright:
 这个服务其实我也没有硬需求，只是想了解下就部署了（部署后，使用率也比较低）。之所以叫这个名字是因为最初的项目是 [Paperless](https://github.com/the-paperless-project/paperless)，原作者疲于维护，开源社区 Fork 出了一个新版本 [Paperless-ng](https://github.com/jonaswinkler/paperless-ng)，然后又因为缺少维护，有了现在最新的这个叉出 [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/paperless-ngx.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/paperless-ngx.png-compressed.webp"
   class="class param"
   title="Paperless-ngx"
   caption=""
@@ -157,7 +157,7 @@ Paperless-ngx 里的文档还有 Archive serial number 的概念，这在你需�
 我这套 Homelab 的服务，绝大多数都是使用 Docker 进行部署的。[Portainer](https://github.com/portainer/portainer) 就提供了一个 Web UI 可以对 Docker 环境进行简单的管理（也支持 Docker Swarm 集群，Kubernetes 集群）。创建容器可以直接在 Web UI 里以填表的形式，选择镜像、添加环境变量和绑定存储。也支持在页面上直接应用一个 Docker-compose yaml 文件。拉起一个多个容器的栈（Stack）。部署了 Portainer 就不需要打命令，直接点击就可以操作容器或者调整配置。 
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/portainer-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/portainer-ui.png-compressed.webp"
   class="class param"
   title="Portainer"
   caption=""
@@ -173,7 +173,7 @@ Paperless-ngx 里的文档还有 Archive serial number 的概念，这在你需�
 Speedtest 的社区开源版本，部署来是用来测试内网链路的速度的。[Liberspeed](https://github.com/librespeed/speedtest) 并不是只用来内网测速，现在也有在线的测速网站在用这套方案。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/liberspeed-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/liberspeed-ui.png-compressed.webp"
   class="class param"
   title="Liberspeed"
   caption="看着像个简陋的 SpeedTest，但是该有的信息都有"
@@ -191,7 +191,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 部署的服务太多，会记不住服务的访问入口（无论是域名还是端口）。这时候就可以部署一个内网门户。在这个系列中，在外网服务中我介绍了 Authentik，他的应用列表可以作为服务的门户。也介绍了 Flame，可以添加应用的列表和书签列表。但是内网中，我选择的是 Homarr。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/homarr-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/homarr-ui.png-compressed.webp"
   class="class param"
   title="Homarr"
   caption="为你的服务提供一个统一美观的导航栏"
@@ -208,7 +208,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 
 ### 系统实时信息：DashDot
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/dashdot-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/dashdot-ui.png-compressed.webp"
   class="class param"
   title="Dashdot."
   caption=""
@@ -226,7 +226,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 > 涉及的服务：overleaf, drawio
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/selfhost-drawio-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/selfhost-drawio-ui.png-compressed.webp"
   class="class param"
   title="Draw.IO"
   caption=""
@@ -248,7 +248,7 @@ Speedtest 的社区开源版本，部署来是用来测试内网链路的速度�
 > 涉及的服务：Coder
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/coder-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/coder-ui.png-compressed.webp"
   class="class param"
   title="Coder with code-server (a open source vs code implementation) template"
   caption=""

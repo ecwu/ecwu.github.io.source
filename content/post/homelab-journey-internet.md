@@ -62,7 +62,7 @@ copyright:
 但我们日常使用各家的平台时，会经常能看到“使用 Microsoft / Google 账号登陆”的选项，点击后会跳转到 Microsoft 或 Google 的页面，并询问你是否授权账号的部分信息（如昵称、邮箱）给平台以创建账号（或确认身份），最后成功登录。这种一个帐号通行的形式就是统一身份认证 SSO。如果能将这种形式复刻在自建的服务上，那一定会有很棒的体验。所以 HomeLab 公网服务部分首先介绍自建的身份鉴权平台 Authentik。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/authentik-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/authentik-ui.png-compressed.webp"
   class="class param"
   title="Authentik"
   caption="将所有支持 SSO 的服务都集中在一处，非 SSO 服务也可以添加进来，可以作为门户网站"
@@ -94,7 +94,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 最初使用了 Tiny Tiny RSS (TTRSS) 的 [Docker 方案](https://ttrss.henry.wang/)，它插件、主题众多，有不少优秀的移动端 APP(第三方)，整体体验良好，使用了将近一年的时间。当 22 年 10 月份的时候，接触到 [Miniflux](https://miniflux.app/) 项目，它界面上更加简洁，而且是用 Go 实现的，应该会比用 PHP 实现的 TTRSS 更加的轻量，这些优势促使我切换了阅读器。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/miniflux-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/miniflux-ui.png-compressed.webp"
   class="class param"
   title="Miniflux"
   caption="简洁的 RSS 阅读器"
@@ -118,7 +118,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 ### 代码托管：Gitea
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/gitea-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/gitea-ui.png-compressed.webp"
   class="class param"
   title="自建 Gitea"
   caption="界面上挺像 GitHub"
@@ -143,7 +143,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 ## 密码管理：VaultWarden
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/vaultwarden-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/vaultwarden-ui.png-compressed.webp"
   class="class param"
   title="vaultwarden"
   caption="BitWarden 密码管理器，但是是自建的（截图中还是老版本的 VaultWarden，新版本已经将 BitWarden 和 VaultWarden 更彻底的区分开，以避免版权商标带来的问题）"
@@ -165,7 +165,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 ### 个人或团队知识库：Outline
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/outline-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/outline-ui.png-compressed.webp"
   class="class param"
   title="Outline"
   caption="知识库，开源的 Notion 替代，可以自建"
@@ -185,7 +185,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 ### 团队协作工具：YouTrack
 
   {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/youtrack-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/youtrack-ui.png-compressed.webp"
   class="class param"
   title="YouTrack"
   caption="官方演示项目"
@@ -207,7 +207,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 目前内外网提到的服务就有十几种，如果使用的是端口，那很难全部记住（就算全用域名也容易搞混）。那么一个类似 Hao123 的门户导航站是有必要的。之前在内网，我使用的是 [Homarr](/post/homelab-journey-intranet#服务门户homarr)，但 Homarr 没有鉴权、可以随意修改页面的内容。这种形式是不适合部署在公网的。这种情况下，我就选用了 [Flame](https://github.com/pawelmalak/flame)。
 
 {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/flame-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/flame-ui.png-compressed.webp"
   class="class param"
   title=""
   caption="简洁的自建开始界面"
@@ -233,7 +233,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
 但除了自建，还有一种“滥用” GitHub 的方式实现服务的状态监控，通过 [upptime/upptime](https://github.com/upptime/upptime) 项目，利用 GitHub Actions 定期检查服务状态，用 GitHub Repository 储存历史信息，用 GitHub Pages 来展示状态页，是无成本的一种监控服务状态的方式。但需要注意的是，因为 GitHub Actions 的因素，服务并无法保证准确的一个固定的监控时间间隔，也就是说服务无法访问时，可能无法第一时间感知（但是个人用，也完全是够了）。
 
  {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/uptime-kuma-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/uptime-kuma-ui.png-compressed.webp"
   class="class param"
   title=""
   caption="服务状态页"
@@ -249,7 +249,7 @@ Authentik 支持 OIDC/OAuth2, SAML, LDAP, Proxy 四种 Provider，能覆盖目�
  这个服务使用的并不多，但是部署了还是可以提一下。Grafana 主要是用于数据的可视化并允许你方便的制作出一个可视化的面板。使用时它连接数据源（可以是传统基于 SQL 的，也可以是时间序列数据库如 [Prometheus](https://prometheus.io/)）然后面板中编辑数据的检索语句（Query），然后利用它自带（比如折线图、散点图、文本、列表）或是第三方的插件进行可视化。通过这种方式，可以很方便的生成出一个美观的可视化大屏。
 
   {{< figure
-  src="//cdn.ecwuuuuu.com/blog/image/homelab/grafana-ui.png"
+  src="//cdn.ecwuuuuu.com/blog/image/homelab/grafana-ui.png-compressed.webp"
   class="class param"
   title="Grafana"
   caption="可视化服务器 Docker 带宽和资源使用的状态"

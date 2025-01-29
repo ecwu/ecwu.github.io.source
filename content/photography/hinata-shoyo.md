@@ -3,7 +3,7 @@ title: "Figure: Hinata Shoyo"
 subtitle:
 author: Zhenghao Wu
 description: 
-featureimage: http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-2.jpg
+featureimage: http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-2.jpg-compressed.webp
 unsplashfeatureimage: 
 
 publishDate: "2022-01-10T22:04:44+08:00"
@@ -53,12 +53,12 @@ Note:
 
 {{< gallery g-class="hinata">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-1.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-1.jpg-compressed.webp"
 image-description="1">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-2.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-2.jpg-compressed.webp"
 image-description="2">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-3.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-3.jpg-compressed.webp"
 image-description="3">}}
 {{< gallery "end">}}

@@ -73,7 +73,7 @@ copyright: bysa
 
 A **computational graph** represents the flow of data through a computational model in the form of a directed acyclic graph (DAG). It serves as a visual representation of the mathematical operations performed on input data to produce the desired output.
 
-![computational_graph_equation2.jpg](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/computational_graph_equation2.jpg)
+![computational_graph_equation2.jpg](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/computational_graph_equation2.jpg-compressed.webp)
 
 PyTorch allows for efficient and flexible model construction and dynamic control flow through its dynamic computational graph. Unlike TensorFlow, another popular deep-learning framework that employs static computational graphs, PyTorch constructs and executes the computational graph dynamically during runtime.
 
@@ -105,15 +105,15 @@ Overall, PyTorch's automatic differentiation capability, combined with its dynam
 
 These figures show the usage of DL frameworks based on PyPI downloads, the number of models available on HuggingFace, and the changes in publications over time.
 
-![num_hf_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_hf_models_2023.png)
+![num_hf_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_hf_models_2023.png-compressed.webp)
 
-![num_top_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_top_models_2023.png)
+![num_top_models_2023.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/num_top_models_2023.png-compressed.webp)
 
-![Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png)
+![Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/Fraction-of-Papers-Using-PyTorch-vs.-TensorFlow.png-compressed.webp)
 
-![torch-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/torch-download-trend.png)
+![torch-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/torch-download-trend.png-compressed.webp)
 
-![tensorflow-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/tensorflow-download-trend.png)
+![tensorflow-download-trend.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/tensorflow-download-trend.png-compressed.webp)
 
 ## How to use PyTorch
 
@@ -325,7 +325,7 @@ class MyNetwork(nn.Module):
         return x
 ```
 
-![mlp-figure.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/mlp-figure.png)
+![mlp-figure.png](http://cdn.ecwuuuuu.com/blog/image/pytorch-tutorial/mlp-figure.png-compressed.webp)
 
 In the `__init__` method, you can define any layers or modules you need for your network. In this example, we define two fully connected layers (`nn.Linear`) with specified input and output sizes.
 In the forward method, you specify the sequence of operations that will be applied to the input x during the forward pass. In this example, we apply the first linear layer (`self.fc1`), followed by the second linear layer (`self.fc2`).

@@ -3,7 +3,7 @@ title: My Past NLP Projects
 subtitle: Natural Language Processing
 author: Zhenghao Wu
 description: 
-featureimage: http://cdn.ecwuuuuu.com/blog/image/misc/307-guaige.jpg
+featureimage: http://cdn.ecwuuuuu.com/blog/image/misc/307-guaige.jpg-compressed.webp
 unsplashfeatureimage: 
 
 publishDate: "2021-05-07T00:13:30+08:00"

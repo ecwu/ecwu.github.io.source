@@ -46,10 +46,10 @@ FYP 前前后后会要求提交多个文档：
 这一行原本是被注释了的，将这一行取消注释后，原本页面上的左右标尺，作者名，页眉的“请勿分发”，都发生了变化。
 
 注释之前：
-![注释之前](https://cdn.ecwuuuuu.com/blog/image/naacl-before.png)
+![注释之前](https://cdn.ecwuuuuu.com/blog/image/naacl-before.png-compressed.webp)
 
 注释之后：
-![注释之后](https://cdn.ecwuuuuu.com/blog/image/naacl-after.png)
+![注释之后](https://cdn.ecwuuuuu.com/blog/image/naacl-after.png-compressed.webp)
 
 实现是这样的：
 

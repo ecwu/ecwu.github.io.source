@@ -57,7 +57,7 @@ copyright:
 - Apology *Ἀπολογία Σωκράτους* by **Plato**
 - Simulacra and Simulation (1981) by **Jean Baudrillard**
 - House Hunting (2001) by **Todd Hido** {{< figure
-  src="http://cdn.ecwuuuuu.com/blog/image/hh-1.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/hh-1.jpg-compressed.webp"
   class="class param"
   type="margin"
   label="house-hunting"

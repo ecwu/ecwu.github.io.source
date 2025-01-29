@@ -3,7 +3,7 @@ title: Drag
 subtitle: 
 author: Zhenghao Wu
 description: On the way back home.
-featureimage: http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg
+featureimage: http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg-compressed.webp
 unsplashfeatureimage: 
 
 publishDate: "2021-07-20T13:57:20+08:00"
@@ -57,16 +57,16 @@ Just like the time I was taking the photos. Been "dragged" back home by the metr
 
 {{< gallery g-class="drag">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-1.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-1.jpg-compressed.webp"
 image-description="No.1">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-2.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-2.jpg-compressed.webp"
 image-description="No.2">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-3.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-3.jpg-compressed.webp"
 image-description="No.3">}}
 {{< gallery-image
-image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg"
+image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg-compressed.webp"
 image-description="No.4">}}
 {{< gallery "end">}}
 

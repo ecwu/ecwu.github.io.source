@@ -3,7 +3,7 @@ title: UIC night
 subtitle: 
 author: Zhenghao Wu
 description: The course I took at 2018 HKBU summer program
-featureimage: "https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-302.jpg"
+featureimage: "https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-302.jpg-compressed.webp"
 unsplashfeatureimage: 
 
 publishDate: "2020-07-13T21:43:01+08:00"
@@ -58,21 +58,21 @@ Specs:
 
 {{< gallery g-class="uic-night">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-298.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-298.jpg-compressed.webp"
 image-description="Zhonghe Square & The Hall">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-299.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-299.jpg-compressed.webp"
 image-description="Part of the school founding year (2005) statute">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-300.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-300.jpg-compressed.webp"
 image-description="T4 and T5 Teaching Building">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-301.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-301.jpg-compressed.webp"
 image-description="\"The Oasis\" canteen and the bridge">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-302.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-302.jpg-compressed.webp"
 image-description="Learning Resource Centre">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-303.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/series/uicnight/UICNight_film_series-303.jpg-compressed.webp"
 image-description="T2">}}
 {{< gallery "end">}}

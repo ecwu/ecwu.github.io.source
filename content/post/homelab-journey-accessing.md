@@ -101,7 +101,7 @@ Tailscale 的效果非常惊艳，连接上就可以访问组网内的其他设�
 
 为此我使用了 Hugo 制作了一个门户页（使用 [Hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/) 模板），来方便访问不同的服务。但是这个静态页面有些小问题，因为前面提到的访问方法很多，不同情况下，我的访问用的 URL 都是不一样的，正常 HTML 并无法自适应。但群晖的 DSM 中却有这一特性，即会根据你访问的 URL 来动态的调整页面中提供的 URL。为了实现类似的功能，我修改了 Hugo 模板的一些代码，加入了一段 JavaScript 来动态的修改按钮的 URL。
 
-![NAS 上用 Hugo 生成的页面](http://cdn.ecwuuuuu.com/blog/image/homelab/nas-80-hugo-home.png)
+![NAS 上用 Hugo 生成的页面](http://cdn.ecwuuuuu.com/blog/image/homelab/nas-80-hugo-home.png-compressed.webp)
 
 ```Javascript
 let getUrl = window.location;
@@ -153,4 +153,4 @@ portainer.local.ecwu.xyz {
 
 我本身就使用 Cloudflare 进行网站的解析，并且已经部署了 Authentik 的身份验证服务。我将 Authentik 通过 OAuth2 的方式添加到 Authentication 的 Identity Provider 中。然后将 ecwu.xyz 页面加入到 Applications，并选定 Identity Provider 为 Login Method。经过这样的设定，ecwu.xyz 页面就要求登录才能访问了，并且正常情况下只显示一个登录页。
 
-![CloudFlare Zero Trust 保护的 ecwu.xyz 网页](http://cdn.ecwuuuuu.com/blog/image/homelab/cf-access-ecwuxyz.png)
+![CloudFlare Zero Trust 保护的 ecwu.xyz 网页](http://cdn.ecwuuuuu.com/blog/image/homelab/cf-access-ecwuxyz.png-compressed.webp)

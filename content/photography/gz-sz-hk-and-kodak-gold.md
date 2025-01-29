@@ -3,7 +3,7 @@ title: Guangzhou, Shenzhen, Hong Kong, and Kodak Gold
 subtitle: Testing new film before heading to Ireland.
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/5.jpg
+featureimage: https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/5.jpg-compressed.webp
 unsplashfeatureimage: 
 
 publishDate: "2024-10-03T23:59:00+01:00"
@@ -54,34 +54,34 @@ After completing my master’s degree following the COVID-19 outbreak, I transit
 
 {{< gallery g-class="gz-sz-hk">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/1.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/1.jpg-compressed.webp"
 image-description="High-speed train platform at Guangzhou Nan Railway Station">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/2.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/2.jpg-compressed.webp"
 image-description="Signless Cofe (they have a film vending machine)">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/3.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/3.jpg-compressed.webp"
 image-description="Night cityscape at Zhuangjiang New Town">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/4.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/4.jpg-compressed.webp"
 image-description="Platform at a random Guangzhou Metro Station">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/5.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/5.jpg-compressed.webp"
 image-description="Buildings in Shenzhen (1)">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/6.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/6.jpg-compressed.webp"
 image-description="Buildings in Shenzhen (2)">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/7.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/7.jpg-compressed.webp"
 image-description="The sea view on the Hong Kong-Zhuhai-Macau Bridge">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/8.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/8.jpg-compressed.webp"
 image-description="The street view of Mong Kok, Hong Kong">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/9.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/9.jpg-compressed.webp"
 image-description="The sea view near HKUST">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/10.jpg"
+image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/10.jpg-compressed.webp"
 image-description="The night view of a plaza near Sha Tin">}}
 {{< gallery "end">}}
 

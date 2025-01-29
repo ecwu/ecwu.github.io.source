@@ -58,7 +58,7 @@ copyright:
 HomeLab 直译是在家里的实验室，赛博语境下指网络、计算设备组成的实验沙盒。可以用来学习计算机技术和部署自用的服务。个人感觉 HomeLab 这个概念更多是在国外使用，许多的爱好者集中在 Reddit 频道 [r/homelab](https://www.reddit.com/r/homelab/) 分享、交流项目和问题；在 YouTube 上也有不少博主提供手把手教学视频。这个应对国内的概念应该是 NAS 和 All in One (All in Boom 😀)，许多教程能在什么值得买和哔哩哔哩找到。
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/homelab/homelab-overview.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/homelab/homelab-overview.jpg-compressed.webp"
   class="class param"
   title="HomeLab 规模概览"
   caption="通过部署 Homarr 项目展示了大部分服务"

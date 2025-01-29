@@ -3,7 +3,7 @@ title: Television Studio Production @ HKBU
 subtitle: 
 author: Zhenghao Wu
 description: The course I took at 2018 HKBU summer program
-featureimage: "https://cdn.ecwuuuuu.com/blog/image//hkbu-studio.jpg"
+featureimage: "https://cdn.ecwuuuuu.com/blog/image//hkbu-studio.jpg-compressed.webp"
 unsplashfeatureimage: 
 
 publishDate: "2018-08-20T02:56:01+08:00"
@@ -58,7 +58,7 @@ Television Studio Production 电视影棚制作
 好在这门课没有消失。在大二暑假，这门课又出现在了暑期课程的课程列表里。一顿操作，和几位同专业的同学选上了这门课（5 位 CDS 的同学）。
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-01.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-01.jpg-compressed.webp"
   class="class param"
   title="电视制作影棚内景"
   label="p1"
@@ -71,7 +71,7 @@ Television Studio Production 电视影棚制作
 刚开始的理论教学内容既有光圈快门感光度的知识，也有偏实操的灯光、设备使用，搭景的教学。
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-02.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-02.jpg-compressed.webp"
   class="class param"
   title="拍摄现场"
   label="p2"
@@ -84,7 +84,7 @@ Television Studio Production 电视影棚制作
 大家都很有创意，有的人拍摄“非诚勿扰”，也有的拍摄“赌神”的桥段。我自己的剧本写了一个电视购物的桥段。
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-03.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-03.jpg-compressed.webp"
   type="full"
   label="p3"
   title="在现场的我"
@@ -93,7 +93,7 @@ Television Studio Production 电视影棚制作
 {{< section "end" >}}
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-04.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-04.jpg-compressed.webp"
   class="class param"
   title="拍摄现场"
   label="p4"
@@ -102,7 +102,7 @@ Television Studio Production 电视影棚制作
 {{< section "end" >}}
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-05.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-05.jpg-compressed.webp"
   class="class param"
   title="拍摄现场"
   label="p5"
@@ -111,7 +111,7 @@ Television Studio Production 电视影棚制作
 {{< section "end" >}}
 
 {{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-06.jpg"
+  src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-06.jpg-compressed.webp"
   class="class param"
   title="装逼现场"
   label="p6"
