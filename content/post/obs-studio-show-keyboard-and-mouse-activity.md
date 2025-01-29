@@ -3,7 +3,7 @@ title: 使用 input-overlay 工具在 OBS Studio 中展示鼠标和按键操作
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: http://cdn.ecwuuuuu.com/blog/image/obs-input-overlay-cover.png
+featureimage: http://cdn.ecwuuuuu.com/blog/image/obs-input-overlay-cover.webp
 unsplashfeatureimage: 
 
 publishDate: "2023-01-31T00:16:08+08:00"
