@@ -107,7 +107,7 @@ The [PANTONE Color](https://www.pantone.com/) is a more proprietary and well-kno
  >}}
 {{< section "end" >}}
 
-In our case, we need the color name and its corresponding RGB value, so I made a Chinese color [name mapping file](https://gist.github.com/ecwu/d7534ef90c936e034c68b68281d9ad88) using [the list from Wikipedia](https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8), I also made an English one which I stored [here](https://gist.github.com/ecwu/d7534ef90c936e034c68b68281d9ad88). 
+In our case, we need the color name and its corresponding RGB value, so I made a Chinese color [name mapping file](https://gist.github.com/ecwu/461a1567ec5ab55dbaf18701c3e4c08b) using [the list from Wikipedia](https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8), I also made an English one which I stored [here](https://gist.github.com/ecwu/d7534ef90c936e034c68b68281d9ad88). 
 
 > In the mapping files I create, there are 248 colors named in Chinese and 977 colors named in English. Personally, I thought some color names used in English were less intuitive. And as a native Chinese speaker, I am more familiar with those Chinese color names, So in the following examples on color naming, I will use the Chinese name mapping file (I will provide translation or description).
 
