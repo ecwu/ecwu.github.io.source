@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/PtabTe6iJ_8/download?ixid=MnwxMjA3fDB8
 unsplashfeatureimage: Mika Baumeister
 
 publishDate: "2022-02-23T20:44:55+08:00"
-lastmod: 
+lastmod: "2025-02-09T15:16:00+00:00"
 draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
@@ -40,6 +40,8 @@ tags:
 - HSL
 - CIELAB
 - RGB
+- OKLCH
+- OKLAB
 
 categories:
 - Programming
@@ -270,6 +272,57 @@ $$\Delta E(\[L_1, a_1, b_1\], \[L_2, a_2, a_2\]) = \sqrt{(L_1-L_2)^2+(a_1-a_2)^2
 
 Such distance is usually called $\Delta E$ in color science. Stand for the color difference. When you buy some electronics with a screen, the claim for the screen with $\Delta E$ is less than a certain number. It is what it means. (It is an average of multiple colors measurements differences). A $\Delta E \leq 1$ is hard for humans to distinguish; a good monitor should have a $\Delta E \leq 3$.
 
+### $\Delta E76$, $\Delta E94$, and $\Delta E2000$
+
+> This section updated on 2025-02-09
+
+In the last section, the $\Delta E$ formulation is known as the $\Delta E76$ formulation (CIE 1976). It is the simplest and most straightforward way to calculate color differences. But simplest means it is not accurate. In detail, "it exaggerates the differences in yellows and compresses our perceptual distance between blues" ([Ref](https://opentextbc.ca/graphicdesign/chapter/4-4-lab-colour-space-and-delta-e-measurements/)).
+
+There are more complex modifications like $\Delta E94$ and $\Delta E2000$ for better accuracy.
+
+The $\Delta E94$ includes some adjustment factors in the formula:
+
+$$\Delta E94 = \sqrt{(\frac{\Delta L}{K_L S_L})^2+(\frac{\Delta C}{K_C S_C})^2+(\frac{\Delta H}{K_H S_H})^2}$$
+
+where $\Delta L$, $\Delta C$, $\Delta H$ are the differences in lightness, chroma, and hue, $\Delta L = L_1-L_2, \Delta C = C_1-C_2, \Delta H = \sqrt{(a_1-a_2)^2+(b_1-b_2)^2-(C_1-C_2)^2}$.
+
+$K_L$, $K_C$, $K_H$ are the weighting factors. Usually they are set to 1, but can be changed for different applications (For textiles, $K_L=2$ to emphasize lightness differences).
+
+Where $S_L$, $S_C$, $S_H$ are the scaling factors, which compensate for the non-linear response of human vision.
+
+
+The $\Delta E2000$ is the most complex and accurate one. It includes more factors like the lightness, chroma, and hue differences, the weighting factors, and the compensation factors.
+
+$$
+\Delta E = \sqrt{
+\left({\Delta L'} \over {K_L S_L}\right)^2
++
+\left({\Delta C'} \over {K_C S_C}\right)^2
++
+\left({\Delta H'} \over {K_H S_H}\right)^2
++
+R_T \left({\Delta C'} \over {K_C S_C}\right) \left({\Delta H'} \over {K_H S_H}\right)
+}
+$$
+
+$\Delta E2000$ uses a more sophisticated scaling for Lightness, Chroma, and Hue differences, reflecting that our sensitivity to these differences is not constant across the range.
+
+The $R_T$ is a rotation function to account for the hue difference. For the human eye. **Hue** difference in regions like blue (~275°) is less sensitive than in other colors regions.
+
+I will not go into detail about the $\Delta E94$ and $\Delta E2000$ here. You can learn more from [this page](http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE94.html), [this page](http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE2000.html) and [this page](https://www.color.org/events/colorimetry/Melgosa_CIEDE2000_Workshop-July4.pdf).
+
+### OKLCH Color Space and CSS Support
+
+> This section updated on 2025-02-09
+
+With the release of the Tailwind CSS version [4.0](https://tailwindcss.com/blog/tailwindcss-v4#modernized-p3-color-palette)[(release tag)](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.0.0), I noticed their new **Modernized P3 color palette**. It uses the OKLCH color space for the color palette.
+
+The evolving of distance formula indicates the problem of CIELAB color space. It suffers from hub non-linearity. The OKLCH color space try to solve the problem by integrating data from CAM16 (for lightness and chroma) and IPT (for hue) color spaces.
+
+The syntax for the OKLCH color space is `oklch(<lightness> <chroma> <hue> / <alpha>)` ([mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/oklch)). The support for the OKLCH color space starts from 2023, and most of the modern browsers support it.
+
+I found this color picker tool from OKLCH (https://oklch.com/), which is quite interesting. You can try it out to see how the color space works.
+
 ## Epilogue
 
 This article is the first academic work I finished without outer pushes (like school or work). Initially, I was not entirely familiar with the topic (I still do not fully understand the complete picture after my research, like how the CIELAB converted and modeled). But I was having a lot of fun when writing the text and creating the visualization and interactive modules.
@@ -299,6 +352,8 @@ Color Distances
 - https://stackoverflow.com/questions/4754506/color-similarity-distance-in-rgba-color-space
 - https://www.compuphase.com/cmetric.htm
 - https://cubicspot.blogspot.com/2019/05/designing-better-terminal-text-color.html
+- http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE94.html
+- http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE2000.html
 
 Color Naming List
 - https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8
