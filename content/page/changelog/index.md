@@ -50,6 +50,15 @@ copyright:
 
 ## Changelog
 
+### 2025
+
+#### February 2025
+
+- Update the Tailwind CSS to v4
+- Update the KaTeX to v0.16.21
+- Adjust the style for homepage card to match the design system
+- Adding support for youtube and bilibili embeds
+
 ### 2024
 
 #### October 2024

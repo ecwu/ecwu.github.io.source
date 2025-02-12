@@ -58,7 +58,7 @@ module.exports = {
             "blockquote p:last-of-type::after": false,
           }
         }
-      })
+      }),
     },
     fontFamily: {
       'serif': ['et-book', 'Bembo', 'Palatino', '"Palatino Linotype"', '"Palatino LT STD"', '"Book Antiqua"', 'Georgia', 'serif'],
