@@ -74,3 +74,4 @@ copyright:
 | 9   | ForwardAuth 配置接入任意应用 | [BV1Mb421a7fF](https://www.bilibili.com/video/BV1Mb421a7fF) | [HUB0aOVCo1M](https://www.youtube.com/watch?v=HUB0aOVCo1M) |
 | 10  | 配置多因素身份验证 | [BV1sJ4m1u7Rq](https://www.bilibili.com/video/BV1sJ4m1u7Rq) | [Ol7wF8AsrVA](https://www.youtube.com/watch?v=Ol7wF8AsrVA) |
 | 11  | 配置 Passwordless 登录 | [BV1tE421P7o1](https://www.bilibili.com/video/BV1tE421P7o1) | [p13W__HVDI8](https://www.youtube.com/watch?v=p13W__HVDI8) |
+| 13  | RAC 远程访问控制 配置 | [BV1Bh9bYXEqF](https://www.bilibili.com/video/BV1Bh9bYXEqF) | [VSZIoAqJRLQ](https://www.youtube.com/watch?v=VSZIoAqJRLQ) |
