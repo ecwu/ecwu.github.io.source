@@ -52,6 +52,10 @@ copyright:
 
 ### 2025
 
+#### April 2025
+
+- Adding a new "no-dark-invert" class for dark mode to prevent dark mode inversion for some images
+
 #### February 2025
 
 - Update the Tailwind CSS to v4
