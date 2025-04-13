@@ -69,7 +69,7 @@ The Tailwind UI is the official component library, and it has a paywall (not che
 
 A lot has been done in the past two weeks. And the theme is almost ready but still needs some tweaking. I borrow a lot of ideas from other Hugo themes, but the main idea is still **Make it simple**.
 
-![designstandard](http://cdn.ecwuuuuu.com/blog/image/designstandard/designstandard.001.jpeg-compressed.webp)
+![designstandard](http://cdn.ecwuuuuu.com/blog/image/designstandard/designstandard.001.jpeg-compressed.webp "no-dark-invert")
 
 Setting up a new theme is a quite messy process, have to consider an overwhelming amount of items and elements. So to make sure the unified style across the site, I create a design guideline that defines the overall coloring, placement of modules, and sizing. This saves me from designing by eye page by page.
 
