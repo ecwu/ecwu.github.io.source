@@ -87,7 +87,7 @@ FRP 是后来配置来作为 IPv6 访问补充的工具。最早知道 FRP 是�
 
 ### Tailscale
 
-Tailscale 是 [Lau](cklau.cc) 介绍的工具，他是基于 Wireguard 构建，力求易用。
+Tailscale 是 [Lau](https://blog.cklau.cc) 介绍的工具，他是基于 Wireguard 构建，力求易用。
 
 - 它通过第三方服务的认证来登录，在设备上登录后就可以将设备添加进自己的组网里。然后 Tailscale 会自动处理用于加密点对点通信的密钥分发和配置。
 - 大多时候，通信通过 NAT 穿透实现；但当穿透无法实现时，Tailscale 的中继服务会介入。
