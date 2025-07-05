@@ -143,3 +143,6 @@ quick_commit.sh
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Local build output
+public/
