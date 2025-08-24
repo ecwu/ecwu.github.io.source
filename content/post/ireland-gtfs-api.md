@@ -6,9 +6,9 @@ description: 本文介绍了爱尔兰交通数据 API 的使用，特别是 GTFS
 featureimage: 
 unsplashfeatureimage: 
 
-publishDate: "2025-08-19T12:00:00+01:00"
+publishDate: "2025-08-24T12:00:00+01:00"
 lastmod: 
-draft: true
+draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
 
