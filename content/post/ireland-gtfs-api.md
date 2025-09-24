@@ -18,7 +18,7 @@ toc: false
 math: false
 gallery: false
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
 series:
 
