@@ -9,7 +9,7 @@ unsplashfeatureimage:
 publishDate: "2025-08-24T12:00:00+01:00"
 lastmod: 
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -228,5 +228,3 @@ Trips 表中包含 service_id 字段，那么前一步的查询结果中我们�
 ![](https://cdn.ecwuuuuu.com/blog/image/tfi-test-768.jpg-compressed.webp)
 
 可以看到结果相当接近，（机场快线 700 不是同一个数据源，所以我的结果里没有）
-
-> 未完待续
