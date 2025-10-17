@@ -52,8 +52,6 @@ copyright:
 <!-- - [Hao Tian](https://www.haotian22.top/) -->
 <!-- - [某科学的贝壳](https://blog.ning.moe): Get busy living or get busy dying. -->
 
-<ul role="list" class="p-0">
-
 {{< friend-item title="Junde Yhi" img="https://avatars.githubusercontent.com/u/4285573?v=4" url="https://yhi.moe/" desc="Proficient in computer tech (specializing in IoT), open source evangelist.">}}
 
 {{< friend-item title="Terence Lau" img="https://avatars.githubusercontent.com/u/16585846?v=4" url="https://blog.cklau.cc/" desc="Ph.D. Student in Political Science at Trinity College Dublin, an expert in statistics, medical image, cyptography, language processing; a quasi-computer-science-expert.">}}
@@ -95,8 +93,6 @@ copyright:
 {{< friend-item title="zlicdt" img="https://zlicdt.github.io/img/avatar.png" url="https://zlicdt.github.io/" desc="なに？？">}}
 
 {{< friend-item title="渺宙凛娴" img="https://chrdsite.rinchord.studio/content/images/size/w256h256/format/jpeg/2024/09/1000023288.jpg" url="https://chrdsite.rinchord.studio/" desc="渺之舟，宇之奏">}}
-
-</ul>
 
 > The order of the list has no special meaning.
 
