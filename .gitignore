@@ -146,3 +146,5 @@ quick_commit.sh
 
 # Local build output
 public/
+
+CLAUDE.md
