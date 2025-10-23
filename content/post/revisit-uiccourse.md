@@ -20,12 +20,12 @@ gallery: false
 showinfocard: true
 enablecomment: true
 
-series:
+series: project
 previous:
 next:
 
-confidence: 8
-importance: 
+confidence: highly likely
+importance: 8
 
 tags:
 - uicCourse
