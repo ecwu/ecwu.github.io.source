@@ -128,9 +128,17 @@ The `include-html` shortcode includes an external HTML file from the same direct
 <!-- Note: This requires an HTML file in the same directory -->
 <!-- {{< include-html "example.html" >}} -->
 
+### 12. Marmaid Shortcode
+
+{{< mermaid >}}
+graph LR;
+A[Lemons]-->B[Lemonade];
+B-->C[Profit]
+{{< /mermaid >}}
+
 ## Shortcode Summary
 
-All 11 shortcodes available in the theme:
+All 12 shortcodes available in the theme:
 
 1. **figure** - Display images with captions
 2. **video** - Embed video files
@@ -143,4 +151,4 @@ All 11 shortcodes available in the theme:
 9. **gallery-image** - Individual images within gallery
 10. **friend-item** - Friend link cards
 11. **include-html** - Include external HTML files
-
+12. **mermaid** - Render Mermaid diagrams

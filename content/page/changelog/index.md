@@ -54,7 +54,8 @@ copyright:
 
 #### October 2025
 
-- Update the Tailwind CSS to v4 (v4.1.14)
+- Update the Tailwind CSS to v4 (v4.1.+)
+- Adding Mermaid diagram support
 
 #### April 2025
 
