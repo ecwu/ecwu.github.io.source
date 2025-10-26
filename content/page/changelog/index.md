@@ -37,7 +37,7 @@ copyright:
 
 ## About this site
 - Write with static site generator [Hugo](https://gohugo.io/)
-    - Uses [ecwu-theme](https://github.com/ecwu/ecwu-theme) from Jan 2022, Theme introduction: `TBA`
+    - Uses [ecwu-theme](https://github.com/ecwu/ecwu-theme) from Jan 2022, Theme introduction: [Blog Theme: ecwu-theme](/post/blog-theme-ecwu-theme/)
 - Build with [GitHub Actions](https://github.com/features/actions)
 - Site preview build with [Cloudflare Pages](https://pages.cloudflare.com/)
     - https://ecwu-github-io-source.pages.dev/
