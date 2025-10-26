@@ -7,7 +7,7 @@ featureimage:
 unsplashfeatureimage: 
 
 publishDate: "2021-12-22T16:35:45.000Z"
-lastmod: 
+lastmod: "2025-10-26T22:00:00+00:00"
 draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
@@ -79,3 +79,6 @@ I provide [the guidelines](http://cdn.ecwuuuuu.com/blog/image/designstandard/des
 
 The [new theme](https://github.com/ecwu/ecwu-theme) has been applied on the site, I probably will write a post to introduce the new theme. Feel free to explore the site, and give me some feedback in the comment section.
 
+## 2025.10.26 Update
+
+I finally wrote a detailed post about the theme: [New Blog Theme: ecwu-theme](/post/blog-theme-ecwu-theme/). The theme is also getting evolved with new features and improvements. Check out the [changelog](/page/changelog/) for the latest updates!
