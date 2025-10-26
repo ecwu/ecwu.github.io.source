@@ -112,23 +112,14 @@ The `gallery` shortcode creates a horizontal scrolling gallery of images.
 
 The `gallery-image` shortcode is used within the gallery shortcode (see above example).
 
-### 10. Friend Item Shortcode
-
-The `friend-item` shortcode creates a friend link card.
-
-<ul class="divide-y divide-gray-200 dark:divide-gray-700">
-{{< friend-item img="https://avatars.githubusercontent.com/u/12345?v=4" title="Example Friend" desc="A description of this friend's site" url="https://example.com" >}}
-{{< friend-item img="https://avatars.githubusercontent.com/u/67890?v=4" title="Another Friend" desc="Another cool website" url="https://anotherexample.com" >}}
-</ul>
-
-### 11. Include HTML Shortcode
+### 10. Include HTML Shortcode
 
 The `include-html` shortcode includes an external HTML file from the same directory.
 
 <!-- Note: This requires an HTML file in the same directory -->
 <!-- {{< include-html "example.html" >}} -->
 
-### 12. Marmaid Shortcode
+### 11. Marmaid Shortcode
 
 {{< mermaid >}}
 graph LR;
@@ -149,6 +140,5 @@ All 12 shortcodes available in the theme:
 7. **section** - Create custom HTML sections
 8. **gallery** - Horizontal scrolling image gallery
 9. **gallery-image** - Individual images within gallery
-10. **friend-item** - Friend link cards
-11. **include-html** - Include external HTML files
-12. **mermaid** - Render Mermaid diagrams
+10. **include-html** - Include external HTML files
+11. **mermaid** - Render Mermaid diagrams
