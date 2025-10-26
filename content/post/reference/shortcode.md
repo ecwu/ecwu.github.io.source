@@ -8,7 +8,6 @@ isCJKLanguage: false
 featureimage: https://unsplash.com/photos/GSnMWuCbov8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQxNjQyOTA1&force=true
 unsplashfeatureimage: Andrew Seaman
 
-showmeta: false
 publishDate: "2022-01-01T17:44:45+08:00"
 lastmod: "2022-01-03T17:44:45+08:00"
 draft: true
