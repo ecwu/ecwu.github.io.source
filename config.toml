@@ -5,6 +5,7 @@ title = 'ECWUUUUU'
 theme = 'ecwu-theme'
 
 contentdir = "content"
+dataDir = "data"
 publishdir = "public"
 builddrafts = false
 canonifyurls = true

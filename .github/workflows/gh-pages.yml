@@ -14,19 +14,22 @@ jobs:
           timezoneLinux: "Asia/Shanghai"
           timezoneMacos: "Asia/Shanghai"
           timezoneWindows: "China Standard Time"
-          
+
       - uses: actions/checkout@v3
         with:
-          submodules: 'recursive'
-          
+          submodules: "recursive"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.134.2'
+          hugo-version: "0.134.2"
           # extended: true
 
+      - name: Clean Hugo cache
+        run: rm -rf .hugo_build.lock public/ resources/
+
       - name: Build
-        run: hugo 
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
