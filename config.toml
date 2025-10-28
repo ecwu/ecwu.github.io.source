@@ -147,11 +147,11 @@ url = "/page/friends/"
 # -----------------------------------------------------------------------
 
 [[menu.topic]]
-name = "Changelog"
-pre = "About the site"
+name = "Authentik 教程"
+pre = "Authentik 是一个开源的身份认证平台"
 weight = -100
-identifier = "changelog"
-url = "/page/changelog/"
+identifier = "authentik"
+url = "/series/authentik/"
 [[menu.topic]]
 name = "Keep List"
 pre = "List of stuffs I enjoy"

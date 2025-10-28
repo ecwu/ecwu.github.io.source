@@ -60,7 +60,7 @@ copyright:
 
 如果应用不支持统一登录，或者应用比较的简单没用用户系统。想要将它们纳入自己的统一登录体系是比较麻烦。这种情况下 Authentik 提供了一种配合反向代理的鉴权方法：Forward Authentication (没找到中文翻译，我觉得可以译作`转发验证`)。
 
-![Traefik ForwardAuth Flowchart](https://doc.traefik.io/traefik/assets/img/middleware/authforward.png)
+![Traefik ForwardAuth Flowchart](https://geek-cookbook.funkypenguin.co.nz/images/traefik-forward-auth.png)
 
 鉴权的过程用 Traefik 的流程图做一下讲解：你的请求在经过反向代理时，ForwardAuth 的中间件会向设定好的身份验证服务发请求。如果验证服务返回 `2XX` 的验证码，反向代理则任务验证通过，将内容展现出来，否则则会拒绝返回内容。
 
