@@ -78,7 +78,7 @@ All official course information was contained within a single, large PDF file. A
 
 This led to the creation of `uicCourse`.
 
-![uicCourse Homepage](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/uiccourse-home.webp "no-dark-invert")
+![uicCourse Homepage](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/uiccourse-home.webp)
 
 It was built entirely in Python with a Django backend and server-side rendered templates. Over its development, I added numerous features:
 
@@ -88,7 +88,7 @@ It was built entirely in Python with a Django backend and server-side rendered t
 - Handy "major handbook" display for each major
 - Data visualizations for course statistics
 
-![uicCourse Course Page](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/uiccourse-course.webp "no-dark-invert")
+![uicCourse Course Page](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/uiccourse-course.webp)
 
 The project was eventually passed to a UICHCC and remains operational today, serving as a snapshot of the web development practices of that time.
 
@@ -130,7 +130,7 @@ The technological evolution from the 2018 project to the 2025 rebuild is clear:
 | **Authentication** | Django Auth | NextAuth.js | From a solid but rigid system to a flexible, provider-agnostic auth solution. |
 | **Hosting** | Docker on a VPS | Vercel + Supabase | From manual server management to a fully managed, serverless infrastructure with CI/CD. |
 
-![coursedb Homepage](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/coursedb-home.webp "no-dark-invert")
+![coursedb Homepage](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/coursedb-home.webp)
 
 This new stack represents a philosophical shift toward prioritizing developer experience (DX), type safety, and high efficiency. This allows me to focus on implementing business logic rather than configuring boilerplate.
 
@@ -146,7 +146,7 @@ This new stack represents a philosophical shift toward prioritizing developer ex
 
 **Database & ORM:** SQLite was sufficient for the original project but has performance limitations with concurrent writes. (Though it never gone popular and I never had a problem with it) **PostgreSQL** provides a high-performance and scalable solution. When developing locally, T3 stack provides a quick way to set up a PostgreSQL database with Docker. For production, I use **Supabase** for its managed PostgreSQL service, which simplifies deployment and scaling. While the Django ORM is an excellent tool, it choice **Drizzle ORM** for its lightweight, TypeScript-native design.
 
-![coursedb Course Page](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/coursedb-course.webp "no-dark-invert")
+![coursedb Course Page](https://cdn.ecwuuuuu.com/blog/image/webdev-shift/coursedb-course.webp)
 
 ## Practical Data Automation: From Manual Entry to an Automated Pipeline
 
