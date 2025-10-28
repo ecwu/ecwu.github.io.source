@@ -141,6 +141,11 @@ name = "Friends"
 weight = -50
 identifier = "friends"
 url = "/page/friends/"
+[[menu.nav]]
+name = "Travelling"
+weight = -40
+identifier = "traveling"
+url = "https://www.travellings.cn/go.html"
 
 # -----------------------------------------------------------------------
 # Two Selected Topic Block
