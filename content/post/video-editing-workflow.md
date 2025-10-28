@@ -48,6 +48,6 @@ copyright: bync
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
 
-{{< pdf pdf-url="https://cdn.ecwuuuuu.com/pdf/My-Video-Editing-Workflow.pdf">}}
+{{< pdf pdf-url="https://cdn.ecwuuuuu.com/pdf/My-Video-Editing-Workflow.pdf" aspect="video" >}}
 
 > Not sure about the exact date I originally post the slides. I just set the date to 2018.01.01 so it won't mess up the timeline.

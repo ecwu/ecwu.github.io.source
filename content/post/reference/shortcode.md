@@ -76,7 +76,9 @@ The `embed-video` shortcode embeds videos from YouTube or Bilibili.
 
 The `pdf` shortcode embeds a PDF document.
 
-{{< pdf pdf-url="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" >}}
+{{< pdf pdf-url="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" aspect="video" >}}
+
+aspect options: "landscape" (default), "portrait", "video"
 
 ### 5. Sidenote Shortcode
 
