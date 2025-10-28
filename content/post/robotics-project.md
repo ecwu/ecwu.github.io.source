@@ -63,7 +63,7 @@ copyright:
 
 原始的项目中，视频直接使用电机旋转门结构上的锁，但因为没有合适的电机、在学校的门上直接制作会难以携带和调试。于是我们决定制作一个小门的模型。
 
-![门的模型](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/door-front.jpeg-compressed.webp "no-dark-invert")
+![门的模型](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/door-front.jpeg-compressed.webp)
 
 整个门使用胶合板制作，先使用使用 CAD 工具规划木板的切割，然后通过淘宝上的厂家进行激光切割后再组装。
 
@@ -71,7 +71,7 @@ copyright:
 
 ### 锁
 
-![齿轮结构](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/gear.jpg-compressed.webp "no-dark-invert")
+![齿轮结构](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/gear.jpg-compressed.webp)
 
 因为门是“自己糊的”，那也不可能使用现成的锁具，于是使用 Fusion 360 设计了一个齿轮配合齿条的结构，作为锁舌。只需将电机绑在齿轮上，通过旋转即可控制“锁”的开关。下面视频展示了齿轮配合齿条的运动。
 
@@ -88,7 +88,7 @@ copyright:
 
 但是这些传感器大多比较复杂，需要多个针脚，于是只使用 Arduino 的话，主板上的针脚不够用。于是我们又利用了一块 [Boe-Bot](https://www.parallax.com/boe-bot-robot/) 的主板，分担控制。然后两款主板使用红外进行“交流”（因为两块主板的电压不一致，无法直接连线进行沟通）。
 
-![两块主板示意](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/two-boards-anno.jpg-compressed.webp "no-dark-invert")
+![两块主板示意](http://cdn.ecwuuuuu.com/blog/image/project/smart-door/two-boards-anno.jpg-compressed.webp)
 
 
 ## 视频演示

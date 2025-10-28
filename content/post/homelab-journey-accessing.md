@@ -101,7 +101,7 @@ Tailscale 的效果非常惊艳，连接上就可以访问组网内的其他设�
 
 为此我使用了 Hugo 制作了一个门户页（使用 [Hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/) 模板），来方便访问不同的服务。但是这个静态页面有些小问题，因为前面提到的访问方法很多，不同情况下，我的访问用的 URL 都是不一样的，正常 HTML 并无法自适应。但群晖的 DSM 中却有这一特性，即会根据你访问的 URL 来动态的调整页面中提供的 URL。为了实现类似的功能，我修改了 Hugo 模板的一些代码，加入了一段 JavaScript 来动态的修改按钮的 URL。
 
-![NAS 上用 Hugo 生成的页面](http://cdn.ecwuuuuu.com/blog/image/homelab/nas-80-hugo-home.png-compressed.webp "no-dark-invert")
+![NAS 上用 Hugo 生成的页面](http://cdn.ecwuuuuu.com/blog/image/homelab/nas-80-hugo-home.png-compressed.webp)
 
 ```Javascript
 let getUrl = window.location;

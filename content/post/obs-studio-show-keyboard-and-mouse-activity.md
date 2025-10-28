@@ -55,7 +55,7 @@ copyright:
 
 ## 什么是 input-overlay
 
-![input-overlay 使用中的效果](https://github.com/univrsal/input-overlay/blob/master/docs/io.png?raw=true "no-dark-invert")
+![input-overlay 使用中的效果](https://github.com/univrsal/input-overlay/blob/master/docs/io.png?raw=true)
 
 [input-overlay](https://github.com/univrsal/input-overlay) 是由 [Alex (univrsal)](https://vrsal.xyz/) 开发的一个 OBS Studio 插件。安装后，可以在 OBS Studio 中增加新的来源（source）用于展示鼠标、键盘、甚至是各种游戏手柄的操作。可以在游戏操作教学、软件教程类直播中提升直播时的效果。
 
@@ -67,20 +67,20 @@ copyright:
 
 另外一种安装方法是将相应的文件复制进 OBS Studio 的目录。下载下来的文件夹与 OBS 目录下一一对应，只需要直接覆盖即可。
 
-![通过复制文件的方式安装](http://cdn.ecwuuuuu.com/blog/image/input-overlay-file-replace.png-compressed.webp "no-dark-invert")
+![通过复制文件的方式安装](http://cdn.ecwuuuuu.com/blog/image/input-overlay-file-replace.png-compressed.webp)
 
 安装完成后，你就可以在 OBS Studio 的来源区域，找到并添加 Input Overlay （中文翻译：输入叠加）。
 
-![成功安装后可以在 OBS 内看到添加“输入叠加”源](http://cdn.ecwuuuuu.com/blog/image/input-overlay-in-obs-source.png-compressed.webp "no-dark-invert")
+![成功安装后可以在 OBS 内看到添加“输入叠加”源](http://cdn.ecwuuuuu.com/blog/image/input-overlay-in-obs-source.png-compressed.webp)
 
 ## input-overlay 的 preset （预设）
 
-![input-overlay 的属性配置页](http://cdn.ecwuuuuu.com/blog/image/input-overlay-in-obs-settings.png-compressed.webp "no-dark-invert")
+![input-overlay 的属性配置页](http://cdn.ecwuuuuu.com/blog/image/input-overlay-in-obs-settings.png-compressed.webp)
 
 当你添加了“输入叠加”源后，会看到如图的属性配置页，会要求你加载“贴图”和“配置”两个文件。这两个文件决定 input-overlay 插件显示哪些、以什么样式显示你的外设输入或操作。官方已经提供了一些做好的文件，称为 preset，同样可以在官方的 [GitHub Release](https://github.com/univrsal/input-overlay/releases/download/v5.0.0/input-overlay-5.0.0-presets.zip) 下载。下面展示一些常用的官方预设。
 
 
-![input-overlay 官方 Preset](http://cdn.ecwuuuuu.com/blog/image/input-overlay-presets-v2.png-compressed.webp "no-dark-invert")
+![input-overlay 官方 Preset](http://cdn.ecwuuuuu.com/blog/image/input-overlay-presets-v2.png-compressed.webp)
 
 ## 使用 “按键历史显示” preset 
 
@@ -96,13 +96,13 @@ copyright:
 
 ### 使用 “按键历史显示” preset 第一步：启用 input-overlay 的 websocket 服务器
 
-![input-overlay 开启 websocket 配置](http://cdn.ecwuuuuu.com/blog/image/input-overlay-websocket-settings.png-compressed.webp "no-dark-invert")
+![input-overlay 开启 websocket 配置](http://cdn.ecwuuuuu.com/blog/image/input-overlay-websocket-settings.png-compressed.webp)
 
 input-overlay 除了属性配置页，还有一个藏得比较深的全局配置页。位置在顶栏“工具”选项卡中，“输入叠加设置”按钮。点开后可以看到许多的配置，我们只需要将 “通过 websocket 服务器转发事件” 勾选，并确认端口设置为 `16899`。然后保存并重启 OBS Studio。
 
 ### 使用 “按键历史显示” preset 第二步：新建 “浏览器” 源
 
-![input-overlay 新建历史浏览器源](http://cdn.ecwuuuuu.com/blog/image/input-overlay-source-settings-v2.png-compressed.webp "no-dark-invert")
+![input-overlay 新建历史浏览器源](http://cdn.ecwuuuuu.com/blog/image/input-overlay-source-settings-v2.png-compressed.webp)
 
 然后我们在主界面的“来源”区域创建一个新的浏览器源。配置中如图：勾选“本地文件”。然后选择本地的 `input-history-windows.html` 文件，并适当调整窗口的长宽（如果组合键比较多，可以适当将宽度增加，笔者使用了 1200px 的宽度。）。文件如果正常加载，按下键盘的按键就能在预览窗口看到按键的信息和历史。
 

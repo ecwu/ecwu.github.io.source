@@ -61,7 +61,7 @@ copyright: bysa
 
 ## Introduction to PyTorch
 
-![PyTorch](https://pytorch.org/assets/images/logo-white.svg "no-dark-invert")
+![PyTorch](https://pytorch.org/assets/images/logo-white.svg)
 
 - PyTorch is an open-source deep learning framework that provides a flexible and dynamic approach to building and training neural networks.
 - Its popularity and widespread adoption by the research and industry communities.

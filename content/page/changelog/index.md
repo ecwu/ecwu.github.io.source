@@ -59,7 +59,7 @@ copyright:
 
 #### April 2025
 
-- Adding a new "no-dark-invert" class for dark mode to prevent dark mode inversion for some images
+- Adding a new "no-dark-invert" class for dark mode to prevent dark mode inversion for some images (removed in October 2025)
 
 #### February 2025
 

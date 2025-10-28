@@ -114,7 +114,7 @@ GTFS-R 数据中的两个都很重要：
 
 ## Arrival（实时站牌）的实现
 
-![爱尔兰的电子倒计时站牌](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sign-1040274%2C_Leixlip%2C_Co._Kildare%2C_Ireland.jpg/960px-Sign-1040274%2C_Leixlip%2C_Co._Kildare%2C_Ireland.jpg "no-dark-invert")
+![爱尔兰的电子倒计时站牌](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Sign-1040274%2C_Leixlip%2C_Co._Kildare%2C_Ireland.jpg/960px-Sign-1040274%2C_Leixlip%2C_Co._Kildare%2C_Ireland.jpg)
 爱尔兰的电子倒计时站牌 CC BY-SA 4.0 Author: [Leimanbhradain](https://commons.wikimedia.org/wiki/User:Leimanbhradain)
 
 这个功能想实现如图所示的电子倒计时站牌。因为并不是所有的站点都有电子的倒计时牌。这个站牌会显示三到四个即将到站的公交车信息，并显示预计到达时间。
