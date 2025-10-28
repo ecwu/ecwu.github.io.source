@@ -1,13 +1,13 @@
 ---
 title: "Blog Theme: ecwu-theme"
-subtitle: Building a Scholarly Minimalist Hugo Theme with Tailwind CSS
+subtitle: Building a Minimalist Hugo Theme with Tailwind CSS
 author: Zhenghao Wu
 description: A deep dive into my custom Hugo theme that powers this blog - from design philosophy to technical implementation
 featureimage:
 unsplashfeatureimage:
 
 publishDate: "2025-10-26T21:00:00+00:00"
-lastmod:
+lastmod: "2025-10-28T10:00:00+00:00"
 draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
@@ -15,7 +15,7 @@ status: Finished
 showmeta: true
 hidereadtime: false
 toc: true
-math: false
+math: true
 gallery: true
 showinfocard: true
 enablecomment: true
@@ -160,6 +160,8 @@ Shortcodes are Hugo's way of adding custom content elements, and ecwu-theme incl
 ### Utility Shortcodes
 - **Enhanced figures**: Advanced figure shortcode with rich caption support
 
+All shortcodes are demonstrated in the [cloudflare pages staging site](https://ecwu-github-io-source.pages.dev/post/reference/shortcode/) for easy reference.
+
 ## Additional Theme Features
 
 Beyond shortcodes, the theme includes several integrated systems:
@@ -169,7 +171,10 @@ Beyond shortcodes, the theme includes several integrated systems:
 - **Theme-aware comments**: Comments automatically adapt when users switch between light and dark modes
 
 ### Math Equations
-- **KaTeX support**: For rendering LaTeX-style math equations inline or in blocks
+- **KaTeX support**: For rendering $\LaTeX$-style math equations inline or in blocks
+
+
+$$\nabla_\mu F^{\mu\nu} + \frac{\lambda}{M^2}\nabla_\mu\!\left(\phi\, F^{\mu\nu} + (\nabla^\mu \phi)(\nabla_\rho F^{\rho\nu})\right) = j^\nu + g\,\bar{\psi}\gamma^\nu\psi + \alpha\, R^{\nu}_{\ \mu}\nabla^\mu \phi$$
 
 ### Analytics Integration
 - **Google Analytics**: Easy integration via Hugo parameters
