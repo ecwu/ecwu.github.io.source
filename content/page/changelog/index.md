@@ -56,6 +56,8 @@ copyright:
 
 - Update the Tailwind CSS to v4 (v4.1.+)
 - Adding Mermaid diagram support
+- Restore Sidenote and Marginnote support with new implementation
+- Update KaTeX to v0.16.21
 
 #### April 2025
 
@@ -103,7 +105,7 @@ copyright:
 - New `Terms`, `Series` View and Pages.
 - New Article Info Card
 - New Gallery Implementation with JS.
-- Remove Sidenote
+- Remove Sidenote (bring backed in Oct 2025)
 - Adding shortcode for video (via CDN)
 
 ### Pre 2022
