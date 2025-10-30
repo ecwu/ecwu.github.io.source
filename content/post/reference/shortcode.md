@@ -128,9 +128,28 @@ A[Lemons]-->B[Lemonade];
 B-->C[Profit]
 {{< /mermaid >}}
 
+### 12. Alert Shortcode
+
+The `alert` shortcode displays an alert box with a pen icon and customizable colors.
+
+**Basic usage:**
+{{< alert >}}
+This is a basic alert message with default styling.
+{{< /alert >}}
+
+**With custom colors:**
+{{< alert cardColor="#fff3cd" iconColor="#856404" textColor="#856404" >}}
+This is a custom styled alert with yellow background.
+{{< /alert >}}
+
+Available parameters:
+- `cardColor` - Background color of the alert box
+- `iconColor` - Color of the pen icon
+- `textColor` - Color of the alert text
+
 ## Shortcode Summary
 
-All 12 shortcodes available in the theme:
+All 13 shortcodes available in the theme:
 
 1. **figure** - Display images with captions
 2. **video** - Embed video files
@@ -143,3 +162,4 @@ All 12 shortcodes available in the theme:
 9. **gallery-image** - Individual images within gallery
 10. **include-html** - Include external HTML files
 11. **mermaid** - Render Mermaid diagrams
+12. **alert** - Display alert boxes with pen icon
