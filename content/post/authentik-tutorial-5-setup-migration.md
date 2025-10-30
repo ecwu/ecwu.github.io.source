@@ -54,9 +54,9 @@ copyright:
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
 
-## 提醒
-
+{{< alert >}}
 **因为迁移涉及数据的操作，操作前请提前做好研究，做好备份！！！**
+{{< /alert >}}
 
 ## 引入和备份操作
 
