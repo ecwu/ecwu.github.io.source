@@ -1,5 +1,5 @@
 ---
-title: 学术文献的阅读与理解 - 关于智能体的实验 - 第 1 章
+title: 关于智能体的实验 1 - 三种阅读理解学术文献的智能体框架
 subtitle:
 author: Zhenghao Wu
 description: 
@@ -58,42 +58,6 @@ extramaterials:
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
-
-> 本文记录我在尝试构建智能体和多智能体系统的过程，探索其应用潜力。这会是一个系列文章，这一章节关注的是智能体的构建与多智能体动态交互行为的实现。最后会给出各类学术文章生成的报告示例。
-
-## 前情
-
-智能体发展迅速，但我对它的了解只停留在各种名词和概念的层面，于是想通过实际动手构建一些智能体系统来加深理解。
-
-之前使用 [Cherry Studio](https://www.cherry-ai.com) 结合个人知识库 MCP 工具实现的一个文章理解的智能体：文本从 PDF 中提取出来后，结合包含**理解文章**和**生成报告**任务的提示词发送给API，最终 LLM 调用 MCP 工具生成报告储存在知识库中。
-
-{{< figure
-  src="https://cdn.ecwuuuuu.com/blog/image/agent/cherry-studio-mcp-example.jpg-compressed.webp"
-  type="full"
-  label="cherry-studio-agentic-academic-literature-consuming"
-  title="Cherry Studio 中构建的智能体，使用 DeepSeek V3.2 模型理解 DeepSeek-OCR 文章"
-  alt="alt"
->}}
-{{< section "end" >}}
-
-现在的模型 API，上下文窗口已经足够大，可以直接将文章内容发送给模型进行处理，这个智能体的效果还挺不错的。但更进一步，我想试试设计不同的智能体和多智能体交互行为，实现读论文这个任务上多样的需求：
-
-1. 体系化的文章理解
-2. 模型自己决定阅读策略
-3. 多智能体互相交流（提问和回应）寻求共识
-
-## 工具
-
-为了挑选合适的工具，我去 Reddit 看看都在用什么，发现下面这些项目比较流行：
-
-- [crewAI](https://docs.crewai.com/introduction) 多智能体框架，可以快速构建多 agent 协作、任务委派与工具调用流程。
-- [AutoGen](https://www.microsoft.com/en-us/research/project/autogen/) 微软的项目，专注多智能体系统，通过对话协作（agent-agent、agent-人、工具集成）解决复杂任务流程
-- [Agno](https://docs.agno.com/introduction) 专注多模态智能体的构建。
-- [openai-agents-python](https://openai.github.io/openai-agents-python/) OpenAI 的项目，主打极简 API 构建 agent，支持同步和异步模式，工具调用和流程控制。
-- [PydanticAI](https://ai.pydantic.dev/) Pydantic 团队的项目，专注于让 LLM 输出结构化、类型安全、验证可控，强化数据模型定义与验证能力。
-- [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) LangChain 的项目，通过图结构（graph）方式编排工作流。
-
-我选用了 PydanticAI，主要是看中他数据模型定义和验证的能力。 另外，PydanticAI 并没有封装太多智能体的行为逻辑，更多是提供一个工具库，方便我自己设计智能体和多智能体交互的流程。
 
 ## 单体 Agent (single-agent)
 
