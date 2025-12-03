@@ -50,9 +50,7 @@ categories:
 
 # type: file, link, image, and others
 extramaterials:
-- type: link
-  name: SciRead Viewer
-  url: https://ecwuuuuu.com/special-topic/sciread-viewer
+
 
 
 copyright: 
