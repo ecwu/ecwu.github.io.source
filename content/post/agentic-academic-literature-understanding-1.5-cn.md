@@ -1,5 +1,5 @@
 ---
-title: 关于智能体的实验 1.5 - 阅读理解学术文献的多智能体框架（第四种）
+title: 关于智能体的实验 1.5 - 基于共识的多智能体框架与按需生成专家-协调多智能体系统
 subtitle:
 author: Zhenghao Wu
 description: 

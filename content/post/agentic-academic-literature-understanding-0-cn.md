@@ -42,6 +42,10 @@ tags:
 - 学术论文
 - 研究
 - 阅读
+- Agentic Reading
+- Academic Literature
+- 文献理解
+- 论文阅读
 
 categories:
 - Tech
@@ -98,7 +102,7 @@ copyright:
 这个系列文章预计会有四个部分：
 
 - 第 0 章：任务的定义，难点，构建智能体使用的工具（本文）
-- 第 1 章：三种阅读理解学术文献的智能体框架
+- [第 1 章：三种阅读理解学术文献的智能体框架](/post/agentic-academic-literature-understanding-1-cn/)
 - 第 1.5 章：交互多智能体框架
 - 第 2 章：文本检索增强生成与高质量召回
 - 第 3 章：通过工具调用使能更多能力
