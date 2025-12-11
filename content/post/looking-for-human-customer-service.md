@@ -35,7 +35,8 @@ tags:
 - 欧洲
 
 categories:
-- Placeholder
+- Life
+- Experience
 
 # type: file, link, image, and others
 extramaterials:
