@@ -18,7 +18,7 @@ toc: false
 math: false
 gallery: true
 showinfocard: true
-enablecomment: false
+enablecomment: true
 
 series:
 previous:
@@ -101,4 +101,4 @@ Amazon 的“系统显示今天能送达”、UPS 客服按手册复读、Vodafo
 
 所以最后的感想大概是：
 在欧洲联系客服，真正的难点不是遇到问题，而是想办法突破流程、找到能拍板那个人。
-一旦跳出来，问题其实并不难解决；但前提是，你得先从机器人、外包和各种流程中挣脱出来。
+一旦跳出来，问题其实并不难解决；但前提是，你得先从机器人、外包和各种流程中挣脱出来。然后适应缓慢的处理节奏，耐心等待。
