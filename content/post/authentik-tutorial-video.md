@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/iwfHhOZLVMU/download?ixid=M3wxMjA3fDB8
 unsplashfeatureimage: Chris Murray
 
 publishDate: "2024-08-08T17:11:00+08:00"
-lastmod: 
+lastmod: "2025-12-21T10:00:00+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -74,4 +74,6 @@ copyright:
 | 9   | ForwardAuth 配置接入任意应用 | [BV1Mb421a7fF](https://www.bilibili.com/video/BV1Mb421a7fF) | [HUB0aOVCo1M](https://www.youtube.com/watch?v=HUB0aOVCo1M) |
 | 10  | 配置多因素身份验证 | [BV1sJ4m1u7Rq](https://www.bilibili.com/video/BV1sJ4m1u7Rq) | [Ol7wF8AsrVA](https://www.youtube.com/watch?v=Ol7wF8AsrVA) |
 | 11  | 配置 Passwordless 登录 | [BV1tE421P7o1](https://www.bilibili.com/video/BV1tE421P7o1) | [p13W__HVDI8](https://www.youtube.com/watch?v=p13W__HVDI8) |
+| 12  | 服务的迁移 | [Bilibili 图文](https://www.bilibili.com/opus/1003423588679680017) | N/A |
 | 13  | RAC 远程访问控制 配置 | [BV1Bh9bYXEqF](https://www.bilibili.com/video/BV1Bh9bYXEqF) | [VSZIoAqJRLQ](https://www.youtube.com/watch?v=VSZIoAqJRLQ) |
+| 14  | 社交登录配置 | [BV1uDBJBeEbp](https://www.bilibili.com/video/BV1uDBJBeEbp) | [h3_87ZRoMJ0](https://www.youtube.com/watch?v=h3_87ZRoMJ0) |

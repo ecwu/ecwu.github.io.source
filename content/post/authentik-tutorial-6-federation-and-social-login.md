@@ -160,7 +160,7 @@ copyright:
 ## 参考资料
 
 - https://docs.goauthentik.io/users-sources/sources/social-logins/github/ （GitHub Source 官方教程）
-- https://fangpsh.github.io/posts/2025/2025-07-24.html （飞书 OAuth2 配置参考，里面提供了）
+- https://fangpsh.github.io/posts/2025/2025-07-24.html （飞书 OAuth2 配置参考，里面提供了几个关键的 URL）
 - https://github.com/goauthentik/authentik/issues/8592 （一些关于 GitHub Source 的讨论）
 - https://github.com/goauthentik/authentik/pull/13773 （飞书 Source PR）
 - https://github.com/goauthentik/authentik/pull/18086 （微信 Source PR，已经合并到主线，预计很快能发布）
