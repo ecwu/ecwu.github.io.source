@@ -6,8 +6,8 @@ description:
 featureimage: https://unsplash.com/photos/r8evD-sX5Mc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzY2MjY5MzM4fA&force=true&w=2400
 unsplashfeatureimage:  Zulfugar Karimov
 
-publishDate: "2025-12-20T22:19:29Z"
-lastmod: 
+publishDate: "2025-12-21T22:19:29Z"
+lastmod: "2025-12-22T21:10:51Z"
 draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
@@ -60,6 +60,14 @@ copyright:
 之前我们都在使用 Authentik 来当各种服务的身份提供者（Identity Provider, IdP），但有时我们也希望 Authentik 能够作为一个**服务提供者**（Service Provider, SP），允许用户通过其他身份提供者登录。这就是社交登录的核心概念。
 
 这些身份提供者被称为 Source (来源)，Authentik 通实现了多种协议，包括 OAuth2、OIDC 和 SAML。今天我们主要演示两个基于 OAuth 协议的提供者：GitHub 和飞书（Lark）。其中 GitHub 是官方支持的一种类型，而飞书则是通过自定义 OpenID OAuth Source 实现的。
+
+## 概念解释
+
+![Authentik 社交登录示意图](https://cdn.ecwuuuuu.com/blog/image/authentik-social-login-figure.png-compressed.webp)
+
+传统的流程，Authentik 依赖内部的用户数据库（Built-in Source）来验证用户身份，作为 IdP 向各种应用提供认证服务（其他服务为服务提供商 SP）。而社交登录则是 Authentik 作为 SP，依赖外部的身份提供者（Source）作为 IdP来提供用户身份。
+
+但这个过程，Authentik 并不是获取信息后转发到下游应用，而是将用户信息同步到 Authentik 的用户数据库中，通过 Enrollment 的流程将用户创建到 Authentik 系统中，然后用户就可以使用这些账号登录到 Authentik 绑定的各种应用中。
 
 ## GitHub 社交登录配置
 
