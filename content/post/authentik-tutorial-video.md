@@ -77,3 +77,6 @@ copyright:
 | 12  | 服务的迁移 | [Bilibili 图文](https://www.bilibili.com/opus/1003423588679680017) | N/A |
 | 13  | RAC 远程访问控制 配置 | [BV1Bh9bYXEqF](https://www.bilibili.com/video/BV1Bh9bYXEqF) | [VSZIoAqJRLQ](https://www.youtube.com/watch?v=VSZIoAqJRLQ) |
 | 14  | 社交登录配置 | [BV1uDBJBeEbp](https://www.bilibili.com/video/BV1uDBJBeEbp) | [h3_87ZRoMJ0](https://www.youtube.com/watch?v=h3_87ZRoMJ0) |
+
+
+另外，我还有一些 Authentik 相关的 Gist 文章，记录了一些小技巧和配置方法，欢迎到[我的 Gist 专栏](https://ecwuuuuu.com/series/gist/)查看。
