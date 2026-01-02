@@ -238,6 +238,7 @@ LDAP 准确来说并不是一个统一登录协议，而是一种目录服务协
    - 绑定 `ldap-identification-stage`，设置 order 为 `10`。
    - 绑定 `ldap-authentication-login`，设置 order 为 `30`。
 3. 编辑 `ldap-identification-stage`，将其 Password stage 更改为 `ldap-authentication-password`。
+4. `ldap-authentication-flow` 创建完成后，进入更新 flow 的设置页面，将 Authentication 从 `No requirement` 改为 `Require Outpost`。因为这个创建的 Flow 不包含 MFA 阶段，所以我们不希望它被用于普通的用户登录。上面这个设置可以确保只有 Outpost（LDAP）能使用该 Flow。
 
 #### 创建 LDAP 应用与提供程序
 
