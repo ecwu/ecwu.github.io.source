@@ -7,7 +7,7 @@ featureimage: https://unsplash.com/photos/AT5vuPoi8vc/download?ixid=M3wxMjA3fDB8
 unsplashfeatureimage: charlesdeluvio
 
 publishDate: "2024-04-21T14:29:00+08:00"
-lastmod: 
+lastmod: "2026-01-02T22:00:00+08:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -202,4 +202,92 @@ TBA
 
 ## Outposts
 
+Outposts 是 Authentik 的轻量部署单元（即可作为服务运行的组件），可以部署在任何可以访问 Authentik API 的位置。对于某些提供程序类型（例如 LDAP、Proxy、RADIUS、RAC），Outpost 是必需的：这些提供程序将主要逻辑在 Outpost 中执行以提高灵活性和性能。Outpost 使用自动生成的服务账号与令牌限制对 API 的访问权限，仅能读取配置的应用/提供程序及相关对象；当关联的应用或提供程序发生变更时，Authentik 会通过事件和 WebSocket 将新的配置推送到 Outpost，Outpost 也通过 WebSocket 上报健康状况。另一个优势是 Outpost 不依赖外网连接，适用于被防火墙或隔离网络保护的环境，以及对离线或隔离机器提供单点登录支持。
+
+我们下面要介绍的 LDAP 就需要通过 Outpost 来实现。
+
 ### LDAP 配置
+
+LDAP 准确来说并不是一个统一登录协议，而是一种目录服务协议。它不提供跨应用免登录能力，Authentik 会充当一个 LDAP 服务器的角色，应用程序通过 LDAP 协议去查询用户信息和验证用户密码。也就是用户在使用应用时，需要再次输入用户名和密码，应用程序通过 LDAP 协议将用户名和密码发送到 Authentik 进行验证。
+
+相比之前介绍的 OIDC 和 SAML，LDAP 的配置会复杂一些。首先我们需要创建一个 Outpost 来提供 LDAP 服务。这涉及到创建一个专门的账户，和创建 LDAP Outposts。步骤如下：
+
+#### 创建服务账号
+
+1. 使用管理员账号登录后台，进入 `Directory` > `Users` > `Create` 创建一个新用户，示例中我们命名为 `ldapservice`。
+2. 记下该用户的 DN（示例）：`cn=ldapservice,ou=users,dc=ldap,dc=goauthentik,dc=io`。
+
+> INFO: 默认的 `default-authentication-flow` 会对 MFA 进行校验，而当前 LDAP 对 MFA 设备的支持有一定限制：除 SMS（短信）和 WebAuthn（通过 passkey）的设备外，其它常见设备均被支持。如果你只打算使用专用的服务账号来绑定 LDAP，或者不使用 SMS 验证器，则可以直接使用默认流程，跳过下面自定义流程的步骤并继续“创建 LDAP 应用与提供程序”。
+
+#### LDAP Flow（自定义认证流程）
+
+##### 创建自定义阶段
+
+1. 进入 `Flows & Stages` > `Stages` > `Create`，创建一个识别阶段（Identification）：
+   - 名称：`ldap-identification-stage`
+   - 选择 User fields：`Username` 和 `Email`（如需，可加入 `UPN`）。
+2. 同样在 Stages 中创建密码阶段（Password）：
+   - 名称：`ldap-authentication-password`，保持 Backends 的默认设置即可。
+3. 创建用户登录阶段（Login）：
+   - 名称：`ldap-authentication-login`。
+
+##### 创建自定义 Flow
+
+1. 在 `Flows & Stages` > `Flows` > `Create` 新建一个认证流，名称：`ldap-authentication-flow`。
+2. 打开该 Flow，选择 `Stage Bindings`：
+   - 绑定 `ldap-identification-stage`，设置 order 为 `10`。
+   - 绑定 `ldap-authentication-login`，设置 order 为 `30`。
+3. 编辑 `ldap-identification-stage`，将其 Password stage 更改为 `ldap-authentication-password`。
+
+#### 创建 LDAP 应用与提供程序
+
+1. 在 `Applications` > `Applications` > `Create With provider` 创建一个新的应用，命名为 `LDAP`，并在创建时选择 LDAP 提供程序。
+
+#### 分配 LDAP 权限
+
+1. 进入 `Applications` > `Providers`，打开刚才创建的 LDAP Provider，切换到 `Permissions` 标签页。
+2. 点击 `Assign to new user`，选择 `ldapservice` 用户。
+3. 选中 `Search full LDAP directory` 权限并点击 `Assign`，为该服务账号授予目录查询权限。
+
+#### 创建 LDAP Outpost
+
+1. 在 `Applications` > `Outposts` > `Create` 新建（或更新）一个 Outpost，`Type` 选择 `LDAP`，并将它关联到上面创建的 `LDAP` 应用。
+
+> INFO: LDAP Outpost 会根据 Provider 的 Base DN 选择提供程序。为同一 Base DN 添加多个 Provider 可能会导致访问不一致，请避免重复的 Base DN。
+
+2. Outpost 的创建依赖于 Docker 容器的运行，如果你配置了 Outpost Integration，Authentik 则会自动创建并启动容器。否则，你需要手动部署 Outpost。可以参考官方文档的 [LDAP Outpost 部署指南](https://docs.goauthentik.io/add-secure-apps/outposts/#outpost-integrations)。
+
+#### 使用 ldapsearch 测试连通性
+
+1. 在测试机器上安装 ldapsearch（Debian/Ubuntu 下）：
+
+```bash
+sudo apt-get install ldap-utils -y
+```
+
+2. 使用示例命令测试：
+
+```bash
+ldapsearch \
+  -x \
+  -H ldap://<LDAP_OUTPOST_IP>:389 \   # 生产环境请使用 ldaps:// 且对应的 SSL 端口
+  -D 'cn=ldapservice,ou=users,DC=ldap,DC=goauthentik,DC=io' \
+  -w '<ldapuserpassword>' \
+  -b 'DC=ldap,DC=goauthentik,DC=io' \
+  '(objectClass=user)'
+```
+
+> INFO: 成功的首次登录会在 `Events` > `Logs` 中记录，随后的重复登录通常由 Outpost 缓存，不再重复记录。
+
+### Emby 配置
+
+Emby 上使用 LDAP 插件需要 Premium 版本。安装好插件后，进入 `设置` > `插件` > `LDAP` 进行配置：
+
+- LDAP server address: `<LDAP_OUTPOST_IP>`
+- LDAP server Port number: `389`
+- Bind DN: `cn=ldapservice,ou=users,DC=ldap,DC=goauthentik,DC=io`
+- Bind credentials: `<ldapuserpassword>` 这里填写上面创建服务账号时设置的密码
+- User search base: `DC=ldap,DC=goauthentik,DC=io`
+User search filter: `(&(sAMAccountName={0})(memberOf=cn=media,ou=groups,dc=ldap,dc=goauthentik,dc=io))` 这里的 `media` 是我在 Authentik 创建的一个用户组，只有该组内的用户才能通过 LDAP 登录 Emby。
+
+保存配置后，用户就可以通过 LDAP 账号登录 Emby 了。
