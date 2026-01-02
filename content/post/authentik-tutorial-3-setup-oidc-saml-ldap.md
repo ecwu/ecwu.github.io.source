@@ -198,7 +198,26 @@ SAML 一般要求对请求进行签名，你需要展开 Advanced protocol setti
 
 #### Cloudflare Zero Trust
 
-TBA
+[Cloudflare Zero Trust](https://www.cloudflare.com/zh-cn/zero-trust/) 是 Cloudflare 提供的零信任访问服务。它支持通过 SAML 协议接入第三方身份提供者。下面是配置的步骤：
+
+1. 在 Authentik 中创建一个 SAML 应用和对应的 Provider。
+   - 通过 “Create with Provider” 创建 SAML 应用和 Provider。应用名称按需填入。
+   - 在 Provider 的配置页面，类型选择 “SAML Provider”。
+   - 填写以下字段：
+     - ACS URL: `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`
+     - Issuer/Entity ID: `https://<your-team-name>.cloudflareaccess.com/cdn-cgi/access/callback`
+     > INFO: `<your-team-name>` 替换为你的 Cloudflare 团队名称。ACS URL 和 Issuer/Entity ID 是一样的。
+     - Service Provider Binding: 选择 `Post`
+   - 展开 Advanced protocol settings：
+     - Signing Certificate: 选择一张证书用于签名，选择后，勾选 Sign assertion 和 Sign responses。
+     - Property mappings: 选择需要传递给 Cloudflare 的属性，一般全选即可
+   - 保存 Provider 配置。
+2. 在 Cloudflare Zero Trust 中配置 SAML 应用。
+   - 登录 Cloudflare Zero Trust 仪表板，进入 `Integrations` > `Identity Providers` > `Add` > `SAML`。
+   - 一个简单的方式是直接到 Authentik 的 SAML Provider 详情页，点击 `Metadata` 旁边的下载按钮，下载 SAML 元数据文件。
+   - 在 Cloudflare 的 SAML 配置页面，选择 `Upload metadata file`，上传刚才下载的元数据文件。 Cloudflare 会读取并自动填充 SAML 设置字段。
+   - 保存配置。
+3. 创建好的 `Identity Provider`，可以直接点击 `Test` 按钮进行测试。如果配置正确，Cloudflare 会重定向到 Authentik 进行登录验证。登录成功后，Cloudflare 会接收到 SAML 响应并展示返回的用户信息。
 
 ## Outposts
 
@@ -282,7 +301,9 @@ ldapsearch \
 
 ### Emby 配置
 
-Emby 上使用 LDAP 插件需要 Premium 版本。安装好插件后，进入 `设置` > `插件` > `LDAP` 进行配置：
+> 注意，Emby 上使用 LDAP 插件需要有效的 Premiere 授权。请确保你拥有授权许可后再试，否则将无法使用该功能。
+
+安装好插件后，进入 `设置` > `插件` > `LDAP` 进行配置：
 
 - LDAP server address: `<LDAP_OUTPOST_IP>`
 - LDAP server Port number: `389`
