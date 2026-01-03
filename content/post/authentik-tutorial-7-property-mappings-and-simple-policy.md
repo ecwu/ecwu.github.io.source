@@ -8,7 +8,7 @@ unsplashfeatureimage:
 
 publishDate: "2025-12-22T16:18:51Z"
 lastmod: 
-draft: false
+draft: true
 status: Finished
 # In Progress, Staging, Finished, Lagacy
 
