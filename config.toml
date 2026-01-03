@@ -24,7 +24,7 @@ description = "Homepage and blog for Zhenghao Wu (ECWU), sharing thoughts on tec
 # titleString = "Zhenghao Wu's Blog"
 placeholderUnsplashCollection = "https://source.unsplash.com/collection/784653"
 # HTML is ok for `homePageSelfIntro`
-homePageSelfIntro = 'Hello and welcome! I am <a href="/page/about">Zhenghao Wu</a>, but you may also know me by my alias, ECWU. This blog serves as a virtual repository of my thoughts, ideas, collections, and creative projects. I also exhibit my photographic endeavors sometime. Beyond this, I have a domain <a href="https://ecwu.xyz">(ECWU.xyz)</a> storing stuffs I create or deploy.'
+homePageSelfIntro = 'Hello and welcome! I am <a href="/page/about">Zhenghao Wu</a>, but you may also know me by my alias, ECWU. Here, this blog is my repository for my thoughts, observations, projects, and collections. It also serves as an occasional gallery for my photography. Beyond this space, I have a domain <a href="https://ecwu.xyz">(ecwu.xyz)</a>, which is the space for my self-hosted services.'
 homePageSectionArticleCount = 8                                                                                                                                                                                                                                                                                                                                                                   # Number of articles for each section shows at the homepage
 homePageSection = ['post', 'photography']
 [params.footer]
