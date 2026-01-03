@@ -37,7 +37,7 @@ tags:
 - cloud
 
 categories:
-- website
+- Home Lab
 
 # type: file, link, image, and others
 extramaterials:

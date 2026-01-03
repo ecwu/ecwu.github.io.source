@@ -40,10 +40,7 @@ tags:
 
 
 categories:
-- Tech
-- Website
-- Network
-- Cloud
+- Home Lab
 
 # type: file, link, image, and others
 extramaterials:

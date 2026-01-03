@@ -55,8 +55,7 @@ tags:
 - Web Design
 
 categories:
-- Tech
-- Note
+- Development
 
 # type: file, link, image, and others
 extramaterials:

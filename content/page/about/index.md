@@ -29,7 +29,6 @@ tags:
 
 categories:
 - Page
-- Topic
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash

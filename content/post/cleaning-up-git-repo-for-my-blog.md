@@ -36,7 +36,6 @@ tags:
 
 categories:
 - Website
-- Technique Share
 
 # type: file, link, image, and others
 extramaterials:

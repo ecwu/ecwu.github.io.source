@@ -37,8 +37,6 @@ tags:
 - input-overlay
 
 categories:
-- Streaming
-- OBS Studio
 - Tutorial
 
 # type: file, link, image, and others

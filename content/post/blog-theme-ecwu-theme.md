@@ -35,7 +35,7 @@ tags:
 - Design System
 
 categories:
-- Development
+- Website
 
 # type: file, link, image, and others
 extramaterials:

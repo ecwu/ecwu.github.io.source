@@ -31,7 +31,7 @@ tags:
 - Authentik
 
 categories:
-- Placeholder
+- Gist
 
 # type: file, link, image, and others
 extramaterials:

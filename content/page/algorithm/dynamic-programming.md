@@ -31,7 +31,7 @@ tags:
 - Placeholder
 
 categories:
-- Placeholder
+- Algorithm
 
 # type: file, link, image, and others
 extramaterials:

@@ -34,7 +34,6 @@ tags:
 
 categories:
 - Photography
-- Life
 
 camera:
 - Sony A7R3

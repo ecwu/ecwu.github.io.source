@@ -32,7 +32,6 @@ tags:
 - theme
 
 categories:
-- Tech
 - Website
 
 # type: file, link, image, and others

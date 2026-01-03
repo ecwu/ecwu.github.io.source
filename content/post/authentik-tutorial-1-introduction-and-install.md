@@ -38,10 +38,7 @@ tags:
 
 
 categories:
-- Tech
-- Website
-- Network
-- Cloud
+- Tutorial
 
 # type: file, link, image, and others
 extramaterials:

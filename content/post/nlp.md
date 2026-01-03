@@ -42,7 +42,7 @@ tags:
 - Pre-trained Language Model
 
 categories:
-- Project
+- Research
 
 # type: file, link, image, and others
 extramaterials:

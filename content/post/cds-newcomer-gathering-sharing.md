@@ -36,7 +36,6 @@ tags:
 
 categories:
 - Share
-- PDF
 
 # type: file, link, image, and others
 extramaterials:

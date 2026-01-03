@@ -36,7 +36,6 @@ tags:
 
 categories:
 - Life
-- Experience
 
 # type: file, link, image, and others
 extramaterials:

@@ -40,10 +40,7 @@ tags:
 - ddns
 
 categories:
-- Tech
-- Website
-- Networ
-- Cloud
+- Home Lab
 
 # type: file, link, image, and others
 extramaterials:

@@ -33,7 +33,6 @@ tags:
 - Activation Function
 
 categories:
-- Note
 - Machine Learning
 
 # type: file, link, image, and others

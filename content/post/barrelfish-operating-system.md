@@ -35,8 +35,7 @@ tags:
 - Computer Science
 
 categories:
-- Note
-- OS
+- Project
 
 # type: file, link, image, and others
 extramaterials:

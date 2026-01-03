@@ -38,7 +38,6 @@ importance:
 
 categories:
 - Algorithm
-- Tech
 
 # type: file, link, image, and others
 extramaterials:

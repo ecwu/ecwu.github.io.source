@@ -34,7 +34,6 @@ tags:
 - website
 
 categories:
-- Tech
 - Website
 
 # type: file, link, image, and others

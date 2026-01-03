@@ -44,8 +44,6 @@ tags:
 - 阅读
 
 categories:
-- Tech
-- AI
 - Research
 
 # type: file, link, image, and others

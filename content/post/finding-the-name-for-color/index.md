@@ -44,8 +44,7 @@ tags:
 - OKLAB
 
 categories:
-- Programming
-- Art
+- Exploration
 
 # type: file, link, image, and others
 extramaterials:

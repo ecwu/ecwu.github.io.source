@@ -38,7 +38,6 @@ tags:
 
 categories:
 - Project
-- Visualization
 
 # type: file, link, image, and others
 extramaterials:

@@ -41,9 +41,7 @@ tags:
 - NVIDIA A100
 
 categories:
-- Tech
-- Cloud
-- Server
+- Tutorial
 
 # type: file, link, image, and others
 extramaterials:

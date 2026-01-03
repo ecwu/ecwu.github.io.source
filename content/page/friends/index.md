@@ -30,6 +30,7 @@ type: friends
 tags:
 
 categories:
+- Page
 
 copyright:
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash

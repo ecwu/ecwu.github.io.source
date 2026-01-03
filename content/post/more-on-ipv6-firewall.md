@@ -36,9 +36,7 @@ tags:
 - EUI-64
 
 categories:
-- Tech
-- Website
-- Network
+- Note
 
 # type: file, link, image, and others
 extramaterials:

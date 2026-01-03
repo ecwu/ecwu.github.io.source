@@ -27,7 +27,6 @@ importance:
 tags:
 
 categories:
-- Topic
 - Page
 
 copyright: 

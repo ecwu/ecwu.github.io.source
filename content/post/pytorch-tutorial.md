@@ -40,8 +40,7 @@ tags:
 - Deep Learning
 
 categories:
-- Tech
-- Note
+- Tutorial
 
 # type: file, link, image, and others
 extramaterials:
