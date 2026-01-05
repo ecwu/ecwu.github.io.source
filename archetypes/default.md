@@ -25,7 +25,9 @@ previous:
 next:
 
 confidence: 
+# certain, high, highly likely, likely, possible, unlikely, rare, unknown
 importance: 
+# 0-9
 
 tags:
 - Placeholder
@@ -35,9 +37,9 @@ categories:
 
 # type: file, link, image, and others
 extramaterials:
-- type: file
-  name: placeholder
-  url: #
+# - type: file
+#   name: placeholder
+#   url: #
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash

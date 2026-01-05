@@ -24,7 +24,7 @@ series: HomeLab
 previous:
 next:
 
-confidence: 
+confidence: highly likely
 importance: 9
 
 tags:

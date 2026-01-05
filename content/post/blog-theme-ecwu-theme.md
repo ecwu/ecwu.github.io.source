@@ -24,7 +24,7 @@ series:
 previous:
 next:
 
-confidence: High
+confidence: high
 importance: 9
 
 tags:
