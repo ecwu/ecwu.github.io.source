@@ -49,6 +49,12 @@ copyright:
 
 ## Changelog
 
+### 2026
+
+#### January 2026
+
+- Attempt to fix the issue where the full-width feature image slightly exceeds the screen width when the vertical scrollbar is present. (Possible cause: the mixed use of `vw` and `%` units, which the scrollbar affects the `vw` calculation)
+
 ### 2025
 
 #### October 2025
