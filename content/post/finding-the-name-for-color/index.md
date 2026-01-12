@@ -183,7 +183,7 @@ The other problem is that such a color model is hard to understand. When manipul
 
 The HSV color model is preferred instead of the RGB color model, in which the HSV color space is converted from the RGB color space.
 
-{{< video video-url="https://upload.wikimedia.org/wikipedia/commons/5/59/RGB_2_HSV_conversion_with_grid.ogg" is-loop="True">}}
+{{< video video-url="https://upload.wikimedia.org/wikipedia/commons/transcoded/5/59/RGB_2_HSV_conversion_with_grid.ogg/RGB_2_HSV_conversion_with_grid.ogg.1080p.vp9.webm" is-loop="True">}}
 
 > Visualisation for conversion between color models RGB and HSV. video from [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?title=File%3ARGB_2_HSV_conversion_with_grid.ogg), by VerbaGleb.
 
