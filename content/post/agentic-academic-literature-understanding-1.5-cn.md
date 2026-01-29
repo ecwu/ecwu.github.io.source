@@ -44,8 +44,8 @@ categories:
 
 extramaterials:
 - type: link
-  name: SciRead Viewer
-  url: https://ecwuuuuu.com/special-topic/sciread-viewer
+  name: Discussion Agent Report for "Segment Anything"
+  url: https://gist.github.com/ecwu/55c0da590c2da2e1be2369a252573166
 
 copyright:
 
