@@ -3,7 +3,7 @@ title: Self-Host Projects
 subtitle: 
 author: Zhenghao Wu
 description:
-featureimage: https://unsplash.com/photos/hvQMx4RnzYE/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjcyNTg0ODkx&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/hvQMx4RnzYE.webp
 unsplashfeatureimage: Efe Kurnaz
 
 publishDate: "2023-01-01T22:55:00+08:00"

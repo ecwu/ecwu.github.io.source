@@ -3,7 +3,7 @@ title: Authentik 教程系列：社交登录
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/r8evD-sX5Mc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzY2MjY5MzM4fA&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/r8evD-sX5Mc.webp
 unsplashfeatureimage:  Zulfugar Karimov
 
 publishDate: "2025-12-21T22:19:29Z"

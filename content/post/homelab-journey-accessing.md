@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木 - 访问
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/ahi73ZN5P0Y/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY1ODQ4NTQ2&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/ahi73ZN5P0Y.webp
 unsplashfeatureimage: Federico Beccari
 
 publishDate: "2023-02-25T02:20:00+08:00"

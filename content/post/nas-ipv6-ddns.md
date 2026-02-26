@@ -3,7 +3,7 @@ title: Making Synology NAS accessible from the Internet using IPv6 and DDNS
 subtitle: 'IPv6 Yes! :-)'
 author: Zhenghao Wu
 description: Making Synology NAS accessible from the Internet using IPv6 and DDNS
-featureimage: https://unsplash.com/photos/d53ZooI5TtM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8bmFzfGVufDB8fHx8MTY0NDczNDU2OA&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/d53ZooI5TtM.webp
 unsplashfeatureimage: Claudio Schwarz
 
 publishDate: "2021-04-04T10:01:01+08:00"

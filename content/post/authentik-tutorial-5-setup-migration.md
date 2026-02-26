@@ -3,7 +3,7 @@ title: Authentik 教程系列：服务的迁移
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/7b49gfsgQZY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTR8fHRyYW5zcG9ydHxlbnwwfHx8fDE3MjU4MDg5MzV8MA&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/7b49gfsgQZY.webp
 unsplashfeatureimage: xyzcharlize
 
 publishDate: "2024-09-08T22:20:00+01:00"

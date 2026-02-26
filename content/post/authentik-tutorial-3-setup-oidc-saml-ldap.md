@@ -3,7 +3,7 @@ title: Authentik 教程系列：将应用通过 OIDC，SAML，LDAP 协议接入
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/AT5vuPoi8vc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8aGFuZHNoYWtlfGVufDB8fHx8MTcxMzIwOTg2Mnww&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/AT5vuPoi8vc.webp
 unsplashfeatureimage: charlesdeluvio
 
 publishDate: "2024-04-21T14:29:00+08:00"

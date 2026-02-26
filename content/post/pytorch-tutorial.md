@@ -3,7 +3,7 @@ title: PyTorch Tutorial
 subtitle: The material is prepared for people with basic machine learning foundations.
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/qHx3w6Gwz9k/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8UHlUb3JjaHxlbnwwfHx8fDE3MDEwNzEzNjh8MA&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/qHx3w6Gwz9k.webp
 unsplashfeatureimage: Brecht Corbeel
 
 publishDate: "2024-01-05T00:25:00+08:00"

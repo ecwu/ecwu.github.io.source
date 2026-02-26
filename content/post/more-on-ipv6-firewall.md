@@ -3,7 +3,7 @@ title: More on IPv6 Firewall - EUI-64
 subtitle: Errata for Previous DDNS Tutorial, And Some New Knowledge
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/40XgDxBfYXM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bmV0d29ya2luZ3xlbnwwfHx8fDE2NDQ2Nzc1OTU&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/40XgDxBfYXM.webp
 unsplashfeatureimage: Jordan Harrison
 
 publishDate: "2022-02-13T14:42:23+08:00"

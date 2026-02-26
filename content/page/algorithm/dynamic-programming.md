@@ -3,7 +3,7 @@ title: Dynamic Programming
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/NjV34SrbM_g/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8ZHluYW1pY3x8MHx8fHwxNjQzMDQ1OTEw&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/NjV34SrbM_g.webp
 unsplashfeatureimage: Jan Huber
 
 publishDate: "2022-02-09T15:30:00+08:00"

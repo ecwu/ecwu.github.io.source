@@ -3,7 +3,7 @@ title: "How I Rebuilt a 2018 Project in 2025"
 subtitle: Modern Web Development, Vibe Coding, Serverless, and Practical Data Automation
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/rDuBjNdLS0M/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwNjI3NTg4fA&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/rDuBjNdLS0M.webp
 unsplashfeatureimage: Kier in Sight Archives
 
 publishDate: "2025-07-05T14:10:00+01:00"

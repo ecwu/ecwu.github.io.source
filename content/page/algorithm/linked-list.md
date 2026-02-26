@@ -3,7 +3,7 @@ title: Linked List
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/PDxYfXVlK2M/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bGlua2VkfHwwfHx8fDE2NDMwNDYwMTQ&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/PDxYfXVlK2M.webp
 unsplashfeatureimage: JJ Ying
 
 publishDate: "2022-02-09T15:30:00+08:00"

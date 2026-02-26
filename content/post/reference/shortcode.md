@@ -5,7 +5,7 @@ author: Zhenghao Wu
 description: A test post for the new theme
 layout: 
 isCJKLanguage: false
-featureimage: https://unsplash.com/photos/GSnMWuCbov8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQxNjQyOTA1&force=true
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/GSnMWuCbov8.webp
 unsplashfeatureimage: Andrew Seaman
 
 publishDate: "2022-01-01T17:44:45+08:00"
@@ -52,7 +52,7 @@ This document tests all available shortcodes in the ecwu-theme.
 
 The `figure` shortcode displays an image with optional caption and attribution.
 
-{{< figure src="https://unsplash.com/photos/GSnMWuCbov8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQxNjQyOTA1&force=true" alt="Test Image" title="Figure Title" caption="This is a test figure with caption" attr="Photo by Andrew Seaman" attrlink="https://unsplash.com" >}}
+{{< figure src="https://cdn.ecwuuuuu.com/assets/unsplash/GSnMWuCbov8.webp" alt="Test Image" title="Figure Title" caption="This is a test figure with caption" attr="Photo by Andrew Seaman" attrlink="https://unsplash.com" >}}
 
 ### 2. Video Shortcode
 

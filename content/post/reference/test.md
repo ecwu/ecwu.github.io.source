@@ -5,7 +5,7 @@ author: Zhenghao Wu
 description: A test post for the new theme
 layout: 
 isCJKLanguage: false
-featureimage: https://unsplash.com/photos/GSnMWuCbov8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQxNjQyOTA1&force=true
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/GSnMWuCbov8.webp
 unsplashfeatureimage: Andrew Seaman
 
 publishDate: "2022-01-01T17:44:45+08:00"
@@ -47,10 +47,10 @@ extramaterials:
   url: https://google.com
 - type: image
   name: cool-picture.png
-  url: https://unsplash.com/photos/gJzpzEajT6c/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDE1MzcwMzY&force=true
+  url: https://cdn.ecwuuuuu.com/assets/unsplash/gJzpzEajT6c.webp
 - type: audio
   name: hazheng.mp3
-  url: https://unsplash.com/photos/gJzpzEajT6c/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NDE1MzcwMzY&force=true
+  url: https://cdn.ecwuuuuu.com/assets/unsplash/gJzpzEajT6c.webp
 
 copyright: cc0
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash

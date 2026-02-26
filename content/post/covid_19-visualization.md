@@ -3,7 +3,7 @@ title: COVID-19 Vaccination Dashboard
 subtitle: MSBD5005 Course Project
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/j2c7yf223Mk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGNvdmlkJTIwMTl8ZW58MHx8fHwxNjQ0ODQ2ODY5&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/j2c7yf223Mk.webp
 unsplashfeatureimage: Martin Sanchez
 
 publishDate: "2022-02-14T21:55:08+08:00"

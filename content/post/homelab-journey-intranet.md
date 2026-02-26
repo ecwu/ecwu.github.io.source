@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木 - 内网服务
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/8bghKxNU1j0/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fHdpZml8ZW58MHx8fHwxNjY1MDg2OTQx&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/8bghKxNU1j0.webp
 unsplashfeatureimage: JJ Ying
 
 publishDate: "2022-10-15T12:07:00+08:00"

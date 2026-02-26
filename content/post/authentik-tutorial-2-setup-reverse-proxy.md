@@ -3,7 +3,7 @@ title: Authentik 教程系列：反向代理的配置
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/D44kHt8Ex14/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8SWRlbnRpdHl8ZW58MHx8fHwxNzEyNTEwODc2fDI&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/D44kHt8Ex14.webp
 unsplashfeatureimage: Brett Jordan
 
 publishDate: "2024-04-08T19:55:00+08:00"

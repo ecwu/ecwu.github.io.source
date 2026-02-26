@@ -3,7 +3,7 @@ title: Algorithm Completion Project
 subtitle: Leetcode Journal
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/vXInUOv1n84/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8Y29kZXx8MHx8fHwxNjQzMDQ2NjA1&force=true&w=2400
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/vXInUOv1n84.webp
 unsplashfeatureimage: Roman Synkevych
 
 publishDate: "2022-02-09T15:30:00+08:00"

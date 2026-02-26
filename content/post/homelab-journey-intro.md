@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木
 subtitle: 前言和总览
 author: Zhenghao Wu
 description: 
-featureimage: https://unsplash.com/photos/DH5183gvKUg/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjYxNjU4MzEw&force=true
+featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/photo-1558492426-df14e290aefa.webp?imageMogr2/quality/75
 unsplashfeatureimage: Will Porada
 
 publishDate: "2022-10-04T22:43:40+08:00"
