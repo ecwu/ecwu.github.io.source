@@ -65,6 +65,6 @@ Identification:
 - PGP: **`EB59 14CB 8D05 00E4 5118 6C5B 7A85 0E25 660A DA5A`**
   - Public Key: [github](https://github.com/ecwu.gpg)
 
-- PGP: ~~**`EB59 14CB 8D05 00E4 5118 6C5B 7A85 0E25 660A DA5A`**~~ (Revoked)
+- PGP: ~~**`338E B68B 0962 5E8B 0540 1F2F 15DA D8A4 76DD F311`**~~ (Revoked)
 
 Contact me: hi`[AT]`ecwu`[DOT]`xyz
