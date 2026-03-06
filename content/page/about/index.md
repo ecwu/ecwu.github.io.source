@@ -40,7 +40,7 @@ Education:
 
 - PhD. Student, Computer Science [University College Dublin](https://ucd.ie) (Expected 2024-2028)
 - MSc. Big Data Technology, [Hong Kong University of Science and Technology](https://hkust.edu.hk/) (2020-2021)
-- BSc. Computer Science and Technology (Honours), [BNU-HKBU UIC](https://uic.edu.cn/), Graduated with First-Class Honours (2016-2020)
+- BSc. Computer Science and Technology (Honours), [BNBI (Prev. BNU-HKBU UIC)](https://bnbu.edu.cn/), Graduated with First-Class Honours (2016-2020)
 
 Experience:
 
