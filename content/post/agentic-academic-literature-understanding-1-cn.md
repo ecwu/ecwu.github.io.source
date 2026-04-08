@@ -7,9 +7,9 @@ featureimage:
 unsplashfeatureimage:
 
 publishDate: "2025-12-03T17:00:00+00:00"
-lastmod: 
+lastmod: "2026-04-08T18:10:00+01:00"
 draft: false
-status: In Progress
+status: Finished
 # In Progress, Staging, Finished, Lagacy
 
 showmeta: true
@@ -232,5 +232,7 @@ flowchart LR;
 以上介绍了三种不同复杂度的智能体系统设计：单体智能体、ReAct 智能体 和协调多智能体系统。每种设计都有其适用场景和优势。下一章我们将介绍**讨论多智能体系统 (discussion multi-agent system)** 和 **On-Demand 按需生成专家-协调多智能体系统**的设计与实现。
 
 关于三个系统的结果，我制作了一个可视化的工具。挑选了不同领域，不同形式（实验类、综述类等）共十篇文章展示摘要报告。你可以通过下面的链接中查看报告生成效果： [SciRead Viewer](https://ecwuuuuu.com/special-topic/sciread-viewer)
+
+如果你想上手试试这个项目，代码已经开源在 GitHub 上，可以使用 `uv run sciread simple your-file.pdf`, `uv run sciread react your-file.pdf` 和 `uv run sciread coordinate your-file.pdf` 来运行三种智能体系统。
 
 [^1]: Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K. R., & Cao, Y. (2022, October). React: Synergizing reasoning and acting in language models. In The eleventh international conference on learning representations. [https://doi.org/10.48550/arXiv.2210.03629](https://doi.org/10.48550/arXiv.2210.03629)

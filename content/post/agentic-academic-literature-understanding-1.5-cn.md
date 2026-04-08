@@ -23,8 +23,8 @@ series: Reading Agent
 previous:
 next:
 
-confidence: working draft
-importance: 7
+confidence: highly likely
+importance: 8
 
 tags:
 - AI
@@ -207,6 +207,8 @@ flowchart LR
 
 - **共识**：各方都认可 Promptable framework 的灵活性和 Data Engine 的效率。
 - **分歧**：创新者认为 Data Engine 是范式转移，而批判者担心其 Dataset Circularity 风险。这种分歧被完整保留在报告中，供人类读者判断。
+
+如果你想上手试试，代码已经开源在 GitHub 上，可以使用 `uv run sciread discussion your-file.pdf` 来运行讨论式多智能体系统。
 
 ## 未完待续
 

@@ -7,7 +7,7 @@ featureimage:
 unsplashfeatureimage:
 
 publishDate: "2025-12-03T11:11:00+08:00"
-lastmod: 
+lastmod: "2026-04-08T18:10:00+01:00"
 draft: false
 status: In Progress
 # In Progress, Staging, Finished, Lagacy
@@ -108,13 +108,20 @@ copyright:
 
 输出为 Markdown 格式的纯文本报告，不限定格式，只在提示词中给出结构建议（如多使用标题、列表、引用等 Markdown 语法，提升可读性）。
 
+## 实现开源
+
+当前项目代码已经开源在 GitHub 上，并随着系列文章的更新持续迭代：
+
+- [python-sciread](https://github.com/ecwu/python-sciread)
+
 ## 系列展望
 
 这个系列文章预计会有四个部分：
 
 - 第 0 章：任务的定义，难点，构建智能体使用的工具（本文）
 - [第 1 章：三种阅读理解学术文献的智能体框架](/post/agentic-academic-literature-understanding-1-cn/)
-- 第 1.5 章：基于共识的多智能体框架与按需生成专家-协调多智能体系统
+- [第 1.5 章：基于共识的讨论多智能体框架](/post/agentic-academic-literature-understanding-1.5-cn/)
+- 第 1.7 章：按需生成专家多智能体系统
 - 第 2 章：文本检索增强生成与高质量召回
 - 第 3 章：通过工具调用使能更多能力
 - 第 4 章：混合模型编排
