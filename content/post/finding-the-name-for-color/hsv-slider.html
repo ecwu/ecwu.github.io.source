@@ -210,23 +210,30 @@
       return `#${((red << 16) | (green << 8) | blue).toString(16).toUpperCase().padStart(6, '0')}`;
     }
 
-    function updateTrackStyles(hue, saturation, value) {
-      const [satHue, satSaturation, satLightness] = hsvToHsl(hue, 1, value);
-      const [valueHue, valueSaturation, valueLightness] = hsvToHsl(hue, saturation, 1);
-      const gray = Math.round(value * 255);
-
-      hueSlider.style.setProperty('--hsv-thumb-color', `hsl(${hue} 100% 50%)`);
-      saturationSlider.style.background = `linear-gradient(90deg, rgb(${gray}, ${gray}, ${gray}) 0%, hsl(${satHue} ${satSaturation}% ${satLightness}%) 100%)`;
-      saturationSlider.style.setProperty('--hsv-thumb-color', `hsl(${satHue} ${satSaturation}% ${satLightness}%)`);
-      valueSlider.style.background = `linear-gradient(90deg, rgb(0, 0, 0) 0%, hsl(${valueHue} ${valueSaturation}% ${valueLightness}%) 100%)`;
-      valueSlider.style.setProperty('--hsv-thumb-color', `hsl(${valueHue} ${valueSaturation}% ${valueLightness}%)`);
+    function rgbCss(red, green, blue) {
+      return `rgb(${red}, ${green}, ${blue})`;
     }
 
-    function updateCanvas(colorCss, hexColor) {
-      hslCanvas.width = hslCanvas.offsetWidth;
-      hslCanvas.height = hslCanvas.offsetHeight;
+    function updateTrackStyles(hue, saturation, value) {
+      const [satRed, satGreen, satBlue] = hsvToRgb(hue, 1, value);
+      const [valueRed, valueGreen, valueBlue] = hsvToRgb(hue, saturation, 1);
+      const gray = Math.round(value * 255);
 
-      hslContext.fillStyle = colorCss;
+      hueSlider.style.setProperty('--hsv-thumb-color', `hsl(${hue}, 100%, 50%)`);
+      saturationSlider.style.background = `linear-gradient(90deg, ${rgbCss(gray, gray, gray)} 0%, ${rgbCss(satRed, satGreen, satBlue)} 100%)`;
+      saturationSlider.style.setProperty('--hsv-thumb-color', rgbCss(satRed, satGreen, satBlue));
+      valueSlider.style.background = `linear-gradient(90deg, rgb(0, 0, 0) 0%, ${rgbCss(valueRed, valueGreen, valueBlue)} 100%)`;
+      valueSlider.style.setProperty('--hsv-thumb-color', rgbCss(valueRed, valueGreen, valueBlue));
+    }
+
+    function updateCanvas(red, green, blue, hexColor) {
+      const nextWidth = hslCanvas.offsetWidth || hslCanvas.clientWidth || hslCanvas.width || 240;
+      const nextHeight = hslCanvas.offsetHeight || hslCanvas.clientHeight || hslCanvas.height || 240;
+
+      hslCanvas.width = nextWidth;
+      hslCanvas.height = nextHeight;
+
+      hslContext.fillStyle = rgbCss(red, green, blue);
       hslContext.fillRect(0, 0, hslCanvas.width, hslCanvas.height);
 
       hslContext.fillStyle = 'rgba(255, 255, 255, 0.82)';
@@ -243,16 +250,14 @@
       const hue = Number(hueSlider.value);
       const saturation = Number(saturationSlider.value);
       const value = Number(valueSlider.value);
-      const [h, s, lightness] = hsvToHsl(hue, saturation, value);
       const [red, green, blue] = hsvToRgb(hue, saturation, value);
-      const colorCss = `hsl(${h} ${s}% ${lightness}%)`;
 
       hueIntensity.textContent = `${hue}°`;
       saturationIntensity.textContent = `${Math.round(saturation * 100)}%`;
       valueIntensity.textContent = `${Math.round(value * 100)}%`;
 
       updateTrackStyles(hue, saturation, value);
-      updateCanvas(colorCss, rgbToHex(red, green, blue));
+      updateCanvas(red, green, blue, rgbToHex(red, green, blue));
     }
 
     hueSlider.addEventListener('input', updateHSVColor);

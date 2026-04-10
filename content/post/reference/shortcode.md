@@ -62,6 +62,8 @@ The `video` shortcode embeds a video with optional loop and autoplay.
 
 {{< video video-url="https://www.w3schools.com/html/mov_bbb.mp4" is-loop="true" >}}
 
+{{< video video-url="https://upload.wikimedia.org/wikipedia/commons/a/a4/SRGB_gamut_within_CIELAB_color_space_mesh.webm" is-loop="true" >}}
+
 ### 3. Embed Video Shortcode
 
 The `embed-video` shortcode embeds videos from YouTube or Bilibili.
