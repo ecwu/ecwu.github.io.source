@@ -1,86 +1,266 @@
 <hr>
 <p class="text-2xl">Interactive: HSV Color Mixing</p>
-<div class="w-full flex-none lg:flex space-x-5 items-center">
+<div id="hsv-slider-widget" class="w-full flex-none lg:flex space-x-5 items-center">
   <div class="flex-1">
-    <label for="hue-slider" class="form-label">Hue<span id="hsv-hue"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="hue-slider"
-      min="0"
-      max="359"
-      step="1"
-      value="250"/>
-    <label for="saturation-slider" class="form-label">Saturation<span id="hsv-saturation"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="saturation-slider"
-      min="0"
-      max="1"
-      step="0.01"
-      value="1"/>
-    <label for="value-slider" class="form-label">Value<span id="hsv-value"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="value-slider"
-      min="0"
-      max="1"
-      step="0.01"
-      value="1"/>
+    <div class="mb-5">
+      <div class="flex items-center justify-between gap-4">
+        <label for="hue-slider" class="form-label mb-0">Hue</label>
+        <output id="hsv-hue" class="hsv-output" for="hue-slider">250°</output>
+      </div>
+      <input type="range"
+        class="hsv-range hsv-range-hue"
+        id="hue-slider"
+        min="0"
+        max="359"
+        step="1"
+        value="250"/>
+      <div class="hsv-ticks" aria-hidden="true">
+        <span>0°</span>
+        <span>60°</span>
+        <span>120°</span>
+        <span>180°</span>
+        <span>240°</span>
+        <span>300°</span>
+        <span>360°</span>
+      </div>
+    </div>
+    <div class="mb-5">
+      <div class="flex items-center justify-between gap-4">
+        <label for="saturation-slider" class="form-label mb-0">Saturation</label>
+        <output id="hsv-saturation" class="hsv-output" for="saturation-slider">100%</output>
+      </div>
+      <input type="range"
+        class="hsv-range"
+        id="saturation-slider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"/>
+    </div>
+    <div>
+      <div class="flex items-center justify-between gap-4">
+        <label for="value-slider" class="form-label mb-0">Value</label>
+        <output id="hsv-value" class="hsv-output" for="value-slider">100%</output>
+      </div>
+      <input type="range"
+        class="hsv-range"
+        id="value-slider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"/>
+    </div>
   </div>
   <div class="flex-1 flex justify-center">
-    <canvas id="hsv-result" class="rounded-lg" height="200px" width="200px"></canvas>
+    <canvas id="hsv-result" class="rounded-lg" height="240" width="240" style="width:min(100%, 240px); aspect-ratio: 1 / 1;"></canvas>
   </div>
 </div>
 
+<style>
+  #hsv-slider-widget .hsv-output {
+    min-width: 4.5rem;
+    border-radius: 9999px;
+    background: rgba(15, 23, 42, 0.08);
+    padding: 0.15rem 0.65rem;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dark #hsv-slider-widget .hsv-output {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  #hsv-slider-widget .hsv-range {
+    --hsv-thumb-color: #ffffff;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+    cursor: pointer;
+  }
+
+  .dark #hsv-slider-widget .hsv-range {
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  #hsv-slider-widget .hsv-range-hue {
+    background:
+      linear-gradient(
+        90deg,
+        hsl(0deg 100% 50%) 0%,
+        hsl(60deg 100% 50%) 16.67%,
+        hsl(120deg 100% 50%) 33.33%,
+        hsl(180deg 100% 50%) 50%,
+        hsl(240deg 100% 50%) 66.67%,
+        hsl(300deg 100% 50%) 83.33%,
+        hsl(360deg 100% 50%) 100%
+      );
+  }
+
+  #hsv-slider-widget .hsv-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid rgba(15, 23, 42, 0.85);
+    border-radius: 9999px;
+    background: var(--hsv-thumb-color);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.75);
+  }
+
+  #hsv-slider-widget .hsv-range::-moz-range-thumb {
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid rgba(15, 23, 42, 0.85);
+    border-radius: 9999px;
+    background: var(--hsv-thumb-color);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.75);
+  }
+
+  #hsv-slider-widget .hsv-range::-moz-range-track {
+    height: 1rem;
+    border: none;
+    border-radius: 9999px;
+    background: transparent;
+  }
+
+  #hsv-slider-widget .hsv-ticks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.35rem;
+    color: rgba(15, 23, 42, 0.68);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dark #hsv-slider-widget .hsv-ticks {
+    color: rgba(255, 255, 255, 0.68);
+  }
+</style>
+
 <script>
-  // Read the color HSV values from the sliders
-  const hueSlider = document.getElementById('hue-slider');
-  const saturationSlider = document.getElementById('saturation-slider');
-  const valueSlider = document.getElementById('value-slider');
-  const hueIntensity = document.getElementById('hsv-hue');  
-  const saturationIntensity = document.getElementById('hsv-saturation');
-  const valueIntensity = document.getElementById('hsv-value');
-  const hslcanvas = document.getElementById('hsv-result');
-  const hslctx = hslcanvas.getContext('2d');
+  (() => {
+    const hueSlider = document.getElementById('hue-slider');
+    const saturationSlider = document.getElementById('saturation-slider');
+    const valueSlider = document.getElementById('value-slider');
+    const hueIntensity = document.getElementById('hsv-hue');
+    const saturationIntensity = document.getElementById('hsv-saturation');
+    const valueIntensity = document.getElementById('hsv-value');
+    const hslCanvas = document.getElementById('hsv-result');
+    const hslContext = hslCanvas.getContext('2d');
 
-  // monitor slider changes
-  hueSlider.addEventListener('input', () => {
-    hueIntensity.innerText = ': ' + hueSlider.value + '°';
-    updateHSVColor();
-  });
-  saturationSlider.addEventListener('input', () => {
-    saturationIntensity.innerText = ': ' + Number(saturationSlider.value).toFixed(4) * 100 + '%';
-    updateHSVColor();
-  });
-  valueSlider.addEventListener('input', () => {
-    valueIntensity.innerText = ': ' + Number(valueSlider.value).toFixed(4) * 100 + '%';
-    updateHSVColor();
-  });
+    function hsvToHsl(h, s, v) {
+      let lightness = ((2 - s) * v) / 2;
+      let saturation = s;
 
-  // convert hsv to hsl
-  function hsvToHsl(h, s, v) {
-    var l = (2 - s) * v / 2;
-    if (l != 0) {
-      if (l == 1) s = 0;
-      else if (l < 0.5) s = s * v / (l * 2);
-      else s = s * v / (2 - l * 2);
+      if (lightness !== 0) {
+        if (lightness === 1) {
+          saturation = 0;
+        } else if (lightness < 0.5) {
+          saturation = (s * v) / (lightness * 2);
+        } else {
+          saturation = (s * v) / (2 - lightness * 2);
+        }
+      }
+
+      return [h, saturation * 100, lightness * 100];
     }
-    return [h, s * 100, l * 100];
-  }
 
-  // red the hsv value and convert to hsl, then update the canvas
-  function updateHSVColor() {
-    const hue = hueSlider.value;
-    const saturation = saturationSlider.value;
-    const value = valueSlider.value;
-    const hsl = hsvToHsl(hue, saturation, value);
-    const h = hsl[0];
-    const s = hsl[1];
-    const l = hsl[2];
-    hslctx.fillStyle = `hsl(${h}, ${s}%, ${l}%)`;
-    hslctx.fillRect(0, 0, hslcanvas.width, hslcanvas.height);
-  }
+    function hsvToRgb(h, s, v) {
+      const chroma = v * s;
+      const hueSector = (h / 60) % 6;
+      const x = chroma * (1 - Math.abs((hueSector % 2) - 1));
+      const match = v - chroma;
+      let red = 0;
+      let green = 0;
+      let blue = 0;
 
-  updateHSVColor()
+      if (hueSector >= 0 && hueSector < 1) {
+        red = chroma;
+        green = x;
+      } else if (hueSector < 2) {
+        red = x;
+        green = chroma;
+      } else if (hueSector < 3) {
+        green = chroma;
+        blue = x;
+      } else if (hueSector < 4) {
+        green = x;
+        blue = chroma;
+      } else if (hueSector < 5) {
+        red = x;
+        blue = chroma;
+      } else {
+        red = chroma;
+        blue = x;
+      }
+
+      return [
+        Math.round((red + match) * 255),
+        Math.round((green + match) * 255),
+        Math.round((blue + match) * 255)
+      ];
+    }
+
+    function rgbToHex(red, green, blue) {
+      return `#${((red << 16) | (green << 8) | blue).toString(16).toUpperCase().padStart(6, '0')}`;
+    }
+
+    function updateTrackStyles(hue, saturation, value) {
+      const [satHue, satSaturation, satLightness] = hsvToHsl(hue, 1, value);
+      const [valueHue, valueSaturation, valueLightness] = hsvToHsl(hue, saturation, 1);
+      const gray = Math.round(value * 255);
+
+      hueSlider.style.setProperty('--hsv-thumb-color', `hsl(${hue} 100% 50%)`);
+      saturationSlider.style.background = `linear-gradient(90deg, rgb(${gray}, ${gray}, ${gray}) 0%, hsl(${satHue} ${satSaturation}% ${satLightness}%) 100%)`;
+      saturationSlider.style.setProperty('--hsv-thumb-color', `hsl(${satHue} ${satSaturation}% ${satLightness}%)`);
+      valueSlider.style.background = `linear-gradient(90deg, rgb(0, 0, 0) 0%, hsl(${valueHue} ${valueSaturation}% ${valueLightness}%) 100%)`;
+      valueSlider.style.setProperty('--hsv-thumb-color', `hsl(${valueHue} ${valueSaturation}% ${valueLightness}%)`);
+    }
+
+    function updateCanvas(colorCss, hexColor) {
+      hslCanvas.width = hslCanvas.offsetWidth;
+      hslCanvas.height = hslCanvas.offsetHeight;
+
+      hslContext.fillStyle = colorCss;
+      hslContext.fillRect(0, 0, hslCanvas.width, hslCanvas.height);
+
+      hslContext.fillStyle = 'rgba(255, 255, 255, 0.82)';
+      hslContext.fillRect(18, hslCanvas.height - 66, hslCanvas.width - 36, 48);
+
+      hslContext.fillStyle = '#111827';
+      hslContext.font = 'bold 22px sans-serif';
+      hslContext.textAlign = 'center';
+      hslContext.textBaseline = 'middle';
+      hslContext.fillText(hexColor, hslCanvas.width / 2, hslCanvas.height - 42);
+    }
+
+    function updateHSVColor() {
+      const hue = Number(hueSlider.value);
+      const saturation = Number(saturationSlider.value);
+      const value = Number(valueSlider.value);
+      const [h, s, lightness] = hsvToHsl(hue, saturation, value);
+      const [red, green, blue] = hsvToRgb(hue, saturation, value);
+      const colorCss = `hsl(${h} ${s}% ${lightness}%)`;
+
+      hueIntensity.textContent = `${hue}°`;
+      saturationIntensity.textContent = `${Math.round(saturation * 100)}%`;
+      valueIntensity.textContent = `${Math.round(value * 100)}%`;
+
+      updateTrackStyles(hue, saturation, value);
+      updateCanvas(colorCss, rgbToHex(red, green, blue));
+    }
+
+    hueSlider.addEventListener('input', updateHSVColor);
+    saturationSlider.addEventListener('input', updateHSVColor);
+    valueSlider.addEventListener('input', updateHSVColor);
+    window.addEventListener('resize', updateHSVColor);
+
+    updateHSVColor();
+  })();
 </script>
 <hr>

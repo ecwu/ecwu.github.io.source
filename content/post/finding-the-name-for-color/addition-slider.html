@@ -1,79 +1,172 @@
 <hr>
 <p class="text-2xl">Interactive: Color Mixing</p>
-<div class="w-full flex-none lg:flex space-x-5 items-center">
+<div id="rgb-slider-widget" class="w-full flex-none lg:flex space-x-5 items-center">
   <div class="flex-1">
-    <label for="red-slider" class="form-label">Red Intensity<span id="red-intensity"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="red-slider"
-      min="0"
-      max="255"
-      step="1"
-      value="0"/>
-    <label for="green-slider" class="form-label">Green Intensity<span id="green-intensity"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="green-slider"
-      min="0"
-      max="255"
-      step="1"
-      value="0"/>
-    <label for="blue-slider" class="form-label">Blue Intensity<span id="blue-intensity"></span></label>
-    <input type="range"
-      class="form-range w-full h-6 p-0 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none"
-      id="blue-slider"
-      min="0"
-      max="255"
-      step="1"
-      value="0"/>
+    <div class="mb-5">
+      <div class="flex items-center justify-between gap-4">
+        <label for="red-slider" class="form-label mb-0">Red</label>
+        <output id="red-intensity" class="rgb-output" for="red-slider">0</output>
+      </div>
+      <input type="range"
+        class="rgb-range"
+        id="red-slider"
+        min="0"
+        max="255"
+        step="1"
+        value="0"/>
+    </div>
+    <div class="mb-5">
+      <div class="flex items-center justify-between gap-4">
+        <label for="green-slider" class="form-label mb-0">Green</label>
+        <output id="green-intensity" class="rgb-output" for="green-slider">0</output>
+      </div>
+      <input type="range"
+        class="rgb-range"
+        id="green-slider"
+        min="0"
+        max="255"
+        step="1"
+        value="0"/>
+    </div>
+    <div>
+      <div class="flex items-center justify-between gap-4">
+        <label for="blue-slider" class="form-label mb-0">Blue</label>
+        <output id="blue-intensity" class="rgb-output" for="blue-slider">0</output>
+      </div>
+      <input type="range"
+        class="rgb-range"
+        id="blue-slider"
+        min="0"
+        max="255"
+        step="1"
+        value="0"/>
+    </div>
   </div>
   <div class="flex-1 flex justify-center">
-    <canvas id="mixing-result" class="rounded-lg" height="200px" width="200px"></canvas>
+    <canvas id="mixing-result" class="rounded-lg" height="240" width="240" style="width:min(100%, 240px); aspect-ratio: 1 / 1;"></canvas>
   </div>
 </div>
 
-<script>
-  const redSlider = document.getElementById('red-slider');
-  const greenSlider = document.getElementById('green-slider');
-  const blueSlider = document.getElementById('blue-slider');
-  const redIntensity = document.getElementById('red-intensity');
-  const greenIntensity = document.getElementById('green-intensity');
-  const blueIntensity = document.getElementById('blue-intensity');
-  const canvas = document.getElementById('mixing-result');
-  const ctx = canvas.getContext('2d');
-
-  redSlider.addEventListener('input', () => {
-    redIntensity.innerHTML = ": " + redSlider.value;
-    updateCanvas();
-  });
-
-  greenSlider.addEventListener('input', () => {
-    greenIntensity.innerHTML = ": " + greenSlider.value;
-    updateCanvas();
-  });
-
-  blueSlider.addEventListener('input', () => {
-    blueIntensity.innerHTML = ": " + blueSlider.value;
-    updateCanvas();
-  });
-
-  function updateCanvas() {
-    canvas.width  = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
-    const red = redSlider.value;
-    const green = greenSlider.value;
-    const blue = blueSlider.value;
-
-    ctx.fillStyle = `rgb(${red}, ${green}, ${blue})`;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    // write hex color text with reverse color to canvas center
-    ctx.fillStyle = `rgb(${255 - red}, ${255 - green}, ${255 - blue})`;
-    ctx.font = 'bold 24px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(`#${(red << 16 | green << 8 | blue).toString(16).toUpperCase().padStart(6, '0')}`, canvas.width / 2, canvas.height / 2);
+<style>
+  #rgb-slider-widget .rgb-output {
+    min-width: 3.5rem;
+    border-radius: 9999px;
+    background: rgba(15, 23, 42, 0.08);
+    padding: 0.15rem 0.65rem;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
   }
 
-  updateCanvas();
+  .dark #rgb-slider-widget .rgb-output {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  #rgb-slider-widget .rgb-range {
+    --rgb-thumb-color: #ffffff;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+    cursor: pointer;
+  }
+
+  .dark #rgb-slider-widget .rgb-range {
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  #rgb-slider-widget .rgb-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid rgba(15, 23, 42, 0.85);
+    border-radius: 9999px;
+    background: var(--rgb-thumb-color);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.75);
+  }
+
+  #rgb-slider-widget .rgb-range::-moz-range-thumb {
+    width: 1.1rem;
+    height: 1.1rem;
+    border: 2px solid rgba(15, 23, 42, 0.85);
+    border-radius: 9999px;
+    background: var(--rgb-thumb-color);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.75);
+  }
+
+  #rgb-slider-widget .rgb-range::-moz-range-track {
+    height: 1rem;
+    border: none;
+    border-radius: 9999px;
+    background: transparent;
+  }
+</style>
+
+<script>
+  (() => {
+    const redSlider = document.getElementById('red-slider');
+    const greenSlider = document.getElementById('green-slider');
+    const blueSlider = document.getElementById('blue-slider');
+    const redIntensity = document.getElementById('red-intensity');
+    const greenIntensity = document.getElementById('green-intensity');
+    const blueIntensity = document.getElementById('blue-intensity');
+    const canvas = document.getElementById('mixing-result');
+    const context = canvas.getContext('2d');
+
+    function rgbToHex(red, green, blue) {
+      return `#${((red << 16) | (green << 8) | blue).toString(16).toUpperCase().padStart(6, '0')}`;
+    }
+
+    function updateTrackStyles(red, green, blue) {
+      redSlider.style.background = `linear-gradient(90deg, rgb(0, ${green}, ${blue}) 0%, rgb(255, ${green}, ${blue}) 100%)`;
+      greenSlider.style.background = `linear-gradient(90deg, rgb(${red}, 0, ${blue}) 0%, rgb(${red}, 255, ${blue}) 100%)`;
+      blueSlider.style.background = `linear-gradient(90deg, rgb(${red}, ${green}, 0) 0%, rgb(${red}, ${green}, 255) 100%)`;
+
+      redSlider.style.setProperty('--rgb-thumb-color', `rgb(${red}, ${green}, ${blue})`);
+      greenSlider.style.setProperty('--rgb-thumb-color', `rgb(${red}, ${green}, ${blue})`);
+      blueSlider.style.setProperty('--rgb-thumb-color', `rgb(${red}, ${green}, ${blue})`);
+    }
+
+    function updateCanvas(red, green, blue) {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+
+      context.fillStyle = `rgb(${red}, ${green}, ${blue})`;
+      context.fillRect(0, 0, canvas.width, canvas.height);
+
+      context.fillStyle = 'rgba(255, 255, 255, 0.82)';
+      context.fillRect(18, canvas.height - 66, canvas.width - 36, 48);
+
+      context.fillStyle = '#111827';
+      context.font = 'bold 22px sans-serif';
+      context.textAlign = 'center';
+      context.textBaseline = 'middle';
+      context.fillText(rgbToHex(red, green, blue), canvas.width / 2, canvas.height - 42);
+    }
+
+    function updateRgbColor() {
+      const red = Number(redSlider.value);
+      const green = Number(greenSlider.value);
+      const blue = Number(blueSlider.value);
+
+      redIntensity.textContent = `${red}`;
+      greenIntensity.textContent = `${green}`;
+      blueIntensity.textContent = `${blue}`;
+
+      updateTrackStyles(red, green, blue);
+      updateCanvas(red, green, blue);
+    }
+
+    redSlider.addEventListener('input', updateRgbColor);
+    greenSlider.addEventListener('input', updateRgbColor);
+    blueSlider.addEventListener('input', updateRgbColor);
+    window.addEventListener('resize', updateRgbColor);
+
+    updateRgbColor();
+  })();
 </script>
 <hr>
