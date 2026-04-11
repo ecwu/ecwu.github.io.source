@@ -97,7 +97,7 @@ The [PANTONE Color](https://www.pantone.com/) is a more proprietary and well-kno
 
 {{< figure
   src="https://www.pantone.com/media/wysiwyg/color-of-the-year/2022/pantone-color-of-the-year-2022-very-peri-banner.jpg"
-  class="class param"
+  class="l-page"
   title="Pantone Color of the Year 2022: "
   label="pantone-coty"
   attr="PANTONE 17-3938 Very Peri"
