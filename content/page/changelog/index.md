@@ -54,6 +54,10 @@ copyright:
 
 ### 2026
 
+#### April 2026
+
+- Reimplement gallery breakout layout in CSS so galleries can extend to the right edge of the content area without manipulating the outer `<article>` structure. The gallery shortcode is now a paired shortcode.
+
 #### January 2026
 
 - Attempt to fix the issue where the full-width feature image slightly exceeds the screen width when the vertical scrollbar is present. (Possible cause: the mixed use of `vw` and `%` units, which the scrollbar affects the `vw` calculation)
