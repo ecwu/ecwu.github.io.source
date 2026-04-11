@@ -61,4 +61,4 @@ image-description="2">}}
 {{< gallery-image
 image-url="http://cdn.ecwuuuuu.com/blog/image/series/figure/hinata-3.jpg-compressed.webp"
 image-description="3">}}
-{{< gallery "end">}}
+{{< /gallery >}}

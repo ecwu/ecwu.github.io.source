@@ -74,4 +74,4 @@ image-description="东涌地铁站外的喷泉与戏水的小孩 ƒ/2.8 1/2500s 
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/hkflash/hk-photo-me.jpg-compressed.webp"
 image-description="我 ƒ/2.8 1/320s 50mm ISO400">}}
-{{< gallery "end">}}
+{{< /gallery >}}

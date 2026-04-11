@@ -72,7 +72,6 @@ image-description="Building at Shenzhen OCT Harbour">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-10.webp"
 image-description="Sunset, but I messed up the exposure">}}
-
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-9.webp"
 image-description="DJI & Hasselblad Store at Shenzhen OCT Harbour">}}
@@ -88,18 +87,16 @@ image-description="In side the DJI & Hasselblad Store: In door decoration">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-5.webp"
 image-description="In side the DJI & Hasselblad Store: In door decoration">}}
-
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-4.webp"
 image-description="Exit E at a Shenzhen Metro Station">}}
-
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-2.webp"
 image-description="Shenzhen bay at night (With light leak)">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp"
 image-description="Shenzhen bay at night (With light leak)">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 The ten photos above are the results of my shoot. The shooting time was roughly between 5 PM and 8 PM. From the two outdoor evening photos, it’s evident that when the frame includes large areas of soft highlight, the distinctive red halation caused by the removal of the Remjet layer doesn’t appear. The images don’t exhibit an overly stylized color shift due to the tungsten balance. What stands out instead is the natural and pleasing color transitions, as well as the sharpness of the image.
 
@@ -140,7 +137,7 @@ image-description="Andrin, looking up in the sky">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-1.webp"
 image-description="OH-Bay">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 Judging from the results, the decision on metering seems to have been quite accurate.
 
@@ -169,7 +166,7 @@ image-description="Tim (by Andrin)">}}
 image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B9.webp"
 image-description="Me (by Andrin)">}}
 
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## Some thoughts
 

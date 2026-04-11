@@ -87,7 +87,7 @@ image-description="September 13 2014">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2014-09-13_10-55-50_UTC.jpg-compressed.webp"
 image-description="September 13 2014 (2)">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2017
 
@@ -110,7 +110,7 @@ image-description="August 21 2017">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2017-08-30_16-41-05_UTC.jpg-compressed.webp"
 image-description="August 30 2017">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2019
 
@@ -130,7 +130,7 @@ image-description="November 09 2019">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2019-11-10_17-06-11_UTC.jpg-compressed.webp"
 image-description="November 10 2019">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2020
 
@@ -156,7 +156,7 @@ image-description="July 23 2020">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2020-8-18.jpg-compressed.webp"
 image-description="August 18 2020">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2021
 
@@ -170,7 +170,7 @@ image-description="January 18 2021">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2021-3-2.jpg-compressed.webp"
 image-description="March 2 2021">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2022
 
@@ -178,7 +178,7 @@ image-description="March 2 2021">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2022-3-11.jpg-compressed.webp"
 image-description="March 11 2022">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## 2024
 
@@ -186,4 +186,4 @@ image-description="March 11 2022">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/windowsill/2024-08-05T161232.000Z.jpg-compressed.webp"
 image-description="August 5 2024">}}
-{{< gallery "end">}}
+{{< /gallery >}}

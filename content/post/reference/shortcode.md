@@ -109,7 +109,7 @@ The `gallery` shortcode creates a horizontal scrolling gallery of images.
 {{< gallery-image image-url="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400" image-description="Forest path" >}}
 {{< gallery-image image-url="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=400" image-description="Lake view" >}}
 {{< gallery-image image-url="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400" image-description="Desert landscape" >}}
-{{< gallery "end" >}}
+{{< /gallery >}}
 
 ### 9. Gallery Image Shortcode
 

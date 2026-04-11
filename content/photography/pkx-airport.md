@@ -89,4 +89,4 @@ image-description="10">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/series/pkx/pkx-11.jpg-compressed.webp"
 image-description="11">}}
-{{< gallery "end">}}
+{{< /gallery >}}

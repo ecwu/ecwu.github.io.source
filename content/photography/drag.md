@@ -68,5 +68,5 @@ image-description="No.3">}}
 {{< gallery-image
 image-url="http://cdn.ecwuuuuu.com/blog/image/series/drag/drag-4.jpg-compressed.webp"
 image-description="No.4">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 

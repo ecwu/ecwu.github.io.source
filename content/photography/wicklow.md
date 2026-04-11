@@ -86,7 +86,7 @@ image-description="No.7">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-8.webp"
 image-description="No.8">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 When I got back and started sorting through the photos, comparing them with images of Wicklow from other seasons online, I began to feel that winter might actually be when Wicklow is at its most beautiful. There’s a distinct sense of desolate beauty to it. Instead of endless green, the landscape is made up of layers of brown, gray, and deep reddish tones, with the occasional hint of green breaking through. The sky is usually overcast, with heavy clouds hanging low, creating an atmosphere that feels both oppressive and mysterious. In this kind of weather, the lakes look especially deep, reflecting the muted gray sky and adding to the overall sense of quiet and stillness.
 

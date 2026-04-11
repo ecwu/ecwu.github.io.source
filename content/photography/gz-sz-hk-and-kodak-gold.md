@@ -83,7 +83,7 @@ image-description="The sea view near HKUST">}}
 {{< gallery-image
 image-url="https://cdn.ecwuuuuu.com/blog/image/gz-sz-hk/10.jpg-compressed.webp"
 image-description="The night view of a plaza near Sha Tin">}}
-{{< gallery "end">}}
+{{< /gallery >}}
 
 ## Some Thoughts on Kodak Gold 200
 
