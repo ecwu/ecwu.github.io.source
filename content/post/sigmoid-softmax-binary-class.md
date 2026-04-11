@@ -55,8 +55,7 @@ $$
 
 We input the value of the last layer $x$, and we can get a value in the range 0 to 1 as shown in the figure. If the value is greater than 0.5, we consider the model output as one class, or the other class if the value is less than 0.5.{{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="sigmoid-graph"
   title="The logistic sigmoid function"
   attr="Wikimedia Commons"

@@ -39,6 +39,7 @@ This page is a sandbox for the Distill-style layout classes added to the theme. 
 
 - `l-body`
 - `l-page`
+- `l-gutter`
 - `l-screen`
 - `l-screen-right`
 - `l-body side`
@@ -64,6 +65,17 @@ This should align to a page-width column with the same left and right outer gap.
   <div style="min-height: 10rem; padding: 1.25rem; background: linear-gradient(135deg, #ffedd5, #fdba74); border: 1px solid #fb923c; border-radius: 0.75rem;">
     <strong>`l-page`</strong><br>
     Large breakout width.
+  </div>
+</section>
+
+## Gutter
+
+This should occupy the column between the body width and the page width. It is useful for marginal figures or supplemental blocks that should sit entirely to the right of the reading column without becoming full-page elements.
+
+<section class="l-gutter">
+  <div style="min-height: 9rem; padding: 1.25rem; background: linear-gradient(135deg, #ede9fe, #ddd6fe); border: 1px solid #8b5cf6; border-radius: 0.75rem;">
+    <strong>`l-gutter`</strong><br>
+    Starts at the body edge and extends to the page edge.
   </div>
 </section>
 

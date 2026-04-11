@@ -56,7 +56,6 @@ HomeLab 直译是在家里的实验室，赛博语境下指网络、计算设备
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/homelab/homelab-overview.jpg-compressed.webp"
-  class="class param"
   title="HomeLab 规模概览"
   caption="通过部署 Homarr 项目展示了大部分服务"
   label="rb67-pic"

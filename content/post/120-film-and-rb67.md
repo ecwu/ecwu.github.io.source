@@ -48,8 +48,7 @@ copyright: inherit
 
 In my last photography-related post: [Try the Film For the First Time]({{< ref "/post/try-the-film-for-the-first-time" >}}). I have lots of fun with negatives. This makes me want to have my own camera to experience this medium that has existed for nearly 200 years. {{% sidenote "film-exist-time" %}}The film we are still using today was invented by Kodak in 1888, but photosensitive material that uses in photography can date back to 1835.{{% /sidenote %}}{{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/View_from_the_Window_at_Le_Gras_colorized_2020_new.png/1600px-View_from_the_Window_at_Le_Gras_colorized_2020_new.png"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="le-gras"
   title="View from the Window at Le Gras"
   attr="Jonnychiwa [CC BY-SA 4.0]"
@@ -62,7 +61,6 @@ Especially after watching the video of Ji Changyuan (Bilibili: [Linksphotograph]
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67.png-compressed.webp"
-  class="class param"
   title="Mamiya RB67 Pro S"
   caption="The camera I got."
   label="rb67-pic"
@@ -79,8 +77,7 @@ I end up with buying a second-hand Mamiya RB67 Pro S Body with Pro SD 120 film h
 *First Impression?* Really good build quality (i.e. solid and heavy).
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67-weight.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="camera-weight"
   title="The camera body weight around 2.7 KG"
   caption="Very heavy and cumbersome"
@@ -97,7 +94,6 @@ RB in the camera name stands for “**R**otating **B**ack”, and the back I own
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/back-loaded-with-film.jpg-compressed.webp"
-  class="class param"
   title="A film holder (aka. film back) loaded with film"
   caption="A roll of RDP III (PROVIA 100F) slide film"
   label="viewfinder-view-01"
@@ -125,7 +121,6 @@ Commonly used 35mm cameras (SLR, DSLR) use a focal-plane shutter, that is, the s
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/127lens-slowmo.gif"
-  class="class param"
   title="SEKOR-C 127mm lens in slow motion"
   caption="Reflector up, shutter close, aperture set, shutter release."
   label="sekor-127mm-gif"
@@ -141,8 +136,7 @@ The lens I got is a 127mm lens, which equivalent to a 62mm lens in 35mm format. 
 
 The focus ring is not on the lens, it is using a rack-and-pinion system with bellows to pull focus. The system can extend the lens and hood by turning the knobs on each side of the body and adjust the focus. This design allows focusing on something close to the camera (macro shot) for almost all lenses. But one thing needs to bear in mind, the longer the hood and bellows extended, the more light it needs to get a correct exposure. {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67-exp-label.png-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="rb67-exp-label"
   title="A handy chart on the side of the camera body helps you with exposure compensation."
   attr=""
@@ -153,8 +147,7 @@ The focus ring is not on the lens, it is using a rack-and-pinion system with bel
 
 You get a waist-level viewfinder with a pop magnifier instead of an eye-level viewfinder. The world seen through it is absolutely stunning. Color is more vivid, contrast is more natural. But the shortcomings are also obvious, once the light is not sufficient,{{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67-night.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="rb67-night"
   title="Long exposure using a RB67 on a tripod."
   caption="Try very hard to pull focus with the help of one flashlight."
@@ -166,7 +159,6 @@ You get a waist-level viewfinder with a pop magnifier instead of an eye-level vi
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/viewfinder-01.jpg-compressed.webp"
-  class="class param"
   title="View from a waist-level viewfinder on an RB67"
   caption="Film holder rotated to portrait mode"
   label="viewfinder-view-01"
@@ -180,7 +172,6 @@ The image in the viewfinder is mirror flipped. {{% sidenote "mirror-flipped" %}}
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/viewfinder-02.jpg-compressed.webp"
-  class="class param"
   title="Another view from a waist-level viewfinder on an RB67"
   caption="Film holder rotated to landscape mode"
   label="viewfinder-view-01"
@@ -192,8 +183,7 @@ The image in the viewfinder is mirror flipped. {{% sidenote "mirror-flipped" %}}
 
 The pain in the ass is, this kind of viewfinder is not usable when you doing some compositions that need to do from a high angle.{{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/rb67-on-tripod.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="rb67-on-tripod"
   title="The waist-level viewfinder is hard to use when your try to get a high angle shot."
   caption="Prism finder is a good option in this situation, but it needs extra money."
@@ -220,7 +210,7 @@ I have tried many kinds of negatives/films on this camera now, but there are mai
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/films.png-compressed.webp"
-  type="full"
+  class="l-page"
   title="Some of my film stock"
   caption="From left to right, FUJICHROME PROVIA 100F, Kodak PORTRA 800, Kodak PORTRA 400, FUJICOLOR PRO160NS, Kodak EKTAR 100, FUJICOLOR PRO 400H"
   label="viewfinder-view-01"
@@ -232,8 +222,7 @@ I have tried many kinds of negatives/films on this camera now, but there are mai
 
 Before dive into each categories, I want to mention the design of the film. Fuji has a sticker at the end of each film roll (they call it Easy End-seal technology),{{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/easy-end-seal.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="easy-end-seal"
   title="One fully exposed FUJICOLOR PRO160NS"
   caption="You can see the Easy End-seal sticker."
@@ -255,7 +244,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p400-261.jpg-compressed.webp"
-  class="class param"
   title="Sunrise in Changbai Mountain"
   caption="The machine can work normally at about 20 degrees below zero."
   label="p400-261"
@@ -267,7 +255,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p400-266.jpg-compressed.webp"
-  class="class param"
   title="Beijing Daxing International Airport"
   caption="Overexposure by two stops"
   label="p400-266"
@@ -279,7 +266,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p400-269.jpg-compressed.webp"
-  class="class param"
   title="Beijing Daxing International Airport - Waiting area"
   caption="Overexposure by two stops"
   label="p400-269"
@@ -291,7 +277,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p400-252.jpg-compressed.webp"
-  class="class param"
   title="Portrait for friends"
   caption="Under flash light condition, single probe."
   label="p400-252"
@@ -305,7 +290,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p160-253.jpg-compressed.webp"
-  class="class param"
   title="ANBUL, Xavi, CC, and Turing"
   caption=""
   label="p160-253"
@@ -317,7 +301,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/p160-257.jpg-compressed.webp"
-  class="class param"
   title="Gallery"
   caption="@ Cultural Creativity Clusters"
   label="p160-257"
@@ -331,7 +314,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/ekt1-254.jpg-compressed.webp"
-  class="class param"
   title="A green plant in the campus"
   label="ekt1-254"
   attr=""
@@ -342,7 +324,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/ekt1-263.jpg-compressed.webp"
-  class="class param"
   title="Cultural Creativity Clusters"
   label="ekt1-263"
   attr=""
@@ -353,7 +334,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/ekt1-268.jpg-compressed.webp"
-  class="class param"
   title="It used to be a basketball court, now it is covered with weeds"
   caption="Shooting at night, long exposure over ten minutes."
   label="ekt1-268"
@@ -365,7 +345,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/ekt1-271.jpg-compressed.webp"
-  class="class param"
   title="Buildings near Huadu Lake"
   caption="This negative was not developed by my go-to film lab, so the size of the picture is not the same."
   label="ekt1-271"
@@ -379,7 +358,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-258.jpg-compressed.webp"
-  class="class param"
   title="More friends"
   caption="@ \"3D Lab\". From left to right: Qizheng, Junru, Minyong; The man sitting in middle: Yuepeng."
   label="pro1-258"
@@ -391,7 +369,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-262.jpg-compressed.webp"
-  class="class param"
   title="Laboratory building"
   caption="The picture has been adjusted in perspective and cropped."
   label="pro1-262"
@@ -403,7 +380,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-264.jpg-compressed.webp"
-  class="class param"
   title="The ruins near the campus, building materials are scattered in piles."
   label="pro1-264"
   attr=""
@@ -414,7 +390,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-265.jpg-compressed.webp"
-  class="class param"
   title="Broken glass"
   label="pro1-265"
   attr=""
@@ -425,7 +400,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro1-270.jpg-compressed.webp"
-  class="class param"
   title="T4 Teaching building and the island"
   label="pro1-270"
   attr=""
@@ -438,7 +412,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro4-255.jpg-compressed.webp"
-  class="class param"
   title="Classmates at graduation photo taking"
   label="pro4-255"
   attr=""
@@ -449,7 +422,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro4-260.jpg-compressed.webp"
-  class="class param"
   title="Untitled"
   caption="@ Zhonghe Square"
   label="pro4-260"
@@ -461,7 +433,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/pro4-267.jpg-compressed.webp"
-  class="class param"
   title="Learning Resource Centre"
   caption=""
   label="pro4-267"
@@ -474,7 +445,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/rdp3-256.jpg-compressed.webp"
-  class="class param"
   title="City Landscape"
   caption=""
   label="rdp3-256"
@@ -486,7 +456,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/rdp3-259.jpg-compressed.webp"
-  class="class param"
   title="Close-up flower"
   caption=""
   label="rdp3-259"
@@ -501,7 +470,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/hp5p-33.jpg-compressed.webp"
-  class="class param"
   title="Beijing Daxing International Airport"
   caption="In black & white ;)"
   label="hp5p-33"
@@ -515,7 +483,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/shgp-32.jpg-compressed.webp"
-  class="class param"
   title="Overgrown playground"
   caption=""
   label="shgp-32"
@@ -529,7 +496,6 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
  {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/lfhb/foma-34.jpg-compressed.webp"
-  class="class param"
   title="Handheld night shot"
   caption="That line is the trajectory of a plane, and hand shook during the long exposure."
   label="foma-34"
@@ -545,8 +511,7 @@ Finally, I will show some of the photos I have taken, arranged according to diff
 
 When I first tried photography, I heard a sentence: “You should take every shutter seriously”. It was a decades ago, digital cameras already became the new trend. At that time, I did not have the concept of the film, and I felt that the cost of each shutter was low. When I pressed the shutter, I had no special feelings. {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/me-using-rb.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="me-using-rb"
   title="Me holding an RB67 during the photography class last year"
   attr=""

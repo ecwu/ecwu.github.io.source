@@ -59,7 +59,7 @@ copyright:
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/barrelfish-logo.jpg-compressed.webp"
-  type="full"
+  class="l-page"
   label="Barrelfish OS Logo"
   title="Barrelfish OS Logo"
   alt="Barrelfish OS Logo"
@@ -74,8 +74,7 @@ copyright:
 
 Barrelfish OS 是由苏黎世联邦理工大学{{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/ETHzurich-logo.png-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="mn-rhino"
   title="ETH Zurich Logo"
   label="eth"
@@ -93,7 +92,6 @@ Barrelfish OS 最大的特点就是多内核（Multikernel）。研究者认为�
 ## 多内核架构（Multikernel Architecture）
 {{< figure
   src="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/multikernel-model.jpg"
-  class="class param"
   title="The Multikernel model"
   caption="Support heterogeneous cores to work together"
   label="tmm"
@@ -114,7 +112,6 @@ Barrelfish OS 上的内核被称为 CPU Driver (核心处理器驱动)。它是�
 
 {{< figure
   src="https://i.loli.net/2019/09/02/n7sP5GDLjkm4XUz.png"
-  class="class param"
   
   title="Interactions between Barrelfish’s core components"
   caption="Dissertation figure in: "
@@ -140,8 +137,7 @@ Barrelfish OS 上的内核被称为 CPU Driver (核心处理器驱动)。它是�
 
 Barrelfish OS 从 [seL4](https://sel4.systems){{< figure
   src="https://sel4.systems/images/logo-text-white.svg"
-  class="class param"
-  type="margin"
+  class="l-gutter"
   label="sel4"
   title="seL4 Logo"
  >}}

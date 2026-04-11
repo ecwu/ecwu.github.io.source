@@ -58,8 +58,7 @@ copyright:
 - Simulacra and Simulation (1981) by **Jean Baudrillard**
 - House Hunting (2001) by **Todd Hido** {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/hh-1.jpg-compressed.webp"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="house-hunting"
   title="House Hunting (2001)"
   attr="Work by Todd Hido"
@@ -67,8 +66,7 @@ copyright:
 - Genesis (2013) by **Sebastião Salgado**
 - I Know How Furiously Your Heart Is Beating (2019) by **Alec Soth**{{< figure
   src="https://alecsoth.com/photography/media/pages/projects/i-know-how-furiously-your-heart-is-beating/3fa2adc462-1551369073/furiouslycover.jpg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="i-know-how-furiously-your-heart-is-beating"
   title="I Know How Furiously Your Heart Is Beating (2019)"
   attr="Work by Alec Soth"
@@ -97,8 +95,7 @@ copyright:
 ### 3.2 The Newsroom created by **Aaron Sorkin**
 - Featuring: *Jeff Daniels, Emily Mortimer, John Gallagher Jr., Alison Pill, Thomas Sadoski, Dev Patel, Olivia Munn, Sam Waterston* {{< figure
   src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hNq8Gkw3P6mVn2JLaSkHczsteiQ.jpg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="the-newsroom"
   title="The Newsroom Final Episodes Poster"
   attr="From: The Movie Database (TMDb)"
@@ -130,8 +127,7 @@ Some selected episodes:
 
 - OK Computer (Album) by **Radiohead**{{< figure
   src="https://isbn.radiohead.com/26/responsive-images/566b4737fe7f1b7fc969e95c10bca7b7___a_1400_1400.jpg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="ok-computer"
   title="OK COMPUTER Album Cover"
   attr="From: Radiohead Public Library"

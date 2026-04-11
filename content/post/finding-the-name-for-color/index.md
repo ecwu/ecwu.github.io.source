@@ -72,7 +72,6 @@ First, we need to know how to represent a color in the computer. The RGB color m
 
 {{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/2/28/RGB_illumination.jpg"
-  class="class param"
   
   title="A representation of RGB color mixing. Projection of primary color (Red, Green, Blue) lights on a white wall show secondary colors where two overlap; the combination of all three in equal intensities makes white."
   caption="Wikimedia Commons, by"
@@ -115,7 +114,6 @@ Consider the RGB color space. If we set each color intensity as the axis of the 
 
 {{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RGB_color_solid_cube.png/1024px-RGB_color_solid_cube.png"
-  class="class param"
   
   title="The RGB color model mapped to a cube. The horizontal x-axis as red values increasing to the left, y-axis as blue increasing to the lower right and the vertical z-axis as green increasing towards the top. The origin, black is the vertex hidden from view."
   caption="Wikimedia Commons, by"

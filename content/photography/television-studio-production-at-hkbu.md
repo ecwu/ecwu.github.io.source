@@ -58,7 +58,6 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-01.jpg-compressed.webp"
-  class="class param"
   title="电视制作影棚内景"
   label="p1"
   alt="alt"
@@ -71,7 +70,6 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-02.jpg-compressed.webp"
-  class="class param"
   title="拍摄现场"
   label="p2"
   alt="alt"
@@ -84,7 +82,7 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-03.jpg-compressed.webp"
-  type="full"
+  class="l-page"
   label="p3"
   title="在现场的我"
   alt="alt"
@@ -93,7 +91,6 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-04.jpg-compressed.webp"
-  class="class param"
   title="拍摄现场"
   label="p4"
   alt="alt"
@@ -102,7 +99,6 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-05.jpg-compressed.webp"
-  class="class param"
   title="拍摄现场"
   label="p5"
   alt="alt"
@@ -111,7 +107,6 @@ Television Studio Production 电视影棚制作
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/tsp-hkbu-06.jpg-compressed.webp"
-  class="class param"
   title="装逼现场"
   label="p6"
   alt="alt"

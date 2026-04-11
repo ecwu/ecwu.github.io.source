@@ -48,8 +48,7 @@ The story starts from a disposable camera sent to me by [Root](https://github.co
 <!--more-->
 The camera is loaded a color negative film in ISO800, and you can took 39 photos.{{< figure
   src="https://i.loli.net/2019/09/13/Vaq3YCJWKFjBNdf.jpg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="kodak-disposable-camera"
   title="Kodak Funsaver Disposable Camera"
   label="kodak"
@@ -69,7 +68,6 @@ But the result is out of my expectation. We do get photos. Vintage color and tha
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-3.jpg-compressed.webp"
-  class="class param"
   title="Friends doing some posts"
   label="film-1"
   alt="alt"
@@ -78,7 +76,6 @@ But the result is out of my expectation. We do get photos. Vintage color and tha
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-5.jpg-compressed.webp"
-  class="class param"
   title="Everyone have two carrots"
   label="carrots"
   alt="alt"
@@ -87,8 +84,7 @@ But the result is out of my expectation. We do get photos. Vintage color and tha
 
 {{< figure
   src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Nikon_FM2_in_black.jpg/800px-Nikon_FM2_in_black.jpg"
-  class="class param"
-  type="margin"
+  class="l-body side"
   label="nikon-fm2"
   title="Nikon FM2 in black"
   attr="Mariom990 [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)]"
@@ -115,7 +111,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-1.jpg-compressed.webp"
-  class="class param"
   title="HCC Members having an \"eat together event\""
   attr="Featuring: Alvin Liang, Bill Zhong, Bill Li (From left to right)"
   label="胶片 - 01"
@@ -125,7 +120,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-2.jpg-compressed.webp"
-  class="class param"
   title="Portrait for Alvin Liang"
   label="胶片 - 02"
   alt="alt"
@@ -134,7 +128,7 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-4.jpg-compressed.webp"
-  type="full"
+  class="l-page"
   label="胶片 - 04"
   title="CCC Building in UIC"
   alt="CCC Building in UIC"
@@ -143,7 +137,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-6.jpg-compressed.webp"
-  class="class param"
   label="胶片 - 06"
   title="Students who have taken the class"
   alt="alt"
@@ -152,7 +145,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/film-7.jpg-compressed.webp"
-  class="class param"
   label="胶片 - 07"
   title="CEFC Building"
   alt="alt"
@@ -161,7 +153,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-25.jpg-compressed.webp"
-  class="class param"
   label="AGFA-25"
   title="Max Gu"
   alt="alt"
@@ -170,7 +161,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-26.jpg-compressed.webp"
-  class="class param"
   label="AGFA-26"
   title="Hanging tower"
   alt="alt"
@@ -179,7 +169,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-27.jpg-compressed.webp"
-  class="class param"
   label="AGFA-27"
   title="Sculler"
   alt="alt"
@@ -188,7 +177,6 @@ Now, you can enjoy some of my work.
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/AGFA-40p-28.jpg-compressed.webp"
-  class="class param"
   label="AGFA-28"
   title="Plane"
   alt="alt"

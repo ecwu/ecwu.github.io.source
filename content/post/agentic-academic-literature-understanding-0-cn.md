@@ -69,7 +69,7 @@ copyright:
 
 {{< figure
   src="https://cdn.ecwuuuuu.com/blog/image/agent/cherry-studio-mcp-example.jpg-compressed.webp"
-  type="full"
+  class="l-page"
   label="cherry-studio-agentic-academic-literature-consuming"
   title="Cherry Studio 中构建的助手，使用 DeepSeek V3.2 模型理解 DeepSeek-OCR 文章"
   alt="alt"
