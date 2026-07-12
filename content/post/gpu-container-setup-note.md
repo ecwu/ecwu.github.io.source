@@ -3,7 +3,7 @@ title: 服务器新装 GPU 的容器化配置笔记
 subtitle: 在 JupyterHub 环境下
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/G7PV6gd-w4g.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/G7PV6gd-w4g.webp
 unsplashfeatureimage: CHUTTERSNAP
 
 publishDate: "2024-11-24T14:54:00+00:00"

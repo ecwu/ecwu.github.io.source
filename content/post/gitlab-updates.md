@@ -3,7 +3,7 @@ title: 自建 GitLab 配置 SSH 和后续
 subtitle: Quick Update
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/ZV_64LdGoao.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/ZV_64LdGoao.webp
 unsplashfeatureimage: Pankaj Patel
 
 publishDate: "2022-07-13T09:17:36+08:00"

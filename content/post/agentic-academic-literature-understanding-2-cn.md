@@ -1,12 +1,12 @@
 ---
-title: 关于智能体的实验 2 - 文本检索增强生成与高质量召回
+title: 关于智能体的实验 2 - RAG 支持的支撑片段检索
 subtitle:
 author: Zhenghao Wu
 description: 
 featureimage:
 unsplashfeatureimage:
 
-publishDate: "2026-04-08T11:11:00+08:00"
+publishDate: "2026-06-18T09:11:00+08:00"
 lastmod: 
 draft: true
 status: In Progress
@@ -54,6 +54,10 @@ extramaterials:
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
+
+> 这个章节构思了挺久，代码也在一直改。
+>
+> 主要是纠结本身就成熟复杂的 RAG 系统很难在我这样一个短的篇幅里讲清楚。最后决定侧重在“支撑片段检索“（Evidence Retrieval）这个角度。
 
 ## 相关的模块
 

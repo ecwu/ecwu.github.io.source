@@ -3,7 +3,7 @@ title: Cinestill 800T & Expired Kodak Portra 400
 subtitle: A new film stock, some new thoughts.
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp
+featureimage: https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp
 unsplashfeatureimage: 
 
 publishDate: "2025-01-18T18:00:00+00:00"
@@ -67,34 +67,34 @@ Another noteworthy aspect is that this film is tungsten-balanced (that is where 
 
 {{< gallery g-class="c800t">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-1.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-1.webp"
 image-description="Building at Shenzhen OCT Harbour">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-10.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-10.webp"
 image-description="Sunset, but I messed up the exposure">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-9.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-9.webp"
 image-description="DJI & Hasselblad Store at Shenzhen OCT Harbour">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-8.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-8.webp"
 image-description="In side the DJI & Hasselblad Store: A disassembled DJI Matrice 350 drone">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-7.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-7.webp"
 image-description="In side the DJI & Hasselblad Store: Propellers decoration at the test flight area">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-6.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-6.webp"
 image-description="In side the DJI & Hasselblad Store: In door decoration">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-5.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-5.webp"
 image-description="In side the DJI & Hasselblad Store: In door decoration">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-4.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-4.webp"
 image-description="Exit E at a Shenzhen Metro Station">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-2.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-2.webp"
 image-description="Shenzhen bay at night (With light leak)">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/C800T-3.webp"
 image-description="Shenzhen bay at night (With light leak)">}}
 {{< /gallery >}}
 
@@ -114,28 +114,28 @@ The situation with this roll is a bit more complicated. After I purchased it, it
 
 {{< gallery g-class="p400hexp">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-11.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-11.webp"
 image-description="Move too quickly, an abstract version of Max Gu">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-7.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-7.webp"
 image-description="Building">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-6.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-6.webp"
 image-description="Snapshot in my hotel room">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-5.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-5.webp"
 image-description="Tree, but overexposed">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-4.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-4.webp"
 image-description="Linghai Station, Shenzhen Metro">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-3.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-3.webp"
 image-description="Tim (WallBreaker No.4), standing on a bridge, looking at the Shenzhen skyline">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-2.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-2.webp"
 image-description="Andrin, looking up in the sky">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/CP400-1.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/CP400-1.webp"
 image-description="OH-Bay">}}
 {{< /gallery >}}
 
@@ -145,25 +145,25 @@ I also shot a roll of ILFORD HP5+, which was also expired. However, black-and-wh
 
 {{< gallery g-class="hp5plus">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B3.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B3.webp"
 image-description="OH-Bay Ferris Wheel">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B4.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B4.webp"
 image-description="Andrin shooting with his camera">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B5.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B5.webp"
 image-description="Inside OH-Bay">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B7.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B7.webp"
 image-description="Tim & Andrin">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B8.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B8.webp"
 image-description="∇">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B10.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B10.webp"
 image-description="Tim (by Andrin)">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/2025-sz/B9.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/2025-sz/B9.webp"
 image-description="Me (by Andrin)">}}
 
 {{< /gallery >}}

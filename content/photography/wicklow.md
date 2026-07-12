@@ -3,7 +3,7 @@ title: Wicklow
 subtitle: Just ... Breathtaking.
 author: Zhenghao Wu
 description: Wicklow Mountain National Park & Lough Tay
-featureimage: https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-8.webp
+featureimage: https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-8.webp
 unsplashfeatureimage: 
 
 publishDate: "2026-02-26T16:53:20+08:00"
@@ -63,28 +63,28 @@ We arrived in the early evening. There wasn’t a dramatic sunset, but the wind 
 
 {{< gallery g-class="wicklow">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-1.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-1.webp"
 image-description="No.1">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-2.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-2.webp"
 image-description="No.2">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-3.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-3.webp"
 image-description="No.3">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-4.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-4.webp"
 image-description="No.4">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-5.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-5.webp"
 image-description="No.5">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-6.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-6.webp"
 image-description="No.6">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-7.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-7.webp"
 image-description="No.7">}}
 {{< gallery-image
-image-url="https://cdn.ecwuuuuu.com/blog/image/wicklow/wicklow-8.webp"
+image-url="https://img.ecwuuuuu.com/blog/image/wicklow/wicklow-8.webp"
 image-description="No.8">}}
 {{< /gallery >}}
 

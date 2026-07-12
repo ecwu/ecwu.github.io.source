@@ -3,7 +3,7 @@ title: List of stuff I enjoy
 subtitle: Something I like, maybe you can try it?
 author: Zhenghao Wu
 description: Something I like, maybe you can try it?
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/Ae7pSsfzEHs.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/Ae7pSsfzEHs.webp
 unsplashfeatureimage: Eran Menashri
 
 publishDate: "2019-04-15T16:23:05+08:00"

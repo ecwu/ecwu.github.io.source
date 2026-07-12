@@ -3,7 +3,7 @@ title: Finding the Name for Color
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/PtabTe6iJ_8.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/PtabTe6iJ_8.webp
 unsplashfeatureimage: Mika Baumeister
 
 publishDate: "2022-02-23T20:44:55+08:00"

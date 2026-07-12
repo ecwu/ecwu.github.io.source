@@ -3,7 +3,7 @@ title: Selected Music List
 subtitle:
 author: Zhenghao Wu
 description: Something I like, maybe you can try it?
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/QzpgqElvSiA.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/QzpgqElvSiA.webp
 unsplashfeatureimage: Eran Menashri
 
 publishDate: "2022-12-27T23:52:00+08:00"

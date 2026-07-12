@@ -3,7 +3,7 @@ title: Interval
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/2cHW5TKr9Vs.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/2cHW5TKr9Vs.webp
 unsplashfeatureimage: Daniel Olah
 
 publishDate: "2022-02-09T15:30:00+08:00"

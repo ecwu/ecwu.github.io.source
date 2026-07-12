@@ -3,7 +3,7 @@ title: String
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/VQMszEo0x9c.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/VQMszEo0x9c.webp
 unsplashfeatureimage: Nick Fewings
 
 publishDate: "2022-02-09T15:30:00+08:00"

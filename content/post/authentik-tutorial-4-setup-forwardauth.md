@@ -3,7 +3,7 @@ title: Authentik 教程系列：通过反向代理和 ForwardAuth 接入任何�
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/rZCimlB7skw.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/rZCimlB7skw.webp
 unsplashfeatureimage: Nick Night
 
 publishDate: "2024-05-01T21:53:00+08:00"

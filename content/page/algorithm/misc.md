@@ -3,7 +3,7 @@ title: Misc
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/3l19r5EOZaw.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/3l19r5EOZaw.webp
 unsplashfeatureimage: Christopher Bill
 
 publishDate: "2022-02-09T15:30:00+08:00"

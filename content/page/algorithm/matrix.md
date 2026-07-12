@@ -3,7 +3,7 @@ title: Matrix
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/LqKhnDzSF-8.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/LqKhnDzSF-8.webp
 unsplashfeatureimage: Joshua Sortino
 
 publishDate: "2022-02-09T15:30:00+08:00"

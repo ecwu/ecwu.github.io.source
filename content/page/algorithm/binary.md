@@ -3,7 +3,7 @@ title: Binary
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/h3sAF1cVURw.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/h3sAF1cVURw.webp
 unsplashfeatureimage: Hope House Press - Leather Diary Studio
 
 publishDate: "2022-02-09T15:30:00+08:00"

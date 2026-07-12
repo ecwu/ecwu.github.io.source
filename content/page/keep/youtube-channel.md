@@ -3,7 +3,7 @@ title: YouTube Channels
 subtitle: List of YouTube Channels I Found Interesting
 author: Zhenghao Wu
 description: Something I like, maybe you can try it?
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/niUkImZcSP8.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/niUkImZcSP8.webp
 unsplashfeatureimage: Alexander Shatov
 
 publishDate: "2022-01-11T21:58:05+08:00"

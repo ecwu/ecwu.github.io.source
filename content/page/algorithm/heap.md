@@ -3,7 +3,7 @@ title: Heap
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/2FaCKyEEtis.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/2FaCKyEEtis.webp
 unsplashfeatureimage: Rick Mason
 
 publishDate: "2022-02-09T15:30:00+08:00"

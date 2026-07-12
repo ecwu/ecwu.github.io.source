@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木 - 展望
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/xU5Mqq0Chck.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/xU5Mqq0Chck.webp
 unsplashfeatureimage: Drew Beamer
 
 publishDate: "2023-10-07T02:20:00+08:00"

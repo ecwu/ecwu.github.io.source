@@ -3,7 +3,7 @@ title: Sigmoid or Softmax for Binary Classification
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/FWCjJ7VNm-k.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/FWCjJ7VNm-k.webp
 unsplashfeatureimage: David Talley
 
 publishDate: "2021-06-07T13:06:14+08:00"

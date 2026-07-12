@@ -3,7 +3,7 @@ title: 自建 GitLab 踩坑实录
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/ZV_64LdGoao.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/ZV_64LdGoao.webp
 unsplashfeatureimage: Pankaj Patel
 
 publishDate: "2022-05-06T11:45:36+08:00"

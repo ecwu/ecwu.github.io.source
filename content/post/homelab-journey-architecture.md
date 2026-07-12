@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木 - 组成与架构
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/US9Tc9pKNBU.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/US9Tc9pKNBU.webp
 unsplashfeatureimage: Ryan Quintal
 
 publishDate: "2023-01-08T23:17:00+08:00"

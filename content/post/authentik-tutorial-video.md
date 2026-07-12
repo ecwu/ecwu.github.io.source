@@ -3,7 +3,7 @@ title: Authentik 视频教程 - 合集
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/iwfHhOZLVMU.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/iwfHhOZLVMU.webp
 unsplashfeatureimage: Chris Murray
 
 publishDate: "2024-08-08T17:11:00+08:00"

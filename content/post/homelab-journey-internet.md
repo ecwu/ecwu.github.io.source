@@ -3,7 +3,7 @@ title: Homelab：我的赛博积木 - 公网服务
 subtitle: 
 author: Zhenghao Wu
 description: 
-featureimage: https://cdn.ecwuuuuu.com/assets/unsplash/tjX_sniNzgQ.webp
+featureimage: https://img.ecwuuuuu.com/assets/unsplash/tjX_sniNzgQ.webp
 unsplashfeatureimage: frank mckenna
 
 publishDate: "2022-12-30T00:20:00+08:00"
