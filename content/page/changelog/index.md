@@ -47,12 +47,16 @@ copyright:
 - Styled with [Tailwind CSS](https://tailwindcss.com/) (v4.1.+ as of Oct 2025).
 - Implements [giscus](https://github.com/giscus/giscus) for comments.
 - Analytics provided by [Google Analytics v4](https://support.google.com/analytics/answer/10089681?hl=en) & [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/).
-- LLaTeX equations rendered with [KaTeX](https://katex.org).
+- LaTeX equations rendered with [KaTeX](https://katex.org).
 
 
 ## Changelog
 
 ### 2026
+
+#### July 2026
+
+- CDN provider added: [CloudFlare R2](https://developers.cloudflare.com/r2/), which is a S3-compatible object storage service. The site migrated the first batch of webp static assets to R2. Legacy assets are still hosted on Qiniu 七牛.
 
 #### April 2026
 
@@ -100,10 +104,12 @@ copyright:
 - Warp the main content with `<main>` tags, improving RSS scraping results.
 
 #### April 2022
+
 - Replace comment plugins: [utterances](https://utteranc.es) -> [giscus](https://github.com/giscus/giscus)
 - Migrate legacy comments from GitHub Issues to GitHub Discussion
 
 #### February 2022
+
 - Adding shortcode for PDF (Tailwind Aspect-ratio plugin)
 - Refines and adding labels for Draft post 
 - Adding shortcode for embeds html file
@@ -111,6 +117,7 @@ copyright:
 - Fix a bug in article time and read time metadata display
 
 #### January 2022
+
 - Enable the new [ecwu-theme](https://github.com/ecwu/ecwu-theme), Written in [Tailwind CSS 3](https://tailwindcss.com/)
 - Adding Comment Plugin [utterances](https://utteranc.es)
 - Adding Site Analytics [Google Analytics v4](https://support.google.com/analytics/answer/10089681?hl=en)
@@ -121,4 +128,5 @@ copyright:
 - Adding shortcode for video (via CDN)
 
 ### Pre 2022
+
 - Using [hugo-tufte](https://github.com/shawnohare/hugo-tufte) theme with custom modifications
