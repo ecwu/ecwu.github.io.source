@@ -122,7 +122,7 @@ copyright:
 - [第 1 章：三种阅读理解学术文献的智能体框架](/post/agentic-academic-literature-understanding-1-cn/)
 - [第 1.5 章：基于共识的讨论多智能体框架](/post/agentic-academic-literature-understanding-1.5-cn/)
 - 第 1.7 章：按需生成专家多智能体系统
-- 第 2 章：文本检索增强生成与高质量召回
+- [第 2 章：RAG 支持的支撑片段检索](/post/agentic-academic-literature-understanding-2-cn/)
 - 第 3 章：通过工具调用使能更多能力
 - 第 4 章：混合模型编排
 

@@ -57,6 +57,7 @@ copyright:
 #### July 2026
 
 - CDN provider added: [CloudFlare R2](https://developers.cloudflare.com/r2/), which is a S3-compatible object storage service. The site migrated the first batch of webp static assets to R2. Legacy assets are still hosted on Qiniu 七牛.
+- New shortcode for [Vega-Lite](https://vega.github.io/vega-lite/) charts, which allows embedding interactive charts in content pages.
 
 #### April 2026
 
