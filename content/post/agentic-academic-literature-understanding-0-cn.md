@@ -30,21 +30,22 @@ importance: 7
 tags:
 - AI
 - Agentic AI
-- Multi-agent Systems
-- Literature Review
-- Academic Paper
-- Research
-- Reading
+- RAG
+- Evidence Retrieval
+- Information Retrieval
+- Hybrid Retrieval
+- Reranking
+- BM25
+- Chunking
+- RAG Evaluation
+- Reading Agent
 - 人工智能
 - 智能体
-- 多智能体系统
-- 文献综述
-- 学术论文
-- 研究
-- 阅读
-- Agentic Reading
-- Academic Literature
-- 文献理解
+- 检索增强生成
+- 支撑片段检索
+- 信息检索
+- 重排序
+- RAG 评测
 - 论文阅读
 
 categories:
