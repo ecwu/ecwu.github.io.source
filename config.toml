@@ -8,7 +8,6 @@ contentdir = "content"
 dataDir = "data"
 publishdir = "public"
 builddrafts = false
-canonifyurls = true
 
 googleAnalytics = 'G-HSPDSQWH5L'
 enableRobotsTXT = true
