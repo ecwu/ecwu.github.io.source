@@ -1,41 +1,35 @@
-name: github pages
+name: Validate Hugo build
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build-deploy:
-    runs-on: ubuntu-22.04
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: szenius/set-timezone@v1.0
+      - name: Check out source
+        uses: actions/checkout@v6
         with:
-          timezoneLinux: "Asia/Shanghai"
-          timezoneMacos: "Asia/Shanghai"
-          timezoneWindows: "China Standard Time"
-
-      - uses: actions/checkout@v3
-        with:
-          submodules: "recursive"
+          submodules: recursive
+          persist-credentials: false
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.160.0"
-          # extended: true
 
-      - name: Clean Hugo cache
-        run: rm -rf .hugo_build.lock public/ resources/
-
-      - name: Build
+      - name: Validate production build
         run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: ecwu/ecwu.github.io
-          publish_dir: ./public
-          publish_branch: master
-          # keep_files: false
