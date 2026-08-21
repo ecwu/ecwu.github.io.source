@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ecwu-blog",
+  "compatibility_date": "2026-08-21",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Keep variables managed in the Cloudflare dashboard when deploying.
+  // Build-time variables, including draft settings, remain configured per
+  // Cloudflare Pages or Workers Builds trigger and are not stored here.
+  "keep_vars": true,
+
+  // Keep preview endpoints available until the production domain is migrated.
+  "workers_dev": true,
+  "preview_urls": true,
+
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
