@@ -50,7 +50,7 @@ categories:
 extramaterials:
 - type: link
   name: SciRead Viewer
-  url: https://ecwuuuuu.com/special-topic/sciread-viewer
+  url: https://page.ecwuuuuu.com/special-topic/sciread-viewer/
 
 
 copyright: 
@@ -231,7 +231,7 @@ flowchart LR;
 
 以上介绍了三种不同复杂度的智能体系统设计：单体智能体、ReAct 智能体 和协调多智能体系统。每种设计都有其适用场景和优势。下一章我们将介绍**讨论多智能体系统 (discussion multi-agent system)** 和 **On-Demand 按需生成专家-协调多智能体系统**的设计与实现。
 
-关于三个系统的结果，我制作了一个可视化的工具。挑选了不同领域，不同形式（实验类、综述类等）共十篇文章展示摘要报告。你可以通过下面的链接中查看报告生成效果： [SciRead Viewer](https://ecwuuuuu.com/special-topic/sciread-viewer)
+关于三个系统的结果，我制作了一个可视化的工具。挑选了不同领域，不同形式（实验类、综述类等）共十篇文章展示摘要报告。你可以通过下面的链接中查看报告生成效果： [SciRead Viewer](https://page.ecwuuuuu.com/special-topic/sciread-viewer/)
 
 如果你想上手试试这个项目，代码已经开源在 GitHub 上，可以使用 `uv run sciread simple your-file.pdf`, `uv run sciread react your-file.pdf` 和 `uv run sciread coordinate your-file.pdf` 来运行三种智能体系统。
 

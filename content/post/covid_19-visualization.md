@@ -43,7 +43,7 @@ categories:
 extramaterials:
 - type: link
   name: Live Demo
-  url: https://ecwuuuuu.com/covid_vaccine_dashboard/
+  url: https://page.ecwuuuuu.com/covid_vaccine_dashboard/
 
 copyright: 
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
