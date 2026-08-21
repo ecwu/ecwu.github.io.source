@@ -19,7 +19,7 @@ hugo
 # Clean the public directory before building
 rm -rf public/ && hugo
 
-# Deploy (likely handled by GitHub Actions based on config)
+# Deploy (handled by Cloudflare Workers in this project)
 ```
 
 ### Tailwind CSS Development

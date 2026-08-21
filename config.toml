@@ -31,7 +31,7 @@ copyrightHolder = "ECWUUUUU"
 showPoweredBy = true
 showBeian = true
 beianMessage = " 粤 ICP 备 17015575 号 - 1"
-buildBy = "GitHub Actions"
+buildBy = "Cloudflare Workers"
 changelogUrl = '/page/changelog'
 [params.social] # Parameters for social platform
 rss = true

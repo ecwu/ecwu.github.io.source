@@ -39,10 +39,9 @@ copyright:
 - Site generates with [Hugo](https://gohugo.io/) static site generator (version 0.152.2+extended as of Jan 2026).
     - Uses [ecwu-theme](https://github.com/ecwu/ecwu-theme) from Jan 2022, Theme introduction: [Blog Theme: ecwu-theme](/post/blog-theme-ecwu-theme/)
     - Previous theme: [hugo-tufte](https://github.com/shawnohare/hugo-tufte)
-- [Continuous integration](https://glossary.cncf.io/continuous-integration/) via [GitHub Actions](https://github.com/features/actions).
-- Staging previews deployed with [Cloudflare Pages](https://pages.cloudflare.com/).
-    - https://ecwu-github-io-source.pages.dev/
-- Hosted at [GitHub Pages](https://pages.github.com/).
+- [Continuous integration](https://glossary.cncf.io/continuous-integration/) via [Cloudflare Pages](https://pages.cloudflare.com/) (Both Production and Staging).
+  - [GitHub Actions](https://github.com/features/actions) Production home deployment deprecated after Aug 2026. New `page.ecwuuuuu.com` domain still uses GitHub Actions for deployment, hosting GitHub Repositories pages.
+  - Staging Page: https://ecwu-github-io-source.pages.dev/
 - Uses [Cloudflare](https://www.cloudflare.com/) & [Qiniu 七牛](https://www.qiniu.com/) for CDN & Asset Hosting.
 - Styled with [Tailwind CSS](https://tailwindcss.com/) (v4.1.+ as of Oct 2025).
 - Implements [giscus](https://github.com/giscus/giscus) for comments.
@@ -53,6 +52,12 @@ copyright:
 ## Changelog
 
 ### 2026
+
+#### August 2026
+
+- Production deployment pipeline migrated from GitHub Actions to Cloudflare Workers.
+- New domain `page.ecwuuuuu.com` added for GitHub Repositories pages, which is still deployed via GitHub Actions.
+- Hugo updated to `v0.160.0+extended`.
 
 #### July 2026
 
