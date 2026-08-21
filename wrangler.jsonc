@@ -9,8 +9,10 @@
   // Cloudflare Pages or Workers Builds trigger and are not stored here.
   "keep_vars": true,
 
-  // Keep preview endpoints available until the production domain is migrated.
-  "workers_dev": true,
+  // Production is served through ecwuuuuu.com.
+  "workers_dev": false,
+
+  // Keep URLs for non-production branch builds.
   "preview_urls": true,
 
   "assets": {
