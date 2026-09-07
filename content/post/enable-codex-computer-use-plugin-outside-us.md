@@ -9,8 +9,8 @@ unsplashfeatureimage:
 publishDate: "2026-04-16T22:00:00+01:00"
 lastmod:
 draft: false
-status: Finished
-# In Progress, Staging, Finished, Lagacy
+status: Deprecated
+# In Progress, Staging, Finished, Deprecated
 
 showmeta: true
 hidereadtime: false
@@ -46,6 +46,8 @@ extramaterials:
 copyright:
 # inherit cc0 by bysa bync byncsa bynd byncnd unsplash
 ---
+
+> 该方法已经失效，仅留作记录。
 
 ## 背景
 
