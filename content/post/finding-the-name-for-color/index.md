@@ -7,7 +7,7 @@ featureimage: https://img.ecwuuuuu.com/assets/unsplash/PtabTe6iJ_8.webp
 unsplashfeatureimage: Mika Baumeister
 
 publishDate: "2022-02-23T20:44:55+08:00"
-lastmod: "2025-02-09T15:16:00+00:00"
+lastmod: "2026-09-24T13:44:00+01:00"
 draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
@@ -163,9 +163,9 @@ Use `#FFFFFF` (white) color for a try, the program return the top three matches:
 
 ### Problem
 
-But when I tried another color, like `#6A4764`. Seeing it with my eye, the color belongs to dark magenta and dark purple. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *dark rock blue*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($\[25.15, 34.38, 52.69\]$).
+But when I tried another color, like `#6A4764`. Seeing it with my eye, the color belongs to dark magenta and dark purple. But the program's result is not as close. It returns *iron-gray*, *dust gray*, and *plum red*. When we look closer at the color distance. The dark magenta (`#8B008B`) has a $d = 87.46$ but the others is way less ($\[25.15, 34.38, 48.88\]$).
 
-![Program Generated Top three matches](rgb-color-match-problem.png)
+{{< include-html "rgb-color-match.html" >}}
 
 Why this happens?
 
@@ -173,7 +173,7 @@ Why this happens?
 
 I try to visualize the named colors in 3d space. Those colors aren't uniformly distributed. Some are clustered together, and some are relatively sparse with almost no named color. This means some of the colors may not be easy to describe.
 
-![Named Colors in 3D space](color-name-cn-visual.png)
+{{< include-html "named-color-space-linked.html" >}}
 
 The other problem is that such a color model is hard to understand. When manipulating a color, how to make it to some color or “more that color" (hue, saturation; not just red, green, or blue); How to make it brighter or darker.
 

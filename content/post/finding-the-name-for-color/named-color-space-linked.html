@@ -1,0 +1,497 @@
+<hr>
+<p class="text-2xl">Interactive: Named Colors in RGB Space</p>
+<div id="named-color-space" class="named-space l-middle">
+  <p class="named-space-instructions" id="named-space-instructions">Drag either view to rotate both. Scroll over a view or use the buttons to zoom. Hover or tap a circle for details.</p>
+  <div class="named-space-views">
+    <section class="named-space-view" data-mode="density" aria-label="Named color density">
+      <h3>Density</h3>
+      <div class="named-space-stage">
+        <canvas tabindex="0" aria-label="3D density of named colors in RGB space" aria-describedby="named-space-instructions"></canvas>
+        <div class="named-space-tooltip" hidden></div>
+        <div class="named-space-message" role="status">Loading named colors…</div>
+      </div>
+      <p class="named-space-note">One circle per 64 × 64 × 64 RGB cell. Size and number show how many names fall there.</p>
+    </section>
+    <section class="named-space-view" data-mode="colors" aria-label="Individual named colors">
+      <h3>Individual colors</h3>
+      <div class="named-space-stage">
+        <canvas tabindex="0" aria-label="3D plot of individual named colors in RGB space" aria-describedby="named-space-instructions"></canvas>
+        <div class="named-space-tooltip" hidden></div>
+        <div class="named-space-message" role="status">Loading named colors…</div>
+      </div>
+      <p class="named-space-note">Each point is one named color. Hover or tap to see its name and RGB values.</p>
+    </section>
+  </div>
+  <div class="named-space-footer">
+    <span class="named-space-count" aria-live="polite"></span>
+    <div class="named-space-controls" aria-label="Controls for both 3D views">
+      <button type="button" class="named-space-zoom-out" aria-label="Zoom out both views">−</button>
+      <button type="button" class="named-space-zoom-in" aria-label="Zoom in both views">+</button>
+      <button type="button" class="named-space-reset">Reset views</button>
+    </div>
+  </div>
+  <noscript><img src="color-name-cn-visual.png" alt="Two views of the named colors plotted in RGB space"></noscript>
+</div>
+<hr>
+
+<style>
+  #named-color-space {
+    --space-border: rgba(15, 23, 42, 0.24);
+    --space-surface: #f8fafc;
+    --space-text: #334155;
+    --space-axes: rgba(51, 65, 85, 0.45);
+    --space-point-outline: rgba(15, 23, 42, 0.62);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .dark #named-color-space {
+    --space-border: rgba(255, 255, 255, 0.28);
+    --space-surface: #202124;
+    --space-text: #cbd5e1;
+    --space-axes: rgba(203, 213, 225, 0.5);
+    --space-point-outline: rgba(255, 255, 255, 0.7);
+  }
+
+  #named-color-space .named-space-instructions,
+  #named-color-space .named-space-note {
+    color: var(--space-text);
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  #named-color-space .named-space-instructions {
+    margin: 0 0 0.8rem;
+  }
+
+  #named-color-space .named-space-views {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  #named-color-space .named-space-view {
+    min-width: 0;
+  }
+
+  #named-color-space .named-space-view h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  #named-color-space .named-space-stage {
+    position: relative;
+    height: clamp(17rem, 34vw, 22rem);
+    border: 1px solid var(--space-border);
+    border-radius: 0.75rem;
+    background: var(--space-surface);
+    overflow: hidden;
+  }
+
+  #named-color-space canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    touch-action: none;
+  }
+
+  #named-color-space canvas:active {
+    cursor: grabbing;
+  }
+
+  #named-color-space canvas:focus-visible,
+  #named-color-space .named-space-controls button:focus-visible,
+  #named-color-space .named-space-message button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+  }
+
+  #named-color-space .named-space-tooltip {
+    position: absolute;
+    z-index: 2;
+    max-width: min(13rem, calc(100% - 1rem));
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.22);
+    color: #172033;
+    font-size: 0.76rem;
+    line-height: 1.4;
+    pointer-events: none;
+  }
+
+  #named-color-space .named-space-tooltip strong,
+  #named-color-space .named-space-tooltip span {
+    display: block;
+  }
+
+  #named-color-space .named-space-tooltip span {
+    font-variant-numeric: tabular-nums;
+  }
+
+  #named-color-space .named-space-message {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: var(--space-text);
+    text-align: center;
+  }
+
+  #named-color-space .named-space-message[hidden],
+  #named-color-space .named-space-tooltip[hidden] {
+    display: none;
+  }
+
+  #named-color-space .named-space-message button,
+  #named-color-space .named-space-controls button {
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--space-border);
+    border-radius: 0.4rem;
+    background: var(--space-surface);
+    color: var(--space-text);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+  }
+
+  #named-color-space .named-space-message button:hover,
+  #named-color-space .named-space-controls button:hover {
+    border-color: currentColor;
+  }
+
+  #named-color-space .named-space-note {
+    margin: 0.5rem 0 0;
+  }
+
+  #named-color-space .named-space-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 0.8rem;
+    color: var(--space-text);
+    font-size: 0.8rem;
+  }
+
+  #named-color-space .named-space-controls {
+    display: flex;
+    gap: 0.4rem;
+  }
+
+  @media (min-width: 700px) {
+    #named-color-space .named-space-views {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const root = document.getElementById('named-color-space');
+    const count = root.querySelector('.named-space-count');
+    const source = 'https://gist.githubusercontent.com/ecwu/461a1567ec5ab55dbaf18701c3e4c08b/raw/c05b2d4f4bade3ef357ea41cd2add280faed06b7/color-name-mapping-cn.csv';
+    const initial = { yaw: -0.65, pitch: -0.4, zoom: 1 };
+    const camera = { ...initial };
+    const corners = [];
+    const edges = [];
+    let colors = [];
+    let densityCells = [];
+    const panels = [...root.querySelectorAll('.named-space-view')].map(element => ({
+      mode: element.dataset.mode,
+      stage: element.querySelector('.named-space-stage'),
+      canvas: element.querySelector('canvas'),
+      tooltip: element.querySelector('.named-space-tooltip'),
+      message: element.querySelector('.named-space-message'),
+      projected: [],
+      selected: null,
+      pointer: null
+    }));
+
+    panels.forEach(panel => { panel.context = panel.canvas.getContext('2d'); });
+    for (const x of [-1, 1]) for (const y of [-1, 1]) for (const z of [-1, 1]) corners.push([x, y, z]);
+    for (let i = 0; i < corners.length; i++) for (let j = i + 1; j < corners.length; j++) {
+      if (corners[i].filter((value, axis) => value !== corners[j][axis]).length === 1) edges.push([i, j]);
+    }
+
+    function project(point, width, height) {
+      const [x, y, z] = point;
+      const rotatedX = x * Math.cos(camera.yaw) + z * Math.sin(camera.yaw);
+      const rotatedZ = -x * Math.sin(camera.yaw) + z * Math.cos(camera.yaw);
+      const rotatedY = y * Math.cos(camera.pitch) - rotatedZ * Math.sin(camera.pitch);
+      const depth = y * Math.sin(camera.pitch) + rotatedZ * Math.cos(camera.pitch);
+      const scale = Math.min(width, height) * 1.2 * camera.zoom / (4.6 - depth);
+      return { x: width / 2 + rotatedX * scale, y: height / 2 - rotatedY * scale, depth };
+    }
+
+    function drawPanel(panel) {
+      if (!panel.context || !colors.length) return;
+      const { width, height } = panel.canvas.getBoundingClientRect();
+      if (!width || !height) return;
+      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      panel.canvas.width = Math.round(width * ratio);
+      panel.canvas.height = Math.round(height * ratio);
+      const ctx = panel.context;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      ctx.clearRect(0, 0, width, height);
+      const style = getComputedStyle(root);
+      const vertices = corners.map(corner => project(corner, width, height));
+      ctx.strokeStyle = style.getPropertyValue('--space-axes').trim();
+      ctx.lineWidth = 1;
+      for (const [from, to] of edges) {
+        ctx.beginPath();
+        ctx.moveTo(vertices[from].x, vertices[from].y);
+        ctx.lineTo(vertices[to].x, vertices[to].y);
+        ctx.stroke();
+      }
+
+      const origin = project([-1, -1, -1], width, height);
+      const axes = [
+        { end: [1, -1, -1], name: 'R', color: '#dc2626' },
+        { end: [-1, 1, -1], name: 'G', color: '#15803d' },
+        { end: [-1, -1, 1], name: 'B', color: '#2563eb' }
+      ];
+      ctx.font = 'bold 11px sans-serif';
+      for (const axis of axes) {
+        const end = project(axis.end, width, height);
+        ctx.strokeStyle = axis.color;
+        ctx.fillStyle = axis.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(origin.x, origin.y);
+        ctx.lineTo(end.x, end.y);
+        ctx.stroke();
+        ctx.fillText(axis.name, end.x + 4, end.y - 4);
+      }
+
+      const items = panel.mode === 'density' ? densityCells : colors;
+      panel.projected = items.map(item => ({ ...project(item.position, width, height), item }));
+      panel.projected.sort((a, b) => a.depth - b.depth);
+      for (const point of panel.projected) {
+        const radius = panel.mode === 'density'
+          ? 4 + Math.sqrt(point.item.count) * 2.3
+          : 3.2 + (point.depth + 1.7) * 0.55;
+        ctx.beginPath();
+        ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = point.item.hex;
+        ctx.globalAlpha = panel.mode === 'density' ? 0.88 : 1;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = style.getPropertyValue('--space-point-outline').trim();
+        ctx.lineWidth = panel.mode === 'density' ? 1.1 : 0.8;
+        ctx.stroke();
+        if (panel.mode === 'density' && point.item.count >= 3) {
+          const brightness = point.item.rgb.reduce((sum, channel, index) => sum + channel * [0.2126, 0.7152, 0.0722][index], 0);
+          ctx.fillStyle = brightness > 145 ? '#111827' : '#ffffff';
+          ctx.font = 'bold 10px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(point.item.count, point.x, point.y);
+        }
+      }
+      if (panel.selected) {
+        const point = panel.projected.find(entry => entry.item === panel.selected);
+        if (point) {
+          ctx.beginPath();
+          ctx.arc(point.x, point.y, 9, 0, Math.PI * 2);
+          ctx.strokeStyle = style.getPropertyValue('--space-text').trim();
+          ctx.lineWidth = 2;
+          ctx.stroke();
+          showTooltip(panel, point);
+        }
+      }
+    }
+
+    function drawAll() { panels.forEach(drawPanel); }
+
+    function showTooltip(panel, point) {
+      const name = document.createElement('strong');
+      const values = document.createElement('span');
+      if (panel.mode === 'density') {
+        name.textContent = point.item.count + ' named ' + (point.item.count === 1 ? 'color' : 'colors');
+        values.textContent = point.item.ranges.map((index, channel) => 'RGB'[channel] + ' ' + index * 64 + '–' + (index === 3 ? 255 : index * 64 + 63)).join(' · ');
+      } else {
+        name.textContent = point.item.name;
+        values.textContent = point.item.hex + ' · R ' + point.item.rgb[0] + ' · G ' + point.item.rgb[1] + ' · B ' + point.item.rgb[2];
+      }
+      panel.tooltip.replaceChildren(name, values);
+      panel.tooltip.hidden = false;
+      const left = Math.min(Math.max(point.x + 10, 8), panel.stage.clientWidth - panel.tooltip.offsetWidth - 8);
+      const top = Math.min(Math.max(point.y - panel.tooltip.offsetHeight - 10, 8), panel.stage.clientHeight - panel.tooltip.offsetHeight - 8);
+      panel.tooltip.style.left = left + 'px';
+      panel.tooltip.style.top = top + 'px';
+    }
+
+    function pointAt(panel, x, y) {
+      return [...panel.projected].reverse().find(point => {
+        const radius = panel.mode === 'density' ? 7 + Math.sqrt(point.item.count) * 2.3 : 10;
+        return Math.hypot(point.x - x, point.y - y) < radius;
+      });
+    }
+
+    function pointerPosition(panel, event) {
+      const rect = panel.canvas.getBoundingClientRect();
+      return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    }
+
+    function clearSelection() {
+      panels.forEach(panel => {
+        panel.selected = null;
+        panel.tooltip.hidden = true;
+      });
+    }
+
+    function setZoom(value) {
+      camera.zoom = Math.max(0.65, Math.min(2.2, value));
+      clearSelection();
+      drawAll();
+    }
+
+    panels.forEach(panel => {
+      panel.canvas.addEventListener('pointerdown', event => {
+        if (!colors.length) return;
+        panel.canvas.setPointerCapture(event.pointerId);
+        panel.pointer = { id: event.pointerId, x: event.clientX, y: event.clientY, startX: event.clientX, startY: event.clientY, moved: false };
+      });
+      panel.canvas.addEventListener('pointermove', event => {
+        if (panel.pointer && panel.pointer.id === event.pointerId) {
+          const dx = event.clientX - panel.pointer.x;
+          const dy = event.clientY - panel.pointer.y;
+          if (Math.hypot(event.clientX - panel.pointer.startX, event.clientY - panel.pointer.startY) > 3) panel.pointer.moved = true;
+          if (panel.pointer.moved) {
+            camera.yaw += dx * 0.009;
+            camera.pitch = Math.max(-1.45, Math.min(1.45, camera.pitch + dy * 0.009));
+            clearSelection();
+            drawAll();
+          }
+          panel.pointer.x = event.clientX;
+          panel.pointer.y = event.clientY;
+        } else if (event.pointerType === 'mouse') {
+          const { x, y } = pointerPosition(panel, event);
+          const point = pointAt(panel, x, y);
+          if (point) showTooltip(panel, point);
+          else if (!panel.selected) panel.tooltip.hidden = true;
+        }
+      });
+      panel.canvas.addEventListener('pointerup', event => {
+        if (!panel.pointer || panel.pointer.id !== event.pointerId) return;
+        if (!panel.pointer.moved) {
+          const { x, y } = pointerPosition(panel, event);
+          const point = pointAt(panel, x, y);
+          panel.selected = point?.item || null;
+          panel.tooltip.hidden = !point;
+          drawPanel(panel);
+        }
+        panel.pointer = null;
+      });
+      panel.canvas.addEventListener('pointercancel', () => { panel.pointer = null; });
+      panel.canvas.addEventListener('pointerleave', () => { if (!panel.selected) panel.tooltip.hidden = true; });
+      panel.canvas.addEventListener('wheel', event => {
+        if (!colors.length) return;
+        event.preventDefault();
+        setZoom(camera.zoom * (event.deltaY > 0 ? 0.9 : 1.1));
+      }, { passive: false });
+      panel.canvas.addEventListener('keydown', event => {
+        const key = event.key;
+        if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-', '=', 'Home'].includes(key)) return;
+        event.preventDefault();
+        if (key === 'Home') Object.assign(camera, initial);
+        else if (key === '+' || key === '=') camera.zoom = Math.min(2.2, camera.zoom * 1.15);
+        else if (key === '-') camera.zoom = Math.max(0.65, camera.zoom / 1.15);
+        else if (key === 'ArrowLeft') camera.yaw -= 0.15;
+        else if (key === 'ArrowRight') camera.yaw += 0.15;
+        else if (key === 'ArrowUp') camera.pitch = Math.max(-1.45, camera.pitch - 0.15);
+        else camera.pitch = Math.min(1.45, camera.pitch + 0.15);
+        clearSelection();
+        drawAll();
+      });
+    });
+
+    root.querySelector('.named-space-zoom-out').addEventListener('click', () => setZoom(camera.zoom / 1.2));
+    root.querySelector('.named-space-zoom-in').addEventListener('click', () => setZoom(camera.zoom * 1.2));
+    root.querySelector('.named-space-reset').addEventListener('click', () => {
+      Object.assign(camera, initial);
+      clearSelection();
+      drawAll();
+    });
+
+    async function loadColors() {
+      panels.forEach(panel => {
+        panel.message.textContent = 'Loading named colors…';
+        panel.message.hidden = false;
+      });
+      try {
+        const response = await fetch(source);
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const csv = await response.text();
+        colors = csv.replace(/^\uFEFF/, '').trim().split(/\r?\n/).slice(1).map(line => {
+          const comma = line.lastIndexOf(',');
+          const name = line.slice(0, comma).trim().replace(/^"|"$/g, '');
+          const hex = line.slice(comma + 1).trim().toUpperCase();
+          if (!name || !/^#[0-9A-F]{6}$/.test(hex)) return null;
+          const rgb = [1, 3, 5].map(index => parseInt(hex.slice(index, index + 2), 16));
+          return { name, hex, rgb, position: rgb.map(value => value / 127.5 - 1) };
+        }).filter(Boolean);
+        if (!colors.length) throw new Error('Color list is empty');
+        const cells = new Map();
+        for (const color of colors) {
+          const ranges = color.rgb.map(value => Math.min(3, Math.floor(value / 64)));
+          const key = ranges.join('-');
+          if (!cells.has(key)) cells.set(key, { ranges, count: 0, sum: [0, 0, 0] });
+          const cell = cells.get(key);
+          cell.count++;
+          color.rgb.forEach((value, index) => { cell.sum[index] += value; });
+        }
+        densityCells = [...cells.values()].map(cell => {
+          const rgb = cell.sum.map(value => Math.round(value / cell.count));
+          const hex = '#' + rgb.map(value => value.toString(16).padStart(2, '0')).join('').toUpperCase();
+          return { ...cell, rgb, hex, position: rgb.map(value => value / 127.5 - 1) };
+        });
+        count.textContent = colors.length + ' named colors · ' + densityCells.length + ' occupied cells';
+        panels.forEach(panel => { panel.message.hidden = true; });
+        requestAnimationFrame(drawAll);
+      } catch (error) {
+        colors = [];
+        count.textContent = '';
+        panels.forEach(panel => {
+          panel.message.replaceChildren('Could not load the color list.');
+          const retry = document.createElement('button');
+          retry.type = 'button';
+          retry.textContent = 'Try again';
+          retry.addEventListener('click', loadColors, { once: true });
+          panel.message.append(retry);
+        });
+      }
+    }
+
+    if (panels.every(panel => panel.context)) {
+      const resize = new ResizeObserver(entries => {
+        entries.forEach(entry => {
+          const panel = panels.find(item => item.canvas === entry.target);
+          if (panel) drawPanel(panel);
+        });
+      });
+      panels.forEach(panel => resize.observe(panel.canvas));
+      const intersection = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && colors.length) {
+            const panel = panels.find(item => item.stage === entry.target);
+            if (panel) drawPanel(panel);
+          }
+        });
+      });
+      panels.forEach(panel => intersection.observe(panel.stage));
+      new MutationObserver(drawAll).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      window.addEventListener('load', drawAll, { once: true });
+      loadColors();
+    } else {
+      panels.forEach(panel => { panel.message.textContent = 'This browser cannot display the 3D color plot.'; });
+    }
+  })();
+</script>

@@ -1,0 +1,269 @@
+<hr>
+<p class="text-2xl">Interactive: Find the Closest Color Names</p>
+<div id="rgb-color-match" class="rgb-match" aria-label="RGB color name matcher">
+  <div class="rgb-match-layout">
+    <div class="rgb-match-source">
+      <div class="rgb-match-heading">
+        <span>Selected color</span>
+      </div>
+      <div class="rgb-match-selected" style="--swatch-color: #6A4764">
+        <input class="rgb-match-picker" type="color" value="#6a4764" autocomplete="off" aria-label="Choose a color to match">
+        <span class="rgb-match-selected-label" aria-hidden="true">#6A4764</span>
+      </div>
+      <p class="rgb-match-picker-hint">Click the color to change it</p>
+    </div>
+    <div class="rgb-match-results">
+      <div class="rgb-match-heading">Three closest names</div>
+      <ol class="rgb-match-list" aria-live="polite" aria-busy="true">
+        <li class="rgb-match-loading">Loading colors…</li>
+      </ol>
+    </div>
+  </div>
+  <p class="rgb-match-error" role="status" hidden>Could not load the color list. <button type="button">Try again</button></p>
+</div>
+
+<style>
+  #rgb-color-match {
+    --match-border: rgba(15, 23, 42, 0.26);
+    --match-muted: #475569;
+    --match-surface: rgba(15, 23, 42, 0.045);
+    margin: 1.5rem 0;
+  }
+
+  .dark #rgb-color-match {
+    --match-border: rgba(255, 255, 255, 0.3);
+    --match-muted: #cbd5e1;
+    --match-surface: rgba(255, 255, 255, 0.08);
+  }
+
+  #rgb-color-match .rgb-match-layout {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  #rgb-color-match .rgb-match-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin-bottom: 0.65rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  #rgb-color-match .rgb-match-picker-hint {
+    margin: 0.55rem 0 0;
+    color: var(--match-muted);
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  #rgb-color-match .rgb-match-selected {
+    position: relative;
+    display: grid;
+    place-items: end start;
+    min-height: 12.5rem;
+    padding: 1rem;
+    border: 1px solid var(--match-border);
+    border-radius: 0.75rem;
+    background: var(--swatch-color);
+    overflow: hidden;
+  }
+
+  #rgb-color-match .rgb-match-picker {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  #rgb-color-match .rgb-match-selected:focus-within {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+  }
+
+  #rgb-color-match .rgb-match-selected-label {
+    pointer-events: none;
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.55rem;
+    background: rgba(255, 255, 255, 0.94);
+    color: #111827;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.3;
+  }
+
+  #rgb-color-match .rgb-match-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #rgb-color-match .rgb-match-list li {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  #rgb-color-match .rgb-match-swatch {
+    height: 7rem;
+    border: 1px solid var(--match-border);
+    border-radius: 0.65rem;
+    background: var(--swatch-color);
+  }
+
+  #rgb-color-match .rgb-match-name {
+    display: block;
+    margin-top: 0.55rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  #rgb-color-match .rgb-match-meta {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--match-muted);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.4;
+  }
+
+  #rgb-color-match .rgb-match-meta span {
+    display: block;
+  }
+
+  #rgb-color-match .rgb-match-loading {
+    grid-column: 1 / -1;
+    display: grid;
+    place-items: center;
+    min-height: 12.5rem;
+    border: 1px solid var(--match-border);
+    border-radius: 0.75rem;
+    background: var(--match-surface);
+    color: var(--match-muted);
+  }
+
+  #rgb-color-match .rgb-match-error {
+    margin: 0.75rem 0 0;
+    color: var(--match-muted);
+    font-size: 0.88rem;
+  }
+
+  #rgb-color-match .rgb-match-error button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    cursor: pointer;
+  }
+
+  #rgb-color-match .rgb-match-error button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  @media (min-width: 640px) {
+    #rgb-color-match .rgb-match-layout {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr);
+      align-items: start;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const root = document.getElementById('rgb-color-match');
+    const picker = root.querySelector('.rgb-match-picker');
+    const selected = root.querySelector('.rgb-match-selected');
+    const selectedLabel = root.querySelector('.rgb-match-selected-label');
+    const list = root.querySelector('.rgb-match-list');
+    const error = root.querySelector('.rgb-match-error');
+    const retry = error.querySelector('button');
+    const source = 'https://gist.githubusercontent.com/ecwu/461a1567ec5ab55dbaf18701c3e4c08b/raw/c05b2d4f4bade3ef357ea41cd2add280faed06b7/color-name-mapping-cn.csv';
+    let colors = [];
+    picker.value = '#6a4764';
+
+    function rgb(hex) {
+      return [1, 3, 5].map(index => parseInt(hex.slice(index, index + 2), 16));
+    }
+
+    function render() {
+      const hex = picker.value.toUpperCase();
+      selected.style.setProperty('--swatch-color', hex);
+      selectedLabel.textContent = hex;
+      if (!colors.length) return;
+
+      const query = rgb(hex);
+      const nearest = colors.map(color => ({
+        ...color,
+        distance: Math.sqrt(color.rgb.reduce((sum, channel, index) => sum + (channel - query[index]) ** 2, 0))
+      })).sort((a, b) => a.distance - b.distance).slice(0, 3);
+
+      list.replaceChildren(...nearest.map(color => {
+        const item = document.createElement('li');
+        const swatch = document.createElement('div');
+        swatch.className = 'rgb-match-swatch';
+        swatch.style.setProperty('--swatch-color', color.hex);
+        swatch.setAttribute('aria-hidden', 'true');
+
+        const name = document.createElement('span');
+        name.className = 'rgb-match-name';
+        name.textContent = color.name;
+
+        const meta = document.createElement('span');
+        meta.className = 'rgb-match-meta';
+        const hexValue = document.createElement('span');
+        hexValue.textContent = color.hex;
+        const distance = document.createElement('span');
+        distance.textContent = `d = ${color.distance.toFixed(2)}`;
+        meta.append(hexValue, distance);
+        item.append(swatch, name, meta);
+        return item;
+      }));
+      list.setAttribute('aria-busy', 'false');
+    }
+
+    async function loadColors() {
+      error.hidden = true;
+      list.setAttribute('aria-busy', 'true');
+      try {
+        const response = await fetch(source);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const csv = await response.text();
+        colors = csv.replace(/^\uFEFF/, '').trim().split(/\r?\n/).slice(1).map(line => {
+          const comma = line.lastIndexOf(',');
+          const name = line.slice(0, comma).trim().replace(/^"|"$/g, '');
+          const hex = line.slice(comma + 1).trim().toUpperCase();
+          return { name, hex, rgb: rgb(hex) };
+        }).filter(color => color.name && /^#[0-9A-F]{6}$/.test(color.hex));
+        if (colors.length < 3) throw new Error('Color list is empty');
+        render();
+      } catch (loadError) {
+        colors = [];
+        list.replaceChildren();
+        list.setAttribute('aria-busy', 'false');
+        error.hidden = false;
+      }
+    }
+
+    picker.addEventListener('input', render);
+    retry.addEventListener('click', loadColors);
+    loadColors();
+  })();
+</script>
+<hr>
