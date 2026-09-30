@@ -1,0 +1,13 @@
+<section id="prefix-cache-benchmark" class="spark-benchmark l-body" data-spark-chart="B" aria-label="三模型前缀缓存复用气泡图">
+  <p class="sb-heading">前缀缓存复用性能</p>
+  <p class="sb-note">8192 tokens 输入 · 1024 tokens 输出 · 顺序请求三次 · 服务保持前缀缓存开启</p>
+  <p class="sb-loading" role="status">正在读取缓存实验数据。</p>
+  <noscript><p>启用 JavaScript 可查看缓存实验气泡图。</p></noscript>
+  <div class="sb-interactive" hidden>
+    <p class="sb-note">① 首次　② 重复 1　③ 重复 2 · 箭头表示请求顺序</p>
+    <p class="sb-note">气泡面积 ∝ decode TPS</p>
+    <div class="sb-plot"></div>
+    <p class="sb-note">越低表示首个文本等待越短，气泡越大表示 decode 越快。气泡面积与 TPS 成正比；同一模型内横向略微错开，只用于区分请求顺序。</p>
+    <p class="sb-note">每个气泡是一次请求。第二、三次与同组首次请求比较；悬停或点击可查看命中 tokens 与延迟变化。</p>
+  </div>
+</section>
