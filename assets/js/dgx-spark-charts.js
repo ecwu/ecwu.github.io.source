@@ -7,7 +7,7 @@
     const identities=[{key:'qwen27',label:'Qwen3.8-27B',color:'var(--sb-gold)',shape:'circle'},{key:'qwen36',label:'Qwen3.6-35B-A3B',color:'var(--sb-green)',shape:'diamond'},{key:'flash-next',label:'Qwen3.8-Flash-Next',color:'var(--sb-purple)',shape:'triangle'}];
     function initCache(root,data){
       const $=s=>root.querySelector(s),plot=$('.sb-plot'),canvas=el('canvas');
-      canvas.setAttribute('role','img');canvas.setAttribute('aria-label','三个模型的缓存复用气泡图。纵轴为 TTFT，气泡面积代表 decode TPS。完整数值可查阅 CSV / JSON 原始数据。');plot.append(canvas);
+      canvas.setAttribute('role','img');canvas.setAttribute('aria-label','三个模型的缓存复用气泡图。纵轴为 TTFT，气泡面积代表 decode TPS。');plot.append(canvas);
       const labels=['首次','重复 1','重复 2'];let chart;const hiddenModels=new Set();
       const rows=identities.map(m=>[1,2,3].map(round=>data.cache.find(r=>r.model===m.key&&r.round===round)));
       function render(){
@@ -73,13 +73,13 @@
         }};
         if(chart)chart.destroy();
         chart=new Chart(canvas,{type:'scatter',data:{datasets},plugins:[bands,connections,speedAxes],options:{layout:{padding:{right:72,top:20}},responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'nearest',intersect:true},plugins:{legend:{display:false},tooltip:{backgroundColor:bg,titleColor:ink,bodyColor:ink,borderColor:grid,borderWidth:1,titleFont:{family:style.fontFamily},bodyFont:{family:style.fontFamily},callbacks:{title:items=>items[0]?.dataset.label||'',label:ctx=>`${lengths[ctx.raw.row.input_tokens]} · ${fmt(ctx.parsed.x)} ${def.unit}`,afterLabel:ctx=>{const r=ctx.raw.row.metrics[k];const speed=ctx.raw.row.metrics.decode_tps;return [`三轮范围 ${fmt(r.min)}–${fmt(r.max)} ${def.unit}`,`decode：${fmt(speed.mean)} tok/s`,`decode 三轮范围 ${fmt(speed.min)}–${fmt(speed.max)} tok/s`];}}}},scales:{x:{type:isLog?'logarithmic':'linear',beginAtZero:!isLog,ticks:{color:muted,font:{family:style.fontFamily}},grid:{color:grid},border:{color:ink},title:{display:true,text:`${def.name}（${def.unit}，${isLog?'对数':'线性'}刻度）`,color:ink,font:{family:style.fontFamily}}},y:{type:'linear',reverse:true,min:-.5,max:targets.length-.5,afterBuildTicks:axis=>{axis.ticks=targets.map((_,value)=>({value}));},ticks:{color:ink,font:{family:style.fontFamily},autoSkip:false,callback:v=>lengths[targets[v]]||''},grid:{display:false},border:{display:false},title:{display:true,text:'输入长度（tokens）',color:ink,font:{family:style.fontFamily}}}}}});
-        canvas.setAttribute('aria-label',`${def.name}分组点图。输入长度按组排列，每组纵向表示 decode 生成速度，越高越快，右侧统一为 0–200 tok/s 刻度；颜色区分模型，圆形、方形、三角形分别为并发 1、2、4，同长度同模型的并发点依次连线。完整数据可通过下方 CSV 或 JSON 链接下载。`);
+        canvas.setAttribute('aria-label',`${def.name}分组点图。输入长度按组排列，每组纵向表示 decode 生成速度，越高越快，右侧统一为 0–200 tok/s 刻度；颜色区分模型，圆形、方形、三角形分别为并发 1、2、4，同长度同模型的并发点依次连线。`);
         $('.sb-status').textContent=`每一组是一个输入长度；纵向为单请求 decode 生成速度，越高越快，右侧统一使用 0–200 tok/s 刻度，不同输入长度之间也可直接比较点的高度。同一输入长度、同一模型的并发 1 → 2 → 4 用细线连接。${k==='decode_tps'||k==='output_throughput'?'越靠右速度越快':'越靠左等待越短'}。27B 和 Flash-Next 只测到 64K；35B-A3B 的 262K 只运行了单请求实验。`;
       }
       root.querySelectorAll('select').forEach(n=>n.addEventListener('change',render));
       $('.sb-interactive').hidden=false;$('.sb-loading').hidden=true;render();
       new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['class']});
     }
-    function load(){const roots=[...document.querySelectorAll('[data-spark-chart]')];if(!roots.length)return;fetch(new URL(roots[0].dataset.chartSource,document.baseURI)).then(r=>{if(!r.ok)throw new Error('Data unavailable');return r.json();}).then(data=>roots.forEach(root=>init(root,data))).catch(()=>roots.forEach(root=>root.querySelector('.sb-loading').textContent='图表暂时无法加载，可下载 CSV / JSON 查看结果。'));}
+    function load(){const roots=[...document.querySelectorAll('[data-spark-chart]')];if(!roots.length)return;fetch(new URL(roots[0].dataset.chartSource,document.baseURI)).then(r=>{if(!r.ok)throw new Error('Data unavailable');return r.json();}).then(data=>roots.forEach(root=>init(root,data))).catch(()=>roots.forEach(root=>root.querySelector('.sb-loading').textContent='图表暂时无法加载，请稍后重试。'));}
     if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
   })();

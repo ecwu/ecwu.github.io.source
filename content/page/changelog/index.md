@@ -53,6 +53,11 @@ copyright:
 
 ### 2026
 
+#### September 2026
+
+- Add a new chart setting for post, which can load [Chart.js](https://www.chartjs.org/) by post. Which is an complement to the existing Vega-Lite chart support.
+- Adding custom CSS and JS support for post, which can load custom CSS and JS by post.
+
 #### August 2026
 
 - Production deployment pipeline migrated from GitHub Actions to Cloudflare Workers.

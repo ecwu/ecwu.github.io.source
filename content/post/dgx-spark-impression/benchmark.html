@@ -2,7 +2,7 @@
   <p class="sb-heading">上下文长度与并发性能</p>
   <p class="sb-note">单台 DGX Spark· 输出 1024 tokens · 无前缀复用</p>
   <p class="sb-loading" role="status">正在读取实测数据。</p>
-  <noscript><p>启用 JavaScript 可查看分组点图，或下载下方数据文件。</p></noscript>
+  <noscript><p>启用 JavaScript 可查看分组点图。</p></noscript>
   <div class="sb-interactive" hidden>
     <div class="sb-controls">
       <label>指标<select class="sb-metric" aria-label="上下文图指标"><option value="ttft">首个文本等待时间 · TTFT</option><option value="decode_tps">单请求 decode 速度</option><option value="output_throughput">整轮输出吞吐</option><option value="end_to_end">端到端耗时</option></select></label>
@@ -15,5 +15,4 @@
     <p class="sb-status sb-note" aria-live="polite"></p>
     <p class="sb-note">数值为三轮的算术平均。64K / 262K 档实际输入为 64512 / 261120 tokens。</p>
   </div>
-  <div class="sb-links"><a href="benchmark-requests.csv" download>下载 285 条请求 CSV</a><a href="benchmark-data.json" download>下载完整数据 JSON</a><a href="benchmark-methods.txt">字段与统计方法</a></div>
 </section>

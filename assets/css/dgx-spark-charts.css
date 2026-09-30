@@ -32,7 +32,6 @@
 .spark-benchmark th{font-weight:600}
 .spark-benchmark details{margin:.8rem 0;border-top:1px solid var(--sb-line);padding-top:.4rem}
 .spark-benchmark summary{font-size:.85rem;cursor:pointer;color:var(--sb-ink);padding:.35rem 0;min-height:36px}
-.spark-benchmark .sb-links{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-size:.8rem;margin-top:1rem}
 .spark-benchmark a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.spark-benchmark label{flex-basis:calc(50% - .5rem)}.spark-benchmark .sb-heading{font-size:1.15rem}.spark-benchmark .sb-legend{gap:.6rem 1rem;font-size:.82rem}.spark-benchmark .sb-tooltip{max-width:230px}}
 @media print{.spark-benchmark .sb-controls,.spark-benchmark .sb-tooltip{display:none}.spark-benchmark .sb-scroll{overflow:visible}}

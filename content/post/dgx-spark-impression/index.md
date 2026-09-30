@@ -6,9 +6,9 @@ description:
 featureimage: 
 unsplashfeatureimage: 
 
-publishDate: "2026-09-30T00:00:00+01:00"
+publishDate: "2026-09-30T16:15:00+01:00"
 lastmod: ""
-draft: true
+draft: false
 status: Finished
 # In Progress, Staging, Finished, Lagacy
 
@@ -48,7 +48,9 @@ tags:
 - Benchmark
 
 categories:
-- Placeholder
+- AI
+- Tech
+- Home Lab
 
 # type: file, link, image, and others
 extramaterials:
@@ -62,7 +64,7 @@ copyright:
 
 这款产品老黄在 [2025 年的 CES 大会宣布](https://techcrunch.com/2025/01/06/nvidias-project-digits-is-a-personal-ai-computer/)的时候，我就注意到了，当时它还叫 Project DIGITS。
 
-![NVIDIA DGX Spark](DGX-Spark.png)
+![NVIDIA DGX Spark](https://img.ecwuuuuu.com/blog/image/dgx-spark.png)
 
 它内含一颗 ARM 架构的 GB10 Grace Blackwell 芯片。宣称有 1 PFLOPS（千万亿次浮点运算/秒）的 FP4 精度计算能力{{% sidenote "fp4-sparse" %}}官方的 1 PFLOP 是启用结构化稀疏特性时的理论 FP4 峰值，并不等同于本文模型实际可获得的 dense 推理算力。{{% /sidenote %}}。搭配 128 GB 的统一内存和 ConnectX-7 200Gb/s 的高速网络多机拓展网卡。这个纸面数据让人感觉能在本地部署千亿级参数大模型。
 
@@ -222,6 +224,8 @@ vLLM 用 PagedAttention 的方式管理 KV cache，将序列的缓存分成固�
 再看相同输入重复提交的效果。缓存测试单独画成气泡图，横轴是三个模型，纵轴是 TTFT，气泡面积代表 decode 速度。每个模型的三个气泡对应首次请求与后面两次重复，可以同时看到等待时间的下降和生成速度的变化。Qwen3.6 首次 TTFT 约 1.094 秒，后两次约 0.534 和 0.529 秒，各命中 4288 tokens；27B 从约 3.086 秒降到 1.286 和 1.288 秒，各命中 4944 tokens；Flash-Next 从约 3.472 秒降到 1.188 和 1.193 秒，各命中 6048 tokens。这三组顺序请求都观察到了输入前缀复用，后两次请求的平均首文本等待相对各自首次请求分别缩短约 51%、58% 和 66%。
 
 {{< include-html "cache-benchmark.html" >}}
+
+原始数据获取请前往 [GitHub Gist](https://gist.github.com/ecwu/4c27b553cc39160a3bf15a01f5b0c396)。
 
 ## 结语
 
