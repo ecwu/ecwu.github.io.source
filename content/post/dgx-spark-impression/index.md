@@ -17,6 +17,10 @@ hidereadtime: false
 toc: true
 math: false
 charts: true
+customCSS:
+  - css/dgx-spark-charts.css
+customJS:
+  - js/dgx-spark-charts.js
 gallery: false
 showinfocard: true
 enablecomment: true

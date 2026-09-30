@@ -1,0 +1,12 @@
+{{- partial "head/chartjs.html" . -}}
+{{- if not (.Store.Get "customAssetsLoaded") -}}
+  {{- .Store.Set "customAssetsLoaded" true -}}
+  {{- range .Params.customCSS -}}
+    {{- $styles := resources.Get . | minify -}}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  {{- end -}}
+  {{- range .Params.customJS -}}
+    {{- $script := resources.Get . | minify -}}
+    <script defer src="{{ $script.RelPermalink }}"></script>
+  {{- end -}}
+{{- end -}}
